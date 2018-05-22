@@ -7,6 +7,7 @@ package common;
 
 
 import Base.BaseUtil;
+import Utility.Log;
 import cucumber.api.Scenario;
 import cucumber.api.java.After;
 import cucumber.api.java.Before;
@@ -20,6 +21,9 @@ import java.io.File;
 import java.util.Arrays;
 import java.util.concurrent.TimeUnit;
 
+import static java.lang.String.join;
+
+
 public class SetUp extends BaseUtil {
 
     private BaseUtil base;
@@ -29,7 +33,7 @@ public class SetUp extends BaseUtil {
     }
 
     @Before
-    public void InitializeTest(){
+    public void InitializeTest(Scenario scenario){
         File driver_exe = null;
 
         switch (SuiteSetUp.BROWSER.toLowerCase()){
@@ -59,14 +63,17 @@ public class SetUp extends BaseUtil {
 
         base.driver.manage().timeouts().implicitlyWait(10L,TimeUnit.SECONDS);
         base.driver.manage().window().maximize();
-        //base.driver.navigate().to(SuiteSetUp.QA_ENVIRONMENT);
+        Log.startTestCase(scenario.getName());
     }
     @After
     public void TearDownTest(Scenario scenario) {
         if (scenario.isFailed()) {
             //Take screenshot
             System.out.println(scenario.getName());
+            Log.info(scenario.getName() + "\tFAILED");
         }
+        Log.endTestCase(scenario.getName() + "\tPASSED");
         new TearDown(base);
     }
+
 }

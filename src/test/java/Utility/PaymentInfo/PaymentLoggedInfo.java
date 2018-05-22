@@ -1,4 +1,4 @@
-package common.PaymentInfo;
+package Utility.PaymentInfo;
 
 import org.openqa.selenium.WebElement;
 

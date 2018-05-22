@@ -1,5 +1,8 @@
 package Pages;
 
+import Base.CustomExceptions;
+import Utility.PaymentInfo.BankAccountInfo;
+import Utility.PaymentInfo.CreditCardInfo;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -38,6 +41,33 @@ public class AddPaymentPage {
     @FindBy(how = How.ID, using = "ctl00_ctl00_ctl00_cphM_cphM_cphApp_btnBack")
     private WebElement btnCancel;
 
+    @FindBy(how = How.ID, using = "accounttype")
+    private WebElement drpAccountType;
+
+    @FindBy(how = How.ID, using = "routingnumber")
+    private WebElement txtRoutingNumber;
+
+    @FindBy(how = How.ID, using = "accountnumber")
+    private WebElement txtAccountNumber;
+
+    @FindBy(how = How.ID, using = "txtFirstname")
+    private WebElement txtFirstName;
+
+    @FindBy(how = How.ID, using = "txtLastname")
+    private WebElement txtLastName;
+
+    @FindBy(how = How.ID, using = "billing-street-address")
+    private WebElement txtStreet;
+
+    @FindBy(how = How.ID, using = "billing-locality")
+    private WebElement txtCity;
+
+    @FindBy(how = How.ID, using = "billing-region")
+    private WebElement drpState;
+
+    @FindBy(how = How.ID, using = "billing-postal-code")
+    private WebElement txtZip;
+
     public AddPaymentPage(WebDriver driver) {
         PageFactory.initElements(driver, this);
         _driver = driver;
@@ -53,42 +83,60 @@ public class AddPaymentPage {
 
     }
 
-    public void setDrpPaymentMethod(String option) {
+    public void setDrpPaymentMethod(String option) throws CustomExceptions{
         Select sel = new Select(drpPaymentMethod);
         switch (option.toLowerCase()) {
             case "credit card":
                 sel.selectByVisibleText("Credit Card");
                 break;
+            case "bank account":
+                sel.selectByVisibleText("Bank Account");
+                break;
             default:
-                System.out.println("Incorrect option");
+                throw new CustomExceptions(">>>> Payment option not found!!! <<<<");
         }
     }
 
-    public void setCreditCardInformationAndSubmit(String ccNumber, String name, String expirationMonth, String expirationYear, String cvv) throws Exception{
+    public void setCreditCardInformationAndSubmit(CreditCardInfo cardInfo) throws Exception{
         _driver.switchTo().frame(ccNumberIframe);
-        _driver.findElement(By.id("credit-card-number")).sendKeys(ccNumber);
+        _driver.findElement(By.id("credit-card-number")).sendKeys(cardInfo.getCcNumber());
         _driver.switchTo().defaultContent();
 
-        _driver.findElement(By.id("cardholderName")).sendKeys(name);
+        _driver.findElement(By.id("cardholderName")).sendKeys(cardInfo.getCcHolder());
 
         _driver.switchTo().frame(ccExpirationMonthIframe);
         WebElement element = _driver.findElement(By.id("expiration-month"));
-        new Select(element).selectByVisibleText(expirationMonth);
+        new Select(element).selectByVisibleText(cardInfo.getCcMonth());
         _driver.switchTo().defaultContent();
 
         _driver.switchTo().frame(ccExpirationYearIframe);
         element = _driver.findElement(By.id("expiration-year"));
-        new Select(element).selectByVisibleText(expirationYear);
+        new Select(element).selectByVisibleText(cardInfo.getCcYear());
         _driver.switchTo().defaultContent();
 
         _driver.switchTo().frame(ccCVVIframe);
-        _driver.findElement(By.id("cvv")).sendKeys(cvv);
+        _driver.findElement(By.id("cvv")).sendKeys(cardInfo.getCcCVV());
         _driver.switchTo().defaultContent();
 
         btnPaymentSubmit.click();
         //btnCancel.click();
+    }
 
+    public void setBankAccountInformationAndSubmit(BankAccountInfo accountInfo) throws Exception{
+        new Select(drpAccountType).selectByVisibleText(accountInfo.getAccountType());
+        txtRoutingNumber.sendKeys(accountInfo.getRoutingNumber());
+        txtAccountNumber.sendKeys(accountInfo.getAccountNumber());
+        txtFirstName.sendKeys(accountInfo.getFirstName());
+        txtLastName.sendKeys(accountInfo.getLastName());
+        txtStreet.sendKeys(accountInfo.getStreetAddress());
+        txtCity.sendKeys(accountInfo.getCity());
+        new Select(drpState).selectByVisibleText(accountInfo.getState());
+        txtZip.sendKeys(accountInfo.getZipCode());
+
+        btnPaymentSubmit.click();
+        //btnCancel.click();
 
     }
+
 
 }

@@ -1,6 +1,6 @@
 package Pages;
 
-import common.credentials.MemberCredentials;
+import Utility.credentials.MemberCredentials;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -24,7 +24,10 @@ public class MainPage {
     private WebElement username;
 
     @FindBy(how = How.ID, using = "password")
-    private WebElement password;
+    private WebElement over_password;
+
+    @FindBy(how = How.ID, using = "txtPassword")
+    private WebElement txtPassword;
 
     @FindBy(how = How.ID, using = "signin")
     private WebElement btnSignIn;
@@ -34,25 +37,20 @@ public class MainPage {
         _driver = driver;
     }
 
-    public void LoginWith(MemberCredentials credentials){
+    public void LoginWith(MemberCredentials credentials) throws Exception{
         username.clear();
         username.sendKeys(credentials.getUsername());
-        Actions actions = new Actions(_driver);
-        actions.moveToElement(password).perform();
-        actions.click(password);
-        password.sendKeys(credentials.getPassword());
-
+        txtPassword.click();
+        over_password.sendKeys(credentials.getPassword());
         btnSignIn.submit();
 
     }
 
-    public boolean IsUserLoggedIn(){
-        return !(lblWelcome == null);
+    public boolean IsUserLoggedIn() throws Exception{
+        return lblWelcome.isDisplayed();
     }
 
-    public void GoToMyProfile() throws InterruptedException {
-        /*_driver.findElement(By.partialLinkText("My Profile")).click();
-        Thread.sleep(2000L);*/
+    public void GoToMyProfile() throws Exception{
         Actions actions = new Actions(_driver);
         ArrayList<WebElement> ele = new ArrayList<>(_driver.findElements(By.xpath("//*[@id=\"membership\"]/span")));
         actions.moveToElement(ele.get(1)).perform();
