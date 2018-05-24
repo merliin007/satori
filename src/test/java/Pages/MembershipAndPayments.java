@@ -1,5 +1,6 @@
 package Pages;
 
+import Utility.Log;
 import Utility.PaymentInfo.PaymentLoggedInfo;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
@@ -8,6 +9,7 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.How;
 import org.openqa.selenium.support.PageFactory;
 
+import java.time.format.DateTimeParseException;
 import java.util.ArrayList;
 
 public class MembershipAndPayments {
@@ -35,10 +37,19 @@ public class MembershipAndPayments {
         }
     }
 
-    public PaymentLoggedInfo getCapturedPayment() {
+    public ArrayList<PaymentLoggedInfo> getCapturedPayment() {
         ArrayList<WebElement> tableRow = new ArrayList<>(tblPayments.findElements(By.tagName("tr")));
-        ArrayList<WebElement> cells = new ArrayList<>(tableRow.get(1).findElements(By.tagName("td")));
-        return (new PaymentLoggedInfo(cells));
+        ArrayList<PaymentLoggedInfo> paymentList = new ArrayList<>();
+
+        for(WebElement row: tableRow.subList(1,tableRow.size())){
+            ArrayList<WebElement> cells = new ArrayList<>(row.findElements(By.tagName("td")));
+            try {
+                paymentList.add(new PaymentLoggedInfo(cells));
+            } catch (DateTimeParseException e) {
+                Log.warn(e.getMessage());
+            }
+        }
+        return paymentList;
     }
 
     public WebElement getTblPayments(){

@@ -1,8 +1,6 @@
 package Utility.PaymentInfo;
 
 public class CreditCardInfo {
-    /*addPaymentPage.setCreditCardInformationAndSubmit("4111111111111111", "Miguel Aguilar", "11",
-                    "2020", "159");*/
     private String ccNumber;
     private String ccHolder;
     private String ccMonth;

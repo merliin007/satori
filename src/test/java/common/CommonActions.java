@@ -4,6 +4,8 @@
 
 package common;
 
+import Base.CustomExceptions;
+import org.openqa.selenium.StaleElementReferenceException;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
@@ -24,8 +26,11 @@ public class CommonActions {
         wait.until(ExpectedConditions.visibilityOf(element));
     }
 
-    public void waitUntilElementIsAvailable(WebElement element){
-        wait.until(ExpectedConditions.elementToBeClickable(element));
+    public void waitUntilElementIsAvailableAfterRefresh(WebElement element){
+        //wait.until(ExpectedConditions.refreshed(ExpectedConditions.elementToBeClickable(element)));
+        new WebDriverWait(_driver, 10)
+                .ignoring(StaleElementReferenceException.class)
+                .until(ExpectedConditions.refreshed(ExpectedConditions.elementToBeClickable(element)));
     }
 
     public boolean IsLocalDateTimeAroundServerDate(LocalDateTime localDate, LocalDateTime serverDate, long tolerance){
@@ -33,6 +38,12 @@ public class CommonActions {
         return (serverDate.minusMinutes(tolerance).isBefore(tempDate) && serverDate.plusMinutes(tolerance).isAfter(tempDate));
     }
 
+    public void verifyAlertErrorAndAcceptIt() {
+        if(wait.until(ExpectedConditions.alertIsPresent()) != null) {
+            _driver.switchTo().alert().accept();
+            _driver.switchTo().defaultContent();
+        }
+    }
 
 
 }

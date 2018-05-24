@@ -15,7 +15,7 @@ public class TearDown {
 
         }
         finally {
-            killBrowsers(SuiteSetUp.BROWSER + ".exe");
+            //killBrowsers(SuiteSetUp.BROWSER + ".exe");
             System.out.println("Killing all browsers");
         }
     }

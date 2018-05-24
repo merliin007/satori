@@ -41,6 +41,7 @@ public class SetUp extends BaseUtil {
                 driver_exe = new File(SuiteSetUp.WEBDRIVERS_FOLDER, "geckodriver64.exe");
                 System.setProperty("webdriver.gecko.driver", driver_exe.getAbsolutePath());
                 FirefoxProfile profile = new FirefoxProfile();
+                //profile.setPreference("browser.private.browsing.autostart",true);
                 profile.setAcceptUntrustedCertificates(true);
                 base.driver = new FirefoxDriver();
                 break;
@@ -67,12 +68,10 @@ public class SetUp extends BaseUtil {
     }
     @After
     public void TearDownTest(Scenario scenario) {
-        if (scenario.isFailed()) {
-            //Take screenshot
-            System.out.println(scenario.getName());
-            Log.info(scenario.getName() + "\tFAILED");
-        }
-        Log.endTestCase(scenario.getName() + "\tPASSED");
+        if (scenario.isFailed())
+            Log.endTestCase(scenario.getName() + "\tFAILED");
+        else
+            Log.endTestCase(scenario.getName() + "\tPASSED");
         new TearDown(base);
     }
 

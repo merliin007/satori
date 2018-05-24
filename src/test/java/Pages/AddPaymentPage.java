@@ -14,6 +14,12 @@ import org.openqa.selenium.support.ui.Select;
 public class AddPaymentPage {
     private WebDriver _driver;
 
+    @FindBy(how = How.ID, using = "ctl00_ctl00_ctl00_cphM_cphM_cphApp_tbc_tpInformation_txtPaymentDateValue")
+    private WebElement txtDate;
+
+    @FindBy(how = How.ID, using = "ctl00_ctl00_ctl00_cphM_cphM_cphApp_tbc_tpInformation_txtPaymentTimeValue")
+    private WebElement txtTime;
+
     @FindBy(how = How.ID, using = "ctl00_ctl00_ctl00_cphM_cphM_cphApp_tbc_tpInformation_cmdAdd")
     private WebElement btnAdd;
 
@@ -37,6 +43,9 @@ public class AddPaymentPage {
 
     @FindBy(how = How.ID, using = "ctl00_ctl00_ctl00_cphM_cphM_cphApp_btnSubmit")
     private WebElement btnPaymentSubmit;
+
+    @FindBy(how = How.ID, using = "ctl00_ctl00_ctl00_cphM_cphM_cphApp_btnSubmitNoCC")
+    private WebElement btnSubmitPaymentNoCC;
 
     @FindBy(how = How.ID, using = "ctl00_ctl00_ctl00_cphM_cphM_cphApp_btnBack")
     private WebElement btnCancel;
@@ -68,6 +77,9 @@ public class AddPaymentPage {
     @FindBy(how = How.ID, using = "billing-postal-code")
     private WebElement txtZip;
 
+    @FindBy(how = How.ID, using = "ctl00_ctl00_ctl00_cphM_cphM_cphApp_tbc_tpInformation_productSelector_cbIsUpgrade")
+    private WebElement chkUpgrade;
+
     public AddPaymentPage(WebDriver driver) {
         PageFactory.initElements(driver, this);
         _driver = driver;
@@ -91,6 +103,9 @@ public class AddPaymentPage {
                 break;
             case "bank account":
                 sel.selectByVisibleText("Bank Account");
+                break;
+            case "office credit":
+                sel.selectByVisibleText("Office Credit");
                 break;
             default:
                 throw new CustomExceptions(">>>> Payment option not found!!! <<<<");
@@ -119,7 +134,6 @@ public class AddPaymentPage {
         _driver.switchTo().defaultContent();
 
         btnPaymentSubmit.click();
-        //btnCancel.click();
     }
 
     public void setBankAccountInformationAndSubmit(BankAccountInfo accountInfo) throws Exception{
@@ -134,9 +148,40 @@ public class AddPaymentPage {
         txtZip.sendKeys(accountInfo.getZipCode());
 
         btnPaymentSubmit.click();
-        //btnCancel.click();
-
     }
 
+    public void clickNoCCSubmitBtn() throws Exception{
+        btnSubmitPaymentNoCC.click();
+    }
 
+    public void clickCancelButton() throws Exception{
+        btnCancel.click();
+    }
+
+    public void clearCreditCardFields() throws Exception{
+        _driver.switchTo().frame(ccNumberIframe);
+        _driver.findElement(By.id("credit-card-number")).clear();
+        _driver.switchTo().defaultContent();
+
+        _driver.findElement(By.id("cardholderName")).clear();
+
+        _driver.switchTo().frame(ccCVVIframe);
+        _driver.findElement(By.id("cvv")).clear();
+        _driver.switchTo().defaultContent();
+    }
+
+    public void setChkUpgrade(boolean checked) throws Exception{
+        if(checked){
+            if(!chkUpgrade.isSelected())
+                chkUpgrade.click();
+        }
+    }
+
+    public WebElement getTxtDate() {
+        return txtDate;
+    }
+
+    public WebElement getTxtTime() {
+        return txtTime;
+    }
 }
