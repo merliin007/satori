@@ -1,6 +1,4 @@
-package Base;
-
-import net.bytebuddy.implementation.bytecode.Throw;
+package base;
 
 public class CustomExceptions extends Exception {
 

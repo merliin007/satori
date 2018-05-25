@@ -1,6 +1,6 @@
-package Base;
+package base;
 
-import Utility.Log;
+import utility.Log;
 import common.SuiteSetUp;
 import org.apache.commons.io.FileUtils;
 import org.apache.log4j.xml.DOMConfigurator;

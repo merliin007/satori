@@ -1,9 +1,9 @@
-package Pages;
+package pages;
 
-import Base.CustomExceptions;
-import Utility.PaymentInfo.BankAccountInfo;
-import Utility.PaymentInfo.CheckInfo;
-import Utility.PaymentInfo.CreditCardInfo;
+import base.CustomExceptions;
+import utility.paymentInfo.BankAccountInfo;
+import utility.paymentInfo.CheckInfo;
+import utility.paymentInfo.CreditCardInfo;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;

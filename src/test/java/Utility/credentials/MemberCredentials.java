@@ -1,4 +1,4 @@
-package Utility.credentials;
+package utility.credentials;
 
 public class MemberCredentials {
     private String username;

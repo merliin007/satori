@@ -1,7 +1,7 @@
-package Pages;
+package pages;
 
-import Utility.Log;
-import Utility.PaymentInfo.PaymentLoggedInfo;
+import utility.Log;
+import utility.paymentInfo.PaymentLoggedInfo;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;

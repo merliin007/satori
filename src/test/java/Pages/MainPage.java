@@ -1,6 +1,6 @@
-package Pages;
+package pages;
 
-import Utility.credentials.MemberCredentials;
+import utility.credentials.MemberCredentials;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;

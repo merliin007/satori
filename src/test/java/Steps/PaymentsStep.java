@@ -1,16 +1,16 @@
-package Steps;
+package steps;
 
-import Base.BaseUtil;
-import Utility.Log;
-import Pages.*;
-import Utility.PaymentInfo.BankAccountInfo;
-import Utility.PaymentInfo.CheckInfo;
-import Utility.PaymentInfo.CreditCardInfo;
+import base.BaseUtil;
+import org.testng.annotations.Parameters;
+import utility.Log;
+import pages.*;
+import utility.paymentInfo.BankAccountInfo;
+import utility.paymentInfo.CheckInfo;
+import utility.paymentInfo.CreditCardInfo;
 import common.CommonActions;
-import Utility.PaymentInfo.PaymentLoggedInfo;
-import Utility.credentials.MemberCredentials;
+import utility.paymentInfo.PaymentLoggedInfo;
+import utility.credentials.MemberCredentials;
 import cucumber.api.DataTable;
-import cucumber.api.PendingException;
 import cucumber.api.java.en.And;
 import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
@@ -18,6 +18,7 @@ import cucumber.api.java.en.When;
 import org.openqa.selenium.StaleElementReferenceException;
 
 import static org.junit.Assert.*;
+
 import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
 import java.util.ArrayList;
@@ -35,8 +36,6 @@ public class PaymentsStep extends BaseUtil {
     private PaymentsErrorPage paymentsErrorPage;
     private PaymentDetailsPage paymentDetailsPage;
     private RefundPage refundPage;
-
-    //private LocalDateTime actualTime;
     private LocalDateTime purchaseTime;
     private String _paymentType;
 
@@ -45,19 +44,20 @@ public class PaymentsStep extends BaseUtil {
     }
 
     @Given("^I sign in as Default user$")
-    public void iSignInAsDefaultUser(String user) {
+    public void iSignInAsDefaultUser() {
         try {
-            base.NavigateToPage("test");
             mainPage = new MainPage(base.driver);
-            mainPage.LoginWith(new MemberCredentials());
+            MemberCredentials memberCredentials = new MemberCredentials();
+            mainPage.LoginWith(memberCredentials);
             commonActions = new CommonActions(base.driver);
-            Log.info("Logging as: " + user);
+            Log.info("Logging as: " + memberCredentials.getUsername());
         } catch (Exception e) {
             fail();
             Log.error(e.getMessage());
             base.GrabScreenShot();
         }
     }
+
     @Given("^I sign in as member user$")
     public void iSignInAsMemberUser(DataTable table) {
         try {
@@ -236,8 +236,6 @@ public class PaymentsStep extends BaseUtil {
     }
 
 
-
-
     @When("^Manually adding my credit card information I submit all information$")
     public void manuallyAddingMyCreditCardInformationISubmitAllInformation(DataTable table) {
         try {
@@ -310,22 +308,22 @@ public class PaymentsStep extends BaseUtil {
             Log.error(e.getMessage());
             base.GrabScreenShot();
             fail();
-        }
-        finally {
-            if(paymentFound.isResult()){
+        } finally {
+            if (paymentFound.isResult()) {
                 commonActions.waitUntilElementIsVisible(membershipAndPayments.getTblPayments());
                 deletePayment(membershipAndPayments.getCapturedPayment().get(paymentFound.getI()));
             }
         }
     }
 
-    private void savePurchaseTime(String date, String time) throws Exception{
+    private void savePurchaseTime(String date, String time) throws Exception {
         purchaseTime = LocalDateTime.parse(date + " " + time,
                 DateTimeFormatter.ofPattern("M/dd/yyyy h:mm:ss a"));
     }
-    private void deletePayment(PaymentLoggedInfo payment){
+
+    private void deletePayment(PaymentLoggedInfo payment) {
         try {
-            for(int i = 0; i < 5; i++){
+            for (int i = 0; i < 5; i++) {
                 try {
                     payment.getLnkDelete().click();
                     base.driver.switchTo().alert().accept();
@@ -343,7 +341,7 @@ public class PaymentsStep extends BaseUtil {
     }
 
     @And("^After adding my check information I submit payment$")
-    public void afterAddingMyCheckInformationISubmitPayment(){
+    public void afterAddingMyCheckInformationISubmitPayment() {
         try {
             _paymentType = "Check";
             addPaymentPage.setDrpPaymentMethod(_paymentType);
@@ -361,7 +359,7 @@ public class PaymentsStep extends BaseUtil {
     }
 
     @Then("^Refund is made for this payment$")
-    public void refundIsMadeForThisPayment(){
+    public void refundIsMadeForThisPayment() {
         try {
             PaymentInfo paymentFound = findPayment();
             assertTrue(paymentFound.isResult());
@@ -375,8 +373,8 @@ public class PaymentsStep extends BaseUtil {
         }
     }
 
-    private void refundPayment(PaymentLoggedInfo paymentLoggedInfo){
-        try{
+    private void refundPayment(PaymentLoggedInfo paymentLoggedInfo) {
+        try {
             Log.info("Refunding payment");
             paymentLoggedInfo.getLnkRefund().click();
             refundPage = new RefundPage(base.driver);
@@ -384,14 +382,14 @@ public class PaymentsStep extends BaseUtil {
             refundPage.setComments("Refunding payment per Automator");
             refundPage.getBtnSave().click();
             commonActions.waitUntilElementIsVisible(membershipAndPayments.getTblPayments());
-        }catch (Exception e){
+        } catch (Exception e) {
             Log.error(e.getMessage());
             base.GrabScreenShot();
             fail();
         }
     }
 
-    private PaymentInfo findPayment() throws Exception{
+    private PaymentInfo findPayment() throws Exception {
         boolean result = false;
         ArrayList<PaymentLoggedInfo> payments = membershipAndPayments.getCapturedPayment();
         int i = 0;
@@ -415,15 +413,18 @@ public class PaymentsStep extends BaseUtil {
         return new PaymentInfo(i, result);
     }
 
-    private class PaymentInfo{
+    private class PaymentInfo {
         private int i;
         private boolean result;
+
         public int getI() {
             return i;
         }
+
         public boolean isResult() {
             return result;
         }
+
         public PaymentInfo(int i, boolean result) {
             this.i = i;
             this.result = result;

@@ -1,4 +1,4 @@
-package Utility.PaymentInfo;
+package utility.paymentInfo;
 
 public class CreditCardInfo {
     private String ccNumber;

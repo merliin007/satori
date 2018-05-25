@@ -6,8 +6,9 @@ package common;
 
 
 
-import Base.BaseUtil;
-import Utility.Log;
+import base.BaseUtil;
+import org.testng.annotations.Parameters;
+import utility.Log;
 import cucumber.api.Scenario;
 import cucumber.api.java.After;
 import cucumber.api.java.Before;
@@ -32,6 +33,7 @@ public class SetUp extends BaseUtil {
         this.base = base;
     }
 
+    @Parameters("environment")
     @Before
     public void InitializeTest(Scenario scenario){
         File driver_exe = null;
@@ -64,6 +66,7 @@ public class SetUp extends BaseUtil {
 
         base.driver.manage().timeouts().implicitlyWait(10L,TimeUnit.SECONDS);
         base.driver.manage().window().maximize();
+        this.base.NavigateToPage(System.getProperty("environmentName"));
         Log.startTestCase(scenario.getName());
     }
     @After

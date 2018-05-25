@@ -4,7 +4,7 @@
 
 package common;
 
-import Base.BaseUtil;
+import base.BaseUtil;
 
 public class TearDown {
     public TearDown(BaseUtil base){
