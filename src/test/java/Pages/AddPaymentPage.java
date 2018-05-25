@@ -2,6 +2,7 @@ package Pages;
 
 import Base.CustomExceptions;
 import Utility.PaymentInfo.BankAccountInfo;
+import Utility.PaymentInfo.CheckInfo;
 import Utility.PaymentInfo.CreditCardInfo;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
@@ -80,6 +81,12 @@ public class AddPaymentPage {
     @FindBy(how = How.ID, using = "ctl00_ctl00_ctl00_cphM_cphM_cphApp_tbc_tpInformation_productSelector_cbIsUpgrade")
     private WebElement chkUpgrade;
 
+    @FindBy(how = How.ID, using = "ctl00_ctl00_ctl00_cphM_cphM_cphApp_paymentCheck_txtCheckNumber")
+    private WebElement txtCheckNumber;
+
+    @FindBy(how = How.ID, using = "ctl00_ctl00_ctl00_cphM_cphM_cphApp_paymentCheck_txtAccountHolderName")
+    private WebElement txtCheckAccountHolder;
+
     public AddPaymentPage(WebDriver driver) {
         PageFactory.initElements(driver, this);
         _driver = driver;
@@ -95,7 +102,7 @@ public class AddPaymentPage {
 
     }
 
-    public void setDrpPaymentMethod(String option) throws CustomExceptions{
+    public void setDrpPaymentMethod(String option) throws CustomExceptions {
         Select sel = new Select(drpPaymentMethod);
         switch (option.toLowerCase()) {
             case "credit card":
@@ -107,12 +114,18 @@ public class AddPaymentPage {
             case "office credit":
                 sel.selectByVisibleText("Office Credit");
                 break;
+            case "check":
+                sel.selectByVisibleText("Check");
+                break;
+            case "cash":
+                sel.selectByVisibleText("Cash");
+                break;
             default:
                 throw new CustomExceptions(">>>> Payment option not found!!! <<<<");
         }
     }
 
-    public void setCreditCardInformationAndSubmit(CreditCardInfo cardInfo) throws Exception{
+    public void setCreditCardInformationAndSubmit(CreditCardInfo cardInfo) throws Exception {
         _driver.switchTo().frame(ccNumberIframe);
         _driver.findElement(By.id("credit-card-number")).sendKeys(cardInfo.getCcNumber());
         _driver.switchTo().defaultContent();
@@ -136,7 +149,7 @@ public class AddPaymentPage {
         btnPaymentSubmit.click();
     }
 
-    public void setBankAccountInformationAndSubmit(BankAccountInfo accountInfo) throws Exception{
+    public void setBankAccountInformationAndSubmit(BankAccountInfo accountInfo) throws Exception {
         new Select(drpAccountType).selectByVisibleText(accountInfo.getAccountType());
         txtRoutingNumber.sendKeys(accountInfo.getRoutingNumber());
         txtAccountNumber.sendKeys(accountInfo.getAccountNumber());
@@ -150,15 +163,15 @@ public class AddPaymentPage {
         btnPaymentSubmit.click();
     }
 
-    public void clickNoCCSubmitBtn() throws Exception{
+    public void clickNoCCSubmitBtn() throws Exception {
         btnSubmitPaymentNoCC.click();
     }
 
-    public void clickCancelButton() throws Exception{
+    public void clickCancelButton() throws Exception {
         btnCancel.click();
     }
 
-    public void clearCreditCardFields() throws Exception{
+    public void clearCreditCardFields() throws Exception {
         _driver.switchTo().frame(ccNumberIframe);
         _driver.findElement(By.id("credit-card-number")).clear();
         _driver.switchTo().defaultContent();
@@ -170,9 +183,9 @@ public class AddPaymentPage {
         _driver.switchTo().defaultContent();
     }
 
-    public void setChkUpgrade(boolean checked) throws Exception{
-        if(checked){
-            if(!chkUpgrade.isSelected())
+    public void setChkUpgrade(boolean checked) throws Exception {
+        if (checked) {
+            if (!chkUpgrade.isSelected())
                 chkUpgrade.click();
         }
     }
@@ -183,5 +196,10 @@ public class AddPaymentPage {
 
     public WebElement getTxtTime() {
         return txtTime;
+    }
+
+    public void setCheckInformation(CheckInfo check) throws Exception{
+        txtCheckNumber.sendKeys(check.getCheckNumber());
+        txtCheckAccountHolder.sendKeys(check.getAccountHolder());
     }
 }
