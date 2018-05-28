@@ -30,15 +30,19 @@ public class BaseUtil{
     }
 
     public void NavigateToPage(String environment){
-        switch (environment.toLowerCase()){
-            case "qa":
-                driver.navigate().to(SuiteSetUp.QA_ENVIRONMENT);
-                Log.info("Navigating to: " + SuiteSetUp.QA_ENVIRONMENT);
-                break;
-            case "test":
-                driver.navigate().to(SuiteSetUp.TEST_ENVIRONMENT);
-                Log.info("Navigating to: " + SuiteSetUp.TEST_ENVIRONMENT);
-                break;
+        try {
+            switch (environment.toLowerCase()){
+                case "qa":
+                    driver.navigate().to(SuiteSetUp.QA_ENVIRONMENT);
+                    Log.info("Navigating to: " + SuiteSetUp.QA_ENVIRONMENT);
+                    break;
+                case "test":
+                    driver.navigate().to(SuiteSetUp.TEST_ENVIRONMENT);
+                    Log.info("Navigating to: " + SuiteSetUp.TEST_ENVIRONMENT);
+                    break;
+            }
+        } catch (NullPointerException e) {
+            Log.error("Environment System property missing... Exiting");
         }
     }
 

@@ -61,12 +61,9 @@ public class PaymentsStep extends BaseUtil {
     @Given("^I sign in as member user$")
     public void iSignInAsMemberUser(DataTable table) {
         try {
-            base.NavigateToPage("test");
             mainPage = new MainPage(base.driver);
-
             List<MemberCredentials> memberCredentials = new ArrayList<>();
             memberCredentials = table.asList(MemberCredentials.class);
-
             mainPage.LoginWith(memberCredentials.get(0));
             commonActions = new CommonActions(base.driver);
             Log.info("Logging as: " + memberCredentials.get(0).getUsername());

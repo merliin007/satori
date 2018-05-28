@@ -33,7 +33,6 @@ public class SetUp extends BaseUtil {
         this.base = base;
     }
 
-    @Parameters("environment")
     @Before
     public void InitializeTest(Scenario scenario){
         File driver_exe = null;
