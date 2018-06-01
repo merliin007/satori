@@ -7,7 +7,7 @@ Feature: Upgrade membership via Check
     And I navigate to My Profile menu
     And Click on MemberShip & Payments
     And Click on Add Member Payment
-    When Upgrading membership for user "100-142-402"
+    When Upgrading membership for user "102-456-637"
     And After adding my check information I submit payment
     Then Purchase detail page shows correct payment
 

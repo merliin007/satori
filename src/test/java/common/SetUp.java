@@ -5,8 +5,12 @@
 package common;
 
 
-
 import base.BaseUtil;
+import org.openqa.selenium.chrome.ChromeOptions;
+import org.openqa.selenium.firefox.FirefoxOptions;
+import org.openqa.selenium.ie.InternetExplorerDriver;
+import org.openqa.selenium.ie.InternetExplorerOptions;
+import org.openqa.selenium.remote.CapabilityType;
 import org.testng.annotations.Parameters;
 import utility.Log;
 import cucumber.api.Scenario;
@@ -34,40 +38,47 @@ public class SetUp extends BaseUtil {
     }
 
     @Before
-    public void InitializeTest(Scenario scenario){
+    public void InitializeTest(Scenario scenario) {
         File driver_exe = null;
-
-        switch (SuiteSetUp.BROWSER.toLowerCase()){
+        boolean isIe = false;
+        switch (SuiteSetUp.BROWSER.toLowerCase()) {
             case "firefox":
                 driver_exe = new File(SuiteSetUp.WEBDRIVERS_FOLDER, "geckodriver64.exe");
                 System.setProperty("webdriver.gecko.driver", driver_exe.getAbsolutePath());
-                FirefoxProfile profile = new FirefoxProfile();
-                //profile.setPreference("browser.private.browsing.autostart",true);
-                profile.setAcceptUntrustedCertificates(true);
-                base.driver = new FirefoxDriver();
+                FirefoxOptions firefoxOptions = new FirefoxOptions();
+                firefoxOptions.setAcceptInsecureCerts(true);
+                firefoxOptions.setCapability("browser.private.browsing.autostart", true);
+                base.driver = new FirefoxDriver(firefoxOptions);
                 break;
             case "chrome":
-                driver_exe = new File(SuiteSetUp.WEBDRIVERS_FOLDER,"chromedriver.exe");
+                driver_exe = new File(SuiteSetUp.WEBDRIVERS_FOLDER, "chromedriver.exe");
                 System.setProperty("webdriver.chrome.driver", driver_exe.getAbsolutePath());
-                DesiredCapabilities capabilities = new DesiredCapabilities().chrome();
-                capabilities.setCapability("chrome.switches", Arrays.asList("--ignore-certificate-errors"));
-                base.driver = new ChromeDriver();
+                ChromeOptions options = new ChromeOptions();
+                //options.setCapability("chrome.switches", Arrays.asList("--ignore-certificate-errors"));
+                options.setCapability(CapabilityType.ACCEPT_INSECURE_CERTS, true);
+                base.driver = new ChromeDriver(options);
                 break;
-            case "edge":
-                driver_exe = new File(SuiteSetUp.WEBDRIVERS_FOLDER,"MicrosoftWebDriver.exe");
-                System.setProperty("webdriver.edge.driver", driver_exe.getAbsolutePath());
-                base.driver = new EdgeDriver();
+            case "ie":
+                driver_exe = new File(SuiteSetUp.WEBDRIVERS_FOLDER, "IEDriverServer.exe");
+                System.setProperty("webdriver.ie.driver", driver_exe.getAbsolutePath());
+                InternetExplorerOptions ieOptions = new InternetExplorerOptions();
+                ieOptions.setCapability(InternetExplorerDriver.IE_ENSURE_CLEAN_SESSION, true);
+                ieOptions.setCapability(CapabilityType.ACCEPT_INSECURE_CERTS, true);
+                base.driver = new InternetExplorerDriver();
+                isIe = true;
                 break;
-                default:
-                    System.out.println("Browser not defined");
-                    System.exit(-1);
+            default:
+                System.out.println("Browser not defined");
+                System.exit(-1);
         }
 
-        base.driver.manage().timeouts().implicitlyWait(10L,TimeUnit.SECONDS);
+        base.driver.manage().timeouts().implicitlyWait(10L, TimeUnit.SECONDS);
         base.driver.manage().window().maximize();
-        this.base.NavigateToPage(System.getProperty("environmentName"));
+        this.base.NavigateToPage(System.getProperty("environmentName"), isIe);
+
         Log.startTestCase(scenario.getName());
     }
+
     @After
     public void TearDownTest(Scenario scenario) {
         if (scenario.isFailed())

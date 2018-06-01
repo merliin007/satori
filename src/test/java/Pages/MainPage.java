@@ -14,8 +14,9 @@ import java.util.ArrayList;
 public class MainPage {
     private WebDriver _driver;
     private WebElement element;
-    @FindBy(how = How.ID, using = "ctl00_ctl00_ctl00_LblWelcome")
-    private WebElement lblWelcome;
+
+    //@FindBy(how = How.ID, using = "ctl00_ctl00_ctl00_LblWelcome")
+    By byLblWelcome = By.id("ctl00_ctl00_ctl00_LblWelcome");
 
     @FindBy(how = How.ID, using = "membership")
     private WebElement mnuMyALTA;
@@ -47,7 +48,11 @@ public class MainPage {
     }
 
     public boolean IsUserLoggedIn() throws Exception{
-        return lblWelcome.isDisplayed();
+        return _driver.findElement(byLblWelcome).isDisplayed();
+    }
+
+    public By getLblWelcomeBy() {
+        return byLblWelcome;
     }
 
     public void GoToMyProfile() throws Exception{

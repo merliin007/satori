@@ -7,7 +7,7 @@ Feature: Payments with Office Credit
     And I navigate to My Profile menu
     And Click on MemberShip & Payments
     And Click on Add Member Payment
-    And Add the payment for the following member: "101-575-919"
+    And Add the payment for the following member: "102-456-637"
     And After selecting "Office Credit" option I submit all information
     Then I get confirmation page Accepting my payment
 

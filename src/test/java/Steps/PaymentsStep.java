@@ -1,6 +1,7 @@
 package steps;
 
 import base.BaseUtil;
+import org.openqa.selenium.UnhandledAlertException;
 import org.testng.annotations.Parameters;
 import utility.Log;
 import pages.*;
@@ -128,8 +129,10 @@ public class PaymentsStep extends BaseUtil {
     @And("^Add the payment for the following member: \"([^\"]*)\"$")
     public void addThePaymentForTheFollowingUser(String altaNumber) {
         try {
+            this.savePurchaseTime(addPaymentPage.getTxtDate().getAttribute("value"), addPaymentPage.getTxtTime().getAttribute("value"));
             addPaymentPage.setTxtAltaNumber(altaNumber);
             addPaymentPage.getBtnAdd().click();
+            commonActions.waitUntilElementIsVisible(addPaymentPage.getTblPurchases());
             Log.info("Entering alta number: " + altaNumber);
         } catch (Exception e) {
             fail();
@@ -142,7 +145,7 @@ public class PaymentsStep extends BaseUtil {
     public void afterAddingMyCreditCardInformationISubmitPayment() {
         try {
             _paymentType = "Credit Card";
-            this.savePurchaseTime(addPaymentPage.getTxtDate().getAttribute("value"), addPaymentPage.getTxtTime().getAttribute("value"));
+            //this.savePurchaseTime(addPaymentPage.getTxtDate().getAttribute("value"), addPaymentPage.getTxtTime().getAttribute("value"));
             addPaymentPage.setDrpPaymentMethod(_paymentType);
             Log.info("Selecting " + _paymentType + " payment method");
             addPaymentPage.setCreditCardInformationAndSubmit(new CreditCardInfo());
@@ -186,7 +189,7 @@ public class PaymentsStep extends BaseUtil {
             _paymentType = "Bank Account";
             addPaymentPage.setDrpPaymentMethod(_paymentType);
             Log.info("Selecting " + _paymentType + " payment method");
-            this.savePurchaseTime(addPaymentPage.getTxtDate().getText(), addPaymentPage.getTxtTime().getText());
+
             addPaymentPage.setBankAccountInformationAndSubmit(new BankAccountInfo());
             commonActions.waitUntilElementIsVisible(membershipAndPayments.getMembershipBanner());
             Log.info("Payment submitted successfully");
@@ -202,7 +205,7 @@ public class PaymentsStep extends BaseUtil {
     public void afterSelectingOfficeCreditOptionISubmitAllInformation() {
         try {
             _paymentType = "Office Credit";
-            this.savePurchaseTime(addPaymentPage.getTxtDate().getText(), addPaymentPage.getTxtTime().getText());
+            //this.savePurchaseTime(addPaymentPage.getTxtDate().getText(), addPaymentPage.getTxtTime().getText());
             addPaymentPage.setDrpPaymentMethod(_paymentType);
             Log.info("Selecting " + _paymentType + " payment method");
             addPaymentPage.clickNoCCSubmitBtn();
@@ -249,7 +252,11 @@ public class PaymentsStep extends BaseUtil {
                     addPaymentPage.setCreditCardInformationAndSubmit(cc);
                     commonActions.verifyAlertErrorAndAcceptIt();
                     addPaymentPage.clearCreditCardFields();
-                } catch (Exception e) {
+                }catch (UnhandledAlertException e){
+                    commonActions.verifyAlertErrorAndAcceptIt();
+                    addPaymentPage.clearCreditCardFields();
+                }
+                catch (Exception e) {
                     Log.error(e.getMessage());
                 }
             }
@@ -286,6 +293,7 @@ public class PaymentsStep extends BaseUtil {
             addPaymentPage.setTxtAltaNumber(user);
             addPaymentPage.setChkUpgrade(true);
             addPaymentPage.getBtnAdd().click();
+            commonActions.waitUntilElementIsVisible(addPaymentPage.getTblPurchases());
             Log.info("Upgrading membership for member: " + user);
         } catch (Exception e) {
             Log.error(e.getMessage());
@@ -327,6 +335,7 @@ public class PaymentsStep extends BaseUtil {
                     base.driver.switchTo().defaultContent();
                     Log.info("Deleting Payment");
                     commonActions.waitUntilElementIsVisible(membershipAndPayments.getTblPayments());
+                    commonActions.waitUntilElementIsClickable(membershipAndPayments.getBtnSearch());
                     break;
                 } catch (StaleElementReferenceException e) {
                     Log.warn("Trying to recover delete link element, attempt: " + i);

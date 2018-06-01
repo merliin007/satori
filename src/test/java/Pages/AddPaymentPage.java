@@ -87,6 +87,9 @@ public class AddPaymentPage {
     @FindBy(how = How.ID, using = "ctl00_ctl00_ctl00_cphM_cphM_cphApp_paymentCheck_txtAccountHolderName")
     private WebElement txtCheckAccountHolder;
 
+    @FindBy(how = How.ID, using = "ctl00_ctl00_ctl00_cphM_cphM_cphApp_gvPurchaseItems")
+    private WebElement tblPurchases;
+
     public AddPaymentPage(WebDriver driver) {
         PageFactory.initElements(driver, this);
         _driver = driver;
@@ -201,5 +204,9 @@ public class AddPaymentPage {
     public void setCheckInformation(CheckInfo check) throws Exception{
         txtCheckNumber.sendKeys(check.getCheckNumber());
         txtCheckAccountHolder.sendKeys(check.getAccountHolder());
+    }
+
+    public WebElement getTblPurchases() {
+        return tblPurchases;
     }
 }

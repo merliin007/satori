@@ -31,6 +31,7 @@
                     <testFailureIgnore>true</testFailureIgnore>
                     <systemPropertyVariables>
                         <environmentName>test</environmentName>
+                        <browserName>firefox</browserName>
                     </systemPropertyVariables>
                 </configuration>
             </plugin>
@@ -47,8 +48,8 @@
                             <goal>generate</goal>
                         </goals>
                         <configuration>
-                            <projectName>ExecuteAutomation Cucumber</projectName>
-                            <outputDirectory>${project.build.directory}/cucumber-report-html</outputDirectory>
+                            <projectName>Satori Automation</projectName>
+                            <outputDirectory>${project.build.directory}/satori-report-html</outputDirectory>
                             <cucumberOutput>${project.build.directory}/cucumber.json</cucumberOutput>
                         </configuration>
                     </execution>
@@ -112,7 +113,7 @@
             <groupId>org.testng</groupId>
             <artifactId>testng</artifactId>
             <version>6.14.3</version>
-            <scope>test</scope>
+            <!--<scope>test</scope>-->
         </dependency>
 
         <!-- https://mvnrepository.com/artifact/commons-io/commons-io -->

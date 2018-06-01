@@ -7,7 +7,7 @@ Feature: Payments with Bank Account (ACH)
     And I navigate to My Profile menu
     And Click on MemberShip & Payments
     And Click on Add Member Payment
-    And Add the payment for the following member: "101-575-919"
+    And Add the payment for the following member: "102-456-637"
     And After adding my Bank Account information I submit all information
     Then I get confirmation page Accepting my payment
 

@@ -29,7 +29,7 @@ public class BaseUtil{
 
     }
 
-    public void NavigateToPage(String environment){
+    public void NavigateToPage(String environment, boolean isIe){
         try {
             switch (environment.toLowerCase()){
                 case "qa":
@@ -41,8 +41,11 @@ public class BaseUtil{
                     Log.info("Navigating to: " + SuiteSetUp.TEST_ENVIRONMENT);
                     break;
             }
+            if(isIe)
+                driver.navigate().to("javascript:document.getElementById('overridelink').click();");
         } catch (NullPointerException e) {
             Log.error("Environment System property missing... Exiting");
+            System.exit(-1);
         }
     }
 

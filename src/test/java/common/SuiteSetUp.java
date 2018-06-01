@@ -4,14 +4,25 @@
 
 package common;
 
+import utility.Log;
+
 public class SuiteSetUp {
     /*public static final String TEST_ENVIRONMENT = "https://test.altatennis.org/Public/Secure/Login.aspx";*/
     public static final String TEST_ENVIRONMENT = "https://test.altatennis.org/";
     /*public static final String QA_ENVIRONMENT =   "https://Alta:TennisQa1@altarebuild.qa.satoriinteractive.com/webapp";*/
-    public static final String QA_ENVIRONMENT =   "https://altarebuild.qa.satoriinteractive.com/webapp/Public/Secure/Login.aspx";
-    public static final String UAT_ENVIRONMENT =  "https://altarebuild.uat.satoriinteractive.com/webapp/Public/Secure/Login.aspx";
+    public static final String QA_ENVIRONMENT = "https://altarebuild.qa.satoriinteractive.com/webapp/Login.aspx";
+    public static final String UAT_ENVIRONMENT = "https://altarebuild.uat.satoriinteractive.com/webapp/Public/Secure/Login.aspx";
 
-    public static final String BROWSER = "firefox";
+    public static String BROWSER = selectBrowser();
     public static final String WEBDRIVERS_FOLDER = "lib/web_drivers";
 
+    private static String selectBrowser() {
+            String browser = System.getProperty("browserName");
+            if(browser != null)
+                return browser;
+            else{
+                Log.warn("Browser option missing, using default instead");
+                return "firefox";
+            }
+    }
 }

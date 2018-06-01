@@ -1,3 +1,4 @@
+@bug
 Feature: Refund membership with Check
   This feature exercises Membership refunding payment via Check from Office User for another member
 

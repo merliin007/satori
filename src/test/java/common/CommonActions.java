@@ -4,6 +4,7 @@
 
 package common;
 
+import org.openqa.selenium.By;
 import org.openqa.selenium.StaleElementReferenceException;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -24,6 +25,9 @@ public class CommonActions {
     public void waitUntilElementIsVisible(WebElement element){
         wait.until(ExpectedConditions.visibilityOf(element));
     }
+    public void waitUntilElementIsClickable(WebElement element){
+        wait.until(ExpectedConditions.elementToBeClickable(element));
+    }
 
     public void waitUntilElementIsAvailableAfterRefresh(WebElement element){
         //wait.until(ExpectedConditions.refreshed(ExpectedConditions.elementToBeClickable(element)));
@@ -42,6 +46,11 @@ public class CommonActions {
             _driver.switchTo().alert().accept();
             _driver.switchTo().defaultContent();
         }
+    }
+
+    public void waitUntilExistenceOfElement(By elementBy){
+        new WebDriverWait(_driver, 5)
+                .until(ExpectedConditions.presenceOfElementLocated(elementBy));
     }
 
 

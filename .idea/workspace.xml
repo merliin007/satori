@@ -13,24 +13,34 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="PaymentsStep.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/steps/PaymentsStep.java">
+      <file leaf-file-name="LoginIntoNewSite.feature" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/test/java/features/login/LoginIntoNewSite.feature">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="68">
-              <caret line="27" column="38" selection-start-line="27" selection-start-column="38" selection-end-line="27" selection-end-column="38" />
+            <state relative-caret-position="357">
+              <caret line="21" lean-forward="true" selection-start-line="21" selection-end-line="21" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="LoginSteps.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/steps/LoginSteps.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="345">
+              <caret line="72" column="19" selection-start-line="72" selection-start-column="19" selection-end-line="72" selection-end-column="19" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="method#PaymentInfo#0;class#PaymentInfo#0;class#PaymentsStep#0" />
+                <element signature="e#657#658#0" expanded="true" />
+                <element signature="e#689#690#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="BaseUtil.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="BaseUtil.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/base/BaseUtil.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="204">
-              <caret line="21" column="35" lean-forward="true" selection-start-line="21" selection-start-column="35" selection-end-line="21" selection-end-column="35" />
+            <state relative-caret-position="192">
+              <caret line="22" column="13" lean-forward="true" selection-start-line="22" selection-start-column="13" selection-end-line="22" selection-end-column="13" />
               <folding>
                 <element signature="e#394#395#0" expanded="true" />
                 <element signature="e#448#449#0" expanded="true" />
@@ -39,50 +49,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="RefundViaCreditCardForMember.feature" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/features/refunds/RefundViaCreditCardForMember.feature">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="68">
-              <caret line="4" column="22" selection-start-line="4" selection-start-column="22" selection-end-line="4" selection-end-column="22" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="PurchaseMembershipCreditCard.feature" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/features/payments/PurchaseMembershipCreditCard.feature">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="68">
-              <caret line="4" column="33" selection-start-line="4" selection-start-column="33" selection-end-line="4" selection-end-column="33" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="pom.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/pom.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="272">
-              <caret line="22" column="21" lean-forward="true" selection-start-line="22" selection-start-column="21" selection-end-line="22" selection-end-column="21" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="TestRunner.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/runner/TestRunner.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="85">
-              <caret line="5" column="55" selection-start-line="5" selection-start-column="55" selection-end-line="5" selection-end-column="55" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="SetUp.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/common/SetUp.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="296">
-              <caret line="67" selection-start-line="67" selection-end-line="67" />
+            <state relative-caret-position="22">
+              <caret line="69" column="20" lean-forward="true" selection-start-line="69" selection-start-column="20" selection-end-line="69" selection-end-column="20" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -93,8 +64,20 @@
       <file leaf-file-name="SuiteSetUp.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/common/SuiteSetUp.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="85">
-              <caret line="7" column="51" selection-start-line="7" selection-start-column="51" selection-end-line="7" selection-end-column="51" />
+            <state relative-caret-position="170">
+              <caret line="12" column="101" selection-start-line="12" selection-start-column="101" selection-end-line="12" selection-end-column="101" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="TestRunner.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/runner/TestRunner.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="187">
+              <caret line="11" selection-start-line="11" selection-end-line="11" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -126,23 +109,14 @@
       <find>pico</find>
       <find>.class</find>
       <find>env</find>
+      <find>testng</find>
+      <find>savep</find>
+      <find>upgradingm</find>
     </findStrings>
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/test/java/common/SuiteSetUp.java" />
-        <option value="$PROJECT_DIR$/src/test/java/Pages/LoginPage.java" />
-        <option value="$PROJECT_DIR$/src/test/java/Base/Log.java" />
-        <option value="$PROJECT_DIR$/src/log4j.xml" />
-        <option value="$PROJECT_DIR$/src/test/java/Pages/MainPage.java" />
-        <option value="$PROJECT_DIR$/src/test/java/Utility/credentials/MemberCredentials.java" />
-        <option value="$PROJECT_DIR$/src/test/java/Base/BaseUtil.java" />
-        <option value="$PROJECT_DIR$/log4j.xml" />
-        <option value="$APPLICATION_CONFIG_DIR$/scratches/scratch.feature" />
-        <option value="$PROJECT_DIR$/src/test/java/Base/CustomExceptions.java" />
-        <option value="$PROJECT_DIR$/src/test/java/Utility/PaymentInfo/BankAccountInfo.java" />
-        <option value="$PROJECT_DIR$/src/test/java/Utility/Log.java" />
         <option value="$PROJECT_DIR$/src/test/java/Features/PurchaseMembershipViaOfficeCredit.feature" />
         <option value="$PROJECT_DIR$/src/test/java/Features/PurchaseMembershipViaOfficeCreditf.feature" />
         <option value="$PROJECT_DIR$/src/test/java/Features/PurchaseMembershipViaACH.feature" />
@@ -152,7 +126,6 @@
         <option value="$PROJECT_DIR$/src/test/java/Features/UpgradeMembershipCreditCard.feature" />
         <option value="$PROJECT_DIR$/src/test/java/common/TearDown.java" />
         <option value="$PROJECT_DIR$/src/test/java/Pages/PaymentDetailsPage.java" />
-        <option value="$PROJECT_DIR$/src/test/java/common/CommonActions.java" />
         <option value="$PROJECT_DIR$/src/test/java/Features/PurchaseMembershipCreditCard.feature" />
         <option value="$PROJECT_DIR$/src/test/java/Features/UpgradeMembershipViaCheck.feature" />
         <option value="$PROJECT_DIR$/src/test/java/Utility/PaymentInfo/CheckInfo.java" />
@@ -173,11 +146,28 @@
         <option value="$PROJECT_DIR$/SatoriAutomation.iml" />
         <option value="$PROJECT_DIR$/src/test/java/Steps/PaymentsStep.java" />
         <option value="$PROJECT_DIR$/src/test/java/Runner/TestRunner.java" />
-        <option value="$PROJECT_DIR$/src/test/java/runner/TestRunner.java" />
+        <option value="$PROJECT_DIR$/src/test/java/features/payments/PurchaseMembershipCreditCard.feature" />
+        <option value="$PROJECT_DIR$/src/test/java/features/payments/PurchaseMembershipViaACH.feature" />
+        <option value="$PROJECT_DIR$/src/test/java/features/payments/PurchaseMembershipViaOfficeCreditf.feature" />
+        <option value="$PROJECT_DIR$/src/test/java/features/payments/UpgradeMembershipCreditCard.feature" />
+        <option value="$PROJECT_DIR$/src/test/java/features/payments/UpgradeMembershipViaCheck.feature" />
         <option value="$PROJECT_DIR$/pom.xml" />
-        <option value="$PROJECT_DIR$/src/test/java/steps/PaymentsStep.java" />
         <option value="$PROJECT_DIR$/src/test/java/common/SetUp.java" />
         <option value="$PROJECT_DIR$/src/test/java/base/BaseUtil.java" />
+        <option value="$PROJECT_DIR$/src/test/java/pages/MembershipAndPayments.java" />
+        <option value="$PROJECT_DIR$/src/test/java/pages/AddPaymentPage.java" />
+        <option value="$PROJECT_DIR$/src/test/java/steps/PaymentsStep.java" />
+        <option value="$PROJECT_DIR$/src/test/java/features/payments/PurchaseMembershipCreditCard-IncorrectInformation.feature" />
+        <option value="$PROJECT_DIR$/src/test/java/features/refunds/RefundViaCheck.feature" />
+        <option value="$PROJECT_DIR$/src/test/java/LoginSteps.java" />
+        <option value="$PROJECT_DIR$/src/test/java/pages/newPages/nLoginPage.java" />
+        <option value="$PROJECT_DIR$/src/test/java/common/SuiteSetUp.java" />
+        <option value="$PROJECT_DIR$/src/test/java/pages/newPages/ManageAlta.java" />
+        <option value="$PROJECT_DIR$/src/test/java/pages/MainPage.java" />
+        <option value="$PROJECT_DIR$/src/test/java/common/CommonActions.java" />
+        <option value="$PROJECT_DIR$/src/test/java/runner/TestRunner.java" />
+        <option value="$PROJECT_DIR$/src/test/java/steps/LoginSteps.java" />
+        <option value="$PROJECT_DIR$/src/test/java/features/login/LoginIntoNewSite.feature" />
       </list>
     </option>
   </component>
@@ -215,19 +205,15 @@
     <option name="runMavenInBackground" value="false" />
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="2227" />
-    <option name="y" value="3" />
+    <option name="x" value="1352" />
     <option name="width" value="1065" />
-    <option name="height" value="1087" />
+    <option name="height" value="920" />
   </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
-      <pane id="AndroidView" />
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -239,6 +225,12 @@
               <item name="SatoriAutomation" type="b2602c69:ProjectViewProjectNode" />
               <item name="satori" type="462c0819:PsiDirectoryNode" />
               <item name="lib" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="SatoriAutomation" type="b2602c69:ProjectViewProjectNode" />
+              <item name="satori" type="462c0819:PsiDirectoryNode" />
+              <item name="lib" type="462c0819:PsiDirectoryNode" />
+              <item name="web_drivers" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="SatoriAutomation" type="b2602c69:ProjectViewProjectNode" />
@@ -289,6 +281,15 @@
               <item name="test" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="features" type="462c0819:PsiDirectoryNode" />
+              <item name="login" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="SatoriAutomation" type="b2602c69:ProjectViewProjectNode" />
+              <item name="satori" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="features" type="462c0819:PsiDirectoryNode" />
               <item name="payments" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -307,6 +308,15 @@
               <item name="test" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="pages" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="SatoriAutomation" type="b2602c69:ProjectViewProjectNode" />
+              <item name="satori" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="pages" type="462c0819:PsiDirectoryNode" />
+              <item name="newPages" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="SatoriAutomation" type="b2602c69:ProjectViewProjectNode" />
@@ -354,10 +364,14 @@
           <select />
         </subPane>
       </pane>
+      <pane id="AndroidView" />
+      <pane id="Scope" />
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="com.intellij.ide.scratch.LRUPopupBuilder$1/New Scratch File" value="Gherkin" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/test/java/steps" />
     <property name="project.structure.last.edited" value="Problems" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.19655173" />
@@ -389,37 +403,14 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Cucumber java.Feature: RefundViaCreditCardForMember (1)">
+  <component name="RunManager" selected="Cucumber java.Feature: LoginIntoNewSite">
     <configuration default="true" type="Application" factoryName="Application">
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
     </configuration>
-    <configuration name="Feature: RefundViaCash" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
+    <configuration name="Feature: LoginIntoNewSite" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="cucumber.api.cli.Main" />
       <module name="SatoriAutomation" />
       <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvmSMFormatter --monochrome" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="cucumber.api.cli.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-    </configuration>
-    <configuration name="Feature: RefundViaCreditCard" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="cucumber.api.cli.Main" />
-      <module name="SatoriAutomation" />
-      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvmSMFormatter --monochrome" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="cucumber.api.cli.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-    </configuration>
-    <configuration name="Feature: RefundViaCreditCardForMember (1)" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
-      <log_file alias="LogFile" path="$PROJECT_DIR$/logs/logfile.log" />
-      <option name="MAIN_CLASS_NAME" value="cucumber.api.cli.Main" />
-      <module name="SatoriAutomation" />
-      <option name="PROGRAM_PARAMETERS" value="--plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvmSMFormatter --monochrome" />
       <option name="VM_PARAMETERS" value="-DenvironmentName=qa" />
       <extension name="coverage">
         <pattern>
@@ -428,10 +419,35 @@
         </pattern>
       </extension>
     </configuration>
-    <configuration name="Feature: RefundViaCreditCardForMember" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
+    <configuration name="Feature: PurchaseMembershipCreditCard-IncorrectInformation" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="cucumber.api.cli.Main" />
       <module name="SatoriAutomation" />
       <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvmSMFormatter --monochrome" />
+      <option name="VM_PARAMETERS" value="-DenvironmentName=test -DbrowserName=chrome" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="cucumber.api.cli.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+    </configuration>
+    <configuration name="Feature: PurchaseMembershipCreditCard" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="cucumber.api.cli.Main" />
+      <module name="SatoriAutomation" />
+      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvmSMFormatter --monochrome" />
+      <option name="VM_PARAMETERS" value="-DenvironmentName=test -DbrowserName=chrome" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="cucumber.api.cli.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+    </configuration>
+    <configuration name="Feature: UpgradeMembershipViaCheck" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="cucumber.api.cli.Main" />
+      <module name="SatoriAutomation" />
+      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvmSMFormatter --monochrome" />
+      <option name="VM_PARAMETERS" value="-DenvironmentName=test -DbrowserName=chrome" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="cucumber.api.cli.*" />
@@ -465,22 +481,22 @@
       </extension>
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="SUITE_NAME" />
-      <option name="PACKAGE_NAME" value="Runner" />
+      <option name="SUITE_NAME" value="" />
+      <option name="PACKAGE_NAME" value="runner" />
       <option name="MAIN_CLASS_NAME" value="runner.TestRunner" />
       <option name="METHOD_NAME" />
-      <option name="GROUP_NAME" />
+      <option name="GROUP_NAME" value="" />
       <option name="TEST_OBJECT" value="CLASS" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
-      <option name="OUTPUT_DIRECTORY" />
+      <option name="VM_PARAMETERS" value="-ea -DenvironmentName=qa -DbrowserName=chrome" />
+      <option name="PARAMETERS" value="" />
+      <option name="WORKING_DIRECTORY" value="file://%MODULE_WORKING_DIR%" />
+      <option name="OUTPUT_DIRECTORY" value="" />
       <option name="PASS_PARENT_ENVS" value="true" />
       <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
+        <value defaultName="moduleWithDependencies" />
       </option>
       <option name="USE_DEFAULT_REPORTERS" value="false" />
-      <option name="PROPERTIES_FILE" />
+      <option name="PROPERTIES_FILE" value="" />
       <properties />
       <listeners />
     </configuration>
@@ -507,19 +523,19 @@
       <listeners />
     </configuration>
     <list>
-      <item itemvalue="Cucumber java.Feature: RefundViaCash" />
-      <item itemvalue="Cucumber java.Feature: RefundViaCreditCard" />
-      <item itemvalue="Cucumber java.Feature: RefundViaCreditCardForMember" />
-      <item itemvalue="Cucumber java.Feature: RefundViaCreditCardForMember (1)" />
+      <item itemvalue="Cucumber java.Feature: PurchaseMembershipCreditCard" />
+      <item itemvalue="Cucumber java.Feature: PurchaseMembershipCreditCard-IncorrectInformation" />
+      <item itemvalue="Cucumber java.Feature: UpgradeMembershipViaCheck" />
+      <item itemvalue="Cucumber java.Feature: LoginIntoNewSite" />
       <item itemvalue="TestNG.TestRunner" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Cucumber java.Feature: RefundViaCreditCardForMember (1)" />
+        <item itemvalue="Cucumber java.Feature: LoginIntoNewSite" />
+        <item itemvalue="Cucumber java.Feature: UpgradeMembershipViaCheck" />
+        <item itemvalue="Cucumber java.Feature: PurchaseMembershipCreditCard-IncorrectInformation" />
+        <item itemvalue="Cucumber java.Feature: PurchaseMembershipCreditCard" />
         <item itemvalue="TestNG.TestRunner" />
-        <item itemvalue="Cucumber java.Feature: RefundViaCreditCardForMember" />
-        <item itemvalue="Cucumber java.Feature: RefundViaCash" />
-        <item itemvalue="Cucumber java.Feature: RefundViaCreditCard" />
       </list>
     </recent_temporary>
   </component>
@@ -538,39 +554,39 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="Feature__RefundViaCreditCardForMember_(1) - 2018.05.27 at 13h 24m 25s.xml">
-      <configuration name="Feature: RefundViaCreditCardForMember (1)" configurationId="CucumberJavaRunConfigurationType" />
+    <history-entry file="Feature__LoginIntoNewSite - 2018.05.31 at 16h 04m 36s.xml">
+      <configuration name="Feature: LoginIntoNewSite" configurationId="CucumberJavaRunConfigurationType" />
     </history-entry>
-    <history-entry file="Feature__RefundViaCreditCardForMember_(1) - 2018.05.27 at 13h 25m 55s.xml">
-      <configuration name="Feature: RefundViaCreditCardForMember (1)" configurationId="CucumberJavaRunConfigurationType" />
+    <history-entry file="Feature__LoginIntoNewSite - 2018.05.31 at 16h 06m 21s.xml">
+      <configuration name="Feature: LoginIntoNewSite" configurationId="CucumberJavaRunConfigurationType" />
     </history-entry>
-    <history-entry file="Feature__RefundViaCreditCardForMember_(1) - 2018.05.27 at 14h 23m 57s.xml">
-      <configuration name="Feature: RefundViaCreditCardForMember (1)" configurationId="CucumberJavaRunConfigurationType" />
+    <history-entry file="Feature__LoginIntoNewSite - 2018.05.31 at 16h 07m 48s.xml">
+      <configuration name="Feature: LoginIntoNewSite" configurationId="CucumberJavaRunConfigurationType" />
     </history-entry>
-    <history-entry file="Feature__RefundViaCreditCardForMember_(1) - 2018.05.27 at 14h 25m 10s.xml">
-      <configuration name="Feature: RefundViaCreditCardForMember (1)" configurationId="CucumberJavaRunConfigurationType" />
+    <history-entry file="Feature__LoginIntoNewSite - 2018.05.31 at 16h 17m 48s.xml">
+      <configuration name="Feature: LoginIntoNewSite" configurationId="CucumberJavaRunConfigurationType" />
     </history-entry>
-    <history-entry file="Feature__RefundViaCreditCardForMember_(1) - 2018.05.27 at 14h 26m 36s.xml">
-      <configuration name="Feature: RefundViaCreditCardForMember (1)" configurationId="CucumberJavaRunConfigurationType" />
+    <history-entry file="Feature__LoginIntoNewSite - 2018.05.31 at 16h 21m 51s.xml">
+      <configuration name="Feature: LoginIntoNewSite" configurationId="CucumberJavaRunConfigurationType" />
     </history-entry>
-    <history-entry file="Feature__RefundViaCreditCardForMember_(1) - 2018.05.27 at 14h 28m 26s.xml">
-      <configuration name="Feature: RefundViaCreditCardForMember (1)" configurationId="CucumberJavaRunConfigurationType" />
+    <history-entry file="Feature__LoginIntoNewSite - 2018.05.31 at 16h 25m 22s.xml">
+      <configuration name="Feature: LoginIntoNewSite" configurationId="CucumberJavaRunConfigurationType" />
     </history-entry>
-    <history-entry file="Feature__RefundViaCreditCardForMember_(1) - 2018.05.27 at 14h 30m 27s.xml">
-      <configuration name="Feature: RefundViaCreditCardForMember (1)" configurationId="CucumberJavaRunConfigurationType" />
+    <history-entry file="Feature__LoginIntoNewSite - 2018.05.31 at 16h 36m 33s.xml">
+      <configuration name="Feature: LoginIntoNewSite" configurationId="CucumberJavaRunConfigurationType" />
     </history-entry>
-    <history-entry file="Feature__RefundViaCreditCardForMember_(1) - 2018.05.27 at 14h 32m 14s.xml">
-      <configuration name="Feature: RefundViaCreditCardForMember (1)" configurationId="CucumberJavaRunConfigurationType" />
+    <history-entry file="Feature__LoginIntoNewSite - 2018.05.31 at 16h 43m 40s.xml">
+      <configuration name="Feature: LoginIntoNewSite" configurationId="CucumberJavaRunConfigurationType" />
     </history-entry>
-    <history-entry file="Feature__RefundViaCreditCardForMember_(1) - 2018.05.27 at 14h 35m 07s.xml">
-      <configuration name="Feature: RefundViaCreditCardForMember (1)" configurationId="CucumberJavaRunConfigurationType" />
+    <history-entry file="Feature__LoginIntoNewSite - 2018.05.31 at 16h 43m 58s.xml">
+      <configuration name="Feature: LoginIntoNewSite" configurationId="CucumberJavaRunConfigurationType" />
     </history-entry>
-    <history-entry file="Feature__RefundViaCreditCardForMember_(1) - 2018.05.27 at 14h 35m 36s.xml">
-      <configuration name="Feature: RefundViaCreditCardForMember (1)" configurationId="CucumberJavaRunConfigurationType" />
+    <history-entry file="Feature__LoginIntoNewSite - 2018.05.31 at 17h 30m 36s.xml">
+      <configuration name="Feature: LoginIntoNewSite" configurationId="CucumberJavaRunConfigurationType" />
     </history-entry>
   </component>
   <component name="ToolWindowManager">
-    <frame x="1358" y="-8" width="1936" height="1096" extended-state="6" />
+    <frame x="1358" y="-8" width="1456" height="916" extended-state="6" />
     <layout>
       <window_info anchor="right" id="Palette" order="3" />
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -579,19 +595,19 @@
       <window_info id="Image Layers" order="2" />
       <window_info anchor="right" id="Capture Analysis" order="3" />
       <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
-      <window_info anchor="right" id="Maven Projects" order="3" weight="0.24307036" />
+      <window_info anchor="right" id="Maven Projects" order="3" weight="0.19842407" />
       <window_info anchor="bottom" id="Version Control" order="7" weight="0.32980132" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.27700534" />
-      <window_info anchor="bottom" id="Terminal" order="7" weight="0.32941177" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.2768212" />
+      <window_info anchor="bottom" id="Terminal" order="7" weight="0.32847682" />
       <window_info id="Capture Tool" order="2" />
       <window_info id="Designer" order="2" />
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.6432247" visible="true" weight="0.14925373" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.6432247" visible="true" weight="0.26289397" />
       <window_info id="Structure" order="1" sideWeight="0.3567753" side_tool="true" weight="0.23298033" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info id="UI Designer" order="2" />
       <window_info anchor="right" id="Theme Preview" order="3" />
       <window_info id="Favorites" order="2" side_tool="true" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.34117648" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.34039736" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -608,36 +624,29 @@
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/test/java/common/CommonActions.java</url>
-          <line>29</line>
+          <url>file://$PROJECT_DIR$/src/test/java/steps/PaymentsStep.java</url>
+          <line>188</line>
           <properties />
-          <option name="timeStamp" value="51" />
+          <option name="timeStamp" value="87" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/test/java/steps/PaymentsStep.java</url>
-          <line>360</line>
+          <line>163</line>
           <properties />
-          <option name="timeStamp" value="66" />
+          <option name="timeStamp" value="89" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/test/java/steps/PaymentsStep.java</url>
-          <line>284</line>
+          <line>133</line>
           <properties />
-          <option name="timeStamp" value="67" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/test/java/common/SetUp.java</url>
-          <line>67</line>
-          <properties />
-          <option name="timeStamp" value="75" />
+          <option name="timeStamp" value="90" />
         </line-breakpoint>
       </breakpoints>
-      <option name="time" value="76" />
+      <option name="time" value="98" />
     </breakpoint-manager>
     <watches-manager>
       <configuration name="CucumberJavaRunConfigurationType">
-        <watch expression="payment" language="JAVA" />
-        <watch expression="System.getProperty(&quot;environmentName&quot;)" language="JAVA" />
+        <watch expression="e.getClass()" language="JAVA" />
       </configuration>
     </watches-manager>
   </component>
@@ -692,6 +701,21 @@
     </expressions>
     <expressions id="watch">
       <expression>
+        <expression-string>e.getClass()</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>e.getCause()</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>e.getStackTrace()</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
         <expression-string>System.getProperty(&quot;environmentName&quot;)</expression-string>
         <language-id>JAVA</language-id>
         <evaluation-mode>EXPRESSION</evaluation-mode>
@@ -723,21 +747,6 @@
       </expression>
       <expression>
         <expression-string>addPaymentPage.getTxtTime().getAttribute(&quot;text&quot;)</expression-string>
-        <language-id>JAVA</language-id>
-        <evaluation-mode>EXPRESSION</evaluation-mode>
-      </expression>
-      <expression>
-        <expression-string>time</expression-string>
-        <language-id>JAVA</language-id>
-        <evaluation-mode>EXPRESSION</evaluation-mode>
-      </expression>
-      <expression>
-        <expression-string>date</expression-string>
-        <language-id>JAVA</language-id>
-        <evaluation-mode>EXPRESSION</evaluation-mode>
-      </expression>
-      <expression>
-        <expression-string>payment.getPaymentDate()</expression-string>
         <language-id>JAVA</language-id>
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
@@ -791,51 +800,10 @@
     </expressions>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/test/java/base/BaseUtil.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="12" lean-forward="true" selection-start-line="12" selection-end-line="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/target/screenshots/screenshot-1526941405038.jpg" />
-    <entry file="file://$PROJECT_DIR$/src/test/java/pages/LoginPage.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="27" column="22" selection-start-line="27" selection-start-column="22" selection-end-line="27" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/log4j.xml" />
-    <entry file="file://$PROJECT_DIR$/log4j.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="14" column="22" lean-forward="true" selection-start-line="14" selection-start-column="22" selection-end-line="14" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$APPLICATION_CONFIG_DIR$/scratches/scratch.feature" />
-    <entry file="file://$PROJECT_DIR$/src/test/java/base/CustomExceptions.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="202">
-          <caret line="12" column="45" lean-forward="true" selection-start-line="12" selection-start-column="45" selection-end-line="12" selection-end-column="45" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/features/payments/PurchaseMembershipViaOfficeCreditf.feature">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="17">
           <caret line="1" column="16" lean-forward="true" selection-end-line="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/utility/Log.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="435">
-          <caret line="29" selection-start-line="29" selection-end-line="29" />
-          <folding>
-            <element signature="e#1173#1174#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -927,14 +895,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="340">
           <caret line="20" column="70" selection-start-line="20" selection-start-column="70" selection-end-line="20" selection-end-column="70" />
-          <folding>
-            <element signature="e#313#314#0" expanded="true" />
-            <element signature="e#347#348#0" expanded="true" />
-            <element signature="e#387#388#0" expanded="true" />
-            <element signature="e#423#424#0" expanded="true" />
-            <element signature="e#449#450#0" expanded="true" />
-            <element signature="e#512#513#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -954,34 +914,6 @@
             <element signature="imports" expanded="true" />
             <element signature="e#1431#1432#0" expanded="true" />
             <element signature="e#1485#1486#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/common/CommonActions.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="26" selection-start-line="26" selection-end-line="26" />
-          <folding>
-            <element signature="e#670#671#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/pages/AddPaymentPage.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="229">
-          <caret line="62" column="26" selection-start-line="62" selection-start-column="26" selection-end-line="62" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/pages/MembershipAndPayments.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="348">
-          <caret line="53" lean-forward="true" selection-start-line="53" selection-end-line="53" />
-          <folding>
-            <element signature="e#1975#1976#0" expanded="true" />
-            <element signature="e#2009#2010#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1015,28 +947,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/pages/MainPage.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="411">
-          <caret line="39" column="16" selection-start-line="39" selection-start-column="16" selection-end-line="39" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/features/payments/PurchaseMembershipCreditCard-IncorrectInformation.feature">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="35" selection-start-line="4" selection-start-column="35" selection-end-line="4" selection-end-column="35" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/features/payments/PurchaseMembershipViaACH.feature">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="35" selection-start-line="4" selection-start-column="35" selection-end-line="4" selection-end-column="35" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/features/payments/PurchaseMembershipViaOfficeCreditf.feature">
+    <entry file="file://$PROJECT_DIR$/src/test/java/features/refunds/RefundViaCreditCard.feature">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="68">
           <caret line="4" column="35" selection-start-line="4" selection-start-column="35" selection-end-line="4" selection-end-column="35" />
@@ -1045,15 +956,182 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/features/payments/UpgradeMembershipCreditCard.feature">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="35" selection-start-line="4" selection-start-column="35" selection-end-line="4" selection-end-column="35" />
+        <state relative-caret-position="153">
+          <caret line="9" column="51" selection-start-line="9" selection-start-column="51" selection-end-line="9" selection-end-column="51" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/features/payments/UpgradeMembershipViaCheck.feature">
       <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="9" column="51" selection-start-line="9" selection-start-column="51" selection-end-line="9" selection-end-column="51" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/info/cukes/cucumber-testng/1.2.5/cucumber-testng-1.2.5.jar!/cucumber/api/testng/AbstractTestNGCucumberTests.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="334">
+          <caret line="41" column="5" lean-forward="true" selection-start-line="41" selection-start-column="5" selection-end-line="41" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/base/CustomExceptions.java">
+      <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="68">
-          <caret line="4" column="35" selection-start-line="4" selection-start-column="35" selection-end-line="4" selection-end-column="35" />
+          <caret line="4" column="31" selection-start-line="4" selection-start-column="31" selection-end-line="4" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/pages/MembershipAndPayments.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="379">
+          <caret line="65" column="57" selection-start-line="65" selection-start-column="57" selection-end-line="65" selection-end-column="57" />
+          <folding>
+            <element signature="e#1975#1976#0" expanded="true" />
+            <element signature="e#2009#2010#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="40" column="65" selection-start-line="40" selection-start-column="65" selection-end-line="40" selection-end-column="65" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/features/payments/PurchaseMembershipCreditCard-IncorrectInformation.feature">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="16" column="34" lean-forward="true" selection-start-line="16" selection-start-column="34" selection-end-line="16" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/features/payments/PurchaseMembershipViaOfficeCreditf.feature">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="9" column="39" selection-start-line="9" selection-start-column="39" selection-end-line="9" selection-end-column="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/pages/AddPaymentPage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3264">
+          <caret line="208" column="41" selection-start-line="208" selection-start-column="41" selection-end-line="208" selection-end-column="41" />
+          <folding>
+            <element signature="e#7575#7576#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/features/payments/PurchaseMembershipViaACH.feature">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="9" column="28" selection-start-line="9" selection-start-column="28" selection-end-line="9" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/pages/newPages/nLoginPage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="911">
+          <caret line="54" column="24" selection-start-line="54" selection-start-column="24" selection-end-line="54" selection-end-column="24" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1091#1092#0" expanded="true" />
+            <element signature="e#1145#1146#0" expanded="true" />
+            <element signature="e#1105#1106#0" expanded="true" />
+            <element signature="e#1139#1140#0" expanded="true" />
+            <element signature="e#1181#1182#0" expanded="true" />
+            <element signature="e#1215#1216#0" expanded="true" />
+            <element signature="e#1255#1256#0" expanded="true" />
+            <element signature="e#1287#1288#0" expanded="true" />
+            <element signature="e#1335#1336#0" expanded="true" />
+            <element signature="e#1375#1376#0" expanded="true" />
+            <element signature="e#1423#1424#0" expanded="true" />
+            <element signature="e#1463#1464#0" expanded="true" />
+            <element signature="e#1507#1508#0" expanded="true" />
+            <element signature="e#1543#1544#0" expanded="true" />
+            <element signature="e#1695#1696#0" expanded="true" />
+            <element signature="e#1719#1720#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/features/refunds/RefundViaCreditCardForMember.feature">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="34" lean-forward="true" selection-start-line="4" selection-start-column="10" selection-end-line="4" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/features/payments/PurchaseMembershipCreditCard.feature">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="22" selection-start-line="4" selection-start-column="22" selection-end-line="4" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/pages/LoginPage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="15" lean-forward="true" selection-start-line="15" selection-end-line="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/pages/newPages/ManageAlta.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="340">
+          <caret line="22" selection-start-line="22" selection-end-line="22" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#482#483#0" expanded="true" />
+            <element signature="e#514#515#0" expanded="true" />
+            <element signature="e#602#603#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/steps/PaymentsStep.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="80" column="50" lean-forward="true" selection-start-line="80" selection-start-column="12" selection-end-line="80" selection-end-column="50" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#PaymentInfo#0;class#PaymentInfo#0;class#PaymentsStep#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/info/cukes/cucumber-core/1.2.5/cucumber-core-1.2.5.jar!/cucumber/runtime/Utils.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="246">
+          <caret line="52" selection-start-line="52" selection-end-line="52" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/features/refunds/RefundViaCheck.feature">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="8" column="7" selection-start-line="8" selection-start-column="7" selection-end-line="8" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/common/CommonActions.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="294">
+          <caret line="51" column="36" selection-start-line="51" selection-start-column="36" selection-end-line="51" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/pages/MainPage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="161">
+          <caret line="50" column="63" lean-forward="true" selection-start-line="50" selection-start-column="63" selection-end-line="50" selection-end-column="63" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1580#1581#0" expanded="true" />
+            <element signature="e#1614#1615#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1064,80 +1142,37 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/features/refunds/RefundViaCheck.feature">
+    <entry file="file://$PROJECT_DIR$/src/test/java/common/SetUp.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="35" selection-start-line="4" selection-start-column="35" selection-end-line="4" selection-end-column="35" />
+        <state relative-caret-position="22">
+          <caret line="69" column="20" lean-forward="true" selection-start-line="69" selection-start-column="20" selection-end-line="69" selection-end-column="20" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/features/refunds/RefundViaCreditCard.feature">
+    <entry file="file://$PROJECT_DIR$/src/test/java/utility/Log.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="35" selection-start-line="4" selection-start-column="35" selection-end-line="4" selection-end-column="35" />
+        <state relative-caret-position="226">
+          <caret line="29" selection-start-line="29" selection-end-line="29" />
+          <folding>
+            <element signature="e#1173#1174#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/common/SuiteSetUp.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="7" column="51" selection-start-line="7" selection-start-column="51" selection-end-line="7" selection-end-column="51" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/features/refunds/RefundViaCreditCardForMember.feature">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="22" selection-start-line="4" selection-start-column="22" selection-end-line="4" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/features/payments/PurchaseMembershipCreditCard.feature">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="33" selection-start-line="4" selection-start-column="33" selection-end-line="4" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/steps/PaymentsStep.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="27" column="38" selection-start-line="27" selection-start-column="38" selection-end-line="27" selection-end-column="38" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="method#PaymentInfo#0;class#PaymentInfo#0;class#PaymentsStep#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="22" column="21" lean-forward="true" selection-start-line="22" selection-start-column="21" selection-end-line="22" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/info/cukes/cucumber-core/1.2.5/cucumber-core-1.2.5.jar!/cucumber/runtime/Utils.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="246">
-          <caret line="51" selection-start-line="51" selection-end-line="51" />
+        <state relative-caret-position="170">
+          <caret line="12" column="101" selection-start-line="12" selection-start-column="101" selection-end-line="12" selection-end-column="101" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/runner/TestRunner.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" column="55" selection-start-line="5" selection-start-column="55" selection-end-line="5" selection-end-column="55" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/common/SetUp.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="296">
-          <caret line="67" selection-start-line="67" selection-end-line="67" />
+        <state relative-caret-position="187">
+          <caret line="11" selection-start-line="11" selection-end-line="11" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -1146,12 +1181,31 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/base/BaseUtil.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="21" column="35" lean-forward="true" selection-start-line="21" selection-start-column="35" selection-end-line="21" selection-end-column="35" />
+        <state relative-caret-position="192">
+          <caret line="22" column="13" lean-forward="true" selection-start-line="22" selection-start-column="13" selection-end-line="22" selection-end-column="13" />
           <folding>
             <element signature="e#394#395#0" expanded="true" />
             <element signature="e#448#449#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/steps/LoginSteps.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="345">
+          <caret line="72" column="19" selection-start-line="72" selection-start-column="19" selection-end-line="72" selection-end-column="19" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#657#658#0" expanded="true" />
+            <element signature="e#689#690#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/features/login/LoginIntoNewSite.feature">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="357">
+          <caret line="21" lean-forward="true" selection-start-line="21" selection-end-line="21" />
         </state>
       </provider>
     </entry>

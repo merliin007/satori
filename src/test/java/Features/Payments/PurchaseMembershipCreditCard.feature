@@ -7,7 +7,7 @@ Feature: Payments with Credit Card
     And I navigate to My Profile menu
     And Click on MemberShip & Payments
     And Click on Add Member Payment
-    When Add the payment for the following member: "100-142-402"
+    When Add the payment for the following member: "102-456-637"
     And After adding my credit card information I submit payment
     Then I get confirmation page Accepting my payment
 

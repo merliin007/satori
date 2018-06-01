@@ -23,6 +23,9 @@ public class MembershipAndPayments {
     @FindBy(how = How.ID, using = "ctl00_ctl00_ctl00_cphM_cphM_cphMemberDashboard_lblBanner")
     private WebElement lblBanner;
 
+    @FindBy(how = How.ID, using = "ctl00_ctl00_ctl00_cphM_cphM_cphMemberDashboard_profileMembership_btnSearch")
+    private WebElement btnSearch;
+
     public MembershipAndPayments(WebDriver driver) {
         PageFactory.initElements(driver, this);
     }
@@ -60,4 +63,5 @@ public class MembershipAndPayments {
         return lblBanner;
     }
 
+    public WebElement getBtnSearch() { return btnSearch; }
 }
