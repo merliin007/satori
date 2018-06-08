@@ -5,28 +5,29 @@
 package common;
 
 
+import autoitx4java.AutoItX;
 import base.BaseUtil;
+import base.RunScript;
+import com.jacob.com.LibraryLoader;
+import com.sun.istack.NotNull;
+import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.firefox.FirefoxOptions;
 import org.openqa.selenium.ie.InternetExplorerDriver;
+import org.openqa.selenium.ie.InternetExplorerDriverService;
 import org.openqa.selenium.ie.InternetExplorerOptions;
 import org.openqa.selenium.remote.CapabilityType;
-import org.testng.annotations.Parameters;
+import org.openqa.selenium.remote.DesiredCapabilities;
 import utility.Log;
 import cucumber.api.Scenario;
 import cucumber.api.java.After;
 import cucumber.api.java.Before;
 import org.openqa.selenium.chrome.ChromeDriver;
-import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
-import org.openqa.selenium.firefox.FirefoxProfile;
-import org.openqa.selenium.remote.DesiredCapabilities;
 
 import java.io.File;
-import java.util.Arrays;
+import java.io.IOException;
 import java.util.concurrent.TimeUnit;
-
-import static java.lang.String.join;
 
 
 public class SetUp extends BaseUtil {
@@ -38,7 +39,7 @@ public class SetUp extends BaseUtil {
     }
 
     @Before
-    public void InitializeTest(Scenario scenario) {
+    public void InitializeTest(Scenario scenario) throws Exception {
         File driver_exe = null;
         boolean isIe = false;
         switch (SuiteSetUp.BROWSER.toLowerCase()) {
@@ -59,12 +60,13 @@ public class SetUp extends BaseUtil {
                 base.driver = new ChromeDriver(options);
                 break;
             case "ie":
-                driver_exe = new File(SuiteSetUp.WEBDRIVERS_FOLDER, "IEDriverServer.exe");
+                driver_exe = new File(SuiteSetUp.WEBDRIVERS_FOLDER, "IEDriverServer32.exe");
                 System.setProperty("webdriver.ie.driver", driver_exe.getAbsolutePath());
                 InternetExplorerOptions ieOptions = new InternetExplorerOptions();
-                ieOptions.setCapability(InternetExplorerDriver.IE_ENSURE_CLEAN_SESSION, true);
-                ieOptions.setCapability(CapabilityType.ACCEPT_INSECURE_CERTS, true);
-                base.driver = new InternetExplorerDriver();
+                //ieOptions.setCapability(InternetExplorerDriver.IE_ENSURE_CLEAN_SESSION, true);
+                //ieOptions.setCapability(InternetExplorerDriver.INTRODUCE_FLAKINESS_BY_IGNORING_SECURITY_DOMAINS, true);
+                ieOptions.setCapability(CapabilityType.ACCEPT_SSL_CERTS, true);
+                base.driver = new InternetExplorerDriver(ieOptions);
                 isIe = true;
                 break;
             default:
@@ -74,10 +76,28 @@ public class SetUp extends BaseUtil {
 
         base.driver.manage().timeouts().implicitlyWait(10L, TimeUnit.SECONDS);
         base.driver.manage().window().maximize();
-        this.base.NavigateToPage(System.getProperty("environmentName"), isIe);
 
+        /*executeAutoItNeeded(SuiteSetUp.BROWSER.toLowerCase());*/
+        Thread t = new Thread( new RunScript(SuiteSetUp.BROWSER.toLowerCase()));
+        t.start();
+
+        this.base.NavigateToPage(System.getProperty("environmentName"), isIe);
         Log.startTestCase(scenario.getName());
     }
+
+    private void executeAutoItNeeded(@NotNull String browser) {
+        if (!browser.equals("ie"))
+            return;
+        String executable = "IEAuthentication.exe";
+        try {
+            File file = new File("lib/", executable);
+            Runtime.getRuntime().exec(file.getAbsolutePath());
+            Log.info("Executing autoit file: " + file.getAbsolutePath());
+        } catch (IOException e) {
+            Log.info("There's a problem running autoit file\n" + e.getMessage());
+        }
+    }
+
 
     @After
     public void TearDownTest(Scenario scenario) {

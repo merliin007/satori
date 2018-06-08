@@ -62,5 +62,7 @@ public class MainPage {
         _driver.findElement(By.xpath("//*[@id=\"multi-level\"]/ul/li[5]/ul/li[1]/a")).click();
     }
 
-
+    public WebElement getBtnSignIn() {
+        return btnSignIn;
+    }
 }

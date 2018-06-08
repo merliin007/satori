@@ -53,5 +53,15 @@ public class CommonActions {
                 .until(ExpectedConditions.presenceOfElementLocated(elementBy));
     }
 
+    public void waitUntilInvisibilityOf(WebElement element) throws Exception{
+        new WebDriverWait(_driver, 10)
+                .until(ExpectedConditions.invisibilityOf(element));
+    }
+
+    public void waitUntilElementWithTextIsInvisible(By element, String text) throws Exception{
+        new WebDriverWait(_driver, 5)
+                .until(ExpectedConditions.invisibilityOfElementWithText(element, text));
+    }
+
 
 }
