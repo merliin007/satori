@@ -11,7 +11,7 @@ import org.openqa.selenium.support.PageFactory;
 
 import java.util.ArrayList;
 
-public class MainPage {
+public class LandingPage {
     private WebDriver _driver;
     private WebElement element;
 
@@ -33,7 +33,7 @@ public class MainPage {
     @FindBy(how = How.ID, using = "signin")
     private WebElement btnSignIn;
 
-    public MainPage(WebDriver driver) {
+    public LandingPage(WebDriver driver) {
         PageFactory.initElements(driver, this);
         _driver = driver;
     }

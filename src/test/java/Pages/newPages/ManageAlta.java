@@ -10,6 +10,7 @@ import org.openqa.selenium.support.PageFactory;
 public class ManageAlta {
 
     By by = By.id("navbarDropdown");
+
     private WebDriver _driver;
 
     public ManageAlta(WebDriver driver) {

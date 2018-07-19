@@ -2,7 +2,6 @@ package steps;
 
 import base.BaseUtil;
 import org.openqa.selenium.UnhandledAlertException;
-import org.testng.annotations.Parameters;
 import utility.Log;
 import pages.*;
 import utility.paymentInfo.BankAccountInfo;
@@ -30,7 +29,7 @@ public class PaymentsStep extends BaseUtil {
     private BaseUtil base;
     private CommonActions commonActions;
     private LoginPage loginPage;
-    private MainPage mainPage;
+    private LandingPage landingPage;
     private MyProfilePage myProfilePage;
     private MembershipAndPayments membershipAndPayments;
     private AddPaymentPage addPaymentPage;
@@ -47,9 +46,9 @@ public class PaymentsStep extends BaseUtil {
     @Given("^I sign in as Default user$")
     public void iSignInAsDefaultUser() {
         try {
-            mainPage = new MainPage(base.driver);
+            landingPage = new LandingPage(base.driver);
             MemberCredentials memberCredentials = new MemberCredentials();
-            mainPage.LoginWith(memberCredentials);
+            landingPage.LoginWith(memberCredentials);
             commonActions = new CommonActions(base.driver);
             Log.info("Logging as: " + memberCredentials.getUsername());
         } catch (Exception e) {
@@ -62,10 +61,10 @@ public class PaymentsStep extends BaseUtil {
     @Given("^I sign in as member user$")
     public void iSignInAsMemberUser(DataTable table) {
         try {
-            mainPage = new MainPage(base.driver);
+            landingPage = new LandingPage(base.driver);
             List<MemberCredentials> memberCredentials = new ArrayList<>();
             memberCredentials = table.asList(MemberCredentials.class);
-            mainPage.LoginWith(memberCredentials.get(0));
+            landingPage.LoginWith(memberCredentials.get(0));
             commonActions = new CommonActions(base.driver);
             Log.info("Logging as: " + memberCredentials.get(0).getUsername());
         } catch (Exception e) {
@@ -78,7 +77,7 @@ public class PaymentsStep extends BaseUtil {
     @Then("^I Should be logged in successfully$")
     public void iShouldBeLoggedInSuccessfully() {
         try {
-            assertTrue(mainPage.IsUserLoggedIn());
+            assertTrue(landingPage.IsUserLoggedIn());
             Log.info("User logged in successfully");
         } catch (Exception e) {
             fail();
@@ -90,7 +89,7 @@ public class PaymentsStep extends BaseUtil {
     @And("^I navigate to My Profile menu$")
     public void iNavigateToMyProfileMenu() {
         try {
-            mainPage.GoToMyProfile();
+            landingPage.GoToMyProfile();
             myProfilePage = new MyProfilePage(base.driver);
             Log.info("Going to My Profile");
         } catch (Exception e) {

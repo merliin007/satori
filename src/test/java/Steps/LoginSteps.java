@@ -9,7 +9,7 @@ import org.openqa.selenium.TimeoutException;
 import pages.newPages.ManageAlta;
 import pages.newPages.nLoginPage;
 import pages.newPages.nMainPage;
-import pages.MainPage;
+import pages.LandingPage;
 import utility.Log;
 
 import static org.junit.Assert.assertTrue;
@@ -20,7 +20,7 @@ public class LoginSteps/* extends BaseUtil*/ {
     private CommonActions commonActions;
     private nLoginPage loginPage;
     private ManageAlta manageAlta;
-    private MainPage mainPage;
+    private LandingPage landingPage;
     private nMainPage nMainPage;
 
     public LoginSteps(BaseUtil base) {
@@ -31,8 +31,8 @@ public class LoginSteps/* extends BaseUtil*/ {
     public void userNavigatesToALTAWebsite() {
         try {
             commonActions = new CommonActions(base.driver);
-            mainPage = new MainPage(base.driver);
-            mainPage.getBtnSignIn().click();
+            landingPage = new LandingPage(base.driver);
+            landingPage.getBtnSignIn().click();
         } catch (Exception e) {
             Log.error(e.getMessage());
             base.GrabScreenShot();
@@ -67,7 +67,7 @@ public class LoginSteps/* extends BaseUtil*/ {
                 Log.info("Reviewing login didn't succeed ");
                 commonActions.waitUntilElementIsVisible(loginPage.getLblError());
                 try {
-                    commonActions.waitUntilExistenceOfElement(mainPage.getLblWelcomeBy());
+                    commonActions.waitUntilExistenceOfElement(landingPage.getLblWelcomeBy());
                 } catch (TimeoutException e) {
                     Log.info("Expected Login failed ");
                 }

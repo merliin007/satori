@@ -81,7 +81,7 @@ public class SetUp extends BaseUtil {
         Thread t = new Thread( new RunScript(SuiteSetUp.BROWSER.toLowerCase()));
         t.start();
 
-        this.base.NavigateToPage(System.getProperty("environmentName"), isIe);
+        this.base.NavigateToPage(System.getProperty("environment"), isIe);
         Log.startTestCase(scenario.getName());
     }
 

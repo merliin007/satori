@@ -44,6 +44,10 @@ public class BaseUtil {
                     driver.navigate().to(SuiteSetUp.QA_TRIO);
                     Log.info("Navigating to: " + SuiteSetUp.QA_TRIO);
                     break;
+                case "uat":
+                    driver.navigate().to(SuiteSetUp.UAT_ENVIRONMENT_all);
+                    Log.info("Navigating to: " + SuiteSetUp.UAT_ENVIRONMENT_all);
+                    break;
             }
             if (isIe)
                 driver.navigate().to("javascript:document.getElementById('overridelink').click();");
