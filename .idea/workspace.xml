@@ -27,20 +27,20 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="Calendars.feature" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/features/calendars/Calendars.feature">
+      <file leaf-file-name="Events.feature" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/features/calendars_events/Events.feature">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="221">
-              <caret line="13" column="55" selection-start-line="13" selection-start-column="55" selection-end-line="13" selection-end-column="55" />
+            <state relative-caret-position="272">
+              <caret line="16" column="26" selection-start-line="16" selection-start-column="26" selection-end-line="16" selection-end-column="26" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="CalendarSteps.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/test/java/steps/CalendarSteps.java">
+      <file leaf-file-name="EventSteps.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/test/java/steps/EventSteps.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="280">
-              <caret line="156" column="70" selection-start-line="156" selection-start-column="70" selection-end-line="156" selection-end-column="70" />
+            <state relative-caret-position="467">
+              <caret line="49" column="5" lean-forward="true" selection-start-line="49" selection-start-column="5" selection-end-line="49" selection-end-column="5" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -48,70 +48,15 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="CalendarsPage.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/pages/newPages/Calendars/CalendarsPage.java">
+      <file leaf-file-name="EventsPage.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/pages/newPages/Events/EventsPage.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="136">
-              <caret line="29" column="14" selection-start-line="29" selection-start-column="14" selection-end-line="29" selection-end-column="38" />
+            <state relative-caret-position="450">
+              <caret line="57" column="22" selection-start-line="57" selection-start-column="22" selection-end-line="57" selection-end-column="22" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#960#961#0" expanded="true" />
-                <element signature="e#1004#1005#0" expanded="true" />
-                <element signature="e#2213#2214#0" expanded="true" />
-                <element signature="e#2247#2248#0" expanded="true" />
-                <element signature="e#2294#2295#0" expanded="true" />
-                <element signature="e#2333#2334#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="CommonActions.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/common/CommonActions.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="232">
-              <caret line="68" column="49" selection-start-line="68" selection-start-column="49" selection-end-line="68" selection-end-column="49" />
-              <folding>
-                <element signature="e#894#895#0" expanded="true" />
-                <element signature="e#962#963#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="NewCalendarPage.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/pages/newPages/Calendars/NewCalendarPage.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="194">
-              <caret line="52" column="35" selection-start-line="52" selection-start-column="35" selection-end-line="52" selection-end-column="35" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Calendar.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/utility/calendar/Calendar.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="340">
-              <caret line="24" selection-start-line="24" selection-end-line="24" />
-              <folding>
-                <element signature="e#598#599#0" expanded="true" />
-                <element signature="e#632#633#0" expanded="true" />
-                <element signature="e#662#663#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Helpers.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/utility/Helpers.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-295">
-              <caret line="22" column="50" selection-start-line="22" selection-start-column="48" selection-end-line="22" selection-end-column="50" />
-              <folding>
-                <element signature="imports" expanded="true" />
+                <element signature="e#1693#1694#0" expanded="true" />
+                <element signature="e#1721#1722#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -129,15 +74,15 @@
   <component name="FindInProjectRecents">
     <findStrings>
       <find>ctl00_ctl00_ctl00_cphM_cphM_cphApp_btnBack</find>
-      <find>adding m</find>
+      <find />
       <find>when</find>
-      <find>add mem</find>
+      <find />
       <find>upgr</find>
       <find>ctl00_ctl00_ctl00_cphM_cphM_cphApp_paymentCheck_txtCheckNumber</find>
       <find>btnSubmitPaymentNoCC</find>
       <find>value</find>
       <find>getI</find>
-      <find>option I submit all information</find>
+      <find />
       <find>setDrpPaymentMethod</find>
       <find>ctl00_ctl00_ctl00_cphM_cphM_cphApp_btnSubmitNoCC</find>
       <find>prop</find>
@@ -148,13 +93,14 @@
       <find>savep</find>
       <find>upgradingm</find>
       <find>flu</find>
-      <find>void start</find>
+      <find />
       <find>mainPage</find>
       <find>ArrayList&lt;</find>
       <find>Member</find>
       <find>Action</find>
       <find>ctl00_ctl00_CPHolder_CPHolder_btnSave</find>
       <find>format</find>
+      <find>argu</find>
     </findStrings>
     <replaceStrings>
       <replace />
@@ -163,14 +109,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/test/java/Features/Refunds/RefundViaCash.feature" />
-        <option value="$PROJECT_DIR$/src/test/java/Features/Refunds/RefundViaCheck.feature" />
-        <option value="$PROJECT_DIR$/src/test/java/Features/Refunds/RefundViaCreditCard.feature" />
-        <option value="$PROJECT_DIR$/src/test/java/Features/Refunds/RefundViaCreditCardForMember.feature" />
-        <option value="$PROJECT_DIR$/SatoriAutomation.iml" />
-        <option value="$PROJECT_DIR$/src/test/java/Steps/PaymentsStep.java" />
-        <option value="$PROJECT_DIR$/src/test/java/Runner/TestRunner.java" />
-        <option value="$PROJECT_DIR$/src/test/java/features/payments/PurchaseMembershipCreditCard.feature" />
         <option value="$PROJECT_DIR$/src/test/java/features/payments/PurchaseMembershipViaACH.feature" />
         <option value="$PROJECT_DIR$/src/test/java/features/payments/PurchaseMembershipViaOfficeCreditf.feature" />
         <option value="$PROJECT_DIR$/src/test/java/features/payments/UpgradeMembershipCreditCard.feature" />
@@ -201,19 +139,27 @@
         <option value="$PROJECT_DIR$/src/test/java/steps/LoginSteps.java" />
         <option value="$PROJECT_DIR$/src/test/java/features/login/LoginIntoNewSite.feature" />
         <option value="$PROJECT_DIR$/src/test/java/pages/newPages/ManageAlta.java" />
-        <option value="$PROJECT_DIR$/src/test/java/pages/newPages/nMainPage.java" />
         <option value="$PROJECT_DIR$/src/test/java/features/navigation/Crawler.feature" />
         <option value="$PROJECT_DIR$/src/test/java/steps/NavigationSteps.java" />
         <option value="$PROJECT_DIR$/src/test/java/utility/calendar/Calendar.java" />
         <option value="$PROJECT_DIR$/src/test/java/pages/newPages/Calendars.java" />
         <option value="$PROJECT_DIR$/src/test/java/pages/newPages/Calendars/ASDASD.java" />
         <option value="$PROJECT_DIR$/src/test/java/base/BaseUtil.java" />
-        <option value="$PROJECT_DIR$/src/test/java/utility/Helpers.java" />
         <option value="$PROJECT_DIR$/src/test/java/pages/newPages/Calendars/NewCalendarPage.java" />
         <option value="$PROJECT_DIR$/src/test/java/features/calendars/Calendars.feature" />
-        <option value="$PROJECT_DIR$/src/test/java/pages/newPages/Calendars/CalendarsPage.java" />
-        <option value="$PROJECT_DIR$/src/test/java/steps/CalendarSteps.java" />
         <option value="$PROJECT_DIR$/src/test/java/common/CommonActions.java" />
+        <option value="$PROJECT_DIR$/src/test/java/steps/CalendarSteps.java" />
+        <option value="$PROJECT_DIR$/src/test/java/pages/newPages/Pages.java" />
+        <option value="$PROJECT_DIR$/src/test/java/pages/newPages/Calendars/CalendarsPage.java" />
+        <option value="$PROJECT_DIR$/src/test/java/steps/EventsSteps.java" />
+        <option value="$PROJECT_DIR$/src/test/java/features/calendars_events/Events.feature" />
+        <option value="$PROJECT_DIR$/src/test/java/features/calendars_events/Calendars.feature" />
+        <option value="$PROJECT_DIR$/src/test/java/pages/newPages/nMainPage.java" />
+        <option value="$PROJECT_DIR$/src/test/java/utility/Helpers.java" />
+        <option value="$PROJECT_DIR$/src/test/java/pages/newPages/Events/EventsPage.java" />
+        <option value="$PROJECT_DIR$/src/test/java/utility/event/Event.java" />
+        <option value="$PROJECT_DIR$/src/test/java/pages/newPages/Events/NewEventsPage.java" />
+        <option value="$PROJECT_DIR$/src/test/java/steps/EventSteps.java" />
       </list>
     </option>
   </component>
@@ -250,7 +196,7 @@
   <component name="MavenRunner">
     <option name="runMavenInBackground" value="false" />
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds" extendedState="7">
     <option name="x" value="-59" />
     <option name="y" value="70" />
     <option name="width" value="1364" />
@@ -261,7 +207,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
+      <pane id="AndroidView" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -323,7 +269,7 @@
               <item name="test" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="features" type="462c0819:PsiDirectoryNode" />
-              <item name="calendars" type="462c0819:PsiDirectoryNode" />
+              <item name="calendars_events" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="SatoriAutomation" type="b2602c69:ProjectViewProjectNode" />
@@ -360,6 +306,16 @@
               <item name="pages" type="462c0819:PsiDirectoryNode" />
               <item name="newPages" type="462c0819:PsiDirectoryNode" />
               <item name="Calendars" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="SatoriAutomation" type="b2602c69:ProjectViewProjectNode" />
+              <item name="satori" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="pages" type="462c0819:PsiDirectoryNode" />
+              <item name="newPages" type="462c0819:PsiDirectoryNode" />
+              <item name="Events" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="SatoriAutomation" type="b2602c69:ProjectViewProjectNode" />
@@ -410,6 +366,15 @@
               <item name="test" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="utility" type="462c0819:PsiDirectoryNode" />
+              <item name="event" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="SatoriAutomation" type="b2602c69:ProjectViewProjectNode" />
+              <item name="satori" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="utility" type="462c0819:PsiDirectoryNode" />
               <item name="paymentInfo" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
@@ -417,7 +382,7 @@
         </subPane>
       </pane>
       <pane id="Scope" />
-      <pane id="AndroidView" />
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -454,9 +419,21 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Cucumber java.Feature: Calendars (3)">
+  <component name="RunManager" selected="Cucumber java.Events">
     <configuration default="true" type="Application" factoryName="Application">
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+    </configuration>
+    <configuration name="Events" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true">
+      <option name="MAIN_CLASS_NAME" value="cucumber.api.cli.Main" />
+      <module name="SatoriAutomation" />
+      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvmSMFormatter --monochrome" />
+      <option name="VM_PARAMETERS" value="-Dbrowser=chrome -Denvironment=uat" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="cucumber.api.cli.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
     </configuration>
     <configuration name="Feature: Calendars (1)" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="cucumber.api.cli.Main" />
@@ -494,19 +471,7 @@
         </pattern>
       </extension>
     </configuration>
-    <configuration name="Feature: Calendars" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true">
-      <option name="MAIN_CLASS_NAME" value="cucumber.api.cli.Main" />
-      <module name="SatoriAutomation" />
-      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvmSMFormatter --monochrome" />
-      <option name="VM_PARAMETERS" value="-Dbrowser=chrome -Denvironment=qa" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="cucumber.api.cli.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-    </configuration>
-    <configuration name="Feature: LoginIntoNewSite (3)" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
+    <configuration name="Feature: Calendars (4)" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="cucumber.api.cli.Main" />
       <module name="SatoriAutomation" />
       <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvmSMFormatter --monochrome" />
@@ -557,19 +522,19 @@
       <listeners />
     </configuration>
     <list>
-      <item itemvalue="Cucumber java.Feature: LoginIntoNewSite (3)" />
-      <item itemvalue="Cucumber java.Feature: Calendars" />
       <item itemvalue="Cucumber java.Feature: Calendars (1)" />
       <item itemvalue="Cucumber java.Feature: Calendars (2)" />
       <item itemvalue="Cucumber java.Feature: Calendars (3)" />
+      <item itemvalue="Cucumber java.Events" />
+      <item itemvalue="Cucumber java.Feature: Calendars (4)" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Cucumber java.Events" />
+        <item itemvalue="Cucumber java.Feature: Calendars (4)" />
         <item itemvalue="Cucumber java.Feature: Calendars (3)" />
         <item itemvalue="Cucumber java.Feature: Calendars (2)" />
         <item itemvalue="Cucumber java.Feature: Calendars (1)" />
-        <item itemvalue="Cucumber java.Feature: Calendars" />
-        <item itemvalue="Cucumber java.Feature: LoginIntoNewSite (3)" />
       </list>
     </recent_temporary>
   </component>
@@ -588,35 +553,35 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="Feature__Calendars_(3) - 2018.07.19 at 16h 02m 43s.xml">
-      <configuration name="Feature: Calendars (3)" configurationId="CucumberJavaRunConfigurationType" />
+    <history-entry file="Events - 2018.07.20 at 14h 28m 21s.xml">
+      <configuration name="Events" configurationId="CucumberJavaRunConfigurationType" />
     </history-entry>
-    <history-entry file="Feature__Calendars_(3) - 2018.07.19 at 16h 05m 06s.xml">
-      <configuration name="Feature: Calendars (3)" configurationId="CucumberJavaRunConfigurationType" />
+    <history-entry file="Events - 2018.07.20 at 14h 30m 00s.xml">
+      <configuration name="Events" configurationId="CucumberJavaRunConfigurationType" />
     </history-entry>
-    <history-entry file="Feature__Calendars_(3) - 2018.07.19 at 16h 12m 54s.xml">
-      <configuration name="Feature: Calendars (3)" configurationId="CucumberJavaRunConfigurationType" />
+    <history-entry file="Events - 2018.07.20 at 16h 36m 06s.xml">
+      <configuration name="Events" configurationId="CucumberJavaRunConfigurationType" />
     </history-entry>
-    <history-entry file="Feature__Calendars_(3) - 2018.07.19 at 16h 18m 00s.xml">
-      <configuration name="Feature: Calendars (3)" configurationId="CucumberJavaRunConfigurationType" />
+    <history-entry file="Events - 2018.07.20 at 16h 41m 50s.xml">
+      <configuration name="Events" configurationId="CucumberJavaRunConfigurationType" />
     </history-entry>
-    <history-entry file="Feature__Calendars_(3) - 2018.07.19 at 16h 49m 35s.xml">
-      <configuration name="Feature: Calendars (3)" configurationId="CucumberJavaRunConfigurationType" />
+    <history-entry file="Feature__Calendars_(4) - 2018.07.20 at 16h 42m 11s.xml">
+      <configuration name="Feature: Calendars (4)" configurationId="CucumberJavaRunConfigurationType" />
     </history-entry>
-    <history-entry file="Feature__Calendars_(3) - 2018.07.19 at 16h 53m 42s.xml">
-      <configuration name="Feature: Calendars (3)" configurationId="CucumberJavaRunConfigurationType" />
+    <history-entry file="Feature__Calendars_(4) - 2018.07.20 at 16h 43m 55s.xml">
+      <configuration name="Feature: Calendars (4)" configurationId="CucumberJavaRunConfigurationType" />
     </history-entry>
-    <history-entry file="Feature__Calendars_(3) - 2018.07.19 at 16h 55m 29s.xml">
-      <configuration name="Feature: Calendars (3)" configurationId="CucumberJavaRunConfigurationType" />
+    <history-entry file="Feature__Calendars_(4) - 2018.07.20 at 16h 44m 34s.xml">
+      <configuration name="Feature: Calendars (4)" configurationId="CucumberJavaRunConfigurationType" />
     </history-entry>
-    <history-entry file="Feature__Calendars_(3) - 2018.07.19 at 16h 56m 37s.xml">
-      <configuration name="Feature: Calendars (3)" configurationId="CucumberJavaRunConfigurationType" />
+    <history-entry file="Feature__Calendars_(4) - 2018.07.20 at 16h 44m 56s.xml">
+      <configuration name="Feature: Calendars (4)" configurationId="CucumberJavaRunConfigurationType" />
     </history-entry>
-    <history-entry file="Feature__Calendars_(3) - 2018.07.19 at 16h 58m 09s.xml">
-      <configuration name="Feature: Calendars (3)" configurationId="CucumberJavaRunConfigurationType" />
+    <history-entry file="Events - 2018.07.20 at 16h 46m 38s.xml">
+      <configuration name="Events" configurationId="CucumberJavaRunConfigurationType" />
     </history-entry>
-    <history-entry file="Feature__Calendars_(3) - 2018.07.19 at 17h 20m 57s.xml">
-      <configuration name="Feature: Calendars (3)" configurationId="CucumberJavaRunConfigurationType" />
+    <history-entry file="Events - 2018.07.20 at 17h 01m 43s.xml">
+      <configuration name="Events" configurationId="CucumberJavaRunConfigurationType" />
     </history-entry>
   </component>
   <component name="TodoView">
@@ -630,6 +595,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info anchor="right" id="Palette" order="3" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32980132" />
@@ -638,20 +604,20 @@
       <window_info id="Image Layers" order="2" />
       <window_info anchor="right" id="Capture Analysis" order="3" />
       <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.50075644" side_tool="true" weight="0.31560892" />
-      <window_info anchor="right" id="Maven Projects" order="3" visible="true" weight="0.18759455" />
+      <window_info anchor="right" id="Maven Projects" order="3" weight="0.18683812" />
       <window_info anchor="bottom" id="Version Control" order="7" weight="0.32933104" />
       <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49924356" weight="0.36020583" />
       <window_info anchor="bottom" id="Terminal" order="7" weight="0.32761577" />
       <window_info id="Capture Tool" order="2" />
       <window_info id="Designer" order="2" />
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.6432247" visible="true" weight="0.23373677" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.32847682" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.6432247" visible="true" weight="0.2375189" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32761577" />
       <window_info id="Structure" order="1" sideWeight="0.3567753" side_tool="true" weight="0.23298033" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info id="UI Designer" order="2" />
       <window_info anchor="right" id="Theme Preview" order="3" />
       <window_info id="Favorites" order="2" side_tool="true" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.380789" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.5025729" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="right" id="Coverage" order="4" side_tool="true" weight="0.3290469" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -686,31 +652,30 @@
           <option name="timeStamp" value="90" />
         </line-breakpoint>
       </breakpoints>
-      <option name="time" value="200" />
+      <option name="time" value="205" />
     </breakpoint-manager>
     <watches-manager>
       <configuration name="CucumberJavaRunConfigurationType">
-        <watch expression="tblCel.get(4).getText()" language="JAVA" />
-        <watch expression="tblCel.get(5).getText()" language="JAVA" />
-        <watch expression="calendarList.get(0).getStartDate()" language="JAVA" />
-        <watch expression="calendarList.get(0).getEndDate()" language="JAVA" />
+        <watch expression="list" language="JAVA" />
+        <watch expression="raw" language="JAVA" />
+        <watch expression="links" language="JAVA" />
       </configuration>
     </watches-manager>
   </component>
   <component name="debuggerHistoryManager">
     <expressions id="evaluateCodeFragment">
       <expression>
-        <expression-string>LocalDate.parse(date1, DateTimeFormatter.ofPattern(&quot;M/d/yyyy&quot;));</expression-string>
+        <expression-string />
         <language-id>JAVA</language-id>
         <evaluation-mode>CODE_FRAGMENT</evaluation-mode>
       </expression>
       <expression>
-        <expression-string>LocalDate.parse(date1, DateTimeFormatter.ofPattern(&quot;M\/dd\/yyyy&quot;));</expression-string>
+        <expression-string />
         <language-id>JAVA</language-id>
         <evaluation-mode>CODE_FRAGMENT</evaluation-mode>
       </expression>
       <expression>
-        <expression-string>LocalDate.parse(date1, DateTimeFormatter.ofPattern(&quot;M/dd/yyyy&quot;));</expression-string>
+        <expression-string />
         <language-id>JAVA</language-id>
         <evaluation-mode>CODE_FRAGMENT</evaluation-mode>
       </expression>
@@ -747,6 +712,21 @@
     </expressions>
     <expressions id="watch">
       <expression>
+        <expression-string>links</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>raw</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>list</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
         <expression-string>calendarList.get(0).getEndDate()</expression-string>
         <language-id>JAVA</language-id>
         <evaluation-mode>EXPRESSION</evaluation-mode>
@@ -781,55 +761,40 @@
         <language-id>JAVA</language-id>
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
-      <expression>
-        <expression-string>popUpCommands.get(0).getAttribute(&quot;text&quot;)</expression-string>
-        <language-id>JAVA</language-id>
-        <evaluation-mode>EXPRESSION</evaluation-mode>
-      </expression>
-      <expression>
-        <expression-string>popUpCommands.get(2).getText()</expression-string>
-        <language-id>JAVA</language-id>
-        <evaluation-mode>EXPRESSION</evaluation-mode>
-      </expression>
-      <expression>
-        <expression-string>popUpCommands.get(1).getText()</expression-string>
-        <language-id>JAVA</language-id>
-        <evaluation-mode>EXPRESSION</evaluation-mode>
-      </expression>
     </expressions>
     <expressions id="evaluateExpression">
       <expression>
-        <expression-string>boolean a = base.driver.getTitle().contains(&quot;Add Payment&quot;);</expression-string>
+        <expression-string />
         <language-id>JAVA</language-id>
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
       <expression>
-        <expression-string>base.driver.getTitle().contains(&quot;Add Payment&quot;)</expression-string>
+        <expression-string />
         <language-id>JAVA</language-id>
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
       <expression>
-        <expression-string>base.driver.getTitle().contains(&quot;ALTA Tennis - Add Payment&quot;)</expression-string>
+        <expression-string />
         <language-id>JAVA</language-id>
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
       <expression>
-        <expression-string>Assert.assertTrue((base.driver.getTitle().contains(&quot;ALTA Tennis - Add Payment&quot;)))</expression-string>
+        <expression-string />
         <language-id>JAVA</language-id>
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
       <expression>
-        <expression-string>Assert.assertTrue((base.driver.getTitle().contains(&quot;Add Payment&quot;)))</expression-string>
+        <expression-string />
         <language-id>JAVA</language-id>
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
       <expression>
-        <expression-string>Assert.assertTrue(base.driver.getTitle().contains(&quot;Add Payment&quot;))</expression-string>
+        <expression-string />
         <language-id>JAVA</language-id>
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
       <expression>
-        <expression-string>Assert.assertTrue(base.driver.getTitle().contains(&quot;Add Payment&quot;));</expression-string>
+        <expression-string />
         <language-id>JAVA</language-id>
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
@@ -839,76 +804,13 @@
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
       <expression>
-        <expression-string>Assert.assertTrue(base.driver.getTitle().contains(&quot;Add payment&quot;))</expression-string>
+        <expression-string />
         <language-id>JAVA</language-id>
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
     </expressions>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/test/java/base/RunScript.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="78">
-          <caret line="8" column="43" selection-start-line="8" selection-start-column="43" selection-end-line="8" selection-end-column="43" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/steps/TrioSteps.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="49">
-          <caret line="31" column="5" selection-start-line="31" selection-start-column="5" selection-end-line="31" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/features/payments/PurchaseMembershipViaACH.feature">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="9" column="28" selection-start-line="9" selection-start-column="28" selection-end-line="9" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/features/payments/PurchaseMembershipViaOfficeCreditf.feature">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="9" column="39" selection-start-line="9" selection-start-column="39" selection-end-line="9" selection-end-column="39" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/features/payments/UpgradeMembershipCreditCard.feature">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="9" column="51" selection-start-line="9" selection-start-column="51" selection-end-line="9" selection-end-column="51" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/features/payments/UpgradeMembershipViaCheck.feature">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="9" column="51" selection-start-line="9" selection-start-column="51" selection-end-line="9" selection-end-column="51" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/features/login/TrioTestLogin.feature">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="6" column="29" selection-start-line="6" selection-start-column="29" selection-end-line="6" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/utility/paymentInfo/CreditCardInfo.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/runner/TestRunner.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="8" column="32" selection-start-line="8" selection-start-column="18" selection-end-line="8" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/features/payments/PurchaseMembershipCreditCard-IncorrectInformation.feature">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="272">
@@ -965,13 +867,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/steps/NavigationSteps.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="365">
-          <caret line="50" column="46" lean-forward="true" selection-start-line="50" selection-start-column="46" selection-end-line="50" selection-end-column="46" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/pages/LoginPage.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="59">
@@ -992,13 +887,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="319">
           <caret line="295" column="86" selection-start-line="295" selection-start-column="86" selection-end-line="295" selection-end-column="86" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/pages/newPages/nMainPage.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1071">
-          <caret line="74" selection-start-line="74" selection-end-line="74" />
         </state>
       </provider>
     </entry>
@@ -1111,13 +999,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/base/CustomExceptions.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/info/cukes/cucumber-core/1.2.5/cucumber-core-1.2.5.jar!/cucumber/runtime/StepDefinitionMatch.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="125">
@@ -1149,26 +1030,90 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/pages/newPages/Calendars/CalendarsPage.java">
+    <entry file="file://$PROJECT_DIR$/src/test/java/pages/newPages/Calendars/NewCalendarPage.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="29" column="14" selection-start-line="29" selection-start-column="14" selection-end-line="29" selection-end-column="38" />
+        <state relative-caret-position="212">
+          <caret line="52" column="35" selection-start-line="52" selection-start-column="35" selection-end-line="52" selection-end-column="35" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#960#961#0" expanded="true" />
-            <element signature="e#1004#1005#0" expanded="true" />
-            <element signature="e#2213#2214#0" expanded="true" />
-            <element signature="e#2247#2248#0" expanded="true" />
-            <element signature="e#2294#2295#0" expanded="true" />
-            <element signature="e#2333#2334#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/pages/newPages/Calendars/NewCalendarPage.java">
+    <entry file="file://$PROJECT_DIR$/src/test/java/runner/TestRunner.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="194">
-          <caret line="52" column="35" selection-start-line="52" selection-start-column="35" selection-end-line="52" selection-end-column="35" />
+        <state relative-caret-position="102">
+          <caret line="7" column="19" selection-start-line="7" selection-start-column="17" selection-end-line="7" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/common/CommonActions.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="382">
+          <caret line="72" column="5" lean-forward="true" selection-start-line="72" selection-start-column="5" selection-end-line="72" selection-end-column="5" />
+          <folding>
+            <element signature="e#894#895#0" expanded="true" />
+            <element signature="e#962#963#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/base/CustomExceptions.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="6" column="21" selection-start-line="6" selection-start-column="21" selection-end-line="6" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/pages/newPages/Calendars/CalendarsPage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="44" lean-forward="true" selection-start-line="44" selection-end-line="44" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#getCalendarActionIndex#0;class#CalendarsPage#0" />
+            <element signature="method#getTblCalendarResults#0;class#CalendarsPage#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/steps/EventsSteps.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="5" selection-start-line="5" selection-end-line="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/info/cukes/cucumber-core/1.2.5/cucumber-core-1.2.5.jar!/cucumber/api/DataTable.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-2367">
+          <caret line="31" column="17" selection-start-line="31" selection-start-column="17" selection-end-line="31" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/pages/newPages/nMainPage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="78" selection-start-line="78" selection-end-line="78" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/utility/Helpers.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="229">
+          <caret line="92" column="18" selection-start-line="92" selection-start-column="18" selection-end-line="92" selection-end-column="18" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#determineDateFormat#0;class#Helpers#0" />
+            <element signature="method#CompareDates#0;class#Helpers#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/pages/newPages/Pages.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="10" column="27" selection-start-line="10" selection-start-column="22" selection-end-line="10" selection-end-column="27" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -1187,38 +1132,85 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/common/CommonActions.java">
+    <entry file="file://$PROJECT_DIR$/src/test/java/steps/NavigationSteps.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="232">
-          <caret line="68" column="49" selection-start-line="68" selection-start-column="49" selection-end-line="68" selection-end-column="49" />
+        <state relative-caret-position="208">
+          <caret line="26" selection-start-line="26" selection-end-line="26" />
           <folding>
-            <element signature="e#894#895#0" expanded="true" />
-            <element signature="e#962#963#0" expanded="true" />
+            <element signature="e#446#447#0" expanded="true" />
+            <element signature="e#478#479#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/utility/Helpers.java">
+    <entry file="file://$PROJECT_DIR$/src/test/java/utility/event/Event.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-295">
-          <caret line="22" column="50" selection-start-line="22" selection-start-column="48" selection-end-line="22" selection-end-column="50" />
+        <state relative-caret-position="289">
+          <caret line="20" column="37" selection-start-line="20" selection-start-column="37" selection-end-line="20" selection-end-column="37" />
+          <folding>
+            <element signature="e#602#603#0" expanded="true" />
+            <element signature="e#638#639#0" expanded="true" />
+            <element signature="e#670#671#0" expanded="true" />
+            <element signature="e#713#714#0" expanded="true" />
+            <element signature="e#752#753#0" expanded="true" />
+            <element signature="e#790#791#0" expanded="true" />
+            <element signature="e#824#825#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/pages/newPages/Events/EventsPage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="450">
+          <caret line="57" column="22" selection-start-line="57" selection-start-column="22" selection-end-line="57" selection-end-column="22" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1693#1694#0" expanded="true" />
+            <element signature="e#1721#1722#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/pages/newPages/Events/NewEventsPage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="416">
+          <caret line="47" column="1" lean-forward="true" selection-start-line="47" selection-start-column="1" selection-end-line="47" selection-end-column="1" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#266#267#0" expanded="true" />
+            <element signature="e#292#293#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/steps/CalendarSteps.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="731">
+          <caret line="43" column="40" selection-start-line="43" selection-start-column="16" selection-end-line="43" selection-end-column="40" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/features/calendars/Calendars.feature">
+    <entry file="file://$PROJECT_DIR$/src/test/java/features/calendars_events/Calendars.feature">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="13" column="55" selection-start-line="13" selection-start-column="55" selection-end-line="13" selection-end-column="55" />
+        <state relative-caret-position="170">
+          <caret line="10" column="19" selection-start-line="10" selection-start-column="19" selection-end-line="10" selection-end-column="19" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/steps/CalendarSteps.java">
+    <entry file="file://$PROJECT_DIR$/src/test/java/features/calendars_events/Events.feature">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="280">
-          <caret line="156" column="70" selection-start-line="156" selection-start-column="70" selection-end-line="156" selection-end-column="70" />
+        <state relative-caret-position="272">
+          <caret line="16" column="26" selection-start-line="16" selection-start-column="26" selection-end-line="16" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/steps/EventSteps.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="467">
+          <caret line="49" column="5" lean-forward="true" selection-start-line="49" selection-start-column="5" selection-end-line="49" selection-end-column="5" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

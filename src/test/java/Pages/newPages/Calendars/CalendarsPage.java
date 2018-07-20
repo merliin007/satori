@@ -6,10 +6,11 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.How;
 import org.openqa.selenium.support.PageFactory;
+import pages.newPages.Pages;
 
 import java.util.List;
 
-public class CalendarsPage {
+public class CalendarsPage extends Pages {
 
     private WebDriver _driver;
 
@@ -26,26 +27,34 @@ public class CalendarsPage {
     private WebElement btnConfirmDelete;
 
     private By  toastContainerLocator = By.id("toast-container");
-
     public By getToastContainerLocator() {
         return toastContainerLocator;
     }
 
+    public CalendarsPage(WebDriver driver) {
+        PageFactory.initElements(driver, this);
+        _driver = driver;
+    }
+
+    @Override
     public List<WebElement> getPopOverLocatorList() {
         return _driver.findElement(By.id("ctl00_ctl00_CPHolder_CPHolder_tableDataView_pnlGrid"))
                 .findElements(By.id("ctl00_ctl00_CPHolder_CPHolder_tableDataView_grdTableList")).get(1)
                 .findElements(By.tagName("tr"));
     }
 
-    public List<WebElement> getPopOverCommands(int position) {
-        return getPopOverLocatorList().get(position)
-                .findElement(By.className("popover__commands"))
-                .findElements(By.tagName("a"));
-    }
-
-    public CalendarsPage(WebDriver driver) {
-        PageFactory.initElements(driver, this);
-        _driver = driver;
+    @Override
+    public int getCalendarActionIndex(String action) {
+        switch (action.toLowerCase()) {
+            case "view calendar":
+                return 0;
+            case "view events":
+                return 1;
+            case "delete calendar":
+                return 2;
+            default:
+                return -1;
+        }
     }
 
     public WebElement getBtnNewCalendar() {

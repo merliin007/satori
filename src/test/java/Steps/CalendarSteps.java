@@ -6,7 +6,6 @@ import cucumber.api.DataTable;
 import cucumber.api.java.en.And;
 import cucumber.api.java.en.Then;
 import org.openqa.selenium.By;
-import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebElement;
 import pages.newPages.Calendars.CalendarsPage;
 import pages.newPages.Calendars.NewCalendarPage;
@@ -15,9 +14,9 @@ import static org.testng.Assert.assertEquals;
 import static org.testng.Assert.assertTrue;
 import static org.testng.Assert.fail;
 
-
+import utility.Helpers;
 import static utility.Helpers.CompareDates;
-
+import pages.newPages.Events.EventsPage;
 import utility.Log;
 import utility.calendar.Calendar;
 
@@ -29,12 +28,16 @@ public class CalendarSteps {
     private NewCalendarPage newCalendarPage;
     private BaseUtil base;
     private CommonActions commonActions;
+    private EventsPage eventsPage;
+    private Helpers helpers;
 
     private List<Calendar> calendarList;
 
     public CalendarSteps(BaseUtil baseUtil) {
         this.base = baseUtil;
         commonActions = new CommonActions(base.driver);
+        helpers = new Helpers(base);
+
     }
 
     @And("^I create a new calendar using$")
@@ -64,7 +67,7 @@ public class CalendarSteps {
             List<WebElement> tblResults = calendarsPage.getTblCalendarResults(0);
             int index = searchForElementInTheList(calendarList.get(0), tblResults);
             if (index != -1) {
-                selectOptionFromCell(index, "view calendar");
+                helpers.selectOptionFromCell(index, "view calendar", calendarsPage);
                 calendarList = table.asList(Calendar.class);
                 assertTrue(EditCalendar(newCalendarPage, calendarList));
                 Log.info("Waiting for toastr to disappear");
@@ -84,7 +87,7 @@ public class CalendarSteps {
             List<WebElement> tblResults = calendarsPage.getTblCalendarResults(0);
             int index = searchForElementInTheList(calendarList.get(0), tblResults);
             if (index != -1) {
-                selectOptionFromCell(index, "delete calendar");
+                helpers.selectOptionFromCell(index, "delete calendar", calendarsPage);
                 commonActions.waitUntilElementIsVisible(calendarsPage.getDeleteModal());
                 calendarsPage.getBtnConfirmDelete().click();
                 tblResults = calendarsPage.getTblCalendarResults(0);
@@ -118,34 +121,7 @@ public class CalendarSteps {
         return CreateNewCalendar(newCalendarPage, calendarOptions, true);
     }
 
-    private void selectOptionFromCell(int position, String action) {
-        try {
 
-            List<WebElement> list = calendarsPage.getPopOverLocatorList();
-            list.get(position).click();
-
-            List<WebElement> subElementCommands = calendarsPage.getPopOverCommands(position);
-
-            JavascriptExecutor js = (JavascriptExecutor) base.driver;
-            String script = "arguments[0].click();";
-            int opt = 0;
-            switch (action.toLowerCase()) {
-                case "view calendar":
-                    opt = 0;
-                    break;
-                case "view events":
-                    opt = 1;
-                    break;
-                case "delete calendar":
-                    opt = 2;
-                    break;
-            }
-            js.executeScript(script, subElementCommands.get(opt));
-
-        } catch (Exception e) {
-            Log.error(e.getMessage());
-        }
-    }
 
     private int searchForElementInTheList(Calendar calendar, List<WebElement> tblResults) {
         int i;
@@ -161,5 +137,7 @@ public class CalendarSteps {
         }
         return -1;
     }
+
+
 
 }
