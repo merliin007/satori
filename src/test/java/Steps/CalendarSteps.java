@@ -64,8 +64,8 @@ public class CalendarSteps {
     @And("^I edit recently created calendar without issues$")
     public void iEditRecentlyCreatedCalendarWithoutIssues(DataTable table) {
         try {
-            List<WebElement> tblResults = calendarsPage.getTblCalendarResults(0);
-            int index = searchForElementInTheList(calendarList.get(0), tblResults);
+            List<WebElement> tblResults = calendarsPage.getTblResults(0);
+            int index = helpers.searchForElementInTheCalendarList(calendarList.get(0), tblResults);
             if (index != -1) {
                 helpers.selectOptionFromCell(index, "view calendar", calendarsPage);
                 calendarList = table.asList(Calendar.class);
@@ -84,14 +84,14 @@ public class CalendarSteps {
     @Then("^I delete such calendar$")
     public void iDeleteSuchCalendar() {
         try {
-            List<WebElement> tblResults = calendarsPage.getTblCalendarResults(0);
-            int index = searchForElementInTheList(calendarList.get(0), tblResults);
+            List<WebElement> tblResults = calendarsPage.getTblResults(0);
+            int index = helpers.searchForElementInTheCalendarList(calendarList.get(0), tblResults);
             if (index != -1) {
                 helpers.selectOptionFromCell(index, "delete calendar", calendarsPage);
                 commonActions.waitUntilElementIsVisible(calendarsPage.getDeleteModal());
                 calendarsPage.getBtnConfirmDelete().click();
-                tblResults = calendarsPage.getTblCalendarResults(0);
-                assertEquals(searchForElementInTheList(calendarList.get(0), tblResults), -1);
+                tblResults = calendarsPage.getTblResults(0);
+                assertEquals(helpers.searchForElementInTheCalendarList(calendarList.get(0), tblResults), -1);
             }
         } catch (Exception e) {
             Log.error(e.getMessage());
@@ -123,20 +123,7 @@ public class CalendarSteps {
 
 
 
-    private int searchForElementInTheList(Calendar calendar, List<WebElement> tblResults) {
-        int i;
-        for (i = 3; i < tblResults.size(); i++) {
-            List<WebElement> tblCel = tblResults.get(i).findElements(By.tagName("td"));
-            if (tblCel.get(0).getText().equals(calendar.getYear()) &&
-                    tblCel.get(1).getText().equals((calendar.getCalendarType())) &&
-                    CompareDates(tblCel.get(4).getText(), calendar.getStartDate()) &&
-                    CompareDates(tblCel.get(5).getText(), calendar.getEndDate())) {
 
-                return i;
-            }
-        }
-        return -1;
-    }
 
 
 

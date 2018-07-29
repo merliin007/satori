@@ -1,13 +1,13 @@
 package base;
 
+import org.openqa.selenium.*;
 import utility.Log;
 import common.SuiteSetUp;
 import org.apache.commons.io.FileUtils;
 import org.apache.log4j.xml.DOMConfigurator;
-import org.openqa.selenium.OutputType;
-import org.openqa.selenium.TakesScreenshot;
-import org.openqa.selenium.WebDriver;
 
+import java.awt.*;
+import java.awt.event.KeyEvent;
 import java.io.File;
 import java.io.IOException;
 
@@ -51,10 +51,43 @@ public class BaseUtil {
             }
             if (isIe)
                 driver.navigate().to("javascript:document.getElementById('overridelink').click();");
+            zoomInOut(-2);
 
         } catch (NullPointerException e) {
             Log.error("Environment System property missing... Exiting");
             System.exit(-1);
+        }
+
+    }
+
+    private void zoomInOut(int z) {
+        try {
+            if(System.getProperty("autoZoom").equals("false"))
+                return;
+            Robot robot = new Robot();
+            if (z < 0)
+                while (z < 0) {
+                    robot.keyPress(KeyEvent.VK_CONTROL);
+                    robot.keyPress(KeyEvent.VK_SUBTRACT);
+                    robot.keyRelease(KeyEvent.VK_SUBTRACT);
+                    robot.keyRelease(KeyEvent.VK_CONTROL);
+                    z++;
+                }
+            else
+                while (z > 0) {
+                    robot.keyPress(KeyEvent.VK_CONTROL);
+                    robot.keyPress(KeyEvent.VK_ADD);
+                    robot.keyRelease(KeyEvent.VK_ADD);
+                    robot.keyRelease(KeyEvent.VK_CONTROL);
+                    z--;
+                }
+
+        }
+        catch (AWTException e) {
+            Log.error(e.getMessage());
+        }
+        catch (NullPointerException npe){
+            Log.info("No Zoom requested");
         }
     }
 

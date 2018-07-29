@@ -7,9 +7,12 @@ package utility;
 import base.BaseUtil;
 import base.CustomExceptions;
 import cucumber.api.DataTable;
+import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebElement;
 import pages.newPages.Pages;
+import utility.calendar.Calendar;
+import utility.event.Event;
 
 import java.time.LocalDate;
 import java.time.format.DateTimeFormatter;
@@ -18,6 +21,7 @@ import java.util.*;
 
 public class Helpers {
     private BaseUtil base;
+
 
     public Helpers(BaseUtil baseUtil) {
         base = baseUtil;
@@ -72,7 +76,7 @@ public class Helpers {
     }
 
     public void selectOptionFromCell(int position, String action, Pages page) throws CustomExceptions {
-        int action_index = page.getCalendarActionIndex(action);
+        int action_index = page.getPageActionIndex(action);
         if ( action_index < 0)
             throw new CustomExceptions("Invalid selecting option");
         try {
@@ -83,6 +87,7 @@ public class Helpers {
 
             JavascriptExecutor js = (JavascriptExecutor) base.driver;
             String script = "arguments[0].click();";
+            js.executeScript("arguments[0].scrollIntoView();", list.get(position));
             js.executeScript(script, subElementCommands.get(action_index));
 
         } catch (Exception e) {
@@ -99,6 +104,43 @@ public class Helpers {
         return DataTable.create(raw);
     }
 
+    public void sortByColumn(String columnName, Pages page){
+        try {
+            List<WebElement> columns = page.getAllColumnHeaders();
+            columns.get(page.getIndexForHeader(columnName)).click();
+        } catch (Exception e) {
+            Log.error(e.getMessage());
+        }
+    }
+
+    public int searchForElementInTheCalendarList(Calendar calendar, List<WebElement> tblResults) {
+        int i;
+        for (i = 3; i < tblResults.size(); i++) {
+            List<WebElement> tblCel = tblResults.get(i).findElements(By.tagName("td"));
+            if (tblCel.get(0).getText().equals(calendar.getYear()) &&
+                    tblCel.get(1).getText().equals((calendar.getCalendarType())) &&
+                    CompareDates(tblCel.get(4).getText(), calendar.getStartDate()) &&
+                    CompareDates(tblCel.get(5).getText(), calendar.getEndDate())) {
+
+                return i;
+            }
+        }
+        return -1;
+    }
+
+    public int searchForElementInTheEventsList(Event event, List<WebElement> tblResults) {
+        int i = 3;
+        for (; i < tblResults.size(); i++) {
+            List<WebElement> tblCel = tblResults.get(i).findElements(By.tagName("td"));
+            if (CompareDates(tblCel.get(0).getText(),event.getDateOfEvent()) &&
+                    tblCel.get(2).getText().equals((event.getEventName())) &&
+                    tblCel.get(3).getText().equals(event.getEventDescription())) {
+
+                return i;
+            }
+        }
+        return -1;
+    }
 
 
 }

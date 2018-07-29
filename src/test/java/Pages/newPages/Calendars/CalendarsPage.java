@@ -18,7 +18,7 @@ public class CalendarsPage extends Pages {
     private WebElement btnNewCalendar;
 
     @FindBy(how = How.ID, using = "ctl00_ctl00_CPHolder_CPHolder_tableDataView_pnlGrid")
-    private WebElement tblCalendarResults;
+    private WebElement tblTableResults;
 
     @FindBy(how = How.CLASS_NAME, using = "modal-content")
     private WebElement deleteModal;
@@ -44,7 +44,7 @@ public class CalendarsPage extends Pages {
     }
 
     @Override
-    public int getCalendarActionIndex(String action) {
+    public int getPageActionIndex(String action) {
         switch (action.toLowerCase()) {
             case "view calendar":
                 return 0;
@@ -57,6 +57,17 @@ public class CalendarsPage extends Pages {
         }
     }
 
+    @Override
+    public int getIndexForHeader(String columnName){
+        //TODO
+        return 0;
+
+    }
+    @Override
+    public List<WebElement> getAllColumnHeaders(){
+        return null;
+    }
+
     public WebElement getBtnNewCalendar() {
         return btnNewCalendar;
     }
@@ -65,8 +76,9 @@ public class CalendarsPage extends Pages {
         return _driver.findElement(toastContainerLocator);
     }
 
-    public List<WebElement> getTblCalendarResults(int i) {
-        return tblCalendarResults.findElements(By.id("ctl00_ctl00_CPHolder_CPHolder_tableDataView_grdTableList"))
+    @Override
+    public List<WebElement> getTblResults(int i) {
+        return tblTableResults.findElements(By.id("ctl00_ctl00_CPHolder_CPHolder_tableDataView_grdTableList"))
                 .get(i)
                 .findElement(By.tagName("tbody"))
                 .findElements(By.tagName("tr"));

@@ -10,6 +10,8 @@ import base.BaseUtil;
 import base.RunScript;
 import com.jacob.com.LibraryLoader;
 import com.sun.istack.NotNull;
+import org.openqa.selenium.By;
+import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.firefox.FirefoxOptions;
@@ -27,6 +29,7 @@ import org.openqa.selenium.firefox.FirefoxDriver;
 
 import java.io.File;
 import java.io.IOException;
+import java.security.Key;
 import java.util.concurrent.TimeUnit;
 
 
@@ -78,8 +81,8 @@ public class SetUp extends BaseUtil {
         base.driver.manage().window().maximize();
 
         /*executeAutoItNeeded(SuiteSetUp.BROWSER.toLowerCase());*/
-        Thread t = new Thread( new RunScript(SuiteSetUp.BROWSER.toLowerCase()));
-        t.start();
+        /*Thread t = new Thread( new RunScript(SuiteSetUp.BROWSER.toLowerCase()));
+        t.start();*/
 
         this.base.NavigateToPage(System.getProperty("environment"), isIe);
         Log.startTestCase(scenario.getName());
@@ -107,5 +110,7 @@ public class SetUp extends BaseUtil {
             Log.endTestCase(scenario.getName() + "\tPASSED");
         new TearDown(base);
     }
+
+
 
 }

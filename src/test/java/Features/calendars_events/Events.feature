@@ -15,6 +15,3 @@ Feature: Events search
       | calendarList | eventName       | eventDescription               | dateOfEvent |
       | 2018 Main    | Automated Event | Automator creating a new event | 11/13/2018  |
     Then I delete such event
-    And I navigate to the following pages option
-      | Website Support | Events |
-    Then I delete such calendar
