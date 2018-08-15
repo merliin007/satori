@@ -5,8 +5,8 @@ Feature: Events search
     Given User navigates to ALTA website
     When I enter username as "OfficeUser" and password as "Abc!123"
 
-  Scenario: User searchs for an event and explores it
-    When I navigate to the following pages option
+  Scenario: User searches for an event and explores it
+    When I navigate to the following page option
       | Website Support | Events |
     And I search for "2018 Main" calendar or create a new if there is not any
       | year | calendarType | startDate  | endDate    |

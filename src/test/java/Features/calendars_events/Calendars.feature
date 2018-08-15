@@ -4,9 +4,10 @@ Feature: Calendars creation
   Background: Successfully loging into alta website
     Given User navigates to ALTA website
     When I enter username as "OfficeUser" and password as "Abc!123"
+    Then I select "Manage" portal
 
   Scenario: User creates a new calendar then edits it
-    When I navigate to the following pages option
+    When I navigate to the following page option
       | Website Support | Calendars |
     And I create a new calendar using
       | year | calendarType | startDate  | endDate    |

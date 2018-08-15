@@ -11,7 +11,7 @@ import org.openqa.selenium.support.How;
 import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.Select;
 
-public class NewEventsPage {
+public class NewEventsPage{
 
     @FindBy (how = How.ID, using = "ctl00_ctl00_CPHolder_CPHolder_dtvCalendarDetail_ddlCalendarList")
     private WebElement ddlCalendarList;
@@ -45,4 +45,5 @@ public class NewEventsPage {
         btnSave.click();
 
     }
+
 }

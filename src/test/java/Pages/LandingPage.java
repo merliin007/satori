@@ -30,7 +30,7 @@ public class LandingPage {
     @FindBy(how = How.ID, using = "txtPassword")
     private WebElement txtPassword;
 
-    @FindBy(how = How.ID, using = "signin")
+    @FindBy(how = How.ID, using = "signinRegister")
     private WebElement btnSignIn;
 
     public LandingPage(WebDriver driver) {

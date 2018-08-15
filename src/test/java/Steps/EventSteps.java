@@ -19,7 +19,6 @@ import utility.event.Event;
 import java.util.List;
 
 import static org.testng.Assert.assertEquals;
-import static utility.Helpers.createLinkForNavigator;
 import static org.testng.Assert.fail;
 
 
@@ -27,7 +26,7 @@ public class EventSteps {
     private BaseUtil base;
     private EventsPage eventsPage;
     private NewEventsPage newEventsPage;
-    private Helpers helpers;
+    private Helpers I;
     private CommonActions commonActions;
 
     List<Event> eventList;
@@ -35,6 +34,8 @@ public class EventSteps {
     public EventSteps(BaseUtil baseUtil) {
         this.base = baseUtil;
         commonActions = new CommonActions(base.driver);
+        I = new Helpers(baseUtil);
+
     }
 
     @And("^I search for \"([^\"]*)\" calendar or create a new if there is not any$")
@@ -42,7 +43,7 @@ public class EventSteps {
         try {
             eventsPage = new EventsPage(base.driver);
             if (!eventsPage.searchFor(calendar)) {
-                DataTable link = createLinkForNavigator("Website Support", "Calendars");
+                DataTable link = I.createLinkForNavigator("Website Support", "Calendars");
                 new NavigationSteps(base).iNavigateToTheFollowingPagesOption(link);
                 new CalendarSteps(base).iCreateANewCalendarUsing(table);
             }
@@ -58,7 +59,7 @@ public class EventSteps {
     @Then("^I create a new Event using$")
     public void iCreateANewEventUsing(DataTable event) {
         try {
-            eventsPage.getBtnNew().click();
+            I.Click(eventsPage.getBtnNew());
             eventList = event.asList(Event.class);
             newEventsPage = new NewEventsPage(base.driver);
 
@@ -83,18 +84,17 @@ public class EventSteps {
     @Then("^I delete such event$")
     public void iDeleteSuchEvent() {
         try {
-            helpers = new Helpers(base);
-            helpers.sortByColumn("Date", eventsPage);
-            helpers.sortByColumn("Date", eventsPage);// as there's some issue sorting, we need to click on sort icon twice
+            I.sortByColumn("Date", eventsPage);
+            I.sortByColumn("Date", eventsPage);// as there's some issue sorting, we need to click on sort icon twice
 
             List<WebElement> tblResults = eventsPage.getTblResults(0);
-            int index = helpers.searchForElementInTheEventsList(eventList.get(0), tblResults);
+            int index = I.searchForElementInTheEventsList(eventList.get(0), tblResults);
             if (index != -1) {
-                helpers.selectOptionFromCell(index, "Delete Event", eventsPage);
+                I.selectOptionFromCell(index, "Delete Event", eventsPage);
                 commonActions.waitUntilElementIsVisible(eventsPage.getDeleteModal());
                 eventsPage.getBtnConfirmDelete().click();
                 tblResults = eventsPage.getTblResults(0);
-                assertEquals(helpers.searchForElementInTheEventsList(eventList.get(0), tblResults), -1);
+                assertEquals(I.searchForElementInTheEventsList(eventList.get(0), tblResults), -1);
             }
 
         } catch (Exception e) {

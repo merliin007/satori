@@ -5,7 +5,6 @@ import common.CommonActions;
 import cucumber.api.DataTable;
 import cucumber.api.java.en.And;
 import cucumber.api.java.en.Then;
-import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import pages.newPages.Calendars.CalendarsPage;
 import pages.newPages.Calendars.NewCalendarPage;
@@ -15,7 +14,6 @@ import static org.testng.Assert.assertTrue;
 import static org.testng.Assert.fail;
 
 import utility.Helpers;
-import static utility.Helpers.CompareDates;
 import pages.newPages.Events.EventsPage;
 import utility.Log;
 import utility.calendar.Calendar;

@@ -5,11 +5,13 @@ import common.CommonActions;
 import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
+import pages.decision.DecisionPortal;
 import org.openqa.selenium.TimeoutException;
 import pages.newPages.ManageAlta;
 import pages.newPages.nLoginPage;
 import pages.newPages.nMainPage;
 import pages.LandingPage;
+import utility.Helpers;
 import utility.Log;
 
 import static org.junit.Assert.assertTrue;
@@ -22,9 +24,12 @@ public class LoginSteps/* extends BaseUtil*/ {
     private ManageAlta manageAlta;
     private LandingPage landingPage;
     private nMainPage nMainPage;
+    private DecisionPortal decisionPortal;
+    private Helpers I;
 
-    public LoginSteps(BaseUtil base) {
-        this.base = base;
+    public LoginSteps(BaseUtil baseUtil) {
+        this.base = baseUtil;
+        I = new Helpers(baseUtil);
     }
 
     @Given("^User navigates to ALTA website$")
@@ -32,7 +37,7 @@ public class LoginSteps/* extends BaseUtil*/ {
         try {
             commonActions = new CommonActions(base.driver);
             landingPage = new LandingPage(base.driver);
-            landingPage.getBtnSignIn().click();
+            I.Click(landingPage.getBtnSignIn());
         } catch (Exception e) {
             Log.error(e.getMessage());
             base.GrabScreenShot();
@@ -46,9 +51,11 @@ public class LoginSteps/* extends BaseUtil*/ {
             loginPage = new nLoginPage(base.driver);
             commonActions.waitUntilElementIsClickable(loginPage.getBtnSignIn());
             Log.info("Login attempt with: " + username);
-            loginPage.getTxtUsername().sendKeys(username);
-            loginPage.getTxtPassword().sendKeys(password);
-            loginPage.getBtnSignIn().click();
+
+            I.Write(loginPage.getTxtUsername(), username);
+            I.Write(loginPage.getTxtPassword(),password);
+            I.Click(loginPage.getBtnSignIn());
+
         } catch (Exception e) {
             Log.error(e.getMessage());
             base.GrabScreenShot();
@@ -76,6 +83,26 @@ public class LoginSteps/* extends BaseUtil*/ {
             Log.error(e.getMessage());
             base.GrabScreenShot();
             fail();
+        }
+    }
+
+    @Then("^I select \"([^\"]*)\" portal$")
+    public void iSelectPortal(String opt){
+        try{
+            decisionPortal = new DecisionPortal(base.driver);
+            I.Click(decisionPortal.getOptions().get(getOptIndex(opt)));
+        }catch (Exception e){
+            Log.error(e.getMessage());
+            base.GrabScreenShot();
+            fail();
+        }
+    }
+
+    private int getOptIndex(String opt){
+        switch (opt.toLowerCase()){
+            case "player": return 0;
+            case "manage": return 1;
+            default: return -1;
         }
     }
 }

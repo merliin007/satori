@@ -6,6 +6,7 @@ package utility;
 
 import base.BaseUtil;
 import base.CustomExceptions;
+import common.Actionable;
 import cucumber.api.DataTable;
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
@@ -19,12 +20,21 @@ import java.time.format.DateTimeFormatter;
 import java.util.*;
 
 
-public class Helpers {
+public class Helpers implements Actionable {
     private BaseUtil base;
-
 
     public Helpers(BaseUtil baseUtil) {
         base = baseUtil;
+    }
+
+    @Override
+    public void Write(WebElement element, String val){
+        element.sendKeys(val);
+    }
+
+    @Override
+    public void Click(WebElement element){
+        element.click();
     }
 
     private static final Map<String, String> DATE_FORMAT_REGEXPS = new HashMap<String, String>() {{
@@ -54,6 +64,7 @@ public class Helpers {
         put("^\\d{1,2}\\s[a-z]{3}\\s\\d{4}\\s\\d{1,2}:\\d{2}:\\d{2}$", "dd MMM yyyy HH:mm:ss");
         put("^\\d{1,2}\\s[a-z]{4,}\\s\\d{4}\\s\\d{1,2}:\\d{2}:\\d{2}$", "dd MMMM yyyy HH:mm:ss");
     }};
+
     private static String determineDateFormat(String dateString){
         for(String regexp: DATE_FORMAT_REGEXPS.keySet()){
             if(dateString.toLowerCase().matches(regexp)){
@@ -63,7 +74,8 @@ public class Helpers {
         return null;
     }
 
-    public static boolean CompareDates(String date1, String date2){
+    @Override
+    public boolean CompareDates(String date1, String date2){
 
         try {
             LocalDate dateObject1 = LocalDate.parse(date1, DateTimeFormatter.ofPattern(Objects.requireNonNull(determineDateFormat(date1))));
@@ -75,6 +87,7 @@ public class Helpers {
         }
     }
 
+    @Override
     public void selectOptionFromCell(int position, String action, Pages page) throws CustomExceptions {
         int action_index = page.getPageActionIndex(action);
         if ( action_index < 0)
@@ -95,7 +108,8 @@ public class Helpers {
         }
     }
 
-    public static DataTable createLinkForNavigator(String section, String option){
+    @Override
+    public DataTable createLinkForNavigator(String section, String option){
         List<List<String>> raw = new ArrayList<>();
         List<String> line = new ArrayList<>();
         line.add(section);
@@ -104,6 +118,7 @@ public class Helpers {
         return DataTable.create(raw);
     }
 
+    @Override
     public void sortByColumn(String columnName, Pages page){
         try {
             List<WebElement> columns = page.getAllColumnHeaders();
@@ -113,6 +128,7 @@ public class Helpers {
         }
     }
 
+    @Override
     public int searchForElementInTheCalendarList(Calendar calendar, List<WebElement> tblResults) {
         int i;
         for (i = 3; i < tblResults.size(); i++) {
@@ -128,6 +144,7 @@ public class Helpers {
         return -1;
     }
 
+    @Override
     public int searchForElementInTheEventsList(Event event, List<WebElement> tblResults) {
         int i = 3;
         for (; i < tblResults.size(); i++) {

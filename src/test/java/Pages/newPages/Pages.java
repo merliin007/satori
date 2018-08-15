@@ -4,12 +4,11 @@
  */
 package pages.newPages;
 
-import com.gargoylesoftware.htmlunit.Page;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import java.util.List;
 
-public abstract class Pages {
+public abstract class Pages{
 
     public abstract List<WebElement> getPopOverLocatorList();
 
