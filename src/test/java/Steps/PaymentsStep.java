@@ -2,12 +2,12 @@ package steps;
 
 import base.BaseUtil;
 import org.openqa.selenium.UnhandledAlertException;
+import utility.Helpers;
 import utility.Log;
 import pages.*;
 import utility.paymentInfo.BankAccountInfo;
 import utility.paymentInfo.CheckInfo;
 import utility.paymentInfo.CreditCardInfo;
-import common.CommonActions;
 import utility.paymentInfo.PaymentLoggedInfo;
 import utility.credentials.MemberCredentials;
 import cucumber.api.DataTable;
@@ -16,9 +16,7 @@ import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
 import org.openqa.selenium.StaleElementReferenceException;
-
 import static org.junit.Assert.*;
-
 import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
 import java.util.ArrayList;
@@ -27,8 +25,6 @@ import java.util.List;
 
 public class PaymentsStep extends BaseUtil {
     private BaseUtil base;
-    private CommonActions commonActions;
-    private LoginPage loginPage;
     private LandingPage landingPage;
     private MyProfilePage myProfilePage;
     private MembershipAndPayments membershipAndPayments;
@@ -38,9 +34,11 @@ public class PaymentsStep extends BaseUtil {
     private RefundPage refundPage;
     private LocalDateTime purchaseTime;
     private String _paymentType;
+    private Helpers I;
 
     public PaymentsStep(BaseUtil base) {
         this.base = base;
+        I = new Helpers(base);
     }
 
     @Given("^I sign in as Default user$")
@@ -49,7 +47,6 @@ public class PaymentsStep extends BaseUtil {
             landingPage = new LandingPage(base.driver);
             MemberCredentials memberCredentials = new MemberCredentials();
             landingPage.LoginWith(memberCredentials);
-            commonActions = new CommonActions(base.driver);
             Log.info("Logging as: " + memberCredentials.getUsername());
         } catch (Exception e) {
             fail();
@@ -65,7 +62,6 @@ public class PaymentsStep extends BaseUtil {
             List<MemberCredentials> memberCredentials = new ArrayList<>();
             memberCredentials = table.asList(MemberCredentials.class);
             landingPage.LoginWith(memberCredentials.get(0));
-            commonActions = new CommonActions(base.driver);
             Log.info("Logging as: " + memberCredentials.get(0).getUsername());
         } catch (Exception e) {
             fail();
@@ -131,7 +127,7 @@ public class PaymentsStep extends BaseUtil {
             this.savePurchaseTime(addPaymentPage.getTxtDate().getAttribute("value"), addPaymentPage.getTxtTime().getAttribute("value"));
             addPaymentPage.setTxtAltaNumber(altaNumber);
             addPaymentPage.getBtnAdd().click();
-            commonActions.waitUntilElementIsVisible(addPaymentPage.getTblPurchases());
+            I.waitUntilElementIsVisible(addPaymentPage.getTblPurchases());
             Log.info("Entering alta number: " + altaNumber);
         } catch (Exception e) {
             fail();
@@ -148,7 +144,7 @@ public class PaymentsStep extends BaseUtil {
             addPaymentPage.setDrpPaymentMethod(_paymentType);
             Log.info("Selecting " + _paymentType + " payment method");
             addPaymentPage.setCreditCardInformationAndSubmit(new CreditCardInfo());
-            commonActions.waitUntilElementIsVisible(membershipAndPayments.getMembershipBanner());
+            I.waitUntilElementIsVisible(membershipAndPayments.getMembershipBanner());
             Log.info("Payment submitted successfully");
         } catch (Exception e) {
             Log.error(e.getMessage());
@@ -164,7 +160,7 @@ public class PaymentsStep extends BaseUtil {
         PaymentLoggedInfo payment = null;
         boolean result = true;
         try {
-            commonActions.waitUntilElementIsVisible(membershipAndPayments.getTblPayments());
+            I.waitUntilElementIsVisible(membershipAndPayments.getTblPayments());
             payment = membershipAndPayments.getCapturedPayment().get(0);
             result = (payment.getStatus().equals("Captured") && _paymentType.equals(payment.getPaymentMethod()) &&
                     payment.getPaymentDate().equals(purchaseTime));
@@ -190,7 +186,7 @@ public class PaymentsStep extends BaseUtil {
             Log.info("Selecting " + _paymentType + " payment method");
 
             addPaymentPage.setBankAccountInformationAndSubmit(new BankAccountInfo());
-            commonActions.waitUntilElementIsVisible(membershipAndPayments.getMembershipBanner());
+            I.waitUntilElementIsVisible(membershipAndPayments.getMembershipBanner());
             Log.info("Payment submitted successfully");
         } catch (Exception e) {
             Log.error(e.getMessage());
@@ -208,7 +204,7 @@ public class PaymentsStep extends BaseUtil {
             addPaymentPage.setDrpPaymentMethod(_paymentType);
             Log.info("Selecting " + _paymentType + " payment method");
             addPaymentPage.clickNoCCSubmitBtn();
-            commonActions.waitUntilElementIsVisible(membershipAndPayments.getMembershipBanner());
+            I.waitUntilElementIsVisible(membershipAndPayments.getMembershipBanner());
             Log.info("Payment submitted successfully");
         } catch (Exception e) {
             Log.error(e.getMessage());
@@ -224,7 +220,7 @@ public class PaymentsStep extends BaseUtil {
             addPaymentPage.setDrpPaymentMethod(_paymentType);
             Log.info("Selecting " + _paymentType + " payment method");
             addPaymentPage.clickNoCCSubmitBtn();
-            commonActions.waitUntilElementIsVisible(membershipAndPayments.getMembershipBanner());
+            I.waitUntilElementIsVisible(membershipAndPayments.getMembershipBanner());
             Log.info("Payment submitted successfully");
         } catch (Exception e) {
             Log.error(e.getMessage());
@@ -249,10 +245,10 @@ public class PaymentsStep extends BaseUtil {
                 Log.info("Testing with: " + cc.getCcNumber());
                 try {
                     addPaymentPage.setCreditCardInformationAndSubmit(cc);
-                    commonActions.verifyAlertErrorAndAcceptIt();
+                    I.verifyAlertErrorAndAcceptIt();
                     addPaymentPage.clearCreditCardFields();
                 }catch (UnhandledAlertException e){
-                    commonActions.verifyAlertErrorAndAcceptIt();
+                    I.verifyAlertErrorAndAcceptIt();
                     addPaymentPage.clearCreditCardFields();
                 }
                 catch (Exception e) {
@@ -272,11 +268,11 @@ public class PaymentsStep extends BaseUtil {
         try {
             assertEquals(base.driver.getTitle(), "ALTA Tennis - Add Payment");
             addPaymentPage.clickCancelButton();
-            commonActions.waitUntilElementIsVisible(membershipAndPayments.getTblPayments());
+            I.waitUntilElementIsVisible(membershipAndPayments.getTblPayments());
             ArrayList<PaymentLoggedInfo> payments = membershipAndPayments.getCapturedPayment();
             Log.info("Validating no payment was registered");
             for (PaymentLoggedInfo payment : payments) {
-                assertFalse(commonActions.IsLocalDateTimeAroundServerDate(LocalDateTime.now(), payment.getPaymentDate(), 2L));
+                assertFalse(I.IsLocalDateTimeAroundServerDate(LocalDateTime.now(), payment.getPaymentDate(), 2L));
             }
         } catch (Exception e) {
             base.GrabScreenShot();
@@ -292,7 +288,7 @@ public class PaymentsStep extends BaseUtil {
             addPaymentPage.setTxtAltaNumber(user);
             addPaymentPage.setChkUpgrade(true);
             addPaymentPage.getBtnAdd().click();
-            commonActions.waitUntilElementIsVisible(addPaymentPage.getTblPurchases());
+            I.waitUntilElementIsVisible(addPaymentPage.getTblPurchases());
             Log.info("Upgrading membership for member: " + user);
         } catch (Exception e) {
             Log.error(e.getMessage());
@@ -314,7 +310,7 @@ public class PaymentsStep extends BaseUtil {
             fail();
         } finally {
             if (paymentFound.isResult()) {
-                commonActions.waitUntilElementIsVisible(membershipAndPayments.getTblPayments());
+                I.waitUntilElementIsVisible(membershipAndPayments.getTblPayments());
                 deletePayment(membershipAndPayments.getCapturedPayment().get(paymentFound.getI()));
             }
         }
@@ -333,8 +329,8 @@ public class PaymentsStep extends BaseUtil {
                     base.driver.switchTo().alert().accept();
                     base.driver.switchTo().defaultContent();
                     Log.info("Deleting Payment");
-                    commonActions.waitUntilElementIsVisible(membershipAndPayments.getTblPayments());
-                    commonActions.waitUntilElementIsClickable(membershipAndPayments.getBtnSearch());
+                    I.waitUntilElementIsVisible(membershipAndPayments.getTblPayments());
+                    I.waitUntilElementIsClickable(membershipAndPayments.getBtnSearch());
                     break;
                 } catch (StaleElementReferenceException e) {
                     Log.warn("Trying to recover delete link element, attempt: " + i);
@@ -353,7 +349,7 @@ public class PaymentsStep extends BaseUtil {
             Log.info("Selecting " + _paymentType + " payment method");
             addPaymentPage.setCheckInformation(new CheckInfo());
             addPaymentPage.clickNoCCSubmitBtn();
-            commonActions.waitUntilElementIsVisible(membershipAndPayments.getMembershipBanner());
+            I.waitUntilElementIsVisible(membershipAndPayments.getMembershipBanner());
             Log.info("Payment submitted successfully");
         } catch (Exception e) {
             Log.error(e.getMessage());
@@ -368,7 +364,7 @@ public class PaymentsStep extends BaseUtil {
         try {
             PaymentInfo paymentFound = findPayment();
             assertTrue(paymentFound.isResult());
-            commonActions.waitUntilElementIsVisible(membershipAndPayments.getTblPayments());
+            I.waitUntilElementIsVisible(membershipAndPayments.getTblPayments());
             refundPayment(membershipAndPayments.getCapturedPayment().get(paymentFound.getI()));
 
         } catch (Exception e) {
@@ -383,10 +379,10 @@ public class PaymentsStep extends BaseUtil {
             Log.info("Refunding payment");
             paymentLoggedInfo.getLnkRefund().click();
             refundPage = new RefundPage(base.driver);
-            commonActions.waitUntilElementIsVisible(refundPage.getDdlRefundMethod());
+            I.waitUntilElementIsVisible(refundPage.getDdlRefundMethod());
             refundPage.setComments("Refunding payment per Automator");
             refundPage.getBtnSave().click();
-            commonActions.waitUntilElementIsVisible(membershipAndPayments.getTblPayments());
+            I.waitUntilElementIsVisible(membershipAndPayments.getTblPayments());
         } catch (Exception e) {
             Log.error(e.getMessage());
             base.GrabScreenShot();
@@ -403,7 +399,7 @@ public class PaymentsStep extends BaseUtil {
             if (payment.getPaymentDate().equals(purchaseTime)) {
                 payment.getLnkSelect().click();
                 paymentDetailsPage = new PaymentDetailsPage(base.driver);
-                commonActions.waitUntilElementIsVisible(paymentDetailsPage.getTab(1));
+                I.waitUntilElementIsVisible(paymentDetailsPage.getTab(1));
                 String _detailAmount = "$" + paymentDetailsPage.getTxtAmount().getAttribute("value");
                 String _detailMethod = paymentDetailsPage.getLblMethod().getText();
                 if (_detailAmount.equals(payment.getAmount()) && _detailMethod.equals(payment.getPaymentMethod())) {

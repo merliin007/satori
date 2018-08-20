@@ -10,31 +10,76 @@ import common.Actionable;
 import cucumber.api.DataTable;
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
+import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.FluentWait;
+import org.openqa.selenium.support.ui.Select;
+import org.openqa.selenium.support.ui.WebDriverWait;
 import pages.newPages.Pages;
 import utility.calendar.Calendar;
 import utility.event.Event;
+import utility.league.LeagueComponents;
 
+import java.time.Duration;
 import java.time.LocalDate;
+import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
 import java.util.*;
 
 
 public class Helpers implements Actionable {
     private BaseUtil base;
+    private WebDriverWait wait;
+    private WebDriver _driver;
+
+    public Helpers(WebDriver driver) {
+        _driver = driver;
+        wait = new WebDriverWait(_driver, 5);
+    }
 
     public Helpers(BaseUtil baseUtil) {
         base = baseUtil;
+        _driver = base.driver;
+        wait = new WebDriverWait(_driver, 5);
     }
 
     @Override
-    public void Write(WebElement element, String val){
+    public void Write(WebElement element, String val) {
+        element.clear();
         element.sendKeys(val);
     }
 
     @Override
-    public void Click(WebElement element){
+    public void Click(WebElement element) {
         element.click();
+    }
+
+    @Override
+    public void ClickOnRowButtonAtPosition(WebElement row, int pos) {
+        WebElement rowButton = row.findElements(By.tagName("td")).get(pos).
+                findElement(By.className("command_buttons"))
+                .findElement(By.tagName("div")).findElement(By.tagName("a"));
+        Click(rowButton);
+    }
+
+    @Override
+    public void JSClick(WebElement element) {
+        JavascriptExecutor js = (JavascriptExecutor) _driver;
+        String script = "arguments[0].click();";
+        js.executeScript(script, element);
+    }
+
+    @Override
+    public void JSScrollToView(WebElement element) {
+        JavascriptExecutor js = (JavascriptExecutor) _driver;
+        String script = "arguments[0].scrollIntoView();";
+        js.executeScript(script, element);
+    }
+
+    @Override
+    public void SelectValue(WebElement element, String val) {
+        new Select(element).selectByVisibleText(val);
     }
 
     private static final Map<String, String> DATE_FORMAT_REGEXPS = new HashMap<String, String>() {{
@@ -65,9 +110,9 @@ public class Helpers implements Actionable {
         put("^\\d{1,2}\\s[a-z]{4,}\\s\\d{4}\\s\\d{1,2}:\\d{2}:\\d{2}$", "dd MMMM yyyy HH:mm:ss");
     }};
 
-    private static String determineDateFormat(String dateString){
-        for(String regexp: DATE_FORMAT_REGEXPS.keySet()){
-            if(dateString.toLowerCase().matches(regexp)){
+    private static String determineDateFormat(String dateString) {
+        for (String regexp : DATE_FORMAT_REGEXPS.keySet()) {
+            if (dateString.toLowerCase().matches(regexp)) {
                 return DATE_FORMAT_REGEXPS.get(regexp);
             }
         }
@@ -75,7 +120,7 @@ public class Helpers implements Actionable {
     }
 
     @Override
-    public boolean CompareDates(String date1, String date2){
+    public boolean CompareDates(String date1, String date2) {
 
         try {
             LocalDate dateObject1 = LocalDate.parse(date1, DateTimeFormatter.ofPattern(Objects.requireNonNull(determineDateFormat(date1))));
@@ -90,7 +135,7 @@ public class Helpers implements Actionable {
     @Override
     public void selectOptionFromCell(int position, String action, Pages page) throws CustomExceptions {
         int action_index = page.getPageActionIndex(action);
-        if ( action_index < 0)
+        if (action_index < 0)
             throw new CustomExceptions("Invalid selecting option");
         try {
 
@@ -98,10 +143,9 @@ public class Helpers implements Actionable {
             list.get(position).click();
             List<WebElement> subElementCommands = page.getPopOverCommands(position);
 
-            JavascriptExecutor js = (JavascriptExecutor) base.driver;
-            String script = "arguments[0].click();";
-            js.executeScript("arguments[0].scrollIntoView();", list.get(position));
-            js.executeScript(script, subElementCommands.get(action_index));
+            JSScrollToView(list.get(position));
+            JSClick(subElementCommands.get(action_index));
+
 
         } catch (Exception e) {
             Log.error(e.getMessage());
@@ -109,7 +153,7 @@ public class Helpers implements Actionable {
     }
 
     @Override
-    public DataTable createLinkForNavigator(String section, String option){
+    public DataTable createLinkForNavigator(String section, String option) {
         List<List<String>> raw = new ArrayList<>();
         List<String> line = new ArrayList<>();
         line.add(section);
@@ -119,7 +163,7 @@ public class Helpers implements Actionable {
     }
 
     @Override
-    public void sortByColumn(String columnName, Pages page){
+    public void sortByColumn(String columnName, Pages page) {
         try {
             List<WebElement> columns = page.getAllColumnHeaders();
             columns.get(page.getIndexForHeader(columnName)).click();
@@ -149,7 +193,7 @@ public class Helpers implements Actionable {
         int i = 3;
         for (; i < tblResults.size(); i++) {
             List<WebElement> tblCel = tblResults.get(i).findElements(By.tagName("td"));
-            if (CompareDates(tblCel.get(0).getText(),event.getDateOfEvent()) &&
+            if (CompareDates(tblCel.get(0).getText(), event.getDateOfEvent()) &&
                     tblCel.get(2).getText().equals((event.getEventName())) &&
                     tblCel.get(3).getText().equals(event.getEventDescription())) {
 
@@ -157,6 +201,89 @@ public class Helpers implements Actionable {
             }
         }
         return -1;
+    }
+
+    @Override
+    public int searchForElementInTheLeagueTemplateList(LeagueComponents.LeagueDescription league, List<WebElement> tblResults) {
+        int i = 3;
+        for (; i < tblResults.size(); i++) {
+            List<WebElement> tblCel = tblResults.get(i).findElements(By.tagName("td"));
+            if (league.getLeagueType().equals(tblCel.get(1).getText())) {
+                return i;
+            }
+        }
+        return -1;
+    }
+
+    @Override
+    public int searchForElementInTheListAtPos(String element, List<WebElement> tblResults, int pos) {
+        int i = (tblResults.size() > 3) ? 3 : 1;
+        for (; i < tblResults.size(); i++) {
+            List<WebElement> tblCel = tblResults.get(i).findElements(By.tagName("td"));
+            if (element.contains(tblCel.get(pos).getText())) {
+                return i;
+            }
+        }
+        return -1;
+    }
+
+    @Override
+    public void waitUntilElementIsVisible(WebElement element) {
+        wait.until(ExpectedConditions.visibilityOf(element));
+    }
+
+    @Override
+    public void waitUntilElementIsClickable(WebElement element) {
+        wait.until(ExpectedConditions.elementToBeClickable(element));
+    }
+
+    @Override
+    public boolean IsLocalDateTimeAroundServerDate(LocalDateTime localDate, LocalDateTime serverDate, long tolerance) {
+        LocalDateTime tempDate = localDate.plusHours(1L);
+        return (serverDate.minusMinutes(tolerance).isBefore(tempDate) && serverDate.plusMinutes(tolerance).isAfter(tempDate));
+    }
+
+    @Override
+    public void verifyAlertErrorAndAcceptIt() {
+        if (wait.until(ExpectedConditions.alertIsPresent()) != null) {
+            _driver.switchTo().alert().accept();
+            _driver.switchTo().defaultContent();
+        }
+    }
+
+    @Override
+    public void waitUntilExistenceOfElement(By elementBy) {
+        new WebDriverWait(_driver, 5)
+                .until(ExpectedConditions.presenceOfElementLocated(elementBy));
+    }
+
+    @Override
+    public void waitUntilInvisibilityOf(WebElement element) throws Exception {
+        new WebDriverWait(_driver, 10)
+                .until(ExpectedConditions.invisibilityOf(element));
+    }
+
+    @Override
+    public void waitUntilElementWithTextIsInvisible(By element, String text) throws Exception {
+        new WebDriverWait(_driver, 5)
+                .until(ExpectedConditions.invisibilityOfElementWithText(element, text));
+    }
+
+    @Override
+    public void fluentWaitUntilElementDisappears(By locator) throws Exception {
+        new FluentWait<>(_driver)
+                .withTimeout(Duration.ofSeconds(6))
+                .pollingEvery(Duration.ofMillis(100L))
+                .ignoring(NoSuchElementException.class)
+                .until(ExpectedConditions.invisibilityOfElementLocated(locator));
+    }
+
+    public void FluentWaitUntilPresenceOfNewElement(By locator) throws Exception {
+        new FluentWait<>(_driver)
+                .withTimeout((Duration.ofSeconds(5)))
+                .pollingEvery(Duration.ofMillis(100L))
+                .ignoring(NoSuchElementException.class)
+                .until(ExpectedConditions.invisibilityOfElementLocated(locator));
     }
 
 

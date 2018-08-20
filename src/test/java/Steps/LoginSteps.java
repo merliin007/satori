@@ -1,7 +1,7 @@
 package steps;
 
 import base.BaseUtil;
-import common.CommonActions;
+import cucumber.api.java.en.And;
 import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
@@ -19,7 +19,6 @@ import static org.junit.Assert.fail;
 
 public class LoginSteps/* extends BaseUtil*/ {
     private BaseUtil base;
-    private CommonActions commonActions;
     private nLoginPage loginPage;
     private ManageAlta manageAlta;
     private LandingPage landingPage;
@@ -35,7 +34,6 @@ public class LoginSteps/* extends BaseUtil*/ {
     @Given("^User navigates to ALTA website$")
     public void userNavigatesToALTAWebsite() {
         try {
-            commonActions = new CommonActions(base.driver);
             landingPage = new LandingPage(base.driver);
             I.Click(landingPage.getBtnSignIn());
         } catch (Exception e) {
@@ -49,7 +47,7 @@ public class LoginSteps/* extends BaseUtil*/ {
     public void iEnterUsernameAsUsernameAndPasswordAsPassword(String username, String password) {
         try {
             loginPage = new nLoginPage(base.driver);
-            commonActions.waitUntilElementIsClickable(loginPage.getBtnSignIn());
+            I.waitUntilElementIsClickable(loginPage.getBtnSignIn());
             Log.info("Login attempt with: " + username);
 
             I.Write(loginPage.getTxtUsername(), username);
@@ -72,9 +70,9 @@ public class LoginSteps/* extends BaseUtil*/ {
                 assertTrue(nMainPage.getLblWelcome().isDisplayed());
             } else {
                 Log.info("Reviewing login didn't succeed ");
-                commonActions.waitUntilElementIsVisible(loginPage.getLblError());
+                I.waitUntilElementIsVisible(loginPage.getLblError());
                 try {
-                    commonActions.waitUntilExistenceOfElement(landingPage.getLblWelcomeBy());
+                    I.waitUntilExistenceOfElement(landingPage.getLblWelcomeBy());
                 } catch (TimeoutException e) {
                     Log.info("Expected Login failed ");
                 }
@@ -90,6 +88,7 @@ public class LoginSteps/* extends BaseUtil*/ {
     public void iSelectPortal(String opt){
         try{
             decisionPortal = new DecisionPortal(base.driver);
+            I.waitUntilElementIsClickable(decisionPortal.getOptions().get(1));
             I.Click(decisionPortal.getOptions().get(getOptIndex(opt)));
         }catch (Exception e){
             Log.error(e.getMessage());

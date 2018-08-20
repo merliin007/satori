@@ -1,32 +1,32 @@
 package steps;
 
 import base.BaseUtil;
-import common.CommonActions;
 import cucumber.api.java.en.And;
 import cucumber.api.java.en.Then;
 import org.openqa.selenium.support.ui.Select;
 import pages.newPages.TransactionManagerPage;
+import utility.Helpers;
 import utility.Log;
 import static org.junit.Assert.fail;
 
 public class NewStepFile{
     private TransactionManagerPage transactionManagerPage;
-    private CommonActions commonActions;
+    private Helpers I;
     private BaseUtil base;
 
     public NewStepFile(BaseUtil base) {
         this.base = base;
         transactionManagerPage = new TransactionManagerPage(base.driver);
+        I = new Helpers(base);
     }
 
     @And("^I search for \"([^\"]*)\" in the dropdown$")
     public void iSearchForInTheDropdown(String searchString) {
         try {
-            commonActions = new CommonActions(base.driver);
             transactionManagerPage = new TransactionManagerPage(base.driver);
             transactionManagerPage.getTxtLocation().sendKeys(searchString);
-            commonActions.waitUntilElementWithTextIsInvisible(transactionManagerPage.getByLoadingResults(), "Searching...");
-            commonActions.waitUntilExistenceOfElement(transactionManagerPage.byHighlightedResults());
+            I.waitUntilElementWithTextIsInvisible(transactionManagerPage.getByLoadingResults(), "Searching...");
+            I.waitUntilExistenceOfElement(transactionManagerPage.byHighlightedResults());
             transactionManagerPage.HighlightedResults().click();
             Log.info("Correct selection of: " + searchString + " result!!!");
         } catch (Exception e) {

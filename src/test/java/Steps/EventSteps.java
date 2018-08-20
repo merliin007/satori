@@ -5,7 +5,6 @@
 package steps;
 
 import base.BaseUtil;
-import common.CommonActions;
 import cucumber.api.DataTable;
 import cucumber.api.java.en.And;
 import cucumber.api.java.en.Then;
@@ -27,15 +26,12 @@ public class EventSteps {
     private EventsPage eventsPage;
     private NewEventsPage newEventsPage;
     private Helpers I;
-    private CommonActions commonActions;
 
     List<Event> eventList;
 
     public EventSteps(BaseUtil baseUtil) {
         this.base = baseUtil;
-        commonActions = new CommonActions(base.driver);
         I = new Helpers(baseUtil);
-
     }
 
     @And("^I search for \"([^\"]*)\" calendar or create a new if there is not any$")
@@ -44,7 +40,7 @@ public class EventSteps {
             eventsPage = new EventsPage(base.driver);
             if (!eventsPage.searchFor(calendar)) {
                 DataTable link = I.createLinkForNavigator("Website Support", "Calendars");
-                new NavigationSteps(base).iNavigateToTheFollowingPagesOption(link);
+                new NavigationSteps(base).iNavigateToTheFollowingPageOption(link);
                 new CalendarSteps(base).iCreateANewCalendarUsing(table);
             }
 
@@ -72,7 +68,7 @@ public class EventSteps {
                 );
             }
             Log.info("Waiting for toastr to disappear");
-            commonActions.fluentWaitUntilElementDisappears(eventsPage.getToastContainerLocator());
+            I.fluentWaitUntilElementDisappears(eventsPage.getToastContainerLocator());
 
         } catch (Exception e) {
             base.GrabScreenShot();
@@ -91,7 +87,7 @@ public class EventSteps {
             int index = I.searchForElementInTheEventsList(eventList.get(0), tblResults);
             if (index != -1) {
                 I.selectOptionFromCell(index, "Delete Event", eventsPage);
-                commonActions.waitUntilElementIsVisible(eventsPage.getDeleteModal());
+                I.waitUntilElementIsVisible(eventsPage.getDeleteModal());
                 eventsPage.getBtnConfirmDelete().click();
                 tblResults = eventsPage.getTblResults(0);
                 assertEquals(I.searchForElementInTheEventsList(eventList.get(0), tblResults), -1);
