@@ -18,7 +18,7 @@ import java.util.NoSuchElementException;
 
 public class EventsPage extends Pages {
 
-    private WebDriver _driver;
+    //private WebDriver _driver;
 
     @FindBy(how = How.ID, using = "ctl00_ctl00_CPHolder_CPHolder_tableDataView_btnNew")
     private WebElement btnNew;
@@ -32,8 +32,8 @@ public class EventsPage extends Pages {
     @FindBy(how = How.ID, using = "ctl00_ctl00_CPHolder_CPHolder_tableDataView_grdTableList")
     private WebElement tblResults;
 
-    @FindBy(how = How.ID, using = "ctl00_ctl00_CPHolder_CPHolder_tableDataView_pnlGrid")
-    private WebElement tblTableResults;
+    /*@FindBy(how = How.ID, using = "ctl00_ctl00_CPHolder_CPHolder_tableDataView_pnlGrid")
+    private WebElement tblTableResults;*/
 
     @FindBy(how = How.CLASS_NAME, using = "modal-content")
     private WebElement deleteModal;
@@ -53,16 +53,17 @@ public class EventsPage extends Pages {
     }
 
     public EventsPage(WebDriver driver) {
+        super(driver);
         PageFactory.initElements(driver, this);
-        _driver = driver;
+        //_driver = driver;
     }
 
-    @Override
+    /*@Override
     public List<WebElement> getPopOverLocatorList() {
         return _driver.findElement(By.id("ctl00_ctl00_CPHolder_CPHolder_tableDataView_pnlGrid"))
                 .findElements(By.id("ctl00_ctl00_CPHolder_CPHolder_tableDataView_grdTableList")).get(1)
                 .findElements(By.tagName("tr"));
-    }
+    }*/
 
     @Override
     public int getPageActionIndex(String action) {
@@ -99,13 +100,13 @@ public class EventsPage extends Pages {
         return tblResults.findElements(By.tagName("th"));
     }
 
-    @Override
+    /*@Override
     public List<WebElement> getTblResults(int i) {
         return tblTableResults.findElements(By.id("ctl00_ctl00_CPHolder_CPHolder_tableDataView_grdTableList"))
                 .get(i)
                 .findElement(By.tagName("tbody"))
                 .findElements(By.tagName("tr"));
-    }
+    }*/
 
     public boolean searchFor(String val) {
         try {

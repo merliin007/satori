@@ -33,7 +33,14 @@ public class LeagueListPage extends Pages {
     @FindBy(how = How.ID, using = "ctl00_ctl00_CPHolder_CPHolder_tableDataView_btnNew")
     private WebElement btnNewLeague;
 
+    @FindBy(how = How.CLASS_NAME, using = "modal-content")
+    private WebElement deleteModal;
+
+    @FindBy(how = How.ID, using = "ctl00_ctl00_CPHolder_CPHolder_tableDataView_lnkConfirm")
+    private WebElement btnConfirmDelete;
+
     public LeagueListPage(WebDriver driver) {
+        super(driver);
         PageFactory.initElements(driver, this);
     }
 
@@ -61,14 +68,24 @@ public class LeagueListPage extends Pages {
         return btnNewLeague;
     }
 
-    @Override
-    public List<WebElement> getPopOverLocatorList() {
-        return null;
+    public WebElement getDeleteModal() {
+        return deleteModal;
+    }
+
+    public WebElement getBtnConfirmDelete() {
+        return btnConfirmDelete;
     }
 
     @Override
     public int getPageActionIndex(String action) {
-        return 0;
+        switch (action.toLowerCase()) {
+            case "select":
+                return 0;
+            case "delete":
+                return 1;
+            default:
+                return -1;
+        }
     }
 
     @Override
@@ -81,8 +98,8 @@ public class LeagueListPage extends Pages {
         return null;
     }
 
-    @Override
+   /* @Override
     public List<WebElement> getTblResults(int i) {
         return null;
-    }
+    }*/
 }

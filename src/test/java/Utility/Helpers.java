@@ -140,7 +140,7 @@ public class Helpers implements Actionable {
         try {
 
             List<WebElement> list = page.getPopOverLocatorList();
-            list.get(position).click();
+            Click(list.get(position));
             List<WebElement> subElementCommands = page.getPopOverCommands(position);
 
             JSScrollToView(list.get(position));
@@ -166,7 +166,7 @@ public class Helpers implements Actionable {
     public void sortByColumn(String columnName, Pages page) {
         try {
             List<WebElement> columns = page.getAllColumnHeaders();
-            columns.get(page.getIndexForHeader(columnName)).click();
+            Click(columns.get(page.getIndexForHeader(columnName)));
         } catch (Exception e) {
             Log.error(e.getMessage());
         }
@@ -174,8 +174,8 @@ public class Helpers implements Actionable {
 
     @Override
     public int searchForElementInTheCalendarList(Calendar calendar, List<WebElement> tblResults) {
-        int i;
-        for (i = 3; i < tblResults.size(); i++) {
+        int i = (tblResults.size() > 3) ? 3 : 1;
+        for (; i < tblResults.size(); i++) {
             List<WebElement> tblCel = tblResults.get(i).findElements(By.tagName("td"));
             if (tblCel.get(0).getText().equals(calendar.getYear()) &&
                     tblCel.get(1).getText().equals((calendar.getCalendarType())) &&
@@ -190,7 +190,7 @@ public class Helpers implements Actionable {
 
     @Override
     public int searchForElementInTheEventsList(Event event, List<WebElement> tblResults) {
-        int i = 3;
+        int i = (tblResults.size() > 3) ? 3 : 1;
         for (; i < tblResults.size(); i++) {
             List<WebElement> tblCel = tblResults.get(i).findElements(By.tagName("td"));
             if (CompareDates(tblCel.get(0).getText(), event.getDateOfEvent()) &&
@@ -221,6 +221,25 @@ public class Helpers implements Actionable {
         for (; i < tblResults.size(); i++) {
             List<WebElement> tblCel = tblResults.get(i).findElements(By.tagName("td"));
             if (element.contains(tblCel.get(pos).getText())) {
+                return i;
+            }
+        }
+        return -1;
+    }
+
+    @Override
+    public int searchForElementInTheLeagueList(LeagueComponents.LeagueDescription leagueDescriptionList, LeagueComponents.LeagueDates leagueDates, List<WebElement> tblResults){
+        int i = (tblResults.size() > 3) ? 3 : 1;
+        for (; i < tblResults.size(); i++) {
+            List<WebElement> tblCel = tblResults.get(i).findElements(By.tagName("td"));
+            if (tblCel.get(1).getText().equals(leagueDescriptionList.getYear()) &&
+                    tblCel.get(2).getText().contains(leagueDescriptionList.getSeason()) &&
+                    tblCel.get(3).getText().contains(leagueDescriptionList.getLeagueType()) &&
+                    tblCel.get(5).getText().contains(leagueDescriptionList.getPlayday()) &&
+                    CompareDates(tblCel.get(9).getText(), leagueDates.getEndDate()) &&
+                    CompareDates(tblCel.get(10).getText(), leagueDates.getCaptMeeting()) &&
+                    CompareDates(tblCel.get(11).getText(), leagueDates.getPlayWeek())) {
+
                 return i;
             }
         }

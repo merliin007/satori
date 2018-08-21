@@ -31,7 +31,7 @@ public interface Actionable {
     int searchForElementInTheEventsList(Event event, List<WebElement> tblResults);
     int searchForElementInTheLeagueTemplateList(LeagueComponents.LeagueDescription league, List<WebElement> tblResults);
     int searchForElementInTheListAtPos(String altaNumber, List<WebElement> tblResults, int pos);
-
+    int searchForElementInTheLeagueList(LeagueComponents.LeagueDescription leagueDescriptionList, LeagueComponents.LeagueDates leagueDates, List<WebElement> tblResults);
     void waitUntilElementIsVisible(WebElement element);
     void waitUntilElementIsClickable(WebElement element);
     boolean IsLocalDateTimeAroundServerDate(LocalDateTime localDate, LocalDateTime serverDate, long tolerance);

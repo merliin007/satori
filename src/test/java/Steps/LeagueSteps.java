@@ -22,8 +22,8 @@ import utility.Helpers;
 import utility.Log;
 import utility.league.*;
 import java.util.List;
-import java.util.NoSuchElementException;
 
+import static org.testng.Assert.assertEquals;
 import static org.testng.Assert.fail;
 import static org.testng.Assert.assertFalse;
 
@@ -64,6 +64,7 @@ public class LeagueSteps {
             leageTemplateSelectionPage = new LeagueTemplateSelectionPage(base.driver);
             I.waitUntilElementIsVisible(leageTemplateSelectionPage.getTblLeagueTemplaes());
             leagueDescriptionList = table.asList(LeagueComponents.LeagueDescription.class);
+
 
             List<WebElement> tblResults = leageTemplateSelectionPage.getTblResults(1);
             int i = I.searchForElementInTheLeagueTemplateList(leagueDescriptionList.get(0), tblResults);
@@ -189,6 +190,36 @@ public class LeagueSteps {
             return !lblErrors.isEmpty();
         } catch (Exception e) {
             return false;
+        }
+    }
+
+    @And("^I search for such league and delete it$")
+    public void iSearchForSuchLeagueAndDeleteIt() {
+        try{
+            Log.info("Searching for league");
+            I.Write(leagueListPage.getTxtYear(),leagueDescriptionList.get(0).getYear());
+            I.SelectValue(leagueListPage.getDdlSeason(), leagueDescriptionList.get(0).getSeason());
+            I.SelectValue(leagueListPage.getDdlLeagueType(), leagueDescriptionList.get(0).getLeagueType());
+            I.SelectValue(leagueListPage.getDdlPlayDay(), leagueDescriptionList.get(0).getPlayday());
+            I.Click(leagueListPage.getBtnSearch());
+
+            iDeleteLeagueResult();
+
+        }catch (Exception e){
+            base.GrabScreenShot();
+            Log.error(e.getMessage());
+            fail();
+        }
+    }
+
+    public void iDeleteLeagueResult() throws Exception{
+        List<WebElement> tblResults = leagueListPage.getTblResults(1);
+        int index = I.searchForElementInTheLeagueList(leagueDescriptionList.get(0), leagueDatesList.get(0), tblResults);
+
+        if (index != -1) {
+            I.selectOptionFromCell(index, "Delete", leagueListPage);
+            I.waitUntilElementIsVisible(leagueListPage.getDeleteModal());
+            leagueListPage.getBtnConfirmDelete().click();
         }
     }
 }

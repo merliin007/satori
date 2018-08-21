@@ -12,13 +12,13 @@ import java.util.List;
 
 public class CalendarsPage extends Pages {
 
-    private WebDriver _driver;
+    //private WebDriver _driver;
 
     @FindBy(how = How.ID, using = "ctl00_ctl00_CPHolder_CPHolder_tableDataView_btnNew")
     private WebElement btnNewCalendar;
 
-    @FindBy(how = How.ID, using = "ctl00_ctl00_CPHolder_CPHolder_tableDataView_pnlGrid")
-    private WebElement tblTableResults;
+    /*@FindBy(how = How.ID, using = "ctl00_ctl00_CPHolder_CPHolder_tableDataView_pnlGrid")
+    private WebElement tblTableResults;*/
 
     @FindBy(how = How.CLASS_NAME, using = "modal-content")
     private WebElement deleteModal;
@@ -32,16 +32,17 @@ public class CalendarsPage extends Pages {
     }
 
     public CalendarsPage(WebDriver driver) {
+        super(driver);
         PageFactory.initElements(driver, this);
-        _driver = driver;
+//        _driver = driver;
     }
 
-    @Override
+    /*@Override
     public List<WebElement> getPopOverLocatorList() {
         return _driver.findElement(By.id("ctl00_ctl00_CPHolder_CPHolder_tableDataView_pnlGrid"))
                 .findElements(By.id("ctl00_ctl00_CPHolder_CPHolder_tableDataView_grdTableList")).get(1)
                 .findElements(By.tagName("tr"));
-    }
+    }*/
 
     @Override
     public int getPageActionIndex(String action) {
@@ -76,13 +77,13 @@ public class CalendarsPage extends Pages {
         return _driver.findElement(toastContainerLocator);
     }
 
-    @Override
+   /* @Override
     public List<WebElement> getTblResults(int i) {
         return tblTableResults.findElements(By.id("ctl00_ctl00_CPHolder_CPHolder_tableDataView_grdTableList"))
                 .get(i)
                 .findElement(By.tagName("tbody"))
                 .findElements(By.tagName("tr"));
-    }
+    }*/
 
     public WebElement getDeleteModal() {
         return deleteModal;

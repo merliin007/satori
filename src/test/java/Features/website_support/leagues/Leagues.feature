@@ -17,3 +17,4 @@ Feature: Leagues creation
       | EndDate    | CaptMeeting | PlayWeek   |
       | 09/10/2019 | 09/17/2019  | 09/24/2019 |
     Then I save my new league without errors
+    And I search for such league and delete it
