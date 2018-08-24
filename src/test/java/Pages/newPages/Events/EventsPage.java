@@ -2,7 +2,7 @@
  * Created by Miguel Angel Aguilar Cuevas
  * 20/07/2018 at 10:42 AM
  */
-package pages.newPages.Events;
+package pages.newPages.events;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;

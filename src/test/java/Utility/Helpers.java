@@ -17,8 +17,10 @@ import org.openqa.selenium.support.ui.FluentWait;
 import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import pages.newPages.Pages;
+import pages.newPages.jobs.*;
 import utility.calendar.Calendar;
 import utility.event.Event;
+import utility.job.Job;
 import utility.league.LeagueComponents;
 
 import java.time.Duration;
@@ -228,7 +230,7 @@ public class Helpers implements Actionable {
     }
 
     @Override
-    public int searchForElementInTheLeagueList(LeagueComponents.LeagueDescription leagueDescriptionList, LeagueComponents.LeagueDates leagueDates, List<WebElement> tblResults){
+    public int searchForElementInTheLeagueList(LeagueComponents.LeagueDescription leagueDescriptionList, LeagueComponents.LeagueDates leagueDates, List<WebElement> tblResults) {
         int i = (tblResults.size() > 3) ? 3 : 1;
         for (; i < tblResults.size(); i++) {
             List<WebElement> tblCel = tblResults.get(i).findElements(By.tagName("td"));
@@ -245,6 +247,49 @@ public class Helpers implements Actionable {
         }
         return -1;
     }
+
+    @Override
+    public int searchForElementInTheJobList(Job job, List<WebElement> tblResults) {
+        int i = 1;
+        for (; i < tblResults.size(); i++) {
+            List<WebElement> tblCel = tblResults.get(i).findElements(By.tagName("td"));
+            try {
+                if (tblCel.get(1).getText().equals(job.getYear()) &&
+                        tblCel.get(2).getText().contains(job.getSeason()) &&
+                        tblCel.get(3).getText().contains(job.getLeague())) {
+                    Log.info("Element found at index: " + i);
+                    return i;
+                }
+            } catch (IndexOutOfBoundsException e) {
+                Log.info("Exception when searching for element");
+            }
+        }
+        Log.info("Element not found");
+        return -1;
+    }
+    @Override
+    public int searchForElementInTheJobListIncludingAgeLevelFlight(Job job, List<WebElement> tblResults) {
+        int i = 1;
+        for (; i < tblResults.size(); i++) {
+            List<WebElement> tblCel = tblResults.get(i).findElements(By.tagName("td"));
+            try {
+                if (tblCel.get(1).getText().equals(job.getYear()) &&
+                        tblCel.get(2).getText().contains(job.getSeason()) &&
+                        tblCel.get(3).getText().contains(job.getLeague()) &&
+                        tblCel.get(4).getText().equals(job.getAge()) &&
+                        tblCel.get(5).getText().equals(job.getLevelFlight())
+                        ) {
+                    Log.info("Element found at index: " + i);
+                    return i;
+                }
+            } catch (IndexOutOfBoundsException e) {
+                Log.info("Exception when searching for element");
+            }
+        }
+        Log.info("Element not found");
+        return -1;
+    }
+
 
     @Override
     public void waitUntilElementIsVisible(WebElement element) {
@@ -305,5 +350,14 @@ public class Helpers implements Actionable {
                 .until(ExpectedConditions.invisibilityOfElementLocated(locator));
     }
 
+    public ArrayList<JobPage> initJobVariables(List<Job> jobsList) {
+        ArrayList<JobPage> jobs = new ArrayList<>();
 
+        jobs.add(new CalculateAwardsPage(_driver, jobsList.get(0)));
+        jobs.add(new DropDuplicatesPage(_driver, jobsList.get(1)));
+        jobs.add(new AssignToDivisionPage(_driver, jobsList.get(2)));
+        jobs.add(new ScheduleLeaguePage(_driver, jobsList.get(3)));
+        jobs.add(new PlayoffDrawPage(_driver, jobsList.get(4)));
+        return jobs;
+    }
 }

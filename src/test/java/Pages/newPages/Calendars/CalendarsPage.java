@@ -1,4 +1,4 @@
-package pages.newPages.Calendars;
+package pages.newPages.calendars;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;

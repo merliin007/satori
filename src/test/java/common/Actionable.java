@@ -11,6 +11,7 @@ import org.openqa.selenium.WebElement;
 import pages.newPages.Pages;
 import utility.calendar.Calendar;
 import utility.event.Event;
+import utility.job.Job;
 import utility.league.LeagueComponents;
 
 import java.time.LocalDateTime;
@@ -40,5 +41,7 @@ public interface Actionable {
     void waitUntilInvisibilityOf(WebElement element) throws Exception;
     void waitUntilElementWithTextIsInvisible(By element, String text) throws Exception;
     void fluentWaitUntilElementDisappears(By locator) throws Exception;
+    int searchForElementInTheJobList(Job job, List<WebElement> tblResults);
+    int searchForElementInTheJobListIncludingAgeLevelFlight(Job job, List<WebElement> tblResults);
 
 }

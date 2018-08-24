@@ -9,8 +9,8 @@ import cucumber.api.DataTable;
 import cucumber.api.java.en.And;
 import cucumber.api.java.en.Then;
 import org.openqa.selenium.WebElement;
-import pages.newPages.Events.EventsPage;
-import pages.newPages.Events.NewEventsPage;
+import pages.newPages.events.EventsPage;
+import pages.newPages.events.NewEventsPage;
 import utility.Helpers;
 import utility.Log;
 import utility.event.Event;
@@ -39,7 +39,7 @@ public class EventSteps {
         try {
             eventsPage = new EventsPage(base.driver);
             if (!eventsPage.searchFor(calendar)) {
-                DataTable link = I.createLinkForNavigator("Website Support", "Calendars");
+                DataTable link = I.createLinkForNavigator("Website Support", "calendars");
                 new NavigationSteps(base).iNavigateToTheFollowingPageOption(link);
                 new CalendarSteps(base).iCreateANewCalendarUsing(table);
             }

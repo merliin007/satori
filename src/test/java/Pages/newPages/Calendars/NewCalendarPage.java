@@ -1,4 +1,4 @@
-package pages.newPages.Calendars;
+package pages.newPages.calendars;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;

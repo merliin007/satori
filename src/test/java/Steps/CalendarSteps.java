@@ -5,13 +5,13 @@ import cucumber.api.DataTable;
 import cucumber.api.java.en.And;
 import cucumber.api.java.en.Then;
 import org.openqa.selenium.WebElement;
-import pages.newPages.Calendars.CalendarsPage;
-import pages.newPages.Calendars.NewCalendarPage;
+import pages.newPages.calendars.CalendarsPage;
+import pages.newPages.calendars.NewCalendarPage;
 import static org.testng.Assert.assertEquals;
 import static org.testng.Assert.assertTrue;
 import static org.testng.Assert.fail;
 import utility.Helpers;
-import pages.newPages.Events.EventsPage;
+import pages.newPages.events.EventsPage;
 import utility.Log;
 import utility.calendar.Calendar;
 

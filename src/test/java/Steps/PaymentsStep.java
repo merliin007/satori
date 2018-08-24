@@ -2,9 +2,9 @@ package steps;
 
 import base.BaseUtil;
 import org.openqa.selenium.UnhandledAlertException;
+import pages.oldPages.*;
 import utility.Helpers;
 import utility.Log;
-import pages.*;
 import utility.paymentInfo.BankAccountInfo;
 import utility.paymentInfo.CheckInfo;
 import utility.paymentInfo.CreditCardInfo;

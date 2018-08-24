@@ -1,4 +1,4 @@
-package pages;
+package pages.oldPages;
 
 import utility.Log;
 import utility.paymentInfo.PaymentLoggedInfo;

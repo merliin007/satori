@@ -1,4 +1,4 @@
-package pages;
+package pages.oldPages;
 
 import base.CustomExceptions;
 import org.openqa.selenium.WebDriver;

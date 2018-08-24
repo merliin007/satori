@@ -1,4 +1,4 @@
-package pages;
+package pages.oldPages;
 
 import utility.credentials.MemberCredentials;
 import org.openqa.selenium.By;

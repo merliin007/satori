@@ -1,7 +1,7 @@
 Feature: Login validation
   This feature exercises correct login into new site
 
-  Background: Successfully loging into alta website
+  Background: Successfully login into alta website
     Given User navigates to ALTA website
     When I enter username as "OfficeUser" and password as "Abc!123"
     Then I select "Manage" portal
