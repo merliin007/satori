@@ -78,6 +78,7 @@ public class SetUp extends BaseUtil {
         }
 
         base.driver.manage().timeouts().implicitlyWait(10L, TimeUnit.SECONDS);
+        //base.driver.manage().timeouts().pageLoadTimeout(20L, TimeUnit.SECONDS);
         base.driver.manage().window().maximize();
 
         /*executeAutoItNeeded(SuiteSetUp.BROWSER.toLowerCase());*/

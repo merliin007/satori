@@ -62,9 +62,10 @@ public class BaseUtil {
 
     private void zoomInOut(int z) {
         try {
-            if(System.getProperty("autoZoom").equals("false"))
+            if (System.getProperty("autoZoom").equals("false"))
                 return;
             Robot robot = new Robot();
+            Log.info("AutoZooming: " + z);
             if (z < 0)
                 while (z < 0) {
                     robot.keyPress(KeyEvent.VK_CONTROL);
@@ -82,11 +83,9 @@ public class BaseUtil {
                     z--;
                 }
 
-        }
-        catch (AWTException e) {
+        } catch (AWTException e) {
             Log.error(e.getMessage());
-        }
-        catch (NullPointerException npe){
+        } catch (NullPointerException npe) {
             Log.info("No Zoom requested");
         }
     }

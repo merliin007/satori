@@ -7,27 +7,25 @@ package utility;
 import base.BaseUtil;
 import base.CustomExceptions;
 import common.Actionable;
+import common.SuiteSetUp;
 import cucumber.api.DataTable;
-import org.openqa.selenium.By;
-import org.openqa.selenium.JavascriptExecutor;
-import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
-import org.openqa.selenium.support.ui.ExpectedConditions;
-import org.openqa.selenium.support.ui.FluentWait;
-import org.openqa.selenium.support.ui.Select;
-import org.openqa.selenium.support.ui.WebDriverWait;
+import org.openqa.selenium.*;
+import org.openqa.selenium.support.ui.*;
 import pages.newPages.Pages;
 import pages.newPages.jobs.*;
 import utility.calendar.Calendar;
 import utility.event.Event;
 import utility.job.Job;
 import utility.league.LeagueComponents;
+import utility.newRoster.Facility;
+import utility.newRoster.PlayerRoster;
 
 import java.time.Duration;
 import java.time.LocalDate;
 import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
 import java.util.*;
+import java.util.NoSuchElementException;
 
 
 public class Helpers implements Actionable {
@@ -48,8 +46,16 @@ public class Helpers implements Actionable {
 
     @Override
     public void Write(WebElement element, String val) {
+        if (val == null || val.isEmpty())
+            return;
         element.clear();
         element.sendKeys(val);
+    }
+
+    public void JSWrite(WebElement element, String val) {
+        JavascriptExecutor js = (JavascriptExecutor) _driver;
+        String script = "arguments[0].value='" + val + "';";
+        js.executeScript(script, element);
     }
 
     @Override
@@ -81,6 +87,8 @@ public class Helpers implements Actionable {
 
     @Override
     public void SelectValue(WebElement element, String val) {
+        if (val == null || val.isEmpty())
+            return;
         new Select(element).selectByVisibleText(val);
     }
 
@@ -111,6 +119,18 @@ public class Helpers implements Actionable {
         put("^\\d{1,2}\\s[a-z]{3}\\s\\d{4}\\s\\d{1,2}:\\d{2}:\\d{2}$", "dd MMM yyyy HH:mm:ss");
         put("^\\d{1,2}\\s[a-z]{4,}\\s\\d{4}\\s\\d{1,2}:\\d{2}:\\d{2}$", "dd MMMM yyyy HH:mm:ss");
     }};
+
+    @Override
+    public void CheckCheckBox(WebElement element) {
+        if (!element.isSelected())
+            Click(element);
+    }
+
+    @Override
+    public void UncheckCheckBox(WebElement element) {
+        if (element.isSelected())
+            Click(element);
+    }
 
     private static String determineDateFormat(String dateString) {
         for (String regexp : DATE_FORMAT_REGEXPS.keySet()) {
@@ -267,6 +287,7 @@ public class Helpers implements Actionable {
         Log.info("Element not found");
         return -1;
     }
+
     @Override
     public int searchForElementInTheJobListIncludingAgeLevelFlight(Job job, List<WebElement> tblResults) {
         int i = 1;
@@ -290,6 +311,47 @@ public class Helpers implements Actionable {
         return -1;
     }
 
+    @Override
+    public int searchForPlayerInTheModal(PlayerRoster player, List<WebElement> tblResults) {
+        int i = 1;
+        for (; i < tblResults.size(); i++) {
+            List<WebElement> tblCel = tblResults.get(i).findElements(By.tagName("td"));
+            try {
+                if (tblCel.get(1).getText().equals(player.getaLTA_Number()) &&
+                        tblCel.get(2).getText().contains(player.getLast() + ", " + player.getFirst())
+                        ) {
+                    Log.info("Element found at index: " + i);
+                    return i;
+                }
+            } catch (IndexOutOfBoundsException e) {
+                Log.info("Exception when searching for element");
+            }
+        }
+        Log.info("Element not found");
+        return -1;
+    }
+
+    //searchForFacilityInTheModal
+    @Override
+    public int searchForFacilityInTheModal(Facility facility, List<WebElement> tblResults) {
+        int i = 1;
+        for (; i < tblResults.size(); i++) {
+            List<WebElement> tblCel = tblResults.get(i).findElements(By.tagName("td"));
+            try {
+                if (tblCel.get(1).getText().equals(facility.getId()) &&
+                        tblCel.get(2).getText().contains(facility.getName()) &&
+                        (facility.getCounty() == null || tblCel.get(4).getText().contains(facility.getCounty()))
+                        ) {
+                    Log.info("Element found at index: " + i);
+                    return i;
+                }
+            } catch (IndexOutOfBoundsException e) {
+                Log.info("Exception when searching for element");
+            }
+        }
+        Log.info("Element not found");
+        return -1;
+    }
 
     @Override
     public void waitUntilElementIsVisible(WebElement element) {
@@ -298,7 +360,21 @@ public class Helpers implements Actionable {
 
     @Override
     public void waitUntilElementIsClickable(WebElement element) {
-        wait.until(ExpectedConditions.elementToBeClickable(element));
+        //wait.until(ExpectedConditions.elementToBeClickable(element));
+
+        new FluentWait<>(_driver)
+                .withTimeout(Duration.ofSeconds(5))
+                .pollingEvery(Duration.ofMillis(100L))
+                .ignoring(StaleElementReferenceException.class)
+                .until(ExpectedConditions.elementToBeClickable(element));
+
+    }
+
+    public void changeZindex() {
+        String script = "document.getElementById('WizardIsBusyIndicatorBehavior_backgroundElement').style.zIndex=-1000;";
+        JavascriptExecutor js = (JavascriptExecutor) _driver;
+        js.executeScript(script);
+
     }
 
     @Override
@@ -324,13 +400,25 @@ public class Helpers implements Actionable {
     @Override
     public void waitUntilInvisibilityOf(WebElement element) throws Exception {
         new WebDriverWait(_driver, 10)
+                .ignoring(StaleElementReferenceException.class)
                 .until(ExpectedConditions.invisibilityOf(element));
+
     }
 
     @Override
     public void waitUntilElementWithTextIsInvisible(By element, String text) throws Exception {
         new WebDriverWait(_driver, 5)
                 .until(ExpectedConditions.invisibilityOfElementWithText(element, text));
+    }
+
+    public void waitUntilConfirmationLabel() throws Exception {
+        new WebDriverWait(_driver, 8)
+                .pollingEvery(Duration.ofMillis(100L))
+                .ignoring(StaleElementReferenceException.class)
+                .until((ExpectedCondition<Boolean>) driver -> driver
+                        .findElement(By.id("ctl00_ctl00_CPHolder_CPHolder_memberSearchPopup_lblMessage"))
+                        .getText().contains(SuiteSetUp.ADD_PLAYER_SUCCESS_LABEL)
+                );
     }
 
     @Override
@@ -360,4 +448,24 @@ public class Helpers implements Actionable {
         jobs.add(new PlayoffDrawPage(_driver, jobsList.get(4)));
         return jobs;
     }
+
+    public CaptainsRetriever<PlayerRoster> getCaptains = (players) -> {
+        List<String> captains = new ArrayList<>();
+        for (PlayerRoster p : players) {
+            if (p.isCaptain() || p.isCoCaptain())
+                captains.add(p.getLast() + ", " + p.getFirst());
+        }
+        return captains;
+    };
+
+    public void fixMe_waitforElementwithText(final By locator, final String text) {
+        new WebDriverWait(_driver, 5)
+                .until(new ExpectedCondition<Boolean>() {
+                    @Override
+                    public Boolean apply(WebDriver driver) {
+                        return (driver.findElement(locator).getText().equals(text));
+                    }
+                });
+    }
+
 }

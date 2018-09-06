@@ -13,6 +13,8 @@ import utility.calendar.Calendar;
 import utility.event.Event;
 import utility.job.Job;
 import utility.league.LeagueComponents;
+import utility.newRoster.Facility;
+import utility.newRoster.PlayerRoster;
 
 import java.time.LocalDateTime;
 import java.util.List;
@@ -24,6 +26,8 @@ public interface Actionable {
     void JSClick(WebElement element);
     void JSScrollToView(WebElement element);
     void SelectValue(WebElement element, String val);
+    void CheckCheckBox(WebElement element);
+    void UncheckCheckBox(WebElement element);
     boolean CompareDates(String date1, String date2);
     void selectOptionFromCell(int position, String action, Pages page) throws CustomExceptions;
     DataTable createLinkForNavigator(String section, String option);
@@ -40,8 +44,11 @@ public interface Actionable {
     void waitUntilExistenceOfElement(By elementBy);
     void waitUntilInvisibilityOf(WebElement element) throws Exception;
     void waitUntilElementWithTextIsInvisible(By element, String text) throws Exception;
+    //void waitUntilElementWithTextIsVisible(WebElement element, String text) throws Exception;
     void fluentWaitUntilElementDisappears(By locator) throws Exception;
     int searchForElementInTheJobList(Job job, List<WebElement> tblResults);
     int searchForElementInTheJobListIncludingAgeLevelFlight(Job job, List<WebElement> tblResults);
+    int searchForPlayerInTheModal(PlayerRoster player, List<WebElement> tblResults);
+    int searchForFacilityInTheModal(Facility facility, List<WebElement> tblResults);
 
 }

@@ -17,6 +17,8 @@ public class SuiteSetUp {
     public static final String UAT_ENVIRONMENT_ie = "https://altarebuild.uat.satoriinteractive.com/webapp/";
     public static final String UAT_ENVIRONMENT_all = "https://Alta:TennisQa1@altarebuild.uat.satoriinteractive.com/webapp/";
 
+    public static final String ADD_PLAYER_SUCCESS_LABEL = "successfully added to Roster. Please choose another member or Close";
+
 
     static String BROWSER = selectBrowser();
     static final String WEBDRIVERS_FOLDER = "lib/web_drivers";

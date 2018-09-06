@@ -73,12 +73,19 @@ public class nMainPage {
     }
 
     private static final Map<String, Integer> MENU_SECTIONS = new HashMap<String, Integer>() {{
+        // alta manage section
         put("website support", 1);
         put("league support", 2);
         put("member and rosters", 3);
         put("ladder and mixers", 4);
         put("reports", 5);
         put("service recognition", 6);
+
+        put("my teams", 1);
+        put("my performance", 2);
+        put("my rosters", 3);
+        put("my ladders & mixers", 4);
+        put("my account", 5);
     }};
     private static final Map<String, Integer> SUBMENU_OPTIONS = new HashMap<String, Integer>() {{
         put("calendars & events", 1);
@@ -95,15 +102,15 @@ public class nMainPage {
         put("documents", 6);
         put("volunteer bulk entry", 7);
 
-
     }};
 
     public WebElement getOptionFromMenu(String section, String lnkName) throws Exception {
         List<WebElement> elementList = menuListOptions.findElements(By.className("nav-item"));
+        if(lnkName.isEmpty())
+            return elementList.get(MENU_SECTIONS.get(section.toLowerCase()));
         List<WebElement> subElements = elementList.get(MENU_SECTIONS.get(section.toLowerCase())).findElements(By.tagName("a"));
         return subElements.get(SUBMENU_OPTIONS.get(lnkName.toLowerCase()));
     }
-
 
 
 }
