@@ -25,10 +25,12 @@ public interface Actionable {
     void ClickOnRowButtonAtPosition(WebElement row, int pos);
     void JSClick(WebElement element);
     void JSScrollToView(WebElement element);
+    void RemoveAttribute(WebElement element);
     void SelectValue(WebElement element, String val);
     void CheckCheckBox(WebElement element);
     void UncheckCheckBox(WebElement element);
     boolean CompareDates(String date1, String date2);
+    void CheckCheckBoxIf(WebElement element, boolean val);
     void selectOptionFromCell(int position, String action, Pages page) throws CustomExceptions;
     DataTable createLinkForNavigator(String section, String option);
     void sortByColumn(String columnName, Pages page);
@@ -44,11 +46,14 @@ public interface Actionable {
     void waitUntilExistenceOfElement(By elementBy);
     void waitUntilInvisibilityOf(WebElement element) throws Exception;
     void waitUntilElementWithTextIsInvisible(By element, String text) throws Exception;
-    //void waitUntilElementWithTextIsVisible(WebElement element, String text) throws Exception;
     void fluentWaitUntilElementDisappears(By locator) throws Exception;
+    void WaitUntilPresenceOfElement(By locator) throws Exception;
     int searchForElementInTheJobList(Job job, List<WebElement> tblResults);
     int searchForElementInTheJobListIncludingAgeLevelFlight(Job job, List<WebElement> tblResults);
     int searchForPlayerInTheModal(PlayerRoster player, List<WebElement> tblResults);
     int searchForFacilityInTheModal(Facility facility, List<WebElement> tblResults);
+    void GoBackToPreviousPage();
+    boolean CompareExpectedPage(String expected);
+    WebElement GetCheckBoxFromList(List<WebElement> checkList, String season);
 
 }

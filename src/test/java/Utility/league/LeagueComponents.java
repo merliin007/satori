@@ -7,6 +7,11 @@ package utility.league;
 public class LeagueComponents {
 
     public class LeagueDescription {
+        private String leagueName;
+        private String gender;
+        private String minAgeType;
+        private String numberOfSeasonsPerYear;
+
         private String leagueType;
         private String year;
         private String season;
@@ -20,6 +25,24 @@ public class LeagueComponents {
         private String scoreCardType;
         private boolean lights;
         private boolean tiebreaker;
+        //        private boolean  active;
+        private String active;
+
+        public String getLeagueName() {
+            return leagueName;
+        }
+
+        public String getGender() {
+            return gender;
+        }
+
+        public String getMinAgeType() {
+            return minAgeType;
+        }
+
+        public String getNumberOfSeasonsPerYear() {
+            return numberOfSeasonsPerYear;
+        }
 
         public String getLeagueType() {
             return leagueType;
@@ -73,6 +96,10 @@ public class LeagueComponents {
             return tiebreaker;
         }
 
+        public boolean isActive() {
+            return active.matches("[yY]es|[tT]rue");
+        }
+
         public LeagueDescription(String LeagueType, String Year, String Season, String PlayDay, String VPName, String RosterDocId,
                                  String PacketDocId, String AgeType, String MinAge, String MaxAge, String ScoreCardType, String Lights, String Tiebreaker) {
             leagueType = LeagueType;
@@ -89,79 +116,90 @@ public class LeagueComponents {
             lights = Lights.contains("yes");
             tiebreaker = Tiebreaker.contains("yes");
         }
+
+        public LeagueDescription(String LeagueName, String Gender, String MinAgeType, String MinAge, String MaxAge, String ScoreCardType, String NumberOfSeasonsPerYear, String Active) {
+            leagueName = LeagueName;
+            gender = Gender;
+            minAgeType = MinAgeType;
+            minAge = MinAge;
+            maxAge = MaxAge;
+            scoreCardType = ScoreCardType;
+            numberOfSeasonsPerYear = NumberOfSeasonsPerYear;
+            active = Active;
+        }
     }
 
     public class LeagueDetails {
 
-        private String tM;
-        private String retTM;
-        private String matchPlayers;
-        private String maxAdd;
-        private String minFem;
-        private String retFem;
+        private String minTeamMembers;
+        private String minRetTeamMembers;
+        private String minMatchPlayers;
+        private String maxAddons;
+        private String minFemales;
+        private String minRetFemales;
         private String minMales;
-        private String retMal;
-        private String tMNeeded;
-        private String femNeeded;
-        private String malNeed;
+        private String minRetMales;
+        private String minTeamMembersNeeded;
+        private String minFemalesNeeded;
+        private String minMalesNeeded;
 
-        public String getTM() {
-            return tM;
+        public String getMinTeamMembers() {
+            return minTeamMembers;
         }
 
-        public String getRetTM() {
-            return retTM;
+        public String getMinRetTeamMembers() {
+            return minRetTeamMembers;
         }
 
-        public String getMatchPlayers() {
-            return matchPlayers;
+        public String getMinMatchPlayers() {
+            return minMatchPlayers;
         }
 
-        public String getMaxAdd() {
-            return maxAdd;
+        public String getMaxAddons() {
+            return maxAddons;
         }
 
-        public String getMinFem() {
-            return minFem;
+        public String getMinFemales() {
+            return minFemales;
         }
 
-        public String getRetFem() {
-            return retFem;
+        public String getMinRetFemales() {
+            return minRetFemales;
         }
 
         public String getMinMales() {
             return minMales;
         }
 
-        public String getRetMal() {
-            return retMal;
+        public String getMinRetMales() {
+            return minRetMales;
         }
 
-        public String getTMNeeded() {
-            return tMNeeded;
+        public String getMinTeamMembersNeeded() {
+            return minTeamMembersNeeded;
         }
 
-        public String getFemNeeded() {
-            return femNeeded;
+        public String getMinFemalesNeeded() {
+            return minFemalesNeeded;
         }
 
-        public String getMalNeed() {
-            return malNeed;
+        public String getMinMalesNeeded() {
+            return minMalesNeeded;
         }
 
-        public LeagueDetails(String TM, String RetTM, String MatchPlayers, String MaxAdd, String MinFem, String RetFem,
-                             String MinMales, String RetMal, String TMNeeded, String FemNeeded, String MalNeed) {
-            this.tM = TM;
-            this.retTM = RetTM;
-            this.matchPlayers = MatchPlayers;
-            this.maxAdd = MaxAdd;
-            this.minFem = MinFem;
-            this.retFem = RetFem;
-            this.minMales = MinMales;
-            this.retMal = RetMal;
-            this.tMNeeded = TMNeeded;
-            this.femNeeded = FemNeeded;
-            this.malNeed = MalNeed;
+        public LeagueDetails(String minTeamMembers, String minRetTeamMembers, String minMatchPlayers, String maxAddons, String minFemales, String minRetFemales,
+                             String minMales, String minRetMales, String minTeamMembersNeeded, String minFemalesNeeded, String minMalesNeeded) {
+            this.minTeamMembers = minTeamMembers;
+            this.minRetTeamMembers = minRetTeamMembers;
+            this.minMatchPlayers = minMatchPlayers;
+            this.maxAddons = maxAddons;
+            this.minFemales = minFemales;
+            this.minRetFemales = minRetFemales;
+            this.minMales = minMales;
+            this.minRetMales = minRetMales;
+            this.minTeamMembersNeeded = minTeamMembersNeeded;
+            this.minFemalesNeeded = minFemalesNeeded;
+            this.minMalesNeeded = minMalesNeeded;
         }
     }
 
@@ -187,6 +225,30 @@ public class LeagueComponents {
             this.endDate = EndDate;
             this.captMeeting = CaptMeeting;
             this.playWeek = PlayWeek;
+        }
+    }
+
+    public class LeagueSeasons {
+        private String season;
+
+        public LeagueSeasons(String season) {
+            this.season = season;
+        }
+
+        public String getSeason() {
+            return season;
+        }
+    }
+
+    public class LeagueExclusions {
+        private String excludedLeague;
+
+        public LeagueExclusions(String excludedLeague) {
+            this.excludedLeague = excludedLeague;
+        }
+
+        public String getExcludedLeague() {
+            return excludedLeague;
         }
     }
 

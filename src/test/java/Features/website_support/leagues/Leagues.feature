@@ -8,7 +8,7 @@ Feature: Leagues creation
 
   Scenario: User creates a new league then edits it and deletes it
     When I navigate to the following page option
-      | Website Support | League Templates |
+      | Website Support     | League Templates and Scheduled Dates |      |
     And I create a new league
     When I enter the following data in Description tab
       | LeagueType  | Year | Season | PlayDay | VPName      | RosterDocId | PacketDocId | AgeType              | MinAge | MaxAge | ScoreCardType | Lights | Tiebreaker |

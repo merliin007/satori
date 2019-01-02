@@ -59,6 +59,16 @@ public class Helpers implements Actionable {
     }
 
     @Override
+    public void RemoveAttribute(WebElement element){
+        JavascriptExecutor js = (JavascriptExecutor) _driver;
+        String script = "arguments[0].removeAttribute('onkeydown', 'onkeydown')";
+        js.executeScript(script, element);
+
+        script = "arguments[0].setAttribute('type', 'text')";
+        js.executeScript(script, element);
+    }
+
+    @Override
     public void Click(WebElement element) {
         element.click();
     }
@@ -91,6 +101,8 @@ public class Helpers implements Actionable {
             return;
         new Select(element).selectByVisibleText(val);
     }
+
+
 
     private static final Map<String, String> DATE_FORMAT_REGEXPS = new HashMap<String, String>() {{
         put("^\\d{8}$", "yyyyMMdd");
@@ -130,6 +142,14 @@ public class Helpers implements Actionable {
     public void UncheckCheckBox(WebElement element) {
         if (element.isSelected())
             Click(element);
+    }
+
+    @Override
+    public void CheckCheckBoxIf(WebElement element, boolean val){
+        if (val)
+            CheckCheckBox(element);
+        else
+            UncheckCheckBox(element);
     }
 
     private static String determineDateFormat(String dateString) {
@@ -430,12 +450,13 @@ public class Helpers implements Actionable {
                 .until(ExpectedConditions.invisibilityOfElementLocated(locator));
     }
 
-    public void FluentWaitUntilPresenceOfNewElement(By locator) throws Exception {
+    @Override
+    public void WaitUntilPresenceOfElement(By locator) throws Exception {
         new FluentWait<>(_driver)
-                .withTimeout((Duration.ofSeconds(5)))
+                .withTimeout((Duration.ofSeconds(6)))
                 .pollingEvery(Duration.ofMillis(100L))
                 .ignoring(NoSuchElementException.class)
-                .until(ExpectedConditions.invisibilityOfElementLocated(locator));
+                .until(ExpectedConditions.presenceOfElementLocated(locator));
     }
 
     public ArrayList<JobPage> initJobVariables(List<Job> jobsList) {
@@ -468,4 +489,29 @@ public class Helpers implements Actionable {
                 });
     }
 
+    @Override
+    public void GoBackToPreviousPage() {
+        JavascriptExecutor js = (JavascriptExecutor) _driver;
+        js.executeScript("window.history.go(-1)");
+    }
+
+    @Override
+    public boolean CompareExpectedPage(String expected) {
+        Log.info("Comparing actual page: " + _driver.getTitle() + " with expected: " + expected);
+        return _driver.getTitle().contains(expected);
+    }
+
+    @Override
+    public WebElement GetCheckBoxFromList(List<WebElement> checkList, String season){
+
+        for(WebElement element: checkList){
+            List<WebElement> cells = element.findElements(By.tagName("td"));
+            for(WebElement cel: cells){
+                if(cel.findElement(By.tagName("label")).getText().toLowerCase().equals(season)){
+                    return cel.findElement(By.className("custom-control-input"));
+                }
+            }
+        }
+        return null;
+    }
 }

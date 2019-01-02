@@ -21,6 +21,7 @@ import pages.newPages.leagues.LeagueVP_SelectionPage;
 import utility.Helpers;
 import utility.Log;
 import utility.league.*;
+
 import java.util.List;
 
 import static org.testng.Assert.assertEquals;
@@ -182,7 +183,7 @@ public class LeagueSteps {
         }
     }
 
-    public boolean checkForErrors(){
+    public boolean checkForErrors() {
         WebElement errors = leagueNewEditPage.getTblErrors();
         Log.info("Checking for errors");
         try {
@@ -195,9 +196,9 @@ public class LeagueSteps {
 
     @And("^I search for such league and delete it$")
     public void iSearchForSuchLeagueAndDeleteIt() {
-        try{
+        try {
             Log.info("Searching for league");
-            I.Write(leagueListPage.getTxtYear(),leagueDescriptionList.get(0).getYear());
+            I.Write(leagueListPage.getTxtYear(), leagueDescriptionList.get(0).getYear());
             I.SelectValue(leagueListPage.getDdlSeason(), leagueDescriptionList.get(0).getSeason());
             I.SelectValue(leagueListPage.getDdlLeagueType(), leagueDescriptionList.get(0).getLeagueType());
             I.SelectValue(leagueListPage.getDdlPlayDay(), leagueDescriptionList.get(0).getPlayday());
@@ -205,14 +206,14 @@ public class LeagueSteps {
 
             iDeleteLeagueResult();
 
-        }catch (Exception e){
+        } catch (Exception e) {
             base.GrabScreenShot();
             Log.error(e.getMessage());
             fail();
         }
     }
 
-    public void iDeleteLeagueResult() throws Exception{
+    public void iDeleteLeagueResult() throws Exception {
         List<WebElement> tblResults = leagueListPage.getTblResults(1);
         int index = I.searchForElementInTheLeagueList(leagueDescriptionList.get(0), leagueDatesList.get(0), tblResults);
 
@@ -220,6 +221,27 @@ public class LeagueSteps {
             I.selectOptionFromCell(index, "Delete", leagueListPage);
             I.waitUntilElementIsVisible(leagueListPage.getDeleteModal());
             leagueListPage.getBtnConfirmDelete().click();
+        }
+    }
+
+    @Then("^I click on \"([^\"]*)\" tab$")
+    public void iClickOnTab(String tabName) {
+        try {
+            if(leagueListPage == null) leagueListPage = new LeagueListPage(base.driver);
+            switch (tabName.toLowerCase()) {
+                case "league templates":
+                    I.Click(leagueListPage.getTabLeagueTemplate());
+                    break;
+                case "leagues":
+                    I.Click(leagueListPage.getTabLeagues());
+                    break;
+                default:
+                    fail();
+            }
+        } catch (Exception e) {
+            base.GrabScreenShot();
+            Log.error(e.getMessage());
+            fail();
         }
     }
 }

@@ -38,11 +38,16 @@ public class NavigationSteps {
                 Log.info("Navigating to " + row.get(1) + " page");
                 I.Click(mainPage.getNavigator()); // Code for using Navigator Menu
                 try {
-                    I.Click(mainPage.getOptionFromMenu(row.get(0), row.get(1)));
+                    I.Click(mainPage.getLinkOptionFromMenu(row.get(0), row.get(1)));
+                    Log.info(String.valueOf(I.CompareExpectedPage(row.get(1))));
                 } catch (Exception ee) {
                     errorPages.put(row.get(0), row.get(1));
                     base.GrabScreenShot();
-                    Log.error("Error during navigation to: ");
+                    Log.error("Error during navigation to: " + row.get(0) + " - " + row.get(1));
+                }
+                finally{
+                    if(!row.get(2).isEmpty() && row.get(2).equals("true"))
+                        I.GoBackToPreviousPage();
                 }
             }
 
@@ -55,7 +60,10 @@ public class NavigationSteps {
 
     @Then("^No error is shown$")
     public void noErrorIsShown() {
-        Log.info("There as an error accessing: " + Arrays.asList(errorPages));
+        if(errorPages.size() > 0)
+            Log.info("There was an error accessing: " + Arrays.asList(errorPages));
+        else
+            Log.info("No errors were found accessing all pages");
         assertTrue(errorPages.isEmpty());
     }
 }

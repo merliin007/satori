@@ -39,6 +39,14 @@ public class LeagueListPage extends Pages {
     @FindBy(how = How.ID, using = "ctl00_ctl00_CPHolder_CPHolder_tableDataView_lnkConfirm")
     private WebElement btnConfirmDelete;
 
+    @FindBy(how = How.ID, using = "ctl00_ctl00_CPHolder_CPHolder_lnkTemplates")
+    private WebElement tabLeagueTemplate;
+
+    @FindBy(how = How.ID, using = "ctl00_ctl00_CPHolder_CPHolder_lnkLeague")
+    private WebElement tabLeagues;
+
+
+
     public LeagueListPage(WebDriver driver) {
         super(driver);
         PageFactory.initElements(driver, this);
@@ -102,4 +110,12 @@ public class LeagueListPage extends Pages {
     public List<WebElement> getTblResults(int i) {
         return null;
     }*/
+
+    public WebElement getTabLeagueTemplate() {
+        return tabLeagueTemplate;
+    }
+
+    public WebElement getTabLeagues() {
+        return tabLeagues;
+    }
 }

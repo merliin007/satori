@@ -4,11 +4,11 @@ Feature: Roster creation
   Background: Successfully login into alta website
     Given User navigates to ALTA website
     When I enter username as "OfficeUser" and password as "Abc!123"
-    Then I select "Player" portal
+    Then I select "Member" portal
 
   Scenario: User creates a new Roster
     When I navigate to the following page option
-      | My Rosters |  |
+      | My Rosters & New/Reinstate | My Rosters                |                 |
     And I create a new roster selecting "Wheelchair - Test League" league
     When I enter the following players on Players tab
       | ALTA_Number | First  | Last        | Captain | CoCaptain | Designee |

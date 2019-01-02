@@ -98,8 +98,8 @@ public class LoginSteps/* extends BaseUtil*/ {
 
     private int getOptIndex(String opt){
         switch (opt.toLowerCase()){
-            case "player": return 0;
-            case "manage": return 1;
+            case "member": return 0;
+            case "manage": return 2;
             default: return -1;
         }
     }

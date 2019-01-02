@@ -12,7 +12,7 @@ import org.openqa.selenium.support.PageFactory;
 
 public class MyRostersPage {
 
-    @FindBy(how = How.ID, using = "ctl00_ctl00_CPHolder_CPHolder_btnCreateRoster")
+    @FindBy(how = How.ID, using = "ctl00_ctl00_CPHolder_CPHolder_MyRosterSearch1_rosterSearch_tableDataView_btnNew")
     private WebElement btnCreateRoster;
 
     public WebElement getBtnCreateRoster() {
