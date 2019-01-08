@@ -19,6 +19,12 @@ public class LeagueTemplateSelectionPage {
     @FindBy(how = How.ID, using = "ctl00_ctl00_CPHolder_CPHolder_tableDataView_pnlGrid")
     private WebElement tblTableResults;
 
+    private By toastrBy = By.id("toast-container");
+
+    public By getToastrBy() {
+        return toastrBy;
+    }
+
     public WebElement getTblLeagueTemplaes() {
         return tblTableResults;
     }

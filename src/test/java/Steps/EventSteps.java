@@ -9,6 +9,7 @@ import cucumber.api.DataTable;
 import cucumber.api.java.en.And;
 import cucumber.api.java.en.Then;
 import org.openqa.selenium.WebElement;
+import pages.newPages.calendars.CalendarsPage;
 import pages.newPages.events.EventsPage;
 import pages.newPages.events.NewEventsPage;
 import utility.Helpers;
@@ -26,6 +27,7 @@ public class EventSteps {
     private EventsPage eventsPage;
     private NewEventsPage newEventsPage;
     private Helpers I;
+    private CalendarsPage calendarsPage;
 
     List<Event> eventList;
 
@@ -36,6 +38,7 @@ public class EventSteps {
 
     @And("^I search for \"([^\"]*)\" calendar or create a new if there is not any$")
     public void iSearchForCalendarOrCreateANewIfThereIsNotAny(String calendar, DataTable table) throws Throwable {
+        iGoToEventsPage();
         try {
             eventsPage = new EventsPage(base.driver);
             if (!eventsPage.searchFor(calendar)) {
@@ -62,14 +65,13 @@ public class EventSteps {
             for (Event e : eventList) {
                 newEventsPage.EnterNewEventInfoAndSave(
                         e.getCalendarList(),
-                        e.getEventName(),
+                        e.getEventName() + "-" + System.currentTimeMillis(),
                         e.getEventDescription(),
                         e.getDateOfEvent()
                 );
             }
             Log.info("Waiting for toastr to disappear");
             I.fluentWaitUntilElementDisappears(eventsPage.getToastContainerLocator());
-
         } catch (Exception e) {
             base.GrabScreenShot();
             Log.error(e.getMessage());
@@ -96,6 +98,17 @@ public class EventSteps {
         } catch (Exception e) {
             base.GrabScreenShot();
             Log.error(e.getMessage());
+            fail();
+        }
+    }
+
+    public void iGoToEventsPage() {
+        try {
+            calendarsPage = new CalendarsPage(base.driver);
+            I.Click(calendarsPage.getLnkEvents());
+        } catch (Exception e) {
+            Log.info(e.getMessage());
+            base.GrabScreenShot();
             fail();
         }
     }

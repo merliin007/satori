@@ -10,6 +10,7 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.How;
 import pages.newPages.Pages;
+import utility.Helpers;
 import utility.job.Job;
 
 import java.util.List;
@@ -18,23 +19,12 @@ public abstract class JobPage extends Pages {
 
     protected Job job;
 
-    @FindBy(how = How.CLASS_NAME, using = "nav-ribbon")
-    private WebElement topRibbon;
-
     public JobPage(WebDriver driver, Job job) {
         super(driver);
         this.job = job;
     }
 
-    public WebElement RibbonOption(String opt) throws Exception{
-        List<WebElement> ribonList = topRibbon.findElement(By.className("container"))
-                .findElements(By.className("nav-ribbon__option"));
-        for(WebElement rib: ribonList){
-            if(rib.findElement(By.tagName("a")).getText().toLowerCase().contains(opt))
-                return rib;
-        }
-        return null;
-    }
+
 
     @Override
     public int getPageActionIndex(String action) {
@@ -48,9 +38,20 @@ public abstract class JobPage extends Pages {
 
     @Override
     public List<WebElement> getAllColumnHeaders() {
-        return null;
+        return getTblResults(1).get(2).findElements(By.tagName("th"));
     }
 
 
     public abstract WebElement  QueueJobButton();
+
+    public List<WebElement> getTblPaging(){
+        List<WebElement> pagingTable = getTblResults(1).get(0).findElement(By.tagName("tbody")).findElements(By.tagName("td"));
+        return pagingTable;
+    }
+
+    public void goToNextPage(int idx, Helpers I) {
+        List<WebElement> paging = getTblPaging();
+        I.Click(paging.get(idx));
+    }
 }
+

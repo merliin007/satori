@@ -17,6 +17,7 @@ import utility.calendar.Calendar;
 import utility.event.Event;
 import utility.job.Job;
 import utility.league.LeagueComponents;
+import utility.members.Member;
 import utility.newRoster.Facility;
 import utility.newRoster.PlayerRoster;
 
@@ -59,7 +60,7 @@ public class Helpers implements Actionable {
     }
 
     @Override
-    public void RemoveAttribute(WebElement element){
+    public void RemoveAttribute(WebElement element) {
         JavascriptExecutor js = (JavascriptExecutor) _driver;
         String script = "arguments[0].removeAttribute('onkeydown', 'onkeydown')";
         js.executeScript(script, element);
@@ -103,7 +104,6 @@ public class Helpers implements Actionable {
     }
 
 
-
     private static final Map<String, String> DATE_FORMAT_REGEXPS = new HashMap<String, String>() {{
         put("^\\d{8}$", "yyyyMMdd");
         put("^\\d{1,2}-\\d{1,2}-\\d{4}$", "dd-MM-yyyy");
@@ -145,7 +145,7 @@ public class Helpers implements Actionable {
     }
 
     @Override
-    public void CheckCheckBoxIf(WebElement element, boolean val){
+    public void CheckCheckBoxIf(WebElement element, boolean val) {
         if (val)
             CheckCheckBox(element);
         else
@@ -213,6 +213,15 @@ public class Helpers implements Actionable {
             Log.error(e.getMessage());
         }
     }
+    @Override
+    public int searchForMemberInMembersList(Member member, List<WebElement> tblResults){
+        for(int i = (tblResults.size() > 3) ? 3 : 1; i< tblResults.size(); i++){
+            List<WebElement> tblCel = tblResults.get(i).findElements(By.tagName("td"));
+            if(tblCel.get(1).getText().equals(member.getAltaNum()))
+                return i;
+        }
+        return -1;
+    }
 
     @Override
     public int searchForElementInTheCalendarList(Calendar calendar, List<WebElement> tblResults) {
@@ -250,7 +259,21 @@ public class Helpers implements Actionable {
         int i = 3;
         for (; i < tblResults.size(); i++) {
             List<WebElement> tblCel = tblResults.get(i).findElements(By.tagName("td"));
-            if (league.getLeagueType().equals(tblCel.get(1).getText())) {
+            if (tblCel.get(1).getText().toLowerCase().contains(league.getLeagueType().toLowerCase())) {
+                return i;
+            }
+        }
+        return -1;
+    }
+
+    @Override
+    public int searchForSuitableLeagueTemplate(LeagueComponents.LeagueDescription league, List<WebElement> tblResults) {
+        int i = 1;
+        for (; i < tblResults.size(); i++) {
+            List<WebElement> tblCel = tblResults.get(i).findElements(By.tagName("td"));
+            if (league.getYear().equals(tblCel.get(1).getText()) &&
+                    league.getSeason().toLowerCase().equals(tblCel.get(2).getText().toLowerCase()) &&
+                    league.getLeagueType().toLowerCase().contains(tblCel.get(3).getText().toLowerCase())) {
                 return i;
             }
         }
@@ -290,8 +313,8 @@ public class Helpers implements Actionable {
 
     @Override
     public int searchForElementInTheJobList(Job job, List<WebElement> tblResults) {
-        int i = 1;
-        for (; i < tblResults.size(); i++) {
+
+        for (int i = 1; i < tblResults.size(); i++) {
             List<WebElement> tblCel = tblResults.get(i).findElements(By.tagName("td"));
             try {
                 if (tblCel.get(1).getText().equals(job.getYear()) &&
@@ -304,6 +327,7 @@ public class Helpers implements Actionable {
                 Log.info("Exception when searching for element");
             }
         }
+
         Log.info("Element not found");
         return -1;
     }
@@ -461,6 +485,8 @@ public class Helpers implements Actionable {
 
     public ArrayList<JobPage> initJobVariables(List<Job> jobsList) {
         ArrayList<JobPage> jobs = new ArrayList<>();
+//        jobs.add(new PlayoffDrawPage(_driver, jobsList.get(0)));
+
 
         jobs.add(new CalculateAwardsPage(_driver, jobsList.get(0)));
         jobs.add(new DropDuplicatesPage(_driver, jobsList.get(1)));
@@ -502,12 +528,12 @@ public class Helpers implements Actionable {
     }
 
     @Override
-    public WebElement GetCheckBoxFromList(List<WebElement> checkList, String season){
+    public WebElement GetCheckBoxFromList(List<WebElement> checkList, String season) {
 
-        for(WebElement element: checkList){
+        for (WebElement element : checkList) {
             List<WebElement> cells = element.findElements(By.tagName("td"));
-            for(WebElement cel: cells){
-                if(cel.findElement(By.tagName("label")).getText().toLowerCase().equals(season)){
+            for (WebElement cel : cells) {
+                if (cel.findElement(By.tagName("label")).getText().toLowerCase().equals(season)) {
                     return cel.findElement(By.className("custom-control-input"));
                 }
             }

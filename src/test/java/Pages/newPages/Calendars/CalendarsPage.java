@@ -31,18 +31,18 @@ public class CalendarsPage extends Pages {
         return toastContainerLocator;
     }
 
+    @FindBy(how = How.ID, using ="ctl00_ctl00_CPHolder_CPHolder_lnkEvents")
+    private WebElement lnkEvents;
+
     public CalendarsPage(WebDriver driver) {
         super(driver);
         PageFactory.initElements(driver, this);
 //        _driver = driver;
     }
 
-    /*@Override
-    public List<WebElement> getPopOverLocatorList() {
-        return _driver.findElement(By.id("ctl00_ctl00_CPHolder_CPHolder_tableDataView_pnlGrid"))
-                .findElements(By.id("ctl00_ctl00_CPHolder_CPHolder_tableDataView_grdTableList")).get(1)
-                .findElements(By.tagName("tr"));
-    }*/
+    public WebElement getLnkEvents() {
+        return lnkEvents;
+    }
 
     @Override
     public int getPageActionIndex(String action) {
@@ -77,15 +77,7 @@ public class CalendarsPage extends Pages {
         return _driver.findElement(toastContainerLocator);
     }
 
-   /* @Override
-    public List<WebElement> getTblResults(int i) {
-        return tblTableResults.findElements(By.id("ctl00_ctl00_CPHolder_CPHolder_tableDataView_grdTableList"))
-                .get(i)
-                .findElement(By.tagName("tbody"))
-                .findElements(By.tagName("tr"));
-    }*/
-
-    public WebElement getDeleteModal() {
+       public WebElement getDeleteModal() {
         return deleteModal;
     }
 

@@ -5,7 +5,6 @@
 package steps;
 
 import base.BaseUtil;
-import base.CustomExceptions;
 import cucumber.api.DataTable;
 import cucumber.api.PendingException;
 import cucumber.api.java.en.And;
@@ -32,7 +31,7 @@ public class LeagueSteps {
     private BaseUtil base;
     private Helpers I;
     private LeagueListPage leagueListPage;
-    private LeagueTemplateSelectionPage leageTemplateSelectionPage;
+    private LeagueTemplateSelectionPage leagueTemplateSelectionPage;
     private LeagueNewEditPage leagueNewEditPage;
     private LeagueVP_SelectionPage leagueVPSelectionPage;
     private RosterInstructions_SelectionPage rosterInstructionsPage;
@@ -62,12 +61,12 @@ public class LeagueSteps {
     public void iEnterTheFollowingDataInDescriptionTab(DataTable table) {
         try {
             Log.info("[League][New League] - Filling out Description fields");
-            leageTemplateSelectionPage = new LeagueTemplateSelectionPage(base.driver);
-            I.waitUntilElementIsVisible(leageTemplateSelectionPage.getTblLeagueTemplaes());
+            leagueTemplateSelectionPage = new LeagueTemplateSelectionPage(base.driver);
+            I.waitUntilElementIsVisible(leagueTemplateSelectionPage.getTblLeagueTemplaes());
             leagueDescriptionList = table.asList(LeagueComponents.LeagueDescription.class);
 
 
-            List<WebElement> tblResults = leageTemplateSelectionPage.getTblResults(1);
+            List<WebElement> tblResults = leagueTemplateSelectionPage.getTblResults(1);
             int i = I.searchForElementInTheLeagueTemplateList(leagueDescriptionList.get(0), tblResults);
 
             /*Note: As there are two tables with same elements,
@@ -75,7 +74,7 @@ public class LeagueSteps {
                 so the temporary solution is to get first table elements,
                 otherwise click on button using javascript would do the trick
              */
-            I.ClickOnRowButtonAtPosition(leageTemplateSelectionPage.getTblResults(0).get(i), 0);
+            I.ClickOnRowButtonAtPosition(leagueTemplateSelectionPage.getTblResults(0).get(i), 0);
             //I.ClickOnRowButtonAtPosition(tblResults.get(i),0);
 
             leagueNewEditPage = new LeagueNewEditPage(base.driver);
@@ -92,11 +91,11 @@ public class LeagueSteps {
                 I.Click(leagueNewEditPage.getBtnVPSelect());
                 iSearchForTheFollowingAltaNumberInVPLeague(ld.getVPName());
 
-                I.Click(leagueNewEditPage.getBtnRosterInstructions());
+                /*I.Click(leagueNewEditPage.getBtnRosterInstructions());
                 iSearchForTheFollowingDocumentID(ld.getRosterDocId());
 
                 I.Click(leagueNewEditPage.getBtnPacketDocument());
-                iSearchForTheFollowingDocumentID(ld.getPacketDocId());
+                iSearchForTheFollowingDocumentID(ld.getPacketDocId());*/
             }
 
         } catch (Exception e) {
@@ -136,10 +135,9 @@ public class LeagueSteps {
     @Then("^I save my new league without errors$")
     public void iSaveMyNewLeagueWithoutErrors() {
         try {
-            I.Click(leagueNewEditPage.getBtnSave());
             Log.info("[League][New League] - Saving new League");
-            I.waitUntilElementIsVisible(leagueNewEditPage.getTabErrors());
             I.Click(leagueNewEditPage.getBtnSave());
+            I.WaitUntilPresenceOfElement(leagueTemplateSelectionPage.getToastrBy());
             assertFalse(checkForErrors());
         } catch (Exception e) {
             base.GrabScreenShot();

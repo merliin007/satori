@@ -15,17 +15,28 @@ import java.util.List;
 public abstract class Pages{
     protected WebDriver _driver;
 
-    @FindBy(how = How.ID, using = "ctl00_ctl00_CPHolder_CPHolder_tableDataView_pnlGrid")
-    protected WebElement tblTableResults;
-
     public Pages(WebDriver _driver) {
         this._driver = _driver;
     }
 
+    @FindBy(how = How.ID, using = "ctl00_ctl00_CPHolder_CPHolder_tableDataView_pnlGrid")
+    protected WebElement tblTableResults;
+
+    @FindBy(how = How.CLASS_NAME, using = "nav-ribbon")
+    private WebElement topRibbon;
+
+    public WebElement RibbonOption(String opt) throws Exception{
+        List<WebElement> ribbonList = topRibbon.findElement(By.className("container"))
+                .findElements(By.className("nav-ribbon__option"));
+        for(WebElement rib: ribbonList){
+            if(rib.findElement(By.tagName("a")).getText().toLowerCase().contains(opt.toLowerCase()))
+                return rib;
+        }
+        return null;
+    }
+
     public List<WebElement> getPopOverLocatorList(){
-        return _driver.findElement(By.id("ctl00_ctl00_CPHolder_CPHolder_tableDataView_pnlGrid"))
-                .findElements(By.id("ctl00_ctl00_CPHolder_CPHolder_tableDataView_grdTableList")).get(0)
-                .findElements(By.tagName("tr"));
+        return getTblResults(0);
     }
 
     public List<WebElement> getPopOverCommands(int position){

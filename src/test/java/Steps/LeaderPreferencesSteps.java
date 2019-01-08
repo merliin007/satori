@@ -5,7 +5,6 @@
 package steps;
 
 import base.BaseUtil;
-import cucumber.api.PendingException;
 import cucumber.api.java.en.And;
 import org.openqa.selenium.WebElement;
 import pages.newPages.memberPortal.myActiveTeams.LeaderPreferencesPage;

@@ -138,6 +138,11 @@
             <version>0.0.15</version>
         </dependency>
 
-
+        <!-- https://mvnrepository.com/artifact/info.cukes/cucumber-java8 -->
+        <!--<dependency>
+            <groupId>info.cukes</groupId>
+            <artifactId>cucumber-java8</artifactId>
+            <version>1.2.5</version>
+        </dependency>-->
     </dependencies>
 </project>

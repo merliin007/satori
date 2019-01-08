@@ -4,14 +4,15 @@ Feature: Events search
   Background: Successfully loging into alta website
     Given User navigates to ALTA website
     When I enter username as "OfficeUser" and password as "Abc!123"
+    Then I select "Manage" portal
 
   Scenario: User searches for an event and explores it
     When I navigate to the following page option
-      | Website Support | Events |
-    And I search for "2018 Main" calendar or create a new if there is not any
+      | Website Support | Calendars & Events |  |
+    And I search for "2019 Main" calendar or create a new if there is not any
       | year | calendarType | startDate  | endDate    |
-      | 2018 | Main         | 07/03/2018 | 07/31/2018 |
+      | 2019 | Main         | 01/03/2019 | 01/31/2019 |
     Then I create a new Event using
       | calendarList | eventName       | eventDescription               | dateOfEvent |
-      | 2018 Main    | Automated Event | Automator creating a new event | 11/13/2018  |
-    Then I delete such event
+      | 2019 Main    | Automated Event | Automator creating a new event | 01/13/2019  |
+#    Then I delete such event

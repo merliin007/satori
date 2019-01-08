@@ -18,7 +18,7 @@ public class NewRosterWizardPage {
 
     private By lblLocator = new By.ById("ctl00_ctl00_CPHolder_CPHolder_memberSearchPopup_lblMessage");
 
-    @FindBy(how = How.ID, using = "ctl00_ctl00_CPHolder_CPHolder_ct999_dtv_cbAcknowledgement")
+    @FindBy(how = How.ID, using = "ctl00_ctl00_CPHolder_CPHolder_ct999_dtv_lblAcknowledgement")
     private WebElement chkAcnowledgment;
 
     @FindBy(how = How.ID, using = "ctl00_ctl00_CPHolder_CPHolder_ct999_dtv_btnSearchPlayers")
@@ -67,8 +67,8 @@ public class NewRosterWizardPage {
     }
 
     public WebElement getChkAcnowledgment() {
-        //return chkAcnowledgment;
-        return _driver.findElement(By.id("ctl00_ctl00_CPHolder_CPHolder_ct999_dtv_cbAcknowledgement"));
+        return chkAcnowledgment;
+        //return _driver.findElement(By.id("ctl00_ctl00_CPHolder_CPHolder_ct999_dtv_cbAcknowledgement"));
     }
 
     public WebElement getBtnAddPlayer() {

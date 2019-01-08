@@ -33,8 +33,8 @@ public class JobSteps {
     }
 
 
-    @And("^I visit each of the following jobs and queue them$")
-    public void iVisitEachOfTheFollowingJobsAndQueueThem(DataTable table) throws Throwable {
+    @And("^I visit each of the following jobs and successfully queue them$")
+    public void iVisitEachOfTheFollowingJobsAndSuccessfullyQueueThem(DataTable table){
         try {
             jobsListPage = new JobsListPage(base.driver);
             List<Job> jobList = table.asList(Job.class);

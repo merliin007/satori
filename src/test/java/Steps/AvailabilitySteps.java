@@ -5,9 +5,7 @@
 package steps;
 
 import base.BaseUtil;
-import cucumber.api.PendingException;
 import cucumber.api.java.en.And;
-import org.kohsuke.rngom.parse.host.Base;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import pages.newPages.memberPortal.myActiveTeams.AvailabilityPage;

@@ -18,6 +18,7 @@ import pages.newPages.myRosters.NewRosterPage;
 import pages.newPages.myRosters.NewRosterWizardPage;
 import utility.Helpers;
 import utility.Log;
+import utility.league.LeagueComponents;
 import utility.newRoster.Facility;
 import utility.newRoster.PlayerRoster;
 
@@ -41,19 +42,21 @@ public class RosterSteps {
         I = new Helpers(base.driver);
     }
 
-    @And("^I create a new roster selecting \"([^\"]*)\" league$")
-    public void iCreateANewRosterSelectingLeague(String league) {
+    @And("^I create a new roster selecting a league matching$")
+    public void iCreateANewRosterSelectingLeague(DataTable table) {
         try {
             Log.info("Entering to New Roster Page");
             myRostersPage = new MyRostersPage(base.driver);
             I.Click(myRostersPage.getBtnCreateRoster());
             Log.info("Creating New Roster Wizard");
             newRosterPage = new NewRosterPage(base.driver);
-            I.SelectValue(newRosterPage.getDdlSelectLeague(), league);
-            I.Click(newRosterPage.getBtnAcknowledgeGetStarted());
-            Log.info(league + " selected");
-            newRosterWizardPage = new NewRosterWizardPage(base.driver);
-            I.waitUntilElementIsVisible(newRosterWizardPage.getBtnNext());
+            List<WebElement> tblResults = newRosterPage.getTblResults(1);
+            List<LeagueComponents.LeagueDescription> leagueTemplate = table.asList(LeagueComponents.LeagueDescription.class);
+            int index = I.searchForSuitableLeagueTemplate(leagueTemplate.get(0), tblResults);
+            //WebElement row = newRosterPage.getTblResults(0).get(idx);
+            I.selectOptionFromCell(index, "select", newRosterPage);
+            I.waitUntilElementIsVisible(newRosterPage.getNewRosterModal());
+            I.Click(newRosterPage.modalCommands("New"));
         } catch (Exception e) {
             base.GrabScreenShot();
             Log.error(e.getMessage());
@@ -66,11 +69,13 @@ public class RosterSteps {
     public void iEnterTheFollowingPlayersOnPlayersTab(DataTable table) {
         try {
             //Thread.sleep(2000L);
+            newRosterWizardPage = new NewRosterWizardPage(base.driver);
             I.waitUntilInvisibilityOf(newRosterWizardPage.getWizardObscurer());
+            I.CheckCheckBox(newRosterWizardPage.getChkAcnowledgment());
             I.Click(newRosterWizardPage.getBtnNext());
             I.waitUntilElementIsVisible(newRosterWizardPage.getBtnAddPlayer());
 
-            I.CheckCheckBox(newRosterWizardPage.getICertifyGrantedPermission());
+            I.CheckCheckBox(newRosterWizardPage.getChkAcnowledgment());
             I.Click(newRosterWizardPage.getBtnAddPlayer());
             I.waitUntilElementIsVisible(newRosterWizardPage.getAddPlayerModal());
             I.waitUntilElementIsClickable(newRosterWizardPage.getAddPlayerModalElement("txtalta"));
@@ -110,7 +115,7 @@ public class RosterSteps {
 
             I.waitUntilElementIsClickable(newRosterWizardPage.getBtnNext());
             I.Click(newRosterWizardPage.getBtnNext());
-            iSelectTheFollowingDesignee(null);
+//            iSelectTheFollowingDesignee(null);
         } catch (Exception e) {
             base.GrabScreenShot();
             Log.error(e.getMessage());
@@ -138,8 +143,8 @@ public class RosterSteps {
         try {
             Log.info("Selecting facility");
             I.waitUntilInvisibilityOf(newRosterWizardPage.getWizardObscurer());
-            I.waitUntilElementIsVisible(newRosterWizardPage.getICertifyGrantedPermission());
-            I.CheckCheckBox(newRosterWizardPage.getICertifyGrantedPermission());
+            I.waitUntilElementIsVisible(newRosterWizardPage.getChkAcnowledgment());
+            I.CheckCheckBox(newRosterWizardPage.getChkAcnowledgment());
             I.Click(newRosterWizardPage.getBtnFacility());
             I.waitUntilElementIsVisible(newRosterWizardPage.getAddFacilityModal());
             I.waitUntilElementIsClickable(newRosterWizardPage.getAddFacilityModalElement("txtName"));
@@ -156,6 +161,7 @@ public class RosterSteps {
             I.waitUntilInvisibilityOf(newRosterWizardPage.getAddFacilityModal());
             I.waitUntilElementIsClickable(newRosterWizardPage.getBtnNext());
             I.Click(newRosterWizardPage.getBtnNext());
+            iSelectTheFollowingDesignee(null);
         } catch (Exception e) {
             base.GrabScreenShot();
             Log.error(e.getMessage());

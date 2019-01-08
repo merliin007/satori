@@ -14,7 +14,10 @@ import utility.Helpers;
 import utility.Log;
 import utility.job.Job;
 
+import java.util.List;
+
 public class AssignToDivisionPage extends JobPage {
+    private Helpers I;
 
     @FindBy(how = How.ID, using = "ctl00_ctl00_CPHolder_CPHolder_ddlIgnoreConstraintsYesNoList")
     private WebElement ddlIgnore;
@@ -28,13 +31,23 @@ public class AssignToDivisionPage extends JobPage {
         new Select(ddlIgnore).selectByVisibleText("Yes");
         btnSearch.click();
 
-        int i = new Helpers(_driver).searchForElementInTheJobList(job, getTblResults(1));
-        return (i > 0) ? getTblResults(0).get(i) : null;
+        int idx, j = 1, pagingSize = getTblPaging().size();
+        do {
+            idx = I.searchForElementInTheJobList(job, getTblResults(1));
+            if (idx > 0)
+                break;
+            else
+                goToNextPage(j, I);
+        } while (++j < 5 && j < pagingSize);
+        return (idx > 0) ? getTblResults(0).get(idx) : null;
     }
 
 
     public AssignToDivisionPage(WebDriver driver, Job job) {
         super(driver, job);
         PageFactory.initElements(driver, this);
+        I = new Helpers(_driver);
     }
+
+
 }

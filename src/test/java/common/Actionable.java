@@ -13,6 +13,7 @@ import utility.calendar.Calendar;
 import utility.event.Event;
 import utility.job.Job;
 import utility.league.LeagueComponents;
+import utility.members.Member;
 import utility.newRoster.Facility;
 import utility.newRoster.PlayerRoster;
 
@@ -34,9 +35,11 @@ public interface Actionable {
     void selectOptionFromCell(int position, String action, Pages page) throws CustomExceptions;
     DataTable createLinkForNavigator(String section, String option);
     void sortByColumn(String columnName, Pages page);
+    int searchForMemberInMembersList(Member member, List<WebElement> tblResults);
     int searchForElementInTheCalendarList(Calendar calendar, List<WebElement> tblResults);
     int searchForElementInTheEventsList(Event event, List<WebElement> tblResults);
     int searchForElementInTheLeagueTemplateList(LeagueComponents.LeagueDescription league, List<WebElement> tblResults);
+    int searchForSuitableLeagueTemplate(LeagueComponents.LeagueDescription league, List<WebElement> tblResults);
     int searchForElementInTheListAtPos(String altaNumber, List<WebElement> tblResults, int pos);
     int searchForElementInTheLeagueList(LeagueComponents.LeagueDescription leagueDescriptionList, LeagueComponents.LeagueDates leagueDates, List<WebElement> tblResults);
     void waitUntilElementIsVisible(WebElement element);

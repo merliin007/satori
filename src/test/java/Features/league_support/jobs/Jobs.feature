@@ -8,12 +8,11 @@ Feature: Jobs execution
 
   Scenario: User navigates through Jobs page and queues some jobs and verifies all jobs are listed on job queue
     When I navigate to the following page option
-      | League Support | Jobs |
-    And I visit each of the following jobs and queue them
+      | League Support | Jobs ||
+    And I visit each of the following jobs and successfully queue them
       | JobName            | Year | Season | League         | Age | LevelFlight |
       | Calculate Awards   | 2017 |        |                |     |             |
       | Drop Duplicates    | 2018 | Fall   | Wheelchair     |     |             |
-      | Assign to Division | 1971 | Spring | Senior Day Men |     |             |
+      | Assign to Division | 1972 | Spring | Senior Day Men |     |             |
       | Schedule League    | 1972 | Winter | Mixed Doubles  |     |             |
       | Playoff Draw       | 2017 | Spring | Junior Girls   | 18  | C-1         |
-    Then I can verify all jobs are listed on the job queue page

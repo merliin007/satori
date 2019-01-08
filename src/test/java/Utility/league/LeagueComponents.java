@@ -127,6 +127,12 @@ public class LeagueComponents {
             numberOfSeasonsPerYear = NumberOfSeasonsPerYear;
             active = Active;
         }
+
+        public LeagueDescription(String Year, String Season, String LeagueType){
+            year = Year;
+            season = Season;
+            leagueType = LeagueType;
+        }
     }
 
     public class LeagueDetails {
