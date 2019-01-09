@@ -59,6 +59,10 @@ public class Helpers implements Actionable {
         js.executeScript(script, element);
     }
 
+    public void AcceptAlert(){
+        _driver.switchTo().alert().accept();
+    }
+
     @Override
     public void RemoveAttribute(WebElement element) {
         JavascriptExecutor js = (JavascriptExecutor) _driver;
@@ -101,6 +105,18 @@ public class Helpers implements Actionable {
         if (val == null || val.isEmpty())
             return;
         new Select(element).selectByVisibleText(val);
+    }
+
+    public void SelectValueLike(WebElement element, String val){
+        if (val == null || val.isEmpty())
+            return;
+        List<WebElement> optList = element.findElements(By.tagName("option"));
+        for(int i = 0; i < optList.size(); i++){
+            if(optList.get(i).getText().contains(val)){
+                new Select(element).selectByIndex(i);
+                return;
+            }
+        }
     }
 
 
@@ -481,6 +497,29 @@ public class Helpers implements Actionable {
                 .pollingEvery(Duration.ofMillis(100L))
                 .ignoring(NoSuchElementException.class)
                 .until(ExpectedConditions.presenceOfElementLocated(locator));
+    }
+
+    public void WaitUntilVisualizationOfElementLocatedBy(By locator) throws Exception {
+        new FluentWait<>(_driver)
+                .withTimeout((Duration.ofSeconds(6)))
+                .pollingEvery(Duration.ofMillis(100L))
+                .ignoring(StaleElementReferenceException.class)
+                .until(ExpectedConditions.visibilityOfElementLocated(locator));
+    }
+
+    public void WaitUntilVisualizationOfElement(WebElement element) throws Exception {
+/*
+        new FluentWait<>(_driver)
+                .withTimeout((Duration.ofSeconds(6)))
+                .pollingEvery(Duration.ofMillis(100L))
+                .ignoring(StaleElementReferenceException.class)
+                //.until(ExpectedConditions.visibilityOf(element));
+                .until(ExpectedConditions.refreshed(
+                        ExpectedConditions.visibilityOf(element)
+                ));
+*/
+        wait.until(ExpectedConditions.refreshed(ExpectedConditions.stalenessOf(element)));
+        //wait.until(ExpectedConditions.presenceOfElementLocated(By.id("table")));
     }
 
     public ArrayList<JobPage> initJobVariables(List<Job> jobsList) {

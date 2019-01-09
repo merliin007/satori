@@ -22,6 +22,8 @@ public class nLoginPage {
     private WebElement chkKeepLogged;
     @FindBy (how = How.ID, using = "ctl00_ctl00_CPHolder_CPHolder_lblError")
     private WebElement lblError;
+    @FindBy(how =How.ID, using ="ctl00_ctl00_CPHolder_CPHolder_HyperLink2")
+    private WebElement linkSingup;
 
     public nLoginPage(WebDriver driver) {
         PageFactory.initElements(driver, this);
@@ -53,5 +55,9 @@ public class nLoginPage {
 
     public WebElement getLblError(){
         return lblError;
+    }
+
+    public WebElement getLinkSingup() {
+        return linkSingup;
     }
 }

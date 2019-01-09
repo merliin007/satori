@@ -65,4 +65,6 @@ public class LandingPage {
     public WebElement getBtnSignIn() {
         return btnSignIn;
     }
+
+
 }

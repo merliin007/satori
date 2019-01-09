@@ -16,7 +16,7 @@ import utility.Log;
 import static org.junit.Assert.assertTrue;
 import static org.junit.Assert.fail;
 
-public class LoginSteps/* extends BaseUtil*/ {
+public class LoginSteps {
     private BaseUtil base;
     private nLoginPage loginPage;
     private ManageAlta manageAlta;
@@ -101,6 +101,19 @@ public class LoginSteps/* extends BaseUtil*/ {
             case "member": return 0;
             case "manage": return 2;
             default: return -1;
+        }
+    }
+
+    @When("^User clicks on Join Now link$")
+    public void userClicksOnJoinNowLink() {
+        try{
+            if(loginPage == null)
+                loginPage = new nLoginPage(base.driver);
+            I.Click(loginPage.getLinkSingup());
+        }catch (Exception e){
+            Log.error(e.getMessage());
+            base.GrabScreenShot();
+            fail();
         }
     }
 }
