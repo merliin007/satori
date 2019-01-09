@@ -6,6 +6,7 @@ package steps;
 
 import base.BaseUtil;
 import cucumber.api.DataTable;
+import cucumber.api.PendingException;
 import cucumber.api.java.en.And;
 import cucumber.api.java.en.Then;
 import pages.newPages.memberPortal.myAccount.MyMembershipPage;
@@ -38,7 +39,7 @@ public class SignUpSteps {
         try {
             Log.info("New Account: Filling out main form");
             List<List<String>> tbl = table.raw();
-            member = new Member(tbl.get(1));
+            member = new Member(tbl.get(0));
             NewMemberSignUpPage signUpPage = new NewMemberSignUpPage(base.driver);
 
             I.Write(signUpPage.getTxtFirstName(), member.getFirst());
@@ -77,15 +78,15 @@ public class SignUpSteps {
         }
     }
 
-    @And("^User selects the following rankings$")
-    public void userSelectsTheFollowingRankings(DataTable table) {
+    @And("^User selects the following rankings ([^\"]*)$")
+    public void userSelectsTheFollowingRankings(String rankings) {
         if (member == null) fail();
         try {
             Log.info("New Account: Selecting Rankings");
-            I.Click(registerPage.getBtnNext());
-            List<List<String>> tbl = table.raw();
-            for (List row : tbl) {
-                I.CheckCheckBox(registerPage.getRankingCheckbox(row.get(0).toString()));
+            I.ClickIfButtonIsNotDisabled(registerPage.getBtnNext());
+            String[] tbl = rankings.split(",");
+            for (int i = 0; i < tbl.length; i++) {
+                I.CheckCheckBox(registerPage.getRankingCheckbox(tbl[i]));
             }
 
         } catch (Exception e) {

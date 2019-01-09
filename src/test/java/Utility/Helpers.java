@@ -78,6 +78,11 @@ public class Helpers implements Actionable {
         element.click();
     }
 
+    public void ClickIfButtonIsNotDisabled(WebElement element){
+        if(!element.getAttribute("class").contains("disabled"))
+            Click(element);
+    }
+
     @Override
     public void ClickOnRowButtonAtPosition(WebElement row, int pos) {
         WebElement rowButton = row.findElements(By.tagName("td")).get(pos).

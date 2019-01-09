@@ -39,91 +39,8 @@
       <file leaf-file-name="NewMemberSignUp.feature" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/features/signup/NewMemberSignUp.feature">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="204">
-              <caret line="12" column="44" selection-start-line="12" selection-start-column="44" selection-end-line="12" selection-end-column="44" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="SignUpSteps.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/test/java/steps/SignUpSteps.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="344">
-              <caret line="109" column="81" selection-start-line="109" selection-start-column="81" selection-end-line="109" selection-end-column="81" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="MyMembershipPage.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/pages/newPages/memberPortal/myAccount/MyMembershipPage.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="289">
-              <caret line="20" column="40" selection-start-line="20" selection-start-column="40" selection-end-line="20" selection-end-column="40" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#409#410#0" expanded="true" />
-                <element signature="e#435#436#0" expanded="true" />
-                <element signature="e#623#624#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Helpers.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/utility/Helpers.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="357">
-              <caret line="61" column="27" selection-start-line="61" selection-start-column="16" selection-end-line="61" selection-end-column="27" />
-              <folding>
-                <element signature="e#1640#1641#0" expanded="true" />
-                <element signature="e#1699#1700#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="RegisterPage.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/pages/newPages/singup/RegisterPage.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="344">
-              <caret line="162" selection-start-line="162" selection-end-line="162" />
-              <folding>
-                <element signature="e#370#486#0" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="LeagueTemplateCreation.feature" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/features/website_support/leagues/LeagueTemplateCreation.feature">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="221">
-              <caret line="13" column="32" selection-start-line="13" selection-start-column="32" selection-end-line="13" selection-end-column="32" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="LeagueComponents.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/utility/league/LeagueComponents.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1054">
-              <caret line="99" column="26" selection-start-line="99" selection-start-column="26" selection-end-line="99" selection-end-column="52" />
-              <folding>
-                <element signature="e#2213#2214#0" expanded="true" />
-                <element signature="e#2276#2277#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="LoginSteps.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/steps/LoginSteps.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-1071">
-              <caret line="3" selection-start-line="3" selection-end-line="3" />
+            <state relative-caret-position="136">
+              <caret line="8" column="40" selection-start-line="8" selection-start-column="40" selection-end-line="8" selection-end-column="40" />
             </state>
           </provider>
         </entry>
@@ -131,49 +48,22 @@
       <file leaf-file-name="Member.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/utility/members/Member.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="245">
-              <caret line="50" column="54" selection-start-line="50" selection-start-column="54" selection-end-line="50" selection-end-column="54" />
+            <state relative-caret-position="170">
+              <caret line="41" column="29" selection-start-line="41" selection-start-column="29" selection-end-line="41" selection-end-column="29" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="method#Member#1;class#Member#0" />
-                <element signature="e#2437#2438#0" expanded="true" />
-                <element signature="e#2475#2476#0" expanded="true" />
-                <element signature="e#2509#2510#0" expanded="true" />
-                <element signature="e#2539#2540#0" expanded="true" />
-                <element signature="e#2571#2572#0" expanded="true" />
-                <element signature="e#2599#2600#0" expanded="true" />
-                <element signature="e#2630#2631#0" expanded="true" />
-                <element signature="e#2657#2658#0" expanded="true" />
-                <element signature="e#2688#2689#0" expanded="true" />
-                <element signature="e#2715#2716#0" expanded="true" />
-                <element signature="e#2745#2746#0" expanded="true" />
-                <element signature="e#2771#2772#0" expanded="true" />
-                <element signature="e#2801#2802#0" expanded="true" />
-                <element signature="e#2827#2828#0" expanded="true" />
-                <element signature="e#2860#2861#0" expanded="true" />
-                <element signature="e#2889#2890#0" expanded="true" />
-                <element signature="e#2927#2928#0" expanded="true" />
-                <element signature="e#2986#2987#0" expanded="true" />
-                <element signature="e#3022#3023#0" expanded="true" />
-                <element signature="e#3054#3055#0" expanded="true" />
-                <element signature="e#3092#3093#0" expanded="true" />
-                <element signature="e#3126#3127#0" expanded="true" />
-                <element signature="e#3162#3163#0" expanded="true" />
-                <element signature="e#3194#3195#0" expanded="true" />
-                <element signature="e#3226#3227#0" expanded="true" />
-                <element signature="e#3254#3255#0" expanded="true" />
-                <element signature="e#3287#3288#0" expanded="true" />
-                <element signature="e#3316#3317#0" expanded="true" />
-                <element signature="e#3346#3347#0" expanded="true" />
-                <element signature="e#3372#3373#0" expanded="true" />
-                <element signature="e#3404#3405#0" expanded="true" />
-                <element signature="e#3432#3433#0" expanded="true" />
-                <element signature="e#3465#3466#0" expanded="true" />
-                <element signature="e#3494#3495#0" expanded="true" />
-                <element signature="e#3529#3530#0" expanded="true" />
-                <element signature="e#3560#3561#0" expanded="true" />
-                <element signature="e#3595#3596#0" expanded="true" />
-                <element signature="e#3626#3627#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="SignUpSteps.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/test/java/steps/SignUpSteps.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="394">
+              <caret line="95" selection-start-line="95" selection-end-line="95" />
+              <folding>
+                <element signature="imports" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -191,7 +81,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>getBtnNext</find>
       <find>addpl</find>
       <find>wait</find>
       <find>zind</find>
@@ -221,6 +110,7 @@
       <find>located</find>
       <find>getHome()</find>
       <find>apt</find>
+      <find>&lt;</find>
     </findStrings>
     <replaceStrings>
       <replace />
@@ -232,7 +122,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/test/java/pages/newPages/myRosters/NewRosterPage.java" />
         <option value="$PROJECT_DIR$/src/test/java/pages/newPages/myRosters/NewRosterWizardPage.java" />
         <option value="$PROJECT_DIR$/src/test/java/steps/RosterSteps.java" />
         <option value="$PROJECT_DIR$/src/test/java/features/website_support/leagues/Leagues.feature" />
@@ -277,12 +166,13 @@
         <option value="$PROJECT_DIR$/src/test/java/pages/newPages/singup/SingUpCommon.java" />
         <option value="$PROJECT_DIR$/src/test/java/pages/newPages/singup/Register2Page.java" />
         <option value="$PROJECT_DIR$/src/test/java/steps/LoginSteps.java" />
-        <option value="$PROJECT_DIR$/src/test/java/pages/newPages/singup/RegisterPage.java" />
-        <option value="$PROJECT_DIR$/src/test/java/features/signup/NewMemberSignUp.feature" />
-        <option value="$PROJECT_DIR$/src/test/java/utility/members/Member.java" />
-        <option value="$PROJECT_DIR$/src/test/java/utility/Helpers.java" />
         <option value="$PROJECT_DIR$/src/test/java/pages/newPages/memberPortal/myAccount/MyMembershipPage.java" />
+        <option value="$PROJECT_DIR$/src/test/java/utility/RandomString.java" />
+        <option value="$PROJECT_DIR$/src/test/java/utility/Helpers.java" />
+        <option value="$PROJECT_DIR$/src/test/java/features/signup/NewMemberSignUp.feature" />
         <option value="$PROJECT_DIR$/src/test/java/steps/SignUpSteps.java" />
+        <option value="$PROJECT_DIR$/src/test/java/pages/newPages/singup/RegisterPage.java" />
+        <option value="$PROJECT_DIR$/src/test/java/utility/members/Member.java" />
       </list>
     </option>
   </component>
@@ -364,53 +254,7 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="test" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="common" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="SatoriAutomation" type="b2602c69:ProjectViewProjectNode" />
-              <item name="satori" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="features" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="SatoriAutomation" type="b2602c69:ProjectViewProjectNode" />
-              <item name="satori" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="features" type="462c0819:PsiDirectoryNode" />
-              <item name="signup" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="SatoriAutomation" type="b2602c69:ProjectViewProjectNode" />
-              <item name="satori" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="features" type="462c0819:PsiDirectoryNode" />
-              <item name="website_support" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="SatoriAutomation" type="b2602c69:ProjectViewProjectNode" />
-              <item name="satori" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="features" type="462c0819:PsiDirectoryNode" />
-              <item name="website_support" type="462c0819:PsiDirectoryNode" />
-              <item name="calendar_events" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="SatoriAutomation" type="b2602c69:ProjectViewProjectNode" />
-              <item name="satori" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="features" type="462c0819:PsiDirectoryNode" />
-              <item name="website_support" type="462c0819:PsiDirectoryNode" />
-              <item name="leagues" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="SatoriAutomation" type="b2602c69:ProjectViewProjectNode" />
@@ -428,99 +272,6 @@
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="pages" type="462c0819:PsiDirectoryNode" />
               <item name="newPages" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="SatoriAutomation" type="b2602c69:ProjectViewProjectNode" />
-              <item name="satori" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="pages" type="462c0819:PsiDirectoryNode" />
-              <item name="newPages" type="462c0819:PsiDirectoryNode" />
-              <item name="memberPortal" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="SatoriAutomation" type="b2602c69:ProjectViewProjectNode" />
-              <item name="satori" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="pages" type="462c0819:PsiDirectoryNode" />
-              <item name="newPages" type="462c0819:PsiDirectoryNode" />
-              <item name="memberPortal" type="462c0819:PsiDirectoryNode" />
-              <item name="myAccount" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="SatoriAutomation" type="b2602c69:ProjectViewProjectNode" />
-              <item name="satori" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="pages" type="462c0819:PsiDirectoryNode" />
-              <item name="newPages" type="462c0819:PsiDirectoryNode" />
-              <item name="singup" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="SatoriAutomation" type="b2602c69:ProjectViewProjectNode" />
-              <item name="satori" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="pages" type="462c0819:PsiDirectoryNode" />
-              <item name="newPages" type="462c0819:PsiDirectoryNode" />
-              <item name="volunteer" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="SatoriAutomation" type="b2602c69:ProjectViewProjectNode" />
-              <item name="satori" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="steps" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="SatoriAutomation" type="b2602c69:ProjectViewProjectNode" />
-              <item name="satori" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="utility" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="SatoriAutomation" type="b2602c69:ProjectViewProjectNode" />
-              <item name="satori" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="utility" type="462c0819:PsiDirectoryNode" />
-              <item name="calendar" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="SatoriAutomation" type="b2602c69:ProjectViewProjectNode" />
-              <item name="satori" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="utility" type="462c0819:PsiDirectoryNode" />
-              <item name="credentials" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="SatoriAutomation" type="b2602c69:ProjectViewProjectNode" />
-              <item name="satori" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="utility" type="462c0819:PsiDirectoryNode" />
-              <item name="league" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="SatoriAutomation" type="b2602c69:ProjectViewProjectNode" />
-              <item name="satori" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="utility" type="462c0819:PsiDirectoryNode" />
-              <item name="members" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -823,34 +574,34 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="Signup - 2019.01.09 at 13h 47m 22s.xml">
+    <history-entry file="Signup - 2019.01.09 at 15h 58m 38s.xml">
       <configuration name="Signup" configurationId="CucumberJavaRunConfigurationType" />
     </history-entry>
-    <history-entry file="Signup - 2019.01.09 at 13h 49m 29s.xml">
+    <history-entry file="Signup - 2019.01.09 at 16h 02m 58s.xml">
       <configuration name="Signup" configurationId="CucumberJavaRunConfigurationType" />
     </history-entry>
-    <history-entry file="Signup - 2019.01.09 at 13h 50m 36s.xml">
+    <history-entry file="Signup - 2019.01.09 at 16h 05m 44s.xml">
       <configuration name="Signup" configurationId="CucumberJavaRunConfigurationType" />
     </history-entry>
-    <history-entry file="Signup - 2019.01.09 at 13h 51m 38s.xml">
+    <history-entry file="Signup - 2019.01.09 at 16h 09m 54s.xml">
       <configuration name="Signup" configurationId="CucumberJavaRunConfigurationType" />
     </history-entry>
-    <history-entry file="Signup - 2019.01.09 at 13h 53m 17s.xml">
+    <history-entry file="Signup - 2019.01.09 at 16h 14m 48s.xml">
       <configuration name="Signup" configurationId="CucumberJavaRunConfigurationType" />
     </history-entry>
-    <history-entry file="Signup - 2019.01.09 at 14h 44m 12s.xml">
+    <history-entry file="Signup - 2019.01.09 at 16h 19m 02s.xml">
       <configuration name="Signup" configurationId="CucumberJavaRunConfigurationType" />
     </history-entry>
-    <history-entry file="Signup - 2019.01.09 at 14h 47m 43s.xml">
+    <history-entry file="Signup - 2019.01.09 at 16h 27m 40s.xml">
       <configuration name="Signup" configurationId="CucumberJavaRunConfigurationType" />
     </history-entry>
-    <history-entry file="Signup - 2019.01.09 at 14h 53m 30s.xml">
+    <history-entry file="Signup - 2019.01.09 at 16h 35m 40s.xml">
       <configuration name="Signup" configurationId="CucumberJavaRunConfigurationType" />
     </history-entry>
-    <history-entry file="Signup - 2019.01.09 at 15h 00m 36s.xml">
+    <history-entry file="Signup - 2019.01.09 at 16h 38m 55s.xml">
       <configuration name="Signup" configurationId="CucumberJavaRunConfigurationType" />
     </history-entry>
-    <history-entry file="Signup - 2019.01.09 at 15h 02m 02s.xml">
+    <history-entry file="Signup - 2019.01.09 at 16h 40m 52s.xml">
       <configuration name="Signup" configurationId="CucumberJavaRunConfigurationType" />
     </history-entry>
   </component>
@@ -865,7 +616,6 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="1912" y="-8" width="1936" height="1096" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info anchor="right" id="Palette" order="3" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32933104" />
@@ -880,14 +630,14 @@
       <window_info anchor="bottom" id="Terminal" order="7" weight="0.31336898" />
       <window_info id="Capture Tool" order="2" />
       <window_info id="Designer" order="3" />
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.5803109" visible="true" weight="0.27132195" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.57967913" visible="true" weight="0.2707889" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32513368" />
       <window_info anchor="right" id="Structure" order="10" sideWeight="0.50428814" side_tool="true" weight="0.17397882" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info id="UI Designer" order="4" />
       <window_info anchor="right" id="Theme Preview" order="6" />
-      <window_info id="Favorites" order="5" sideWeight="0.41968912" side_tool="true" weight="0.26599148" />
-      <window_info active="true" anchor="bottom" id="Debug" order="3" visible="true" weight="0.38074866" />
+      <window_info id="Favorites" order="5" sideWeight="0.42032087" side_tool="true" weight="0.2707889" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.38074866" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="right" id="Coverage" order="7" side_tool="true" weight="0.32889125" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -905,30 +655,19 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/test/java/steps/SignUpSteps.java</url>
-          <line>81</line>
+          <line>86</line>
           <properties />
-          <option name="timeStamp" value="516" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/test/java/steps/SignUpSteps.java</url>
-          <line>63</line>
-          <properties />
-          <option name="timeStamp" value="521" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/test/java/steps/SignUpSteps.java</url>
-          <line>99</line>
-          <properties />
-          <option name="timeStamp" value="522" />
+          <option name="timeStamp" value="539" />
         </line-breakpoint>
       </breakpoints>
-      <option name="time" value="523" />
+      <option name="time" value="542" />
     </breakpoint-manager>
     <watches-manager>
       <configuration name="CucumberJavaRunConfigurationType">
         <watch expression="position" />
         <watch expression="member" language="JAVA" />
         <watch expression="table" />
+        <watch expression="tbl" />
       </configuration>
     </watches-manager>
   </component>
@@ -1092,13 +831,6 @@ x.isDisplayed()</expression-string>
     </expressions>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/test/java/pages/newPages/memberPortal/myActiveTeams/ScheduleLineupPage.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="32" column="19" selection-start-line="32" selection-start-column="19" selection-end-line="32" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/pages/newPages/memberPortal/myActiveTeams/LineupPage.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="85">
@@ -1242,13 +974,6 @@ x.isDisplayed()</expression-string>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/features/website_support/leagues/Leagues.feature">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="12" column="36" selection-start-line="12" selection-start-column="36" selection-end-line="12" selection-end-column="36" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/pages/newPages/leagues/LeagueTemplatesPage.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="204">
@@ -1286,20 +1011,6 @@ x.isDisplayed()</expression-string>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/features/league_support/volunteer_bulk_entry/VolunteerBulkEntry.feature">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="19" selection-start-line="4" selection-start-column="19" selection-end-line="4" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/pages/newPages/singup/SingUpCommon.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="425">
-          <caret line="42" lean-forward="true" selection-start-line="42" selection-end-line="42" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/pages/newPages/singup/Register2Page.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="255">
@@ -1334,16 +1045,6 @@ x.isDisplayed()</expression-string>
             <element signature="e#3138#3139#0" expanded="true" />
             <element signature="e#3456#3457#0" expanded="true" />
             <element signature="e#3533#3534#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/steps/VolunteerBulkEntrySteps.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="649">
-          <caret line="77" column="31" selection-start-line="77" selection-start-column="31" selection-end-line="77" selection-end-column="31" />
-          <folding>
-            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1432,97 +1133,6 @@ x.isDisplayed()</expression-string>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/steps/LoginSteps.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1071">
-          <caret line="3" selection-start-line="3" selection-end-line="3" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/features/signup/NewMemberSignUp.feature">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="12" column="44" selection-start-line="12" selection-start-column="44" selection-end-line="12" selection-end-column="44" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/utility/members/Member.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="245">
-          <caret line="50" column="54" selection-start-line="50" selection-start-column="54" selection-end-line="50" selection-end-column="54" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="method#Member#1;class#Member#0" />
-            <element signature="e#2437#2438#0" expanded="true" />
-            <element signature="e#2475#2476#0" expanded="true" />
-            <element signature="e#2509#2510#0" expanded="true" />
-            <element signature="e#2539#2540#0" expanded="true" />
-            <element signature="e#2571#2572#0" expanded="true" />
-            <element signature="e#2599#2600#0" expanded="true" />
-            <element signature="e#2630#2631#0" expanded="true" />
-            <element signature="e#2657#2658#0" expanded="true" />
-            <element signature="e#2688#2689#0" expanded="true" />
-            <element signature="e#2715#2716#0" expanded="true" />
-            <element signature="e#2745#2746#0" expanded="true" />
-            <element signature="e#2771#2772#0" expanded="true" />
-            <element signature="e#2801#2802#0" expanded="true" />
-            <element signature="e#2827#2828#0" expanded="true" />
-            <element signature="e#2860#2861#0" expanded="true" />
-            <element signature="e#2889#2890#0" expanded="true" />
-            <element signature="e#2927#2928#0" expanded="true" />
-            <element signature="e#2986#2987#0" expanded="true" />
-            <element signature="e#3022#3023#0" expanded="true" />
-            <element signature="e#3054#3055#0" expanded="true" />
-            <element signature="e#3092#3093#0" expanded="true" />
-            <element signature="e#3126#3127#0" expanded="true" />
-            <element signature="e#3162#3163#0" expanded="true" />
-            <element signature="e#3194#3195#0" expanded="true" />
-            <element signature="e#3226#3227#0" expanded="true" />
-            <element signature="e#3254#3255#0" expanded="true" />
-            <element signature="e#3287#3288#0" expanded="true" />
-            <element signature="e#3316#3317#0" expanded="true" />
-            <element signature="e#3346#3347#0" expanded="true" />
-            <element signature="e#3372#3373#0" expanded="true" />
-            <element signature="e#3404#3405#0" expanded="true" />
-            <element signature="e#3432#3433#0" expanded="true" />
-            <element signature="e#3465#3466#0" expanded="true" />
-            <element signature="e#3494#3495#0" expanded="true" />
-            <element signature="e#3529#3530#0" expanded="true" />
-            <element signature="e#3560#3561#0" expanded="true" />
-            <element signature="e#3595#3596#0" expanded="true" />
-            <element signature="e#3626#3627#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/pages/newPages/singup/RegisterPage.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="344">
-          <caret line="162" selection-start-line="162" selection-end-line="162" />
-          <folding>
-            <element signature="e#370#486#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/utility/Helpers.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="61" column="27" selection-start-line="61" selection-start-column="16" selection-end-line="61" selection-end-column="27" />
-          <folding>
-            <element signature="e#1640#1641#0" expanded="true" />
-            <element signature="e#1699#1700#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/info/cukes/cucumber-core/1.2.5/cucumber-core-1.2.5.jar!/cucumber/runtime/Utils.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="425">
-          <caret line="48" selection-start-line="48" selection-end-line="48" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/pages/newPages/memberPortal/myAccount/MyMembershipPage.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="289">
@@ -1536,10 +1146,103 @@ x.isDisplayed()</expression-string>
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/utility/RandomString.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="191">
+          <caret line="59" selection-start-line="59" selection-end-line="59" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/info/cukes/cucumber-core/1.2.5/cucumber-core-1.2.5.jar!/cucumber/runtime/Utils.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="425">
+          <caret line="48" selection-start-line="48" selection-end-line="48" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/utility/Helpers.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="83" selection-start-line="83" selection-end-line="83" />
+          <folding>
+            <element signature="e#1640#1641#0" expanded="true" />
+            <element signature="e#1691#1692#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/features/website_support/leagues/Leagues.feature">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="6" column="14" selection-start-line="6" selection-start-column="14" selection-end-line="6" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/steps/LoginSteps.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="85" column="21" lean-forward="true" selection-start-line="85" selection-start-column="21" selection-end-line="85" selection-end-column="33" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/features/league_support/volunteer_bulk_entry/VolunteerBulkEntry.feature">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="14" column="27" selection-start-line="14" selection-start-column="27" selection-end-line="14" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/steps/VolunteerBulkEntrySteps.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="401">
+          <caret line="72" column="18" lean-forward="true" selection-start-line="72" selection-start-column="18" selection-end-line="72" selection-end-column="26" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/features/signup/NewMemberSignUp.feature">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="8" column="40" selection-start-line="8" selection-start-column="40" selection-end-line="8" selection-end-column="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/utility/members/Member.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="41" column="29" selection-start-line="41" selection-start-column="29" selection-end-line="41" selection-end-column="29" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/pages/newPages/singup/SingUpCommon.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="340">
+          <caret line="31" selection-start-line="31" selection-end-line="31" />
+          <folding>
+            <element signature="e#1042#1043#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/pages/newPages/singup/RegisterPage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="282">
+          <caret line="157" lean-forward="true" selection-start-line="157" selection-end-line="157" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/steps/SignUpSteps.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="344">
-          <caret line="109" column="81" selection-start-line="109" selection-start-column="81" selection-end-line="109" selection-end-column="81" />
+        <state relative-caret-position="394">
+          <caret line="95" selection-start-line="95" selection-end-line="95" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

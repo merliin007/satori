@@ -29,7 +29,7 @@ public class RegisterPage extends SingUpCommon {
     private WebElement dropGender;
     @FindBy(how = How.ID, using = "ctl00_CPHolder_dtv_tbc_tpProfile_txtBirthDate")
     private WebElement txtBirthDate;
-    @FindBy(how = How.ID, using = "ctl00_CPHolder_dtv_tbc_tpProfile_chkWheelchair")
+    @FindBy(how = How.CSS, using = "#ctl00_CPHolder_dtv_tbc_tpProfile_editableContents > div:nth-child(4) > div > span > label")
     private WebElement chkWheelChair;
     @FindBy(how = How.ID, using = "ctl00_CPHolder_dtv_tbc_tpProfile_txtHomePhone")
     private WebElement txtHomePhone;
@@ -159,7 +159,7 @@ public class RegisterPage extends SingUpCommon {
     public WebElement getRankingCheckbox(String opt){
         List<WebElement> chkList = grpRankings.findElements(By.tagName("td"));
         for(WebElement chk: chkList){
-            if(chk.findElement(By.tagName("label")).getText().toLowerCase().contains(opt.toLowerCase()))
+            if(chk.findElement(By.tagName("label")).getText().toLowerCase().contains(opt.toLowerCase().trim()))
                 return chk;
         }
         return null;

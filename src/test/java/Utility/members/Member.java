@@ -5,6 +5,7 @@
 package utility.members;
 
 import com.sun.istack.NotNull;
+import utility.RandomString;
 
 import java.util.List;
 
@@ -26,41 +27,39 @@ public class Member {
     private String apt;
     private String state;
     private String county;
-    private String userName;
     private String password;
 
     public Member(String FirstName, String LastName, String Gender, String DOB, String WheelChair, String HomePhone, String MobilePhone, String WorkPhone,
-                  @NotNull String Email, String Street, String Apt, String City, String State, String Zip, String County, String UserName, String Password) {
+                  @NotNull String Email, String Street, String Apt, String City, String State, String Zip, String County, String Password) {
 
         String systemTime = String.valueOf(System.currentTimeMillis());
 
         this.first = FirstName + systemTime;
         this.last = LastName + systemTime;
-        this.city = City;
+        this.city = City.isEmpty() ? RandomString.getAlphaNumericString(20) : City;
         this.zip = Zip;
         this.dob = DOB;
         this.gender = Gender;
         this.wheelChair = WheelChair;
-        this.homePhone = HomePhone;
-        this.mobilePhone = MobilePhone;
-        this.workPhone = WorkPhone;
+        this.homePhone = HomePhone.isEmpty() ? "5031" + RandomString.getNumericString(6) : HomePhone;
+        this.mobilePhone = MobilePhone.isEmpty() ? "5031" + RandomString.getNumericString(6) : MobilePhone;
+        this.workPhone = WorkPhone.isEmpty() ? "5031" + RandomString.getNumericString(6) : WorkPhone;
         if (!Email.contains("@"))
             throw new IllegalArgumentException("Email does not have correct format");
         else {
             String[] tmp = Email.split("(?=@)");
             this.email = tmp[0] + systemTime + tmp[1];
         }
-        this.street = Street;
-        this.apt = Apt;
+        this.street = Street.isEmpty() ? RandomString.getAlphaNumericString(50) : Street;
+        this.apt = Apt.isEmpty() ? RandomString.getNumericString(4) : Apt;
         this.state = State;
         this.county = County;
-        this.userName = UserName + systemTime;
         this.password = Password;
     }
 
     public Member(List<String> tbl) {
         this(tbl.get(0), tbl.get(1), tbl.get(2), tbl.get(3), tbl.get(4), tbl.get(5), tbl.get(6), tbl.get(7),
-                tbl.get(8), tbl.get(9), tbl.get(10), tbl.get(11), tbl.get(12), tbl.get(13), tbl.get(14), tbl.get(15), tbl.get(16));
+                tbl.get(8), tbl.get(9), tbl.get(10), tbl.get(11), tbl.get(12), tbl.get(13), tbl.get(14), tbl.get(15));
     }
 
     public Member(String altaNum, String first, String last, String city, String zip, String dob) {
@@ -141,7 +140,7 @@ public class Member {
     }
 
     public String getUserName() {
-        return userName;
+        return first;
     }
 
     public String getPassword() {
