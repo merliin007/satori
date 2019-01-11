@@ -9,10 +9,13 @@ import base.CustomExceptions;
 import common.Actionable;
 import common.SuiteSetUp;
 import cucumber.api.DataTable;
+import cucumber.api.java.eo.Se;
 import org.openqa.selenium.*;
 import org.openqa.selenium.support.ui.*;
 import pages.newPages.Pages;
 import pages.newPages.jobs.*;
+import pages.newPages.tss.TrackingSheetPage;
+import pages.newPages.tss.TrackingSheetScorecardDetailPage;
 import utility.calendar.Calendar;
 import utility.event.Event;
 import utility.job.Job;
@@ -20,6 +23,8 @@ import utility.league.LeagueComponents;
 import utility.members.Member;
 import utility.newRoster.Facility;
 import utility.newRoster.PlayerRoster;
+import utility.tss.TrackingSheetScoreCard;
+import utility.tss.TssWeekElements;
 
 import java.time.Duration;
 import java.time.LocalDate;
@@ -53,13 +58,15 @@ public class Helpers implements Actionable {
         element.sendKeys(val);
     }
 
+    @Override
     public void JSWrite(WebElement element, String val) {
         JavascriptExecutor js = (JavascriptExecutor) _driver;
         String script = "arguments[0].value='" + val + "';";
         js.executeScript(script, element);
     }
 
-    public void AcceptAlert(){
+    @Override
+    public void AcceptAlert() {
         _driver.switchTo().alert().accept();
     }
 
@@ -78,8 +85,9 @@ public class Helpers implements Actionable {
         element.click();
     }
 
-    public void ClickIfButtonIsNotDisabled(WebElement element){
-        if(!element.getAttribute("class").contains("disabled"))
+    @Override
+    public void ClickIfButtonIsNotDisabled(WebElement element) {
+        if (!element.getAttribute("class").contains("disabled"))
             Click(element);
     }
 
@@ -112,18 +120,18 @@ public class Helpers implements Actionable {
         new Select(element).selectByVisibleText(val);
     }
 
-    public void SelectValueLike(WebElement element, String val){
+    @Override
+    public void SelectValueLike(WebElement element, String val) {
         if (val == null || val.isEmpty())
             return;
         List<WebElement> optList = element.findElements(By.tagName("option"));
-        for(int i = 0; i < optList.size(); i++){
-            if(optList.get(i).getText().contains(val)){
+        for (int i = 0; i < optList.size(); i++) {
+            if (optList.get(i).getText().contains(val)) {
                 new Select(element).selectByIndex(i);
                 return;
             }
         }
     }
-
 
     private static final Map<String, String> DATE_FORMAT_REGEXPS = new HashMap<String, String>() {{
         put("^\\d{8}$", "yyyyMMdd");
@@ -234,11 +242,12 @@ public class Helpers implements Actionable {
             Log.error(e.getMessage());
         }
     }
+
     @Override
-    public int searchForMemberInMembersList(Member member, List<WebElement> tblResults){
-        for(int i = (tblResults.size() > 3) ? 3 : 1; i< tblResults.size(); i++){
+    public int searchForMemberInMembersList(Member member, List<WebElement> tblResults) {
+        for (int i = (tblResults.size() > 3) ? 3 : 1; i < tblResults.size(); i++) {
             List<WebElement> tblCel = tblResults.get(i).findElements(By.tagName("td"));
-            if(tblCel.get(1).getText().equals(member.getAltaNum()))
+            if (tblCel.get(1).getText().equals(member.getAltaNum()))
                 return i;
         }
         return -1;
@@ -435,6 +444,7 @@ public class Helpers implements Actionable {
 
     }
 
+    @Override
     public void changeZindex() {
         String script = "document.getElementById('WizardIsBusyIndicatorBehavior_backgroundElement').style.zIndex=-1000;";
         JavascriptExecutor js = (JavascriptExecutor) _driver;
@@ -476,6 +486,7 @@ public class Helpers implements Actionable {
                 .until(ExpectedConditions.invisibilityOfElementWithText(element, text));
     }
 
+    @Override
     public void waitUntilConfirmationLabel() throws Exception {
         new WebDriverWait(_driver, 8)
                 .pollingEvery(Duration.ofMillis(100L))
@@ -504,6 +515,7 @@ public class Helpers implements Actionable {
                 .until(ExpectedConditions.presenceOfElementLocated(locator));
     }
 
+    @Override
     public void WaitUntilVisualizationOfElementLocatedBy(By locator) throws Exception {
         new FluentWait<>(_driver)
                 .withTimeout((Duration.ofSeconds(6)))
@@ -512,6 +524,7 @@ public class Helpers implements Actionable {
                 .until(ExpectedConditions.visibilityOfElementLocated(locator));
     }
 
+    @Override
     public void WaitUntilVisualizationOfElement(WebElement element) throws Exception {
 /*
         new FluentWait<>(_driver)
@@ -527,6 +540,7 @@ public class Helpers implements Actionable {
         //wait.until(ExpectedConditions.presenceOfElementLocated(By.id("table")));
     }
 
+    @Override
     public ArrayList<JobPage> initJobVariables(List<Job> jobsList) {
         ArrayList<JobPage> jobs = new ArrayList<>();
 //        jobs.add(new PlayoffDrawPage(_driver, jobsList.get(0)));
@@ -583,5 +597,38 @@ public class Helpers implements Actionable {
             }
         }
         return null;
+    }
+
+    @Override
+    public void EnterTssSearchCriteria(List<String> criteria, TrackingSheetPage tss) throws Exception {
+        if (tss == null || criteria == null) return;
+        SelectValue(tss.getDdlStatus(), criteria.get(0));
+        Write(tss.getTxtYear(), criteria.get(1));
+        SelectValue(tss.getDdlSeason(), criteria.get(2));
+        SelectValue(tss.getDdlLeague(), criteria.get(3));
+        SelectValue(tss.getDdlAge(), criteria.get(4));
+        SelectValue(tss.getDdlOriginalScorecard(), criteria.get(5));
+        SelectValue(tss.getDdlLevelFlight(), criteria.get(6));
+        SelectValue(tss.getDdlDivision(), criteria.get(5));
+        SelectValue(tss.getDdlWeek(), criteria.get(8));
+        Write(tss.getTxtRosterId(), criteria.get(9));
+        Click(tss.getBtnSearch());
+    }
+
+    @Override
+    public void EditTSSFields(TrackingSheetScoreCard tss, TssWeekElements weekElements) throws Exception {
+        SelectValue(weekElements.getHomeResult(), tss.getHomeResult());
+        SelectValue(weekElements.getHomePlayer1(), tss.getHomePlayer1());
+        SelectValue(weekElements.getHomePlayer2(), tss.getHomePlayer2());
+        SelectValue(weekElements.getHomeSet1(), String.valueOf(tss.getHomeSet1()));
+        SelectValue(weekElements.getHomeSet2(), String.valueOf(tss.getHomeSet2()));
+        SelectValue(weekElements.getHomeSet3(), String.valueOf(tss.getHomeSet3()));
+        Write(weekElements.getPlayedDate(), tss.getPlayedDate());
+        SelectValue(weekElements.getAwaySet1(), String.valueOf(tss.getAwaySet1()));
+        SelectValue(weekElements.getAwaySet2(), String.valueOf(tss.getAwaySet2()));
+        SelectValue(weekElements.getAwaySet3(), String.valueOf(tss.getAwaySet3()));
+        SelectValue(weekElements.getAwayPlayer1(), tss.getAwayPlayer1());
+        SelectValue(weekElements.getAwayPlayer2(), tss.getAwayPlayer2());
+        SelectValue(weekElements.getAwayResult(), tss.getAwayResult());
     }
 }

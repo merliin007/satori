@@ -36,20 +36,20 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="NewMemberSignUp.feature" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/features/signup/NewMemberSignUp.feature">
+      <file leaf-file-name="TrackingSheetScoreCards.feature" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/features/league_support/tss/TrackingSheetScoreCards.feature">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="136">
-              <caret line="8" column="40" selection-start-line="8" selection-start-column="40" selection-end-line="8" selection-end-column="40" />
+            <state relative-caret-position="289">
+              <caret line="17" column="110" selection-start-line="17" selection-start-column="110" selection-end-line="17" selection-end-column="110" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Member.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/utility/members/Member.java">
+      <file leaf-file-name="TrackingSheetSteps.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/test/java/steps/TrackingSheetSteps.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="170">
-              <caret line="41" column="29" selection-start-line="41" selection-start-column="29" selection-end-line="41" selection-end-column="29" />
+            <state relative-caret-position="361">
+              <caret line="93" selection-start-line="93" selection-end-line="93" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -57,11 +57,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="SignUpSteps.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/test/java/steps/SignUpSteps.java">
+      <file leaf-file-name="Helpers.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/utility/Helpers.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="394">
-              <caret line="95" selection-start-line="95" selection-end-line="95" />
+            <state relative-caret-position="171">
+              <caret line="619" selection-start-line="619" selection-end-line="619" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -75,13 +75,13 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Interface" />
+        <option value="Enum" />
         <option value="Class" />
       </list>
     </option>
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>addpl</find>
       <find>wait</find>
       <find>zind</find>
       <find>hashm</find>
@@ -111,6 +111,7 @@
       <find>getHome()</find>
       <find>apt</find>
       <find>&lt;</find>
+      <find>deter</find>
     </findStrings>
     <replaceStrings>
       <replace />
@@ -122,14 +123,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/test/java/pages/newPages/myRosters/NewRosterWizardPage.java" />
-        <option value="$PROJECT_DIR$/src/test/java/steps/RosterSteps.java" />
-        <option value="$PROJECT_DIR$/src/test/java/features/website_support/leagues/Leagues.feature" />
-        <option value="$PROJECT_DIR$/src/test/java/pages/newPages/leagues/LeagueTemplateSelectionPage.java" />
-        <option value="$PROJECT_DIR$/src/test/java/steps/LeagueSteps.java" />
-        <option value="$PROJECT_DIR$/src/test/java/features/website_support/calendar_events/Calendars.feature" />
-        <option value="$PROJECT_DIR$/src/test/java/pages/newPages/calendars/CalendarsPage.java" />
-        <option value="$PROJECT_DIR$/src/test/java/steps/EventSteps.java" />
         <option value="$PROJECT_DIR$/src/test/java/features/website_support/calendar_events/Events.feature" />
         <option value="$PROJECT_DIR$/src/test/java/pages/newPages/jobs/DropDuplicatesPage.java" />
         <option value="$PROJECT_DIR$/src/test/java/pages/newPages/jobs/AssignToDivisionPage.java" />
@@ -137,7 +130,6 @@
         <option value="$PROJECT_DIR$/src/test/java/steps/JobSteps.java" />
         <option value="$PROJECT_DIR$/src/test/java/pages/newPages/members_and_rosters/MembersAdvancedSearchPage.java" />
         <option value="$PROJECT_DIR$/src/test/java/utility/members.java" />
-        <option value="$PROJECT_DIR$/src/test/java/common/Actionable.java" />
         <option value="$PROJECT_DIR$/src/test/java/pages/newPages/jobs/JobPage.java" />
         <option value="$PROJECT_DIR$/src/test/java/pages/newPages/members_and_rosters/MemberProfile.java" />
         <option value="$PROJECT_DIR$/src/test/java/pages/newPages/memberPortal/myActiveTeams/myAccount/MemberProfile.java" />
@@ -168,11 +160,20 @@
         <option value="$PROJECT_DIR$/src/test/java/steps/LoginSteps.java" />
         <option value="$PROJECT_DIR$/src/test/java/pages/newPages/memberPortal/myAccount/MyMembershipPage.java" />
         <option value="$PROJECT_DIR$/src/test/java/utility/RandomString.java" />
-        <option value="$PROJECT_DIR$/src/test/java/utility/Helpers.java" />
         <option value="$PROJECT_DIR$/src/test/java/features/signup/NewMemberSignUp.feature" />
         <option value="$PROJECT_DIR$/src/test/java/steps/SignUpSteps.java" />
         <option value="$PROJECT_DIR$/src/test/java/pages/newPages/singup/RegisterPage.java" />
         <option value="$PROJECT_DIR$/src/test/java/utility/members/Member.java" />
+        <option value="$PROJECT_DIR$/src/test/java/pages/newPages/tss/TrackingSheetPage.java" />
+        <option value="$PROJECT_DIR$/src/test/java/utility/tss/TssWeekElements.java" />
+        <option value="$PROJECT_DIR$/src/test/java/utility/tss/LineElement.java" />
+        <option value="$PROJECT_DIR$/src/test/java/utility/tss/TrackinSheetScoreCard.java" />
+        <option value="$PROJECT_DIR$/src/test/java/utility/tss/TrackingSheetScoreCard.java" />
+        <option value="$PROJECT_DIR$/src/test/java/common/Actionable.java" />
+        <option value="$PROJECT_DIR$/src/test/java/utility/Helpers.java" />
+        <option value="$PROJECT_DIR$/src/test/java/steps/TrackingSheetSteps.java" />
+        <option value="$PROJECT_DIR$/src/test/java/pages/newPages/tss/TrackingSheetScorecardDetailPage.java" />
+        <option value="$PROJECT_DIR$/src/test/java/features/league_support/tss/TrackingSheetScoreCards.feature" />
       </list>
     </option>
   </component>
@@ -209,20 +210,18 @@
   <component name="MavenRunner">
     <option name="runMavenInBackground" value="false" />
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="2063" />
-    <option name="y" value="5" />
-    <option name="width" value="1936" />
-    <option name="height" value="1056" />
+  <component name="ProjectFrameBounds" extendedState="7">
+    <option name="x" value="-7" />
+    <option name="width" value="1377" />
+    <option name="height" value="1047" />
   </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
       <pane id="AndroidView" />
-      <pane id="Scope" />
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -254,7 +253,33 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="test" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="common" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="SatoriAutomation" type="b2602c69:ProjectViewProjectNode" />
+              <item name="satori" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="features" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="SatoriAutomation" type="b2602c69:ProjectViewProjectNode" />
+              <item name="satori" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="features" type="462c0819:PsiDirectoryNode" />
+              <item name="league_support" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="SatoriAutomation" type="b2602c69:ProjectViewProjectNode" />
+              <item name="satori" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="features" type="462c0819:PsiDirectoryNode" />
+              <item name="navigation" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="SatoriAutomation" type="b2602c69:ProjectViewProjectNode" />
@@ -273,10 +298,46 @@
               <item name="pages" type="462c0819:PsiDirectoryNode" />
               <item name="newPages" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="SatoriAutomation" type="b2602c69:ProjectViewProjectNode" />
+              <item name="satori" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="pages" type="462c0819:PsiDirectoryNode" />
+              <item name="newPages" type="462c0819:PsiDirectoryNode" />
+              <item name="tss" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="SatoriAutomation" type="b2602c69:ProjectViewProjectNode" />
+              <item name="satori" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="steps" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="SatoriAutomation" type="b2602c69:ProjectViewProjectNode" />
+              <item name="satori" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="utility" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="SatoriAutomation" type="b2602c69:ProjectViewProjectNode" />
+              <item name="satori" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="utility" type="462c0819:PsiDirectoryNode" />
+              <item name="tss" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -318,7 +379,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Cucumber java.Signup">
+  <component name="RunManager" selected="Cucumber java.TSS">
     <configuration default="true" type="Application" factoryName="Application">
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
     </configuration>
@@ -487,6 +548,21 @@
         </pattern>
       </extension>
     </configuration>
+    <configuration name="TSS" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java">
+      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/java/features/league_support/tss/TrackingSheetScoreCards.feature" />
+      <option name="GLUE" value="common steps" />
+      <option name="MAIN_CLASS_NAME" value="cucumber.api.cli.Main" />
+      <module name="SatoriAutomation" />
+      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvmSMFormatter --monochrome" />
+      <option name="SUGGESTED_NAME" value="Feature: Crawler" />
+      <option name="VM_PARAMETERS" value="-Denvironment=qa -Dbrowser=chrome" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="cucumber.api.cli.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+    </configuration>
     <configuration name="VulkEntry" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java">
       <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/java/features/league_support/volunteer_bulk_entry/VolunteerBulkEntry.feature" />
       <option name="GLUE" value="common steps" />
@@ -551,6 +627,7 @@
       <item itemvalue="Cucumber java.Members Search" />
       <item itemvalue="Cucumber java.VulkEntry" />
       <item itemvalue="Cucumber java.Signup" />
+      <item itemvalue="Cucumber java.TSS" />
       <item itemvalue="Cucumber java.Feature: NewRoster" />
     </list>
     <recent_temporary>
@@ -574,35 +651,35 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="Signup - 2019.01.09 at 15h 58m 38s.xml">
-      <configuration name="Signup" configurationId="CucumberJavaRunConfigurationType" />
+    <history-entry file="TSS - 2019.01.11 at 14h 39m 31s.xml">
+      <configuration name="TSS" configurationId="CucumberJavaRunConfigurationType" />
     </history-entry>
-    <history-entry file="Signup - 2019.01.09 at 16h 02m 58s.xml">
-      <configuration name="Signup" configurationId="CucumberJavaRunConfigurationType" />
+    <history-entry file="TSS - 2019.01.11 at 14h 43m 27s.xml">
+      <configuration name="TSS" configurationId="CucumberJavaRunConfigurationType" />
     </history-entry>
-    <history-entry file="Signup - 2019.01.09 at 16h 05m 44s.xml">
-      <configuration name="Signup" configurationId="CucumberJavaRunConfigurationType" />
+    <history-entry file="TSS - 2019.01.11 at 14h 47m 32s.xml">
+      <configuration name="TSS" configurationId="CucumberJavaRunConfigurationType" />
     </history-entry>
-    <history-entry file="Signup - 2019.01.09 at 16h 09m 54s.xml">
-      <configuration name="Signup" configurationId="CucumberJavaRunConfigurationType" />
+    <history-entry file="TSS - 2019.01.11 at 14h 55m 51s.xml">
+      <configuration name="TSS" configurationId="CucumberJavaRunConfigurationType" />
     </history-entry>
-    <history-entry file="Signup - 2019.01.09 at 16h 14m 48s.xml">
-      <configuration name="Signup" configurationId="CucumberJavaRunConfigurationType" />
+    <history-entry file="TSS - 2019.01.11 at 15h 02m 43s.xml">
+      <configuration name="TSS" configurationId="CucumberJavaRunConfigurationType" />
     </history-entry>
-    <history-entry file="Signup - 2019.01.09 at 16h 19m 02s.xml">
-      <configuration name="Signup" configurationId="CucumberJavaRunConfigurationType" />
+    <history-entry file="TSS - 2019.01.11 at 15h 13m 12s.xml">
+      <configuration name="TSS" configurationId="CucumberJavaRunConfigurationType" />
     </history-entry>
-    <history-entry file="Signup - 2019.01.09 at 16h 27m 40s.xml">
-      <configuration name="Signup" configurationId="CucumberJavaRunConfigurationType" />
+    <history-entry file="TSS - 2019.01.11 at 15h 29m 14s.xml">
+      <configuration name="TSS" configurationId="CucumberJavaRunConfigurationType" />
     </history-entry>
-    <history-entry file="Signup - 2019.01.09 at 16h 35m 40s.xml">
-      <configuration name="Signup" configurationId="CucumberJavaRunConfigurationType" />
+    <history-entry file="TSS - 2019.01.11 at 15h 31m 14s.xml">
+      <configuration name="TSS" configurationId="CucumberJavaRunConfigurationType" />
     </history-entry>
-    <history-entry file="Signup - 2019.01.09 at 16h 38m 55s.xml">
-      <configuration name="Signup" configurationId="CucumberJavaRunConfigurationType" />
+    <history-entry file="TSS - 2019.01.11 at 15h 33m 39s.xml">
+      <configuration name="TSS" configurationId="CucumberJavaRunConfigurationType" />
     </history-entry>
-    <history-entry file="Signup - 2019.01.09 at 16h 40m 52s.xml">
-      <configuration name="Signup" configurationId="CucumberJavaRunConfigurationType" />
+    <history-entry file="TSS - 2019.01.11 at 15h 37m 02s.xml">
+      <configuration name="TSS" configurationId="CucumberJavaRunConfigurationType" />
     </history-entry>
   </component>
   <component name="TodoView">
@@ -615,29 +692,28 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="1912" y="-8" width="1936" height="1096" extended-state="6" />
+    <frame x="-7" y="0" width="1377" height="1047" extended-state="0" />
     <layout>
       <window_info anchor="right" id="Palette" order="3" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32933104" />
-      <window_info anchor="bottom" id="Messages" order="10" weight="0.3272727" />
+      <window_info anchor="bottom" id="Messages" order="10" weight="0.3261851" />
       <window_info anchor="right" id="Palette&#9;" order="4" />
       <window_info id="Image Layers" order="1" />
       <window_info anchor="right" id="Capture Analysis" order="5" />
       <window_info anchor="bottom" id="Event Log" order="8" sideWeight="0.50075644" side_tool="true" weight="0.31419623" />
       <window_info anchor="right" id="Maven Projects" order="9" weight="0.1860817" />
       <window_info anchor="bottom" id="Version Control" order="9" weight="0.32933104" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49924356" weight="0.45454547" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49924356" weight="0.45259595" />
       <window_info anchor="bottom" id="Terminal" order="7" weight="0.31336898" />
       <window_info id="Capture Tool" order="2" />
       <window_info id="Designer" order="3" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.57967913" visible="true" weight="0.2707889" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.32513368" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.57829183" visible="true" weight="0.19362187" />
       <window_info anchor="right" id="Structure" order="10" sideWeight="0.50428814" side_tool="true" weight="0.17397882" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info id="UI Designer" order="4" />
       <window_info anchor="right" id="Theme Preview" order="6" />
-      <window_info id="Favorites" order="5" sideWeight="0.42032087" side_tool="true" weight="0.2707889" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.38074866" />
+      <window_info id="Favorites" order="5" sideWeight="0.4217082" side_tool="true" visible="true" weight="0.19362187" />
+      <window_info active="true" anchor="bottom" id="Debug" order="3" visible="true" weight="0.36568847" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="right" id="Coverage" order="7" side_tool="true" weight="0.32889125" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -645,7 +721,38 @@
       <window_info anchor="right" x="0" y="0" width="314" height="716" id="Documentation" order="8" side_tool="true" weight="0.3295129" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32513368" />
     </layout>
+    <layout-to-restore>
+      <window_info anchor="right" id="Palette" order="3" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32513368" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Capture Analysis" order="5" />
+      <window_info anchor="right" id="Coverage" order="7" side_tool="true" weight="0.32889125" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49924356" weight="0.45363128" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.57967913" visible="true" weight="0.27345416" />
+      <window_info anchor="right" id="Structure" order="10" sideWeight="0.50428814" side_tool="true" weight="0.17397882" />
+      <window_info anchor="right" id="Theme Preview" order="6" />
+      <window_info anchor="bottom" id="TODO" order="6" weight="0.32933104" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info id="Image Layers" order="1" />
+      <window_info id="Designer" order="3" />
+      <window_info id="UI Designer" order="4" />
+      <window_info anchor="bottom" id="Debug" order="3" visible="true" weight="0.37988827" />
+      <window_info anchor="right" x="0" y="0" width="314" height="716" id="Documentation" order="8" side_tool="true" weight="0.3295129" />
+      <window_info anchor="right" id="Palette&#9;" order="4" />
+      <window_info anchor="bottom" id="Terminal" order="7" weight="0.31336898" />
+      <window_info anchor="bottom" id="Event Log" order="8" sideWeight="0.50075644" side_tool="true" weight="0.31419623" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="Version Control" order="9" weight="0.32933104" />
+      <window_info id="Capture Tool" order="2" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="bottom" id="Messages" order="10" weight="0.3272727" />
+      <window_info anchor="right" id="Maven Projects" order="9" weight="0.1860817" />
+      <window_info id="Favorites" order="5" sideWeight="0.42032087" side_tool="true" weight="0.2707889" />
+    </layout-to-restore>
   </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
@@ -654,81 +761,103 @@
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/test/java/steps/SignUpSteps.java</url>
-          <line>86</line>
+          <url>file://$PROJECT_DIR$/src/test/java/steps/TrackingSheetSteps.java</url>
+          <line>87</line>
           <properties />
-          <option name="timeStamp" value="539" />
+          <option name="timeStamp" value="572" />
         </line-breakpoint>
       </breakpoints>
-      <option name="time" value="542" />
+      <option name="time" value="573" />
     </breakpoint-manager>
     <watches-manager>
       <configuration name="CucumberJavaRunConfigurationType">
-        <watch expression="position" />
-        <watch expression="member" language="JAVA" />
-        <watch expression="table" />
-        <watch expression="tbl" />
+        <watch expression="weekElements.get(3).awayPlayer1.getText()" language="JAVA" />
+        <watch expression="tss.getPlayedDate()" language="JAVA" />
       </configuration>
     </watches-manager>
   </component>
   <component name="debuggerHistoryManager">
     <expressions id="evaluateCodeFragment">
       <expression>
-        <expression-string>shareContainer.findElement(By.tagName(&quot;tbody&quot;))
-                .findElements(By.className(&quot;prefs__item&quot;))
-                .get(0)
-                .findElement(By.className(&quot;custom-checkbox&quot;))
-                .findElement(By.tagName(&quot;label&quot;)).getText()</expression-string>
+        <expression-string>Select sel = new Select(weekElements.get(3).awayResult);
+sel.getFirstSelectedOption().getText()</expression-string>
         <language-id>JAVA</language-id>
         <evaluation-mode>CODE_FRAGMENT</evaluation-mode>
       </expression>
       <expression>
-        <expression-string>headers.get(2).findElements(By.tagName(&quot;th&quot;)).get(1).getText()</expression-string>
-        <language-id>JAVA</language-id>
-        <custom-info>org.openqa.selenium.By</custom-info>
-        <evaluation-mode>CODE_FRAGMENT</evaluation-mode>
-      </expression>
-      <expression>
-        <expression-string>headers.get(2).findElements(By.tagName(&quot;th&quot;))</expression-string>
-        <language-id>JAVA</language-id>
-        <custom-info>org.openqa.selenium.By</custom-info>
-        <evaluation-mode>CODE_FRAGMENT</evaluation-mode>
-      </expression>
-      <expression>
-        <expression-string>headers.get(1).findElements(By.tagName(&quot;th&quot;))</expression-string>
-        <language-id>JAVA</language-id>
-        <custom-info>org.openqa.selenium.By</custom-info>
-        <evaluation-mode>CODE_FRAGMENT</evaluation-mode>
-      </expression>
-      <expression>
-        <expression-string>headers.get(0).findElements(By.tagName(&quot;th&quot;))</expression-string>
-        <language-id>JAVA</language-id>
-        <custom-info>org.openqa.selenium.By</custom-info>
-        <evaluation-mode>CODE_FRAGMENT</evaluation-mode>
-      </expression>
-      <expression>
-        <expression-string>headers.get(0).findElements(By.tagName(&quot;th&quot;))</expression-string>
+        <expression-string>Select sel = new Select(weekElements.get(3).awaySet1);
+sel.getFirstSelectedOption().getText()</expression-string>
         <language-id>JAVA</language-id>
         <evaluation-mode>CODE_FRAGMENT</evaluation-mode>
       </expression>
       <expression>
-        <expression-string>rib.findElement(By.tagName(&quot;a&quot;)).getText().toLowerCase().contains(opt)</expression-string>
+        <expression-string>Select sel = new Select(weekElements.get(3).awaySet2);
+sel.getFirstSelectedOption().getText()</expression-string>
         <language-id>JAVA</language-id>
         <evaluation-mode>CODE_FRAGMENT</evaluation-mode>
       </expression>
       <expression>
-        <expression-string>rib.findElement(By.tagName(&quot;a&quot;)).getText().contains(opt)</expression-string>
+        <expression-string>Select sel = new Select(weekElements.get(3).awaySet3);
+sel.getFirstSelectedOption().getText()</expression-string>
         <language-id>JAVA</language-id>
         <evaluation-mode>CODE_FRAGMENT</evaluation-mode>
       </expression>
       <expression>
-        <expression-string>WebElement x = leagueNewEditPage.getTabErrors();
-x.isDisplayed()</expression-string>
+        <expression-string>Select sel = new Select(weekElements.get(3).homeSet2);
+sel.getFirstSelectedOption().getText()</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>CODE_FRAGMENT</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>Select sel = new Select(weekElements.get(4).homeResult);
+sel.getFirstSelectedOption().getText()</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>CODE_FRAGMENT</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>Select sel = new Select(weekElements.get(3).awayPlayer2);
+sel.getFirstSelectedOption().getText()</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>CODE_FRAGMENT</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>Select sel = new Select(weekElements.get(3).awayPlayer1);
+sel.getFirstSelectedOption().getText()</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>CODE_FRAGMENT</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>cells.get(6).findElement(By.tagName(&quot;input&quot;)).getAttribute(&quot;value&quot;)</expression-string>
         <language-id>JAVA</language-id>
         <evaluation-mode>CODE_FRAGMENT</evaluation-mode>
       </expression>
     </expressions>
     <expressions id="watch">
+      <expression>
+        <expression-string>tss.getPlayedDate()</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>weekElements.get(3).awayPlayer1.getText()</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>tblResults.get(1).getText()</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>tblResults.get(0).getText()</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>tblResults.get(2).getText()</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
       <expression>
         <expression-string>member</expression-string>
         <language-id>JAVA</language-id>
@@ -754,31 +883,6 @@ x.isDisplayed()</expression-string>
         <expression-string>headers.get(1).findElements(By.tagName(&quot;th&quot;))</expression-string>
         <language-id>JAVA</language-id>
         <custom-info>org.openqa.selenium.By</custom-info>
-        <evaluation-mode>EXPRESSION</evaluation-mode>
-      </expression>
-      <expression>
-        <expression-string>headers.get(2).getText()</expression-string>
-        <language-id>JAVA</language-id>
-        <evaluation-mode>EXPRESSION</evaluation-mode>
-      </expression>
-      <expression>
-        <expression-string>headers.get(1).getText()</expression-string>
-        <language-id>JAVA</language-id>
-        <evaluation-mode>EXPRESSION</evaluation-mode>
-      </expression>
-      <expression>
-        <expression-string>headers.get(0).getText()</expression-string>
-        <language-id>JAVA</language-id>
-        <evaluation-mode>EXPRESSION</evaluation-mode>
-      </expression>
-      <expression>
-        <expression-string>headers</expression-string>
-        <language-id>JAVA</language-id>
-        <evaluation-mode>EXPRESSION</evaluation-mode>
-      </expression>
-      <expression>
-        <expression-string>pagingTable.get(3).getText()</expression-string>
-        <language-id>JAVA</language-id>
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
     </expressions>
@@ -831,66 +935,6 @@ x.isDisplayed()</expression-string>
     </expressions>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/test/java/pages/newPages/memberPortal/myActiveTeams/LineupPage.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="12" column="13" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/pages/newPages/memberPortal/myActiveTeams/LeaderPreferencesPage.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="15" column="13" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/pages/newPages/memberPortal/myActiveTeams/CalendarPage.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="13" column="13" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/steps/JobSteps.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="45" column="36" selection-start-line="45" selection-start-column="36" selection-end-line="45" selection-end-column="36" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/features/league_support/jobs/Jobs.feature">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="18" lean-forward="true" selection-start-line="18" selection-end-line="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/features/navigation/Player_Crawler.feature">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/features/roles/Captain.feature">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/SatoriAutomation.iml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-976" />
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/picocontainer/picocontainer/2.15/picocontainer-2.15.jar!/org/picocontainer/injectors/ConstructorInjector.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="184">
-          <caret line="346" selection-start-line="346" selection-end-line="346" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="395">
-          <caret line="145" column="24" selection-start-line="145" selection-start-column="24" selection-end-line="145" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/pages/newPages/memberPortal/myAccount/ProfileDetailPage.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-7">
@@ -912,13 +956,6 @@ x.isDisplayed()</expression-string>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/pages/newPages/Pages.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="14" column="22" selection-start-line="14" selection-start-column="22" selection-end-line="14" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/pages/newPages/memberPortal/myAccount/MemberProfile.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="85">
@@ -930,13 +967,6 @@ x.isDisplayed()</expression-string>
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="259">
           <caret line="67" column="27" selection-start-line="67" selection-start-column="27" selection-end-line="67" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/features/navigation/Crawler.feature">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="22" column="75" lean-forward="true" selection-start-line="22" selection-start-column="6" selection-end-line="22" selection-end-column="75" />
         </state>
       </provider>
     </entry>
@@ -1011,16 +1041,7 @@ x.isDisplayed()</expression-string>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/pages/newPages/singup/Register2Page.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="18" column="22" selection-start-line="18" selection-start-column="22" selection-end-line="18" selection-end-column="22" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/pages/newPages/singup/Register2Page.java" />
     <entry file="file://$PROJECT_DIR$/src/test/java/pages/newPages/singup/NewMemberSignUpPage.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="306">
@@ -1153,24 +1174,6 @@ x.isDisplayed()</expression-string>
         </state>
       </provider>
     </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/info/cukes/cucumber-core/1.2.5/cucumber-core-1.2.5.jar!/cucumber/runtime/Utils.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="425">
-          <caret line="48" selection-start-line="48" selection-end-line="48" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/utility/Helpers.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="83" selection-start-line="83" selection-end-line="83" />
-          <folding>
-            <element signature="e#1640#1641#0" expanded="true" />
-            <element signature="e#1691#1692#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/features/website_support/leagues/Leagues.feature">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="102">
@@ -1205,23 +1208,6 @@ x.isDisplayed()</expression-string>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/features/signup/NewMemberSignUp.feature">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="8" column="40" selection-start-line="8" selection-start-column="40" selection-end-line="8" selection-end-column="40" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/utility/members/Member.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="41" column="29" selection-start-line="41" selection-start-column="29" selection-end-line="41" selection-end-column="29" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/pages/newPages/singup/SingUpCommon.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="340">
@@ -1241,10 +1227,154 @@ x.isDisplayed()</expression-string>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/steps/SignUpSteps.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="394">
-          <caret line="95" selection-start-line="95" selection-end-line="95" />
+        <state relative-caret-position="479">
+          <caret line="100" column="35" selection-start-line="100" selection-start-column="35" selection-end-line="100" selection-end-column="35" />
           <folding>
             <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/features/navigation/Crawler.feature">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="16" column="75" lean-forward="true" selection-start-line="16" selection-start-column="6" selection-end-line="16" selection-end-column="75" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_161/src.zip!/java/util/List.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1036">
+          <caret line="543" column="6" selection-start-line="543" selection-start-column="6" selection-end-line="543" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/info/cukes/cucumber-core/1.2.5/cucumber-core-1.2.5.jar!/cucumber/runtime/Utils.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="33">
+          <caret line="39" selection-start-line="39" selection-end-line="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/utility/members/Member.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-499">
+          <caret line="41" column="29" selection-start-line="41" selection-start-column="29" selection-end-line="41" selection-end-column="29" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/pages/newPages/tss/TrackingSheetPage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="475">
+          <caret line="48" selection-start-line="48" selection-end-line="48" />
+          <folding>
+            <element signature="method#TrackingSheetPage#0;class#TrackingSheetPage#0" />
+            <element signature="e#1961#1962#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/pages/newPages/Pages.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="386">
+          <caret line="54" selection-start-line="54" selection-end-line="54" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/info/cukes/cucumber-core/1.2.5/cucumber-core-1.2.5.jar!/cucumber/api/DataTable.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="176">
+          <caret line="88" selection-start-line="88" selection-end-line="88" />
+          <folding>
+            <element signature="e#2981#2982#0" expanded="true" />
+            <element signature="e#3012#3013#0" expanded="true" />
+            <element signature="e#3435#3436#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/utility/tss/TssWeekElements.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="340">
+          <caret line="23" column="112" selection-start-line="23" selection-start-column="112" selection-end-line="23" selection-end-column="112" />
+          <folding>
+            <element signature="method#TssWeekElements#0;class#TssWeekElements#0" />
+            <element signature="method#TssWeekElements#0;class#TssWeekElements#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/utility/tss/LineElement.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="18" column="22" selection-start-line="18" selection-start-column="22" selection-end-line="18" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/common/Actionable.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="671">
+          <caret line="122" column="13" selection-start-line="122" selection-start-column="13" selection-end-line="122" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/features/signup/NewMemberSignUp.feature">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="15" column="94" lean-forward="true" selection-start-line="15" selection-start-column="94" selection-end-line="15" selection-end-column="94" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/utility/tss/TrackingSheetScoreCard.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="421">
+          <caret line="49" column="5" selection-start-line="49" selection-start-column="5" selection-end-line="49" selection-end-column="5" />
+          <folding>
+            <element signature="e#1590#1591#0" expanded="true" />
+            <element signature="e#1617#1618#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/features/league_support/tss/TrackingSheetScoreCards.feature">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="17" column="110" selection-start-line="17" selection-start-column="110" selection-end-line="17" selection-end-column="110" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/utility/Helpers.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="171">
+          <caret line="619" selection-start-line="619" selection-end-line="619" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/steps/TrackingSheetSteps.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="361">
+          <caret line="93" selection-start-line="93" selection-end-line="93" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/pages/newPages/tss/TrackingSheetScorecardDetailPage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="395">
+          <caret line="114" column="31" selection-start-line="114" selection-start-column="31" selection-end-line="114" selection-end-column="31" />
+          <folding>
+            <element signature="method#getAllLinesElements#1;class#TrackingSheetScorecardDetailPage#0" />
           </folding>
         </state>
       </provider>
