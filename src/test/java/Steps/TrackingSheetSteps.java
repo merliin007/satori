@@ -6,22 +6,19 @@ package steps;
 
 import base.BaseUtil;
 import cucumber.api.DataTable;
-import cucumber.api.PendingException;
 import cucumber.api.java.en.And;
 import cucumber.api.java.en.Then;
-import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.support.ui.Select;
 import pages.newPages.tss.TrackingSheetPage;
 import pages.newPages.tss.TrackingSheetScorecardDetailPage;
 import utility.Helpers;
 import utility.Log;
-import utility.tss.LineElement;
 import utility.tss.TrackingSheetScoreCard;
 import utility.tss.TssWeekElements;
 
 import java.util.List;
 
+import static org.testng.Assert.assertTrue;
 import static org.testng.Assert.fail;
 
 public class TrackingSheetSteps {
@@ -63,9 +60,9 @@ public class TrackingSheetSteps {
     public void editTssChanging(DataTable table) {
         try {
             List<TrackingSheetScoreCard> tssList = table.asList(TrackingSheetScoreCard.class);
-
             tssDetailPage = new TrackingSheetScorecardDetailPage(base.driver);
             I.waitUntilElementIsVisible(tssDetailPage.getBtnCancel());
+            Log.info("Start editing tracking sheet");
 
             List<TssWeekElements> weekElements = tssDetailPage.getWeekElements();
             for (TrackingSheetScoreCard tss : tssList) {
@@ -81,11 +78,16 @@ public class TrackingSheetSteps {
         }
     }
 
-    @Then("^I got \"([^\"]*)\" message after save$")
-    public void iGotMessageAfterSave(String arg0) {
-        if (tssDetailPage == null) return;
+    @Then("^I got \"([^\"]*)\" message after save$")//TODO: VALIDATE CORRECT RESPONSE MESSAGE
+    public void iGotMessageAfterSave(String resultMessage) {
+        if (tssDetailPage == null || resultMessage.isEmpty()) return;
         try {
+            Log.info("Validating final toastr message");
             I.Click(tssDetailPage.getBtnSave());
+            I.waitUntilExistenceOfElement(tss.getToastContainerLocator());
+            String msg = tss.getToastrMesage();
+            Log.info("Gotten message: " + msg);
+            assertTrue(msg.contains(resultMessage));
         } catch (Exception e) {
             Log.error(e.getMessage());
             base.GrabScreenShot();

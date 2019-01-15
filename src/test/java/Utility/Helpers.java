@@ -38,6 +38,7 @@ public class Helpers implements Actionable {
     private BaseUtil base;
     private WebDriverWait wait;
     private WebDriver _driver;
+    private static Map<String, String> errorPages = new HashMap<String, String>();
 
     public Helpers(WebDriver driver) {
         _driver = driver;
@@ -630,5 +631,13 @@ public class Helpers implements Actionable {
         SelectValue(weekElements.getAwayPlayer1(), tss.getAwayPlayer1());
         SelectValue(weekElements.getAwayPlayer2(), tss.getAwayPlayer2());
         SelectValue(weekElements.getAwayResult(), tss.getAwayResult());
+    }
+
+    public static void setAddErrorPage(List<String> row) {
+        errorPages.put(row.get(0), row.get(1));
+    }
+
+    public static Map<String, String> getErrorPages() {
+        return errorPages;
     }
 }

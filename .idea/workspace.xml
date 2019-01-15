@@ -1,30 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" readonly="true" id="e233993c-a698-469a-8148-0774d40f71f6" name="Default" comment="" />
+    <list default="true" id="e233993c-a698-469a-8148-0774d40f71f6" name="Default" comment="" />
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
-    <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="CoverageDataManager">
-    <SUITE FILE_PATH="coverage/SatoriAutomation$Members_Search.ic" NAME="Members Search Coverage Results" MODIFIED="1546970315936" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
-      <FILTER>cucumber.api.cli.*</FILTER>
-    </SUITE>
     <SUITE FILE_PATH="coverage/SatoriAutomation$Feature__Calendars__1_.ic" NAME="Feature: Calendars (1) Coverage Results" MODIFIED="1531754560228" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
       <FILTER>cucumber.api.cli.*</FILTER>
     </SUITE>
-    <SUITE FILE_PATH="coverage/SatoriAutomation$Feature__LoginIntoNewSite.ic" NAME="Feature: LoginIntoNewSite Coverage Results" MODIFIED="1528467597544" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+    <SUITE FILE_PATH="coverage/SatoriAutomation$Feature__Crawler__1_.ic" NAME="Feature: Crawler (1) Coverage Results" MODIFIED="1528811776072" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>cucumber.api.cli.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/SatoriAutomation$Members_Search.ic" NAME="Members Search Coverage Results" MODIFIED="1546970315936" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
       <FILTER>cucumber.api.cli.*</FILTER>
     </SUITE>
     <SUITE FILE_PATH="coverage/SatoriAutomation$Feature__Crawler.ic" NAME="Feature: Crawler Coverage Results" MODIFIED="1545844039801" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
       <FILTER>cucumber.api.cli.*</FILTER>
     </SUITE>
-    <SUITE FILE_PATH="coverage/SatoriAutomation$Feature__Crawler__1_.ic" NAME="Feature: Crawler (1) Coverage Results" MODIFIED="1528811776072" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+    <SUITE FILE_PATH="coverage/SatoriAutomation$Feature__LoginIntoNewSite.ic" NAME="Feature: LoginIntoNewSite Coverage Results" MODIFIED="1528467597544" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
       <FILTER>cucumber.api.cli.*</FILTER>
     </SUITE>
     <SUITE FILE_PATH="coverage/SatoriAutomation$Feature__Calendars__3_.ic" NAME="Feature: Calendars (3) Coverage Results" MODIFIED="1532020819269" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
@@ -36,20 +35,20 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="TrackingSheetScoreCards.feature" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/features/league_support/tss/TrackingSheetScoreCards.feature">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/features/navigation/PublicNavigation.feature">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="289">
-              <caret line="17" column="110" selection-start-line="17" selection-start-column="110" selection-end-line="17" selection-end-column="110" />
+            <state relative-caret-position="85">
+              <caret line="5" column="40" selection-start-line="5" selection-start-column="40" selection-end-line="5" selection-end-column="40" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="TrackingSheetSteps.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/test/java/steps/TrackingSheetSteps.java">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/test/java/steps/LandingSteps.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="361">
-              <caret line="93" selection-start-line="93" selection-end-line="93" />
+            <state relative-caret-position="266">
+              <caret line="36" column="47" selection-start-line="36" selection-start-column="47" selection-end-line="36" selection-end-column="47" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -57,13 +56,29 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Helpers.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/utility/Helpers.java">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/steps/NavigationSteps.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="171">
-              <caret line="619" selection-start-line="619" selection-end-line="619" />
+            <state relative-caret-position="1105">
+              <caret line="65" column="12" lean-forward="true" selection-start-line="65" selection-start-column="12" selection-end-line="65" selection-end-column="12" />
               <folding>
                 <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/pages/oldPages/LandingPage.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="266">
+              <caret line="96" selection-start-line="96" selection-end-line="96" />
+              <folding>
+                <element signature="method#LandingPage#0;class#LandingPage#0" />
+                <element signature="method#LoginWith#0;class#LandingPage#0" />
+                <element signature="method#IsUserLoggedIn#0;class#LandingPage#0" />
+                <element signature="method#GoToMyProfile#0;class#LandingPage#0" />
+                <element signature="method#compareAndReturn#0;class#LandingPage#0" />
               </folding>
             </state>
           </provider>
@@ -82,7 +97,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>wait</find>
       <find>zind</find>
       <find>hashm</find>
       <find>-&gt;</find>
@@ -112,6 +126,7 @@
       <find>apt</find>
       <find>&lt;</find>
       <find>deter</find>
+      <find>toastr</find>
     </findStrings>
     <replaceStrings>
       <replace />
@@ -123,10 +138,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/test/java/features/website_support/calendar_events/Events.feature" />
-        <option value="$PROJECT_DIR$/src/test/java/pages/newPages/jobs/DropDuplicatesPage.java" />
-        <option value="$PROJECT_DIR$/src/test/java/pages/newPages/jobs/AssignToDivisionPage.java" />
-        <option value="$PROJECT_DIR$/src/test/java/features/league_support/jobs/Jobs.feature" />
         <option value="$PROJECT_DIR$/src/test/java/steps/JobSteps.java" />
         <option value="$PROJECT_DIR$/src/test/java/pages/newPages/members_and_rosters/MembersAdvancedSearchPage.java" />
         <option value="$PROJECT_DIR$/src/test/java/utility/members.java" />
@@ -152,28 +163,32 @@
         <option value="$PROJECT_DIR$/src/test/java/features/league_support/volunteer_bulk_entry/VolunteerBulkEntry.feature" />
         <option value="$PROJECT_DIR$/src/test/java/pages/newPages/volunteer/VolunteerBulkEntryPage.java" />
         <option value="$PROJECT_DIR$/src/test/java/steps/VolunteerBulkEntrySteps.java" />
-        <option value="$PROJECT_DIR$/src/test/java/pages/oldPages/LandingPage.java" />
         <option value="$PROJECT_DIR$/src/test/java/pages/newPages/nLoginPage.java" />
         <option value="$PROJECT_DIR$/src/test/java/pages/newPages/singup/NewMemberSignUpPage.java" />
         <option value="$PROJECT_DIR$/src/test/java/pages/newPages/singup/SingUpCommon.java" />
         <option value="$PROJECT_DIR$/src/test/java/pages/newPages/singup/Register2Page.java" />
-        <option value="$PROJECT_DIR$/src/test/java/steps/LoginSteps.java" />
         <option value="$PROJECT_DIR$/src/test/java/pages/newPages/memberPortal/myAccount/MyMembershipPage.java" />
         <option value="$PROJECT_DIR$/src/test/java/utility/RandomString.java" />
         <option value="$PROJECT_DIR$/src/test/java/features/signup/NewMemberSignUp.feature" />
         <option value="$PROJECT_DIR$/src/test/java/steps/SignUpSteps.java" />
         <option value="$PROJECT_DIR$/src/test/java/pages/newPages/singup/RegisterPage.java" />
         <option value="$PROJECT_DIR$/src/test/java/utility/members/Member.java" />
-        <option value="$PROJECT_DIR$/src/test/java/pages/newPages/tss/TrackingSheetPage.java" />
         <option value="$PROJECT_DIR$/src/test/java/utility/tss/TssWeekElements.java" />
         <option value="$PROJECT_DIR$/src/test/java/utility/tss/LineElement.java" />
         <option value="$PROJECT_DIR$/src/test/java/utility/tss/TrackinSheetScoreCard.java" />
         <option value="$PROJECT_DIR$/src/test/java/utility/tss/TrackingSheetScoreCard.java" />
         <option value="$PROJECT_DIR$/src/test/java/common/Actionable.java" />
-        <option value="$PROJECT_DIR$/src/test/java/utility/Helpers.java" />
-        <option value="$PROJECT_DIR$/src/test/java/steps/TrackingSheetSteps.java" />
+        <option value="$PROJECT_DIR$/src/test/java/pages/newPages/tss/TrackingSheetPage.java" />
         <option value="$PROJECT_DIR$/src/test/java/pages/newPages/tss/TrackingSheetScorecardDetailPage.java" />
+        <option value="$PROJECT_DIR$/src/test/java/steps/TrackingSheetSteps.java" />
         <option value="$PROJECT_DIR$/src/test/java/features/league_support/tss/TrackingSheetScoreCards.feature" />
+        <option value="$PROJECT_DIR$/src/test/java/steps/LoginSteps.java" />
+        <option value="$PROJECT_DIR$/src/test/java/utility/Helpers.java" />
+        <option value="$PROJECT_DIR$/src/test/java/pages/newPages/nMainPage.java" />
+        <option value="$PROJECT_DIR$/src/test/java/features/navigation/PublicNavigation.feature" />
+        <option value="$PROJECT_DIR$/src/test/java/steps/LandingSteps.java" />
+        <option value="$PROJECT_DIR$/src/test/java/pages/oldPages/LandingPage.java" />
+        <option value="$PROJECT_DIR$/src/test/java/steps/NavigationSteps.java" />
       </list>
     </option>
   </component>
@@ -210,18 +225,16 @@
   <component name="MavenRunner">
     <option name="runMavenInBackground" value="false" />
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
-    <option name="x" value="-7" />
-    <option name="width" value="1377" />
-    <option name="height" value="1047" />
+  <component name="ProjectFrameBounds">
+    <option name="x" value="1913" />
+    <option name="width" value="1234" />
+    <option name="height" value="1087" />
   </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="AndroidView" />
-      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -279,6 +292,16 @@
               <item name="test" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="features" type="462c0819:PsiDirectoryNode" />
+              <item name="league_support" type="462c0819:PsiDirectoryNode" />
+              <item name="tss" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="SatoriAutomation" type="b2602c69:ProjectViewProjectNode" />
+              <item name="satori" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="features" type="462c0819:PsiDirectoryNode" />
               <item name="navigation" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -297,6 +320,26 @@
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="pages" type="462c0819:PsiDirectoryNode" />
               <item name="newPages" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="SatoriAutomation" type="b2602c69:ProjectViewProjectNode" />
+              <item name="satori" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="pages" type="462c0819:PsiDirectoryNode" />
+              <item name="newPages" type="462c0819:PsiDirectoryNode" />
+              <item name="jobs" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="SatoriAutomation" type="b2602c69:ProjectViewProjectNode" />
+              <item name="satori" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="pages" type="462c0819:PsiDirectoryNode" />
+              <item name="newPages" type="462c0819:PsiDirectoryNode" />
+              <item name="leagues" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="SatoriAutomation" type="b2602c69:ProjectViewProjectNode" />
@@ -337,18 +380,20 @@
           <select />
         </subPane>
       </pane>
+      <pane id="PackagesPane" />
       <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="SearchEverywhereHistoryKey" value="getAllColumnHeaders&#9;PSI&#9;JAVA://pages.newPages.Pages#getAllColumnHeaders&#10;ClickOnRowButtonAtPosition&#9;PSI&#9;JAVA://common.Actionable#ClickOnRowButtonAtPosition&#10;By &#9;PSI&#9;JAVA://pages.newPages.ManageAlta#by" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1547573418775" />
     <property name="com.intellij.ide.scratch.LRUPopupBuilder$1/New Scratch File" value="Gherkin" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/src/test/java/steps" />
-    <property name="project.structure.last.edited" value="Project" />
+    <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.19655173" />
     <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
-    <property name="settings.editor.selected.configurable" value="configurable.group.language" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -379,9 +424,12 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Cucumber java.TSS">
+  <component name="RunManager" selected="Cucumber java.Feature: PublicNavigation">
     <configuration default="true" type="Application" factoryName="Application">
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
     </configuration>
     <configuration name="Calendar" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java">
       <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/java/features/website_support/calendar_events/Calendars.feature" />
@@ -397,6 +445,9 @@
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
     </configuration>
     <configuration name="Captain" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java">
       <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/java/features/navigation/Crawler.feature" />
@@ -412,6 +463,9 @@
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
     </configuration>
     <configuration name="Coordinator" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java">
       <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/java/features/navigation/Crawler.feature" />
@@ -427,6 +481,9 @@
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
     </configuration>
     <configuration name="Events" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java">
       <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/java/features/website_support/calendar_events/Events.feature" />
@@ -442,6 +499,9 @@
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
     </configuration>
     <configuration name="Feature: NewRoster" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
       <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/java/features/player_portal/my_rosters/NewRoster.feature" />
@@ -457,6 +517,9 @@
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
     </configuration>
     <configuration name="Feature: NewRoster" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
       <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/java/features/player_portal/my_rosters/NewRoster.feature" />
@@ -473,6 +536,24 @@
         </pattern>
       </extension>
     </configuration>
+    <configuration name="Feature: PublicNavigation" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
+      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/java/features/navigation/PublicNavigation.feature" />
+      <option name="GLUE" value="common steps" />
+      <option name="MAIN_CLASS_NAME" value="cucumber.api.cli.Main" />
+      <module name="SatoriAutomation" />
+      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvmSMFormatter --monochrome" />
+      <option name="SUGGESTED_NAME" value="Feature: PublicNavigation" />
+      <option name="VM_PARAMETERS" value="-Denvironment=qa -Dbrowser=chrome" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="cucumber.api.cli.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="Jobs" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java">
       <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/java/features/league_support/jobs/Jobs.feature" />
       <option name="GLUE" value="common steps" />
@@ -487,6 +568,9 @@
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
     </configuration>
     <configuration name="Leagues Template creation" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java">
       <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/java/features/website_support/leagues/LeagueTemplateCreation.feature" />
@@ -502,6 +586,9 @@
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
     </configuration>
     <configuration name="Leagues creation" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java">
       <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/java/features/website_support/leagues/Leagues.feature" />
@@ -517,6 +604,9 @@
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
     </configuration>
     <configuration name="Members Search" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java">
       <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/java/features/members_and_rosters/member_search/SearchForMember.feature" />
@@ -532,6 +622,9 @@
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
     </configuration>
     <configuration name="Signup" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java">
       <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/java/features/signup/NewMemberSignUp.feature" />
@@ -547,6 +640,9 @@
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
     </configuration>
     <configuration name="TSS" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java">
       <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/java/features/league_support/tss/TrackingSheetScoreCards.feature" />
@@ -562,6 +658,9 @@
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
     </configuration>
     <configuration name="VulkEntry" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java">
       <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/java/features/league_support/volunteer_bulk_entry/VolunteerBulkEntry.feature" />
@@ -577,62 +676,28 @@
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
     </configuration>
     <configuration default="true" type="JUnit" factoryName="JUnit">
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" />
-      <option name="MAIN_CLASS_NAME" />
-      <option name="METHOD_NAME" />
       <option name="TEST_OBJECT" value="class" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
       <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <patterns />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
     </configuration>
-    <configuration default="true" type="TestNG" factoryName="TestNG">
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="SUITE_NAME" />
-      <option name="PACKAGE_NAME" />
-      <option name="MAIN_CLASS_NAME" />
-      <option name="METHOD_NAME" />
-      <option name="GROUP_NAME" />
-      <option name="TEST_OBJECT" value="CLASS" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
+    <configuration default="true" type="TestNG">
       <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
-      <option name="OUTPUT_DIRECTORY" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <option name="USE_DEFAULT_REPORTERS" value="false" />
-      <option name="PROPERTIES_FILE" />
       <properties />
       <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
     </configuration>
-    <list>
-      <item itemvalue="Cucumber java.Coordinator" />
-      <item itemvalue="Cucumber java.Leagues creation" />
-      <item itemvalue="Cucumber java.Leagues Template creation" />
-      <item itemvalue="Cucumber java.Captain" />
-      <item itemvalue="Cucumber java.Calendar" />
-      <item itemvalue="Cucumber java.Events" />
-      <item itemvalue="Cucumber java.Jobs" />
-      <item itemvalue="Cucumber java.Members Search" />
-      <item itemvalue="Cucumber java.VulkEntry" />
-      <item itemvalue="Cucumber java.Signup" />
-      <item itemvalue="Cucumber java.TSS" />
-      <item itemvalue="Cucumber java.Feature: NewRoster" />
-    </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Cucumber java.Feature: NewRoster" />
+        <item itemvalue="Cucumber java.Feature: PublicNavigation" />
       </list>
     </recent_temporary>
   </component>
@@ -651,35 +716,35 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="TSS - 2019.01.11 at 14h 39m 31s.xml">
-      <configuration name="TSS" configurationId="CucumberJavaRunConfigurationType" />
+    <history-entry file="Feature__PublicNavigation - 2019.01.15 at 10h 51m 27s.xml">
+      <configuration name="Feature: PublicNavigation" configurationId="CucumberJavaRunConfigurationType" />
     </history-entry>
-    <history-entry file="TSS - 2019.01.11 at 14h 43m 27s.xml">
-      <configuration name="TSS" configurationId="CucumberJavaRunConfigurationType" />
+    <history-entry file="Feature__PublicNavigation - 2019.01.15 at 10h 55m 08s.xml">
+      <configuration name="Feature: PublicNavigation" configurationId="CucumberJavaRunConfigurationType" />
     </history-entry>
-    <history-entry file="TSS - 2019.01.11 at 14h 47m 32s.xml">
-      <configuration name="TSS" configurationId="CucumberJavaRunConfigurationType" />
+    <history-entry file="Feature__PublicNavigation - 2019.01.15 at 11h 02m 41s.xml">
+      <configuration name="Feature: PublicNavigation" configurationId="CucumberJavaRunConfigurationType" />
     </history-entry>
-    <history-entry file="TSS - 2019.01.11 at 14h 55m 51s.xml">
-      <configuration name="TSS" configurationId="CucumberJavaRunConfigurationType" />
+    <history-entry file="Feature__PublicNavigation - 2019.01.15 at 11h 09m 02s.xml">
+      <configuration name="Feature: PublicNavigation" configurationId="CucumberJavaRunConfigurationType" />
     </history-entry>
-    <history-entry file="TSS - 2019.01.11 at 15h 02m 43s.xml">
-      <configuration name="TSS" configurationId="CucumberJavaRunConfigurationType" />
+    <history-entry file="Feature__PublicNavigation - 2019.01.15 at 11h 11m 03s.xml">
+      <configuration name="Feature: PublicNavigation" configurationId="CucumberJavaRunConfigurationType" />
     </history-entry>
-    <history-entry file="TSS - 2019.01.11 at 15h 13m 12s.xml">
-      <configuration name="TSS" configurationId="CucumberJavaRunConfigurationType" />
+    <history-entry file="Feature__PublicNavigation - 2019.01.15 at 11h 16m 49s.xml">
+      <configuration name="Feature: PublicNavigation" configurationId="CucumberJavaRunConfigurationType" />
     </history-entry>
-    <history-entry file="TSS - 2019.01.11 at 15h 29m 14s.xml">
-      <configuration name="TSS" configurationId="CucumberJavaRunConfigurationType" />
+    <history-entry file="Feature__PublicNavigation - 2019.01.15 at 11h 18m 26s.xml">
+      <configuration name="Feature: PublicNavigation" configurationId="CucumberJavaRunConfigurationType" />
     </history-entry>
-    <history-entry file="TSS - 2019.01.11 at 15h 31m 14s.xml">
-      <configuration name="TSS" configurationId="CucumberJavaRunConfigurationType" />
+    <history-entry file="Feature__PublicNavigation - 2019.01.15 at 11h 19m 46s.xml">
+      <configuration name="Feature: PublicNavigation" configurationId="CucumberJavaRunConfigurationType" />
     </history-entry>
-    <history-entry file="TSS - 2019.01.11 at 15h 33m 39s.xml">
-      <configuration name="TSS" configurationId="CucumberJavaRunConfigurationType" />
+    <history-entry file="Feature__PublicNavigation - 2019.01.15 at 11h 20m 53s.xml">
+      <configuration name="Feature: PublicNavigation" configurationId="CucumberJavaRunConfigurationType" />
     </history-entry>
-    <history-entry file="TSS - 2019.01.11 at 15h 37m 02s.xml">
-      <configuration name="TSS" configurationId="CucumberJavaRunConfigurationType" />
+    <history-entry file="Feature__PublicNavigation - 2019.01.15 at 11h 27m 30s.xml">
+      <configuration name="Feature: PublicNavigation" configurationId="CucumberJavaRunConfigurationType" />
     </history-entry>
   </component>
   <component name="TodoView">
@@ -692,87 +757,85 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-7" y="0" width="1377" height="1047" extended-state="0" />
+    <frame x="1913" y="0" width="1234" height="1087" extended-state="0" />
+    <editor active="true" />
     <layout>
-      <window_info anchor="right" id="Palette" order="3" />
-      <window_info anchor="bottom" id="TODO" order="6" weight="0.32933104" />
-      <window_info anchor="bottom" id="Messages" order="10" weight="0.3261851" />
-      <window_info anchor="right" id="Palette&#9;" order="4" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.57312924" weight="0.49781182" />
       <window_info id="Image Layers" order="1" />
-      <window_info anchor="right" id="Capture Analysis" order="5" />
-      <window_info anchor="bottom" id="Event Log" order="8" sideWeight="0.50075644" side_tool="true" weight="0.31419623" />
-      <window_info anchor="right" id="Maven Projects" order="9" weight="0.1860817" />
-      <window_info anchor="bottom" id="Version Control" order="9" weight="0.32933104" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49924356" weight="0.45259595" />
-      <window_info anchor="bottom" id="Terminal" order="7" weight="0.31336898" />
       <window_info id="Capture Tool" order="2" />
       <window_info id="Designer" order="3" />
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.57829183" visible="true" weight="0.19362187" />
-      <window_info anchor="right" id="Structure" order="10" sideWeight="0.50428814" side_tool="true" weight="0.17397882" />
-      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info id="UI Designer" order="4" />
-      <window_info anchor="right" id="Theme Preview" order="6" />
-      <window_info id="Favorites" order="5" sideWeight="0.4217082" side_tool="true" visible="true" weight="0.19362187" />
-      <window_info active="true" anchor="bottom" id="Debug" order="3" visible="true" weight="0.36568847" />
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="right" id="Coverage" order="7" side_tool="true" weight="0.32889125" />
-      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
-      <window_info anchor="right" x="0" y="0" width="314" height="716" id="Documentation" order="8" side_tool="true" weight="0.3295129" />
+      <window_info id="Favorites" order="5" sideWeight="0.42687073" side_tool="true" weight="0.37089714" />
       <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32513368" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49924356" weight="0.45220193" />
+      <window_info active="true" anchor="bottom" id="Debug" order="3" visible="true" weight="0.3641246" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" weight="0.32933104" />
+      <window_info anchor="bottom" id="Terminal" order="7" weight="0.31336898" />
+      <window_info anchor="bottom" id="Event Log" order="8" sideWeight="0.50075644" side_tool="true" weight="0.31364125" />
+      <window_info anchor="bottom" id="Version Control" order="9" weight="0.32933104" />
+      <window_info anchor="bottom" id="Messages" order="10" weight="0.3261851" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Palette" order="3" />
+      <window_info anchor="right" id="Palette&#9;" order="4" />
+      <window_info anchor="right" id="Capture Analysis" order="5" />
+      <window_info anchor="right" id="Theme Preview" order="6" />
+      <window_info anchor="right" id="Coverage" order="7" side_tool="true" weight="0.32889125" />
+      <window_info anchor="right" x="0" y="0" width="314" height="716" id="Documentation" order="8" side_tool="true" weight="0.3295129" />
+      <window_info anchor="right" id="Maven Projects" order="9" weight="0.1860817" />
+      <window_info anchor="right" id="Structure" order="10" sideWeight="0.50428814" side_tool="true" weight="0.17397882" />
+      <window_info anchor="right" id="Maven" order="11" />
     </layout>
     <layout-to-restore>
-      <window_info anchor="right" id="Palette" order="3" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.32513368" />
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="right" id="Capture Analysis" order="5" />
-      <window_info anchor="right" id="Coverage" order="7" side_tool="true" weight="0.32889125" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49924356" weight="0.45363128" />
-      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
-      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.57967913" visible="true" weight="0.27345416" />
-      <window_info anchor="right" id="Structure" order="10" sideWeight="0.50428814" side_tool="true" weight="0.17397882" />
-      <window_info anchor="right" id="Theme Preview" order="6" />
-      <window_info anchor="bottom" id="TODO" order="6" weight="0.32933104" />
-      <window_info anchor="bottom" id="Message" order="0" />
       <window_info id="Image Layers" order="1" />
+      <window_info id="Capture Tool" order="2" />
       <window_info id="Designer" order="3" />
       <window_info id="UI Designer" order="4" />
+      <window_info id="Favorites" order="5" sideWeight="0.42032087" side_tool="true" weight="0.2707889" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32513368" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49924356" weight="0.45363128" />
       <window_info anchor="bottom" id="Debug" order="3" visible="true" weight="0.37988827" />
-      <window_info anchor="right" x="0" y="0" width="314" height="716" id="Documentation" order="8" side_tool="true" weight="0.3295129" />
-      <window_info anchor="right" id="Palette&#9;" order="4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" weight="0.32933104" />
       <window_info anchor="bottom" id="Terminal" order="7" weight="0.31336898" />
       <window_info anchor="bottom" id="Event Log" order="8" sideWeight="0.50075644" side_tool="true" weight="0.31419623" />
-      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="Version Control" order="9" weight="0.32933104" />
-      <window_info id="Capture Tool" order="2" />
-      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="bottom" id="Messages" order="10" weight="0.3272727" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Palette" order="3" />
+      <window_info anchor="right" id="Palette&#9;" order="4" />
+      <window_info anchor="right" id="Capture Analysis" order="5" />
+      <window_info anchor="right" id="Theme Preview" order="6" />
+      <window_info anchor="right" id="Coverage" order="7" side_tool="true" weight="0.32889125" />
+      <window_info anchor="right" x="0" y="0" width="314" height="716" id="Documentation" order="8" side_tool="true" weight="0.3295129" />
       <window_info anchor="right" id="Maven Projects" order="9" weight="0.1860817" />
-      <window_info id="Favorites" order="5" sideWeight="0.42032087" side_tool="true" weight="0.2707889" />
+      <window_info anchor="right" id="Structure" order="10" sideWeight="0.50428814" side_tool="true" weight="0.17397882" />
     </layout-to-restore>
-  </component>
-  <component name="VcsContentAnnotationSettings">
-    <option name="myLimit" value="2678400000" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/test/java/steps/TrackingSheetSteps.java</url>
-          <line>87</line>
+          <url>file://$PROJECT_DIR$/src/test/java/steps/NavigationSteps.java</url>
+          <line>63</line>
           <properties />
-          <option name="timeStamp" value="572" />
+          <option name="timeStamp" value="1" />
         </line-breakpoint>
       </breakpoints>
-      <option name="time" value="573" />
     </breakpoint-manager>
     <watches-manager>
       <configuration name="CucumberJavaRunConfigurationType">
-        <watch expression="weekElements.get(3).awayPlayer1.getText()" language="JAVA" />
-        <watch expression="tss.getPlayedDate()" language="JAVA" />
+        <watch expression="sub.getText()" language="JAVA" />
+        <watch expression="lnkName" language="JAVA" />
       </configuration>
     </watches-manager>
   </component>
@@ -834,6 +897,31 @@ sel.getFirstSelectedOption().getText()</expression-string>
     </expressions>
     <expressions id="watch">
       <expression>
+        <expression-string>lnkName</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>sub.getText()</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>subList</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>elementList</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>section</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
         <expression-string>tss.getPlayedDate()</expression-string>
         <language-id>JAVA</language-id>
         <evaluation-mode>EXPRESSION</evaluation-mode>
@@ -851,38 +939,6 @@ sel.getFirstSelectedOption().getText()</expression-string>
       <expression>
         <expression-string>tblResults.get(0).getText()</expression-string>
         <language-id>JAVA</language-id>
-        <evaluation-mode>EXPRESSION</evaluation-mode>
-      </expression>
-      <expression>
-        <expression-string>tblResults.get(2).getText()</expression-string>
-        <language-id>JAVA</language-id>
-        <evaluation-mode>EXPRESSION</evaluation-mode>
-      </expression>
-      <expression>
-        <expression-string>member</expression-string>
-        <language-id>JAVA</language-id>
-        <evaluation-mode>EXPRESSION</evaluation-mode>
-      </expression>
-      <expression>
-        <expression-string>shareContainer.findElement(By.tagName(&quot;tbody&quot;))                 .findElements(By.className(&quot;prefs__item&quot;))                 .get(0)                 .findElement(By.className(&quot;custom-checkbox&quot;))                 .findElement(By.tagName(&quot;label&quot;))</expression-string>
-        <language-id>JAVA</language-id>
-        <evaluation-mode>EXPRESSION</evaluation-mode>
-      </expression>
-      <expression>
-        <expression-string>tab.findElement(By.tagName(&quot;a&quot;)).getText()</expression-string>
-        <language-id>JAVA</language-id>
-        <evaluation-mode>EXPRESSION</evaluation-mode>
-      </expression>
-      <expression>
-        <expression-string>headers.get(0).findElements(By.tagName(&quot;th&quot;))</expression-string>
-        <language-id>JAVA</language-id>
-        <custom-info>org.openqa.selenium.By</custom-info>
-        <evaluation-mode>EXPRESSION</evaluation-mode>
-      </expression>
-      <expression>
-        <expression-string>headers.get(1).findElements(By.tagName(&quot;th&quot;))</expression-string>
-        <language-id>JAVA</language-id>
-        <custom-info>org.openqa.selenium.By</custom-info>
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
     </expressions>
@@ -935,113 +991,6 @@ sel.getFirstSelectedOption().getText()</expression-string>
     </expressions>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/test/java/pages/newPages/memberPortal/myAccount/ProfileDetailPage.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-7">
-          <caret line="32" column="4" selection-start-line="32" selection-start-column="4" selection-end-line="32" selection-end-column="51" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/pages/newPages/memberPortal/myAccount/MemberAwardsPage.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="629">
-          <caret line="40" column="40" selection-start-line="40" selection-start-column="40" selection-end-line="40" selection-end-column="40" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/pages/newPages/memberPortal/myAccount/MemberPreferencesPage.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="714">
-          <caret line="45" selection-start-line="45" selection-end-line="45" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/pages/newPages/memberPortal/myAccount/MemberProfile.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="13" column="13" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/pages/newPages/memberPortal/myAccount/PersonAwardDetailPage.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="259">
-          <caret line="67" column="27" selection-start-line="67" selection-start-column="27" selection-end-line="67" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/steps/MemberPreferencesSteps.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="29" column="54" selection-start-line="29" selection-start-column="54" selection-end-line="29" selection-end-column="54" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/steps/MemberAwardsSteps.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="373">
-          <caret line="47" column="28" selection-start-line="47" selection-start-column="28" selection-end-line="47" selection-end-column="28" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/steps/NavigationSteps.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="184">
-          <caret line="35" column="50" selection-start-line="35" selection-start-column="50" selection-end-line="35" selection-end-column="50" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/steps/LeagueSteps.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="520">
-          <caret line="60" column="16" selection-start-line="60" selection-start-column="16" selection-end-line="60" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/pages/newPages/leagues/LeagueTemplatesPage.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="22" column="51" lean-forward="true" selection-start-line="22" selection-start-column="4" selection-end-line="22" selection-end-column="51" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/steps/LeagueTemplateSteps.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="265">
-          <caret line="137" column="72" selection-start-line="137" selection-start-column="61" selection-end-line="137" selection-end-column="72" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/utility/volunteer/Position.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="425">
-          <caret line="34" selection-start-line="34" selection-end-line="34" />
-          <folding>
-            <element signature="e#773#774#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/pages/oldPages/LandingPage.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="442">
-          <caret line="35" column="4" selection-start-line="35" selection-start-column="4" selection-end-line="35" selection-end-column="4" />
-          <folding>
-            <element signature="method#LandingPage#0;class#LandingPage#0" />
-            <element signature="method#LoginWith#0;class#LandingPage#0" />
-            <element signature="method#IsUserLoggedIn#0;class#LandingPage#0" />
-            <element signature="method#GoToMyProfile#0;class#LandingPage#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/pages/newPages/singup/Register2Page.java" />
     <entry file="file://$PROJECT_DIR$/src/test/java/pages/newPages/singup/NewMemberSignUpPage.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="306">
@@ -1053,20 +1002,6 @@ sel.getFirstSelectedOption().getText()</expression-string>
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-31">
           <caret line="82" column="60" lean-forward="true" selection-start-line="82" selection-start-column="60" selection-end-line="82" selection-end-column="60" />
-          <folding>
-            <element signature="e#1197#1198#0" expanded="true" />
-            <element signature="e#1249#1250#0" expanded="true" />
-            <element signature="e#1285#1286#0" expanded="true" />
-            <element signature="e#1346#1347#0" expanded="true" />
-            <element signature="e#2286#2287#0" expanded="true" />
-            <element signature="e#2360#2361#0" expanded="true" />
-            <element signature="e#2672#2673#0" expanded="true" />
-            <element signature="e#2751#2752#0" expanded="true" />
-            <element signature="e#3063#3064#0" expanded="true" />
-            <element signature="e#3138#3139#0" expanded="true" />
-            <element signature="e#3456#3457#0" expanded="true" />
-            <element signature="e#3533#3534#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1158,12 +1093,6 @@ sel.getFirstSelectedOption().getText()</expression-string>
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="289">
           <caret line="20" column="40" selection-start-line="20" selection-start-column="40" selection-end-line="20" selection-end-column="40" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#409#410#0" expanded="true" />
-            <element signature="e#435#436#0" expanded="true" />
-            <element signature="e#623#624#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1178,16 +1107,6 @@ sel.getFirstSelectedOption().getText()</expression-string>
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="102">
           <caret line="6" column="14" selection-start-line="6" selection-start-column="14" selection-end-line="6" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/steps/LoginSteps.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="85" column="21" lean-forward="true" selection-start-line="85" selection-start-column="21" selection-end-line="85" selection-end-column="33" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1212,9 +1131,6 @@ sel.getFirstSelectedOption().getText()</expression-string>
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="340">
           <caret line="31" selection-start-line="31" selection-end-line="31" />
-          <folding>
-            <element signature="e#1042#1043#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1235,24 +1151,10 @@ sel.getFirstSelectedOption().getText()</expression-string>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/features/navigation/Crawler.feature">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="16" column="75" lean-forward="true" selection-start-line="16" selection-start-column="6" selection-end-line="16" selection-end-column="75" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://C:/Program Files/Java/jdk1.8.0_161/src.zip!/java/util/List.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-1036">
           <caret line="543" column="6" selection-start-line="543" selection-start-column="6" selection-end-line="543" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/info/cukes/cucumber-core/1.2.5/cucumber-core-1.2.5.jar!/cucumber/runtime/Utils.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="33">
-          <caret line="39" selection-start-line="39" selection-end-line="39" />
         </state>
       </provider>
     </entry>
@@ -1262,17 +1164,6 @@ sel.getFirstSelectedOption().getText()</expression-string>
           <caret line="41" column="29" selection-start-line="41" selection-start-column="29" selection-end-line="41" selection-end-column="29" />
           <folding>
             <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/pages/newPages/tss/TrackingSheetPage.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="475">
-          <caret line="48" selection-start-line="48" selection-end-line="48" />
-          <folding>
-            <element signature="method#TrackingSheetPage#0;class#TrackingSheetPage#0" />
-            <element signature="e#1961#1962#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1288,11 +1179,6 @@ sel.getFirstSelectedOption().getText()</expression-string>
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="176">
           <caret line="88" selection-start-line="88" selection-end-line="88" />
-          <folding>
-            <element signature="e#2981#2982#0" expanded="true" />
-            <element signature="e#3012#3013#0" expanded="true" />
-            <element signature="e#3435#3436#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1318,9 +1204,6 @@ sel.getFirstSelectedOption().getText()</expression-string>
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="671">
           <caret line="122" column="13" selection-start-line="122" selection-start-column="13" selection-end-line="122" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1342,39 +1225,195 @@ sel.getFirstSelectedOption().getText()</expression-string>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/features/league_support/tss/TrackingSheetScoreCards.feature">
+    <entry file="file://$PROJECT_DIR$/src/test/java/pages/newPages/leagues/LeagueListPage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-629">
+          <caret line="15" column="13" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/pages/newPages/leagues/LeagueNewEditPage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-374">
+          <caret line="13" column="13" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/pages/newPages/leagues/LeagueTemplateDetailPage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="110" column="76" lean-forward="true" selection-start-line="110" selection-start-column="76" selection-end-line="110" selection-end-column="76" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/pages/newPages/leagues/LeagueTemplatesPage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="22" column="51" lean-forward="true" selection-start-line="22" selection-start-column="4" selection-end-line="22" selection-end-column="51" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/pages/newPages/jobs/JobsListPage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="13" column="13" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/pages/newPages/jobs/JobPage.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="289">
-          <caret line="17" column="110" selection-start-line="17" selection-start-column="110" selection-end-line="17" selection-end-column="110" />
+          <caret line="29" column="30" selection-start-line="29" selection-start-column="30" selection-end-line="29" selection-end-column="30" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/utility/Helpers.java">
+    <entry file="file://$PROJECT_DIR$/src/test/java/steps/EventSteps.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="171">
-          <caret line="619" selection-start-line="619" selection-end-line="619" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/steps/TrackingSheetSteps.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="361">
-          <caret line="93" selection-start-line="93" selection-end-line="93" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state relative-caret-position="307">
+          <caret line="73" column="70" selection-start-line="73" selection-start-column="70" selection-end-line="73" selection-end-column="70" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/pages/newPages/tss/TrackingSheetScorecardDetailPage.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="395">
-          <caret line="114" column="31" selection-start-line="114" selection-start-column="31" selection-end-line="114" selection-end-column="31" />
+        <state relative-caret-position="153">
+          <caret line="115" column="43" lean-forward="true" selection-start-line="115" selection-start-column="43" selection-end-line="115" selection-end-column="43" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/pages/newPages/tss/TrackingSheetPage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="200">
+          <caret line="101" column="18" selection-start-line="101" selection-start-column="18" selection-end-line="101" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/steps/TrackingSheetSteps.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="249">
+          <caret line="65" lean-forward="true" selection-start-line="65" selection-end-line="65" />
           <folding>
-            <element signature="method#getAllLinesElements#1;class#TrackingSheetScorecardDetailPage#0" />
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/pages/newPages/events/EventsPage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="256">
+          <caret line="40" column="64" selection-start-line="40" selection-start-column="4" selection-end-line="40" selection-end-column="64" />
+          <folding>
+            <element signature="e#1382#1383#0" expanded="true" />
+            <element signature="e#1426#1427#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/features/league_support/tss/TrackingSheetScoreCards.feature">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="9" column="23" selection-start-line="9" selection-start-column="23" selection-end-line="9" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/steps/LoginSteps.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="129" column="5" lean-forward="true" selection-start-line="129" selection-start-column="5" selection-end-line="129" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/features/navigation/MemberPortalNavigation.feature">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="18" column="82" selection-start-line="18" selection-start-column="82" selection-end-line="18" selection-end-column="82" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/info/cukes/cucumber-core/1.2.5/cucumber-core-1.2.5.jar!/cucumber/runtime/Utils.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="84">
+          <caret line="43" selection-start-line="43" selection-end-line="43" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/pages/newPages/nMainPage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="357">
+          <caret line="31" column="4" selection-start-line="31" selection-start-column="4" selection-end-line="31" selection-end-column="4" />
+          <folding>
+            <element signature="method#getNavigator#0;class#nMainPage#0" />
+            <element signature="method#getNavigatorCloseButton#0;class#nMainPage#0" />
+            <element signature="method#getLinkOptionFromMenu#0;class#nMainPage#0" />
+            <element signature="e#1847#2222#1" />
+            <element signature="e#1991#2212#1" />
+            <element signature="method#compareAndReturn#0;class#nMainPage#0" />
+            <element signature="e#2387#2495#1" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/utility/Helpers.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="631">
+          <caret line="635" column="23" selection-start-line="635" selection-start-column="23" selection-end-line="635" selection-end-column="23" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#25144#25145#0" expanded="true" />
+            <element signature="e#25198#25199#0" expanded="true" />
+            <element signature="e#25255#25256#0" expanded="true" />
+            <element signature="e#25288#25289#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/features/navigation/PublicNavigation.feature">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" column="40" selection-start-line="5" selection-start-column="40" selection-end-line="5" selection-end-column="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/pages/oldPages/LandingPage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="266">
+          <caret line="96" selection-start-line="96" selection-end-line="96" />
+          <folding>
+            <element signature="method#LandingPage#0;class#LandingPage#0" />
+            <element signature="method#LoginWith#0;class#LandingPage#0" />
+            <element signature="method#IsUserLoggedIn#0;class#LandingPage#0" />
+            <element signature="method#GoToMyProfile#0;class#LandingPage#0" />
+            <element signature="method#compareAndReturn#0;class#LandingPage#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/features/navigation/ManageALTANavigation.feature">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="533">
+          <caret line="47" column="24" selection-start-line="47" selection-start-column="24" selection-end-line="47" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/steps/NavigationSteps.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1105">
+          <caret line="65" column="12" lean-forward="true" selection-start-line="65" selection-start-column="12" selection-end-line="65" selection-end-column="12" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/steps/LandingSteps.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="266">
+          <caret line="36" column="47" selection-start-line="36" selection-start-column="47" selection-end-line="36" selection-end-column="47" />
+          <folding>
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>

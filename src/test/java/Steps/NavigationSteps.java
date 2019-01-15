@@ -2,20 +2,21 @@ package steps;
 
 import base.BaseUtil;
 import cucumber.api.DataTable;
-import cucumber.api.PendingException;
 import cucumber.api.java.en.And;
 import cucumber.api.java.en.Then;
 import pages.newPages.nMainPage;
 import utility.Helpers;
 import utility.Log;
-
 import java.util.Arrays;
-import java.util.HashMap;
+import java.util.Collections;
 import java.util.List;
-import java.util.Map;
+
+
 
 import static org.testng.Assert.assertTrue;
 import static org.testng.Assert.fail;
+import static utility.Helpers.getErrorPages;
+import static utility.Helpers.setAddErrorPage;
 
 public class NavigationSteps {
     private BaseUtil base;
@@ -27,7 +28,7 @@ public class NavigationSteps {
         I = new Helpers(base);
     }
 
-    private Map<String, String> errorPages = new HashMap<String, String>();
+
 
     @And("I navigate to the following page option")
     public void iNavigateToTheFollowingPageOption(DataTable links) {
@@ -41,7 +42,7 @@ public class NavigationSteps {
                     I.Click(mainPage.getLinkOptionFromMenu(row.get(0), row.get(1)));
                     Log.info(String.valueOf(I.CompareExpectedPage(row.get(1))));
                 } catch (Exception ee) {
-                    errorPages.put(row.get(0), row.get(1));
+                    setAddErrorPage(row);
                     base.GrabScreenShot();
                     Log.error("Error during navigation to: " + row.get(0) + " - " + row.get(1));
                 }
@@ -60,10 +61,10 @@ public class NavigationSteps {
 
     @Then("^No error is shown$")
     public void noErrorIsShown() {
-        if(errorPages.size() > 0)
-            Log.info("There was an error accessing: " + Arrays.asList(errorPages));
+        if(getErrorPages().size() > 0)
+            Log.info("There was an error accessing: " + Collections.singleton(getErrorPages()));
         else
             Log.info("No errors were found accessing all pages");
-        assertTrue(errorPages.isEmpty());
+        assertTrue(getErrorPages().isEmpty());
     }
 }

@@ -16,5 +16,5 @@ Feature: TSS edition
     And Edit tss changing
       | Week | Home Result | Home Player1 | Home Player2 | Home Set1 | Home Set2 | Home Set3 | Played Date | Away Set1 | Away Set2 | Away Set3 | Away Result | Away Player1 | Away Player2 | Home Comments   | Away Comments  |
       | 5    |             |              |              | 6         | 6         |           |             | 1         |           |           |             |              |              | Automated (66-) | Testing  (00-) |
-    Then I got "success" message after save
+    Then I got "updated correctly" message after save
 

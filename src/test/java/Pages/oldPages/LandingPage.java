@@ -1,5 +1,6 @@
 package pages.oldPages;
 
+import utility.Log;
 import utility.credentials.MemberCredentials;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
@@ -10,6 +11,7 @@ import org.openqa.selenium.support.How;
 import org.openqa.selenium.support.PageFactory;
 
 import java.util.ArrayList;
+import java.util.List;
 
 public class LandingPage {
     private WebDriver _driver;
@@ -33,12 +35,21 @@ public class LandingPage {
     @FindBy(how = How.ID, using = "ctl00_signinRegister")
     private WebElement btnSignIn;
 
+    @FindBy(how = How.ID, using = "navbarMainToggle")
+    private WebElement btnNavigator;
+
+    @FindBy(how = How.CLASS_NAME, using = "megamenu__list-col")
+    private WebElement navList;
+
+    @FindBy(how = How.CLASS_NAME, using = "footer-home__social")
+    private WebElement lnkSocial;
+
     public LandingPage(WebDriver driver) {
         PageFactory.initElements(driver, this);
         _driver = driver;
     }
 
-    public void LoginWith(MemberCredentials credentials) throws Exception{
+    public void LoginWith(MemberCredentials credentials) throws Exception {
         username.clear();
         username.sendKeys(credentials.getUsername());
         txtPassword.click();
@@ -47,7 +58,7 @@ public class LandingPage {
 
     }
 
-    public boolean IsUserLoggedIn() throws Exception{
+    public boolean IsUserLoggedIn() throws Exception {
         return _driver.findElement(byLblWelcome).isDisplayed();
     }
 
@@ -55,7 +66,7 @@ public class LandingPage {
         return byLblWelcome;
     }
 
-    public void GoToMyProfile() throws Exception{
+    public void GoToMyProfile() throws Exception {
         Actions actions = new Actions(_driver);
         ArrayList<WebElement> ele = new ArrayList<>(_driver.findElements(By.xpath("//*[@id=\"membership\"]/span")));
         actions.moveToElement(ele.get(1)).perform();
@@ -66,5 +77,37 @@ public class LandingPage {
         return btnSignIn;
     }
 
+    public WebElement getBtnNavigator() {
+        return btnNavigator;
+    }
 
+    public WebElement getNavList() {
+        return navList;
+    }
+
+    public WebElement getLnkSocial() {
+        return lnkSocial;
+    }
+
+    public WebElement getLinkOptionFromMenu(String lnkName) throws Exception {
+        List<WebElement> elementList = navList.findElements(By.className("megamenu__section"));
+        for (WebElement element : elementList) {
+            List<WebElement> subList = element.findElements(By.tagName("a"));
+            for (WebElement sub : subList) {
+                if (sub.getText().contains(lnkName)) {
+                    Log.info("URL found: " + sub.getAttribute("href"));
+                    return sub;
+                }
+            }
+        }
+        return null;
+    }
+
+    private WebElement compareAndReturn(List<WebElement> elementList, String section) {
+        for (WebElement element : elementList) {
+            if (section.equals(element.getText().toLowerCase()))
+                return element;
+        }
+        return null;
+    }
 }

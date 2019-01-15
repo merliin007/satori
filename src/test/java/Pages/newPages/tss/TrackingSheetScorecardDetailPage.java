@@ -60,6 +60,7 @@ public class TrackingSheetScorecardDetailPage {
     }
 
     private List<TssWeekElements> getAllLinesElements() {
+        Log.info("Hold on a moment, mapping all elements, it'll take a while...");
         List<WebElement> hPlayers1 = getAllLinesPlayers(true, 1);
         List<WebElement> hPlayers2 = getAllLinesPlayers(true, 2);
         List<WebElement> aPlayers1 = getAllLinesPlayers(false, 1);
@@ -95,6 +96,7 @@ public class TrackingSheetScorecardDetailPage {
                 break;
             }
         }
+        Log.info("Element mapping done!");
         return weekElements;
     }
 

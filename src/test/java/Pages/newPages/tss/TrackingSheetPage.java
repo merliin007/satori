@@ -4,6 +4,7 @@
  */
 package pages.newPages.tss;
 
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -43,6 +44,7 @@ public class TrackingSheetPage extends Pages {
     private WebElement btnSearch;
     @FindBy(how = How.ID, using ="ctl00_ctl00_CPHolder_CPHolder_btnReset")
     private WebElement btnClear;
+    private By toastContainerLocator = By.id("toast-container");
 
 
     public WebElement getDdlStatus() {
@@ -91,6 +93,14 @@ public class TrackingSheetPage extends Pages {
 
     public WebElement getBtnClear() {
         return btnClear;
+    }
+
+    public By getToastContainerLocator() {
+        return toastContainerLocator;
+    }
+
+    public String getToastrMesage(){
+        return _driver.findElement(toastContainerLocator).findElement(By.className("toast-message")).getText();
     }
 
     @Override

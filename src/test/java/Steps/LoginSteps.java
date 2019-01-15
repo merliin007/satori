@@ -1,6 +1,7 @@
 package steps;
 
 import base.BaseUtil;
+import cucumber.api.PendingException;
 import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
@@ -111,6 +112,17 @@ public class LoginSteps {
                 loginPage = new nLoginPage(base.driver);
             I.Click(loginPage.getLinkSingup());
         }catch (Exception e){
+            Log.error(e.getMessage());
+            base.GrabScreenShot();
+            fail();
+        }
+    }
+
+    @Given("^User navigates to ALTA website without signing in$")
+    public void userNavigatesToALTAWebsiteWithoutSigningIn(){
+        try {
+            landingPage = new LandingPage(base.driver);
+        } catch (Exception e) {
             Log.error(e.getMessage());
             base.GrabScreenShot();
             fail();
