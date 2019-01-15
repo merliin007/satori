@@ -7,7 +7,7 @@ package steps;
 import base.BaseUtil;
 import cucumber.api.DataTable;
 import cucumber.api.java.en.And;
-import pages.newPages.memberPortal.myActiveTeams.CalendarPage;
+import pages.memberPortal.myActiveTeams.CalendarPage;
 import utility.Helpers;
 import utility.Log;
 import utility.calendar.CalendarEvent;

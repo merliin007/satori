@@ -6,12 +6,11 @@ package steps;
 
 import base.BaseUtil;
 import cucumber.api.DataTable;
-import cucumber.api.PendingException;
 import cucumber.api.java.en.And;
 import cucumber.api.java.en.Then;
-import pages.newPages.memberPortal.myAccount.MyMembershipPage;
-import pages.newPages.singup.NewMemberSignUpPage;
-import pages.newPages.singup.RegisterPage;
+import pages.memberPortal.myAccount.MyMembershipPage;
+import pages.singup.NewMemberSignUpPage;
+import pages.singup.RegisterPage;
 import utility.Helpers;
 import utility.Log;
 import utility.members.Member;

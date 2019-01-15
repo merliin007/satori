@@ -5,10 +5,9 @@
 package steps;
 
 import base.BaseUtil;
-import cucumber.api.PendingException;
 import cucumber.api.java.en.And;
-import pages.newPages.memberPortal.myAccount.MemberAwardsPage;
-import pages.newPages.memberPortal.myAccount.PersonAwardDetailPage;
+import pages.memberPortal.myAccount.MemberAwardsPage;
+import pages.memberPortal.myAccount.PersonAwardDetailPage;
 import utility.Helpers;
 import utility.Log;
 

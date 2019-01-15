@@ -1,16 +1,14 @@
 package steps;
 
 import base.BaseUtil;
-import cucumber.api.PendingException;
 import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
 import pages.decision.DecisionPortal;
 import org.openqa.selenium.TimeoutException;
-import pages.newPages.ManageAlta;
-import pages.newPages.nLoginPage;
-import pages.newPages.nMainPage;
-import pages.oldPages.LandingPage;
+import pages.home.LoginPage;
+import pages.home.MainPage;
+import pages.home.LandingPage;
 import utility.Helpers;
 import utility.Log;
 
@@ -19,10 +17,9 @@ import static org.junit.Assert.fail;
 
 public class LoginSteps {
     private BaseUtil base;
-    private nLoginPage loginPage;
-    private ManageAlta manageAlta;
+    private LoginPage loginPage;
     private LandingPage landingPage;
-    private nMainPage nMainPage;
+    private MainPage mainPage;
     private DecisionPortal decisionPortal;
     private Helpers I;
 
@@ -46,7 +43,7 @@ public class LoginSteps {
     @When("^I enter username as \"([^\"]*)\" and password as \"([^\"]*)\"$")
     public void iEnterUsernameAsUsernameAndPasswordAsPassword(String username, String password) {
         try {
-            loginPage = new nLoginPage(base.driver);
+            loginPage = new LoginPage(base.driver);
             I.waitUntilElementIsClickable(loginPage.getBtnSignIn());
             Log.info("Login attempt with: " + username);
 
@@ -65,9 +62,9 @@ public class LoginSteps {
     public void theLoginShouldBeValid(boolean valid) {
         try {
             if (valid) {
-                nMainPage = new nMainPage(base.driver);
+                mainPage = new MainPage(base.driver);
                 Log.info("Reviewing login succeed ");
-                assertTrue(nMainPage.getLblWelcome().isDisplayed());
+                assertTrue(mainPage.getLblWelcome().isDisplayed());
             } else {
                 Log.info("Reviewing login didn't succeed ");
                 I.waitUntilElementIsVisible(loginPage.getLblError());
@@ -109,7 +106,7 @@ public class LoginSteps {
     public void userClicksOnJoinNowLink() {
         try{
             if(loginPage == null)
-                loginPage = new nLoginPage(base.driver);
+                loginPage = new LoginPage(base.driver);
             I.Click(loginPage.getLinkSingup());
         }catch (Exception e){
             Log.error(e.getMessage());

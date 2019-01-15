@@ -6,11 +6,10 @@ package steps;
 
 import base.BaseUtil;
 import cucumber.api.DataTable;
-import cucumber.api.PendingException;
 import cucumber.api.java.en.And;
 import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
-import pages.newPages.volunteer.VolunteerBulkEntryPage;
+import pages.volunteer.VolunteerBulkEntryPage;
 import utility.Helpers;
 import utility.Log;
 import utility.volunteer.Position;

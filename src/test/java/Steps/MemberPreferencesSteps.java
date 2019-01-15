@@ -5,9 +5,8 @@
 package steps;
 
 import base.BaseUtil;
-import cucumber.api.PendingException;
 import cucumber.api.java.en.And;
-import pages.newPages.memberPortal.myAccount.MemberPreferencesPage;
+import pages.memberPortal.myAccount.MemberPreferencesPage;
 import utility.Helpers;
 import utility.Log;
 

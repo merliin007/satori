@@ -8,8 +8,8 @@ import base.BaseUtil;
 import cucumber.api.java.en.Then;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
-import pages.newPages.memberPortal.myActiveTeams.LineupPage;
-import pages.newPages.memberPortal.myActiveTeams.ScheduleLineupPage;
+import pages.memberPortal.myActiveTeams.LineupPage;
+import pages.memberPortal.myActiveTeams.ScheduleLineupPage;
 import utility.Helpers;
 import utility.Log;
 

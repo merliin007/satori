@@ -2,7 +2,8 @@ package steps;
 
 import base.BaseUtil;
 import org.openqa.selenium.UnhandledAlertException;
-import pages.oldPages.*;
+import pages.DefunctOldPages.*;
+import pages.home.LandingPage;
 import utility.Helpers;
 import utility.Log;
 import utility.paymentInfo.BankAccountInfo;

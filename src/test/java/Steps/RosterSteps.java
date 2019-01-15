@@ -12,17 +12,15 @@ import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.interactions.Actions;
-import pages.newPages.myRosters.MyRostersPage;
-import pages.newPages.myRosters.NewRosterPage;
-import pages.newPages.myRosters.NewRosterWizardPage;
+import pages.myRosters.MyRostersPage;
+import pages.myRosters.NewRosterPage;
+import pages.myRosters.NewRosterWizardPage;
 import utility.Helpers;
 import utility.Log;
 import utility.league.LeagueComponents;
 import utility.newRoster.Facility;
 import utility.newRoster.PlayerRoster;
 
-import javax.xml.crypto.Data;
 import java.util.List;
 
 import static org.testng.Assert.fail;

@@ -8,7 +8,7 @@ import base.BaseUtil;
 import cucumber.api.java.en.And;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
-import pages.newPages.memberPortal.myActiveTeams.AvailabilityPage;
+import pages.memberPortal.myActiveTeams.AvailabilityPage;
 import utility.Helpers;
 import utility.Log;
 

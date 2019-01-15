@@ -6,7 +6,7 @@ package steps;
 
 import base.BaseUtil;
 import cucumber.api.java.en.And;
-import pages.newPages.memberPortal.myAccount.ProfileDetailPage;
+import pages.memberPortal.myAccount.ProfileDetailPage;
 import utility.Helpers;
 import utility.Log;
 

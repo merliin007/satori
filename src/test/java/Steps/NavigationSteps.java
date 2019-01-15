@@ -4,10 +4,10 @@ import base.BaseUtil;
 import cucumber.api.DataTable;
 import cucumber.api.java.en.And;
 import cucumber.api.java.en.Then;
-import pages.newPages.nMainPage;
+import pages.home.MainPage;
 import utility.Helpers;
 import utility.Log;
-import java.util.Arrays;
+
 import java.util.Collections;
 import java.util.List;
 
@@ -20,7 +20,7 @@ import static utility.Helpers.setAddErrorPage;
 
 public class NavigationSteps {
     private BaseUtil base;
-    private nMainPage mainPage;
+    private MainPage mainPage;
     private Helpers I;
 
     public NavigationSteps(BaseUtil base) {
@@ -33,7 +33,7 @@ public class NavigationSteps {
     @And("I navigate to the following page option")
     public void iNavigateToTheFollowingPageOption(DataTable links) {
         try {
-            mainPage = new nMainPage(base.driver);
+            mainPage = new MainPage(base.driver);
             List<List<String>> data = links.raw();
             for (List<String> row : data) {
                 Log.info("Navigating to " + row.get(1) + " page");

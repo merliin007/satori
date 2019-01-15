@@ -9,15 +9,13 @@ import cucumber.api.DataTable;
 import cucumber.api.PendingException;
 import cucumber.api.java.en.And;
 import cucumber.api.java.en.Then;
-import pages.newPages.jobs.*;
+import pages.jobs.*;
 import utility.Helpers;
 import utility.Log;
 import utility.job.Job;
 
 import java.util.ArrayList;
-import java.util.HashMap;
 import java.util.List;
-import java.util.Map;
 
 import static org.testng.Assert.fail;
 

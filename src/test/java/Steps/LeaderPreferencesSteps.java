@@ -7,7 +7,7 @@ package steps;
 import base.BaseUtil;
 import cucumber.api.java.en.And;
 import org.openqa.selenium.WebElement;
-import pages.newPages.memberPortal.myActiveTeams.LeaderPreferencesPage;
+import pages.memberPortal.myActiveTeams.LeaderPreferencesPage;
 import utility.Helpers;
 import utility.Log;
 
