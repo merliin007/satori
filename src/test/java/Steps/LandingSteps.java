@@ -7,14 +7,13 @@ package steps;
 import base.BaseUtil;
 import cucumber.api.DataTable;
 import cucumber.api.java.en.When;
+import org.openqa.selenium.WebElement;
 import pages.home.LandingPage;
 import utility.Helpers;
 import utility.Log;
 import java.util.List;
-
-
 import static org.testng.Assert.fail;
-import static utility.Helpers.setAddErrorPage;
+import static utility.Helpers.AddErrorPage;
 
 public class LandingSteps {
 
@@ -31,14 +30,20 @@ public class LandingSteps {
     public void iNavigateToTheFollowingPublicPageOption(DataTable table) {
         try {
             landingPage = new LandingPage(base.driver);
+
             List<List<String>> data = table.raw();
             for (List<String> row : data) {
                 Log.info("Navigating to " + row.get(1) + " page");
                 I.Click(landingPage.getBtnNavigator()); // Code for using Navigator Menu
+                Log.info("Current page: " + landingPage.getBreadCrumbChildText());
                 try {
-                    I.Click(landingPage.getLinkOptionFromMenu(row.get(1)));
+                    WebElement pageLink = landingPage.getLinkOptionFromMenu(row.get(1));
+                    if (pageLink != null)
+                        I.Click(pageLink);
+                    else
+                        AddErrorPage(row);
                 } catch (Exception e) {
-                    setAddErrorPage(row);
+                    AddErrorPage(row);
                     base.GrabScreenShot();
                     Log.error("Error during navigation to: " + row.get(0) + " - " + row.get(1));
                     Log.error(e.getMessage());

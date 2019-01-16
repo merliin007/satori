@@ -57,6 +57,10 @@ public class Member {
         this.password = Password;
     }
 
+    public Member(String first, String last){
+        this.first = first;
+        this.last = last;
+    }
     public Member(List<String> tbl) {
         this(tbl.get(0), tbl.get(1), tbl.get(2), tbl.get(3), tbl.get(4), tbl.get(5), tbl.get(6), tbl.get(7),
                 tbl.get(8), tbl.get(9), tbl.get(10), tbl.get(11), tbl.get(12), tbl.get(13), tbl.get(14), tbl.get(15));

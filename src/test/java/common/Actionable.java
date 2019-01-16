@@ -55,6 +55,8 @@ public interface Actionable {
 
     int searchForMemberInMembersList(Member member, List<WebElement> tblResults);
 
+    int searchForMemberByNameInMembersList(Member member, List<WebElement> tblResults);
+
     int searchForElementInTheCalendarList(Calendar calendar, List<WebElement> tblResults);
 
     int searchForElementInTheEventsList(Event event, List<WebElement> tblResults);
@@ -121,5 +123,7 @@ public interface Actionable {
     void EnterTssSearchCriteria(List<String> criteria, TrackingSheetPage tss) throws Exception;
 
     void EditTSSFields(TrackingSheetScoreCard tss, TssWeekElements tssWeekElements) throws Exception;
+
+    boolean IsMembershipNotPayed(WebElement row);
 
 }

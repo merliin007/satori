@@ -36,11 +36,12 @@ public class Helpers implements Actionable {
     private BaseUtil base;
     private WebDriverWait wait;
     private WebDriver _driver;
-    private static Map<String, String> errorPages = new HashMap<String, String>();
+    private static List<String> errorPages;
 
     public Helpers(WebDriver driver) {
         _driver = driver;
         wait = new WebDriverWait(_driver, 5);
+        errorPages = new ArrayList<>();
     }
 
     public Helpers(BaseUtil baseUtil) {
@@ -253,6 +254,17 @@ public class Helpers implements Actionable {
     }
 
     @Override
+    public int searchForMemberByNameInMembersList(Member member, List<WebElement> tblResults) {
+        for (int i = (tblResults.size() > 3) ? 3 : 1; i < tblResults.size(); i++) {
+            List<WebElement> tblCel = tblResults.get(i).findElements(By.tagName("td"));
+            if (tblCel.get(2).getText().toLowerCase().contains(member.getFirst().toLowerCase()) &&
+                    tblCel.get(4).getText().toLowerCase().contains(member.getLast().toLowerCase()) && IsMembershipNotPayed(tblResults.get(i)))
+                return i;
+        }
+        return -1;
+    }
+
+    @Override
     public int searchForElementInTheCalendarList(Calendar calendar, List<WebElement> tblResults) {
         int i = (tblResults.size() > 3) ? 3 : 1;
         for (; i < tblResults.size(); i++) {
@@ -372,7 +384,7 @@ public class Helpers implements Actionable {
                         tblCel.get(3).getText().contains(job.getLeague()) &&
                         tblCel.get(4).getText().equals(job.getAge()) &&
                         tblCel.get(5).getText().equals(job.getLevelFlight())
-                        ) {
+                ) {
                     Log.info("Element found at index: " + i);
                     return i;
                 }
@@ -392,7 +404,7 @@ public class Helpers implements Actionable {
             try {
                 if (tblCel.get(1).getText().equals(player.getaLTA_Number()) &&
                         tblCel.get(2).getText().contains(player.getLast() + ", " + player.getFirst())
-                        ) {
+                ) {
                     Log.info("Element found at index: " + i);
                     return i;
                 }
@@ -414,7 +426,7 @@ public class Helpers implements Actionable {
                 if (tblCel.get(1).getText().equals(facility.getId()) &&
                         tblCel.get(2).getText().contains(facility.getName()) &&
                         (facility.getCounty() == null || tblCel.get(4).getText().contains(facility.getCounty()))
-                        ) {
+                ) {
                     Log.info("Element found at index: " + i);
                     return i;
                 }
@@ -562,16 +574,6 @@ public class Helpers implements Actionable {
         return captains;
     };
 
-    public void fixMe_waitforElementwithText(final By locator, final String text) {
-        new WebDriverWait(_driver, 5)
-                .until(new ExpectedCondition<Boolean>() {
-                    @Override
-                    public Boolean apply(WebDriver driver) {
-                        return (driver.findElement(locator).getText().equals(text));
-                    }
-                });
-    }
-
     @Override
     public void GoBackToPreviousPage() {
         JavascriptExecutor js = (JavascriptExecutor) _driver;
@@ -631,11 +633,17 @@ public class Helpers implements Actionable {
         SelectValue(weekElements.getAwayResult(), tss.getAwayResult());
     }
 
-    public static void setAddErrorPage(List<String> row) {
-        errorPages.put(row.get(0), row.get(1));
+    public static void AddErrorPage(List<String> row) {
+        errorPages.add(row.get(0) + " - " + row.get(1));
     }
 
-    public static Map<String, String> getErrorPages() {
+    public static List<String> getErrorPages() {
         return errorPages;
+    }
+
+    @Override
+    public boolean IsMembershipNotPayed(WebElement row){
+        return (row.findElements(By.tagName("td")).get(19).getText().contains("Unpaid"));
+
     }
 }

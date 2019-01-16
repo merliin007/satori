@@ -3,17 +3,15 @@ package steps;
 import base.BaseUtil;
 import org.openqa.selenium.UnhandledAlertException;
 import pages.DefunctOldPages.*;
-import pages.home.LandingPage;
+import pages.memberPortal.payments.PaymentConfirmationPage;
 import utility.Helpers;
 import utility.Log;
 import utility.paymentInfo.BankAccountInfo;
 import utility.paymentInfo.CheckInfo;
 import utility.paymentInfo.CreditCardInfo;
 import utility.paymentInfo.PaymentLoggedInfo;
-import utility.credentials.MemberCredentials;
 import cucumber.api.DataTable;
 import cucumber.api.java.en.And;
-import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
 import org.openqa.selenium.StaleElementReferenceException;
@@ -26,8 +24,6 @@ import java.util.List;
 
 public class PaymentsStep extends BaseUtil {
     private BaseUtil base;
-    private LandingPage landingPage;
-    private MyProfilePage myProfilePage;
     private MembershipAndPayments membershipAndPayments;
     private AddPaymentPage addPaymentPage;
     private PaymentsErrorPage paymentsErrorPage;
@@ -42,53 +38,12 @@ public class PaymentsStep extends BaseUtil {
         I = new Helpers(base);
     }
 
-    @Given("^I sign in as Default user$")
-    public void iSignInAsDefaultUser() {
-        try {
-            landingPage = new LandingPage(base.driver);
-            MemberCredentials memberCredentials = new MemberCredentials();
-            landingPage.LoginWith(memberCredentials);
-            Log.info("Logging as: " + memberCredentials.getUsername());
-        } catch (Exception e) {
-            fail();
-            Log.error(e.getMessage());
-            base.GrabScreenShot();
-        }
-    }
 
-    @Given("^I sign in as member user$")
-    public void iSignInAsMemberUser(DataTable table) {
-        try {
-            landingPage = new LandingPage(base.driver);
-            List<MemberCredentials> memberCredentials = new ArrayList<>();
-            memberCredentials = table.asList(MemberCredentials.class);
-            landingPage.LoginWith(memberCredentials.get(0));
-            Log.info("Logging as: " + memberCredentials.get(0).getUsername());
-        } catch (Exception e) {
-            fail();
-            Log.error(e.getMessage());
-            base.GrabScreenShot();
-        }
-    }
-
-    @Then("^I Should be logged in successfully$")
+   /* @Then("^I Should be logged in successfully$")
     public void iShouldBeLoggedInSuccessfully() {
         try {
             assertTrue(landingPage.IsUserLoggedIn());
             Log.info("User logged in successfully");
-        } catch (Exception e) {
-            fail();
-            Log.error(e.getMessage());
-            base.GrabScreenShot();
-        }
-    }
-
-    @And("^I navigate to My Profile menu$")
-    public void iNavigateToMyProfileMenu() {
-        try {
-            landingPage.GoToMyProfile();
-            myProfilePage = new MyProfilePage(base.driver);
-            Log.info("Going to My Profile");
         } catch (Exception e) {
             fail();
             Log.error(e.getMessage());
@@ -107,7 +62,7 @@ public class PaymentsStep extends BaseUtil {
             Log.error(e.getMessage());
             base.GrabScreenShot();
         }
-    }
+    }*/
 
     @And("^Click on Add Member Payment$")
     public void clickOnAddMemberPayment() {
@@ -416,9 +371,9 @@ public class PaymentsStep extends BaseUtil {
     }
 
     private class PaymentInfo {
+
         private int i;
         private boolean result;
-
         public int getI() {
             return i;
         }
@@ -431,5 +386,21 @@ public class PaymentsStep extends BaseUtil {
             this.i = i;
             this.result = result;
         }
+
+    }
+
+    @Then("^I get success payment confirmation$")
+    public void iGetSuccessPaymentConfirmation(){
+        try{
+            PaymentConfirmationPage confirmation = new PaymentConfirmationPage(base.driver);
+            I.waitUntilElementIsVisible(confirmation.getLblConfirmation());
+            Log.info("Payment confirmation: " + confirmation.getLblConfirmation().getText() );
+            I.Click(confirmation.getBtnContinue());
+        }catch (Exception e){
+            Log.error(e.getMessage());
+            base.GrabScreenShot();
+            fail();
+        }
+
     }
 }

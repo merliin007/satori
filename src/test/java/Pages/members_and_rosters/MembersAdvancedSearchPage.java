@@ -23,11 +23,25 @@ public class MembersAdvancedSearchPage extends Pages {
     @FindBy(how = How.ID, using ="ctl00_ctl00_CPHolder_CPHolder_txtAltaNumber")
     private WebElement txtAltaNumber;
 
+    @FindBy(how = How.ID, using ="ctl00_ctl00_CPHolder_CPHolder_txtFirstName")
+    private WebElement txtFirstName;
+
+    @FindBy(how = How.ID, using ="ctl00_ctl00_CPHolder_CPHolder_txtLastName")
+    private WebElement txtLastName;
+
     @FindBy(how = How.ID, using = "ctl00_ctl00_CPHolder_CPHolder_btnFilter")
     private WebElement btnSearch;
 
     public WebElement getTxtAltaNumber() {
         return txtAltaNumber;
+    }
+
+    public WebElement getTxtFirstName() {
+        return txtFirstName;
+    }
+
+    public WebElement getTxtLastName() {
+        return txtLastName;
     }
 
     public WebElement getBtnSearch() {
