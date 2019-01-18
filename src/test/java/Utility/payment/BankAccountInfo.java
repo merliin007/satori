@@ -1,4 +1,4 @@
-package utility.paymentInfo;
+package utility.payment;
 
 public class BankAccountInfo {
     private String accountType;

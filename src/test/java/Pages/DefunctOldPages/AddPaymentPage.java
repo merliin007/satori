@@ -1,9 +1,9 @@
 package pages.DefunctOldPages;
 
 import base.CustomExceptions;
-import utility.paymentInfo.BankAccountInfo;
-import utility.paymentInfo.CheckInfo;
-import utility.paymentInfo.CreditCardInfo;
+import utility.payment.BankAccountInfo;
+import utility.payment.CheckInfo;
+import utility.payment.CreditCardInfo;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;

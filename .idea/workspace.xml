@@ -36,10 +36,37 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/features/payments/MemberShipPayment.feature">
+        <entry file="file://$PROJECT_DIR$/src/test/java/features/payments/MembershipPayment.feature">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="221">
-              <caret line="13" column="37" lean-forward="true" selection-start-line="13" selection-start-column="37" selection-end-line="13" selection-end-column="37" />
+            <state relative-caret-position="238">
+              <caret line="14" column="33" selection-start-line="14" selection-start-column="33" selection-end-line="14" selection-end-column="33" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/test/java/features/refunds/MembershipRefund.feature">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="255">
+              <caret line="15" column="35" selection-start-line="15" selection-start-column="35" selection-end-line="15" selection-end-column="35" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/features/payments/MembershipPaymentDeletion.feature">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="204">
+              <caret line="12" column="43" lean-forward="true" selection-start-line="12" selection-start-column="43" selection-end-line="12" selection-end-column="43" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/features/payments/MembershipChangePurchase.feature">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="306">
+              <caret line="18" column="32" selection-start-line="18" selection-start-column="4" selection-end-line="18" selection-end-column="32" />
             </state>
           </provider>
         </entry>
@@ -47,76 +74,26 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/steps/PaymentsStep.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="400">
-              <caret line="402" selection-start-line="402" selection-end-line="402" />
+            <state relative-caret-position="783">
+              <caret line="392" column="16" selection-start-line="392" selection-start-column="16" selection-end-line="392" selection-end-column="16" />
               <folding>
                 <element signature="method#PaymentsStep#0;class#PaymentsStep#0" />
-                <element signature="e#1641#1746#0" />
-                <element signature="method#clickOnMemberShipPayments#0;class#PaymentsStep#0" />
-                <element signature="e#1857#2073#0" />
-                <element signature="e#2094#2199#0" />
                 <element signature="method#clickOnAddMemberPayment#0;class#PaymentsStep#0" />
-                <element signature="e#2305#2518#0" />
-                <element signature="e#2539#2644#0" />
                 <element signature="method#addThePaymentForTheFollowingUser#0;class#PaymentsStep#0" />
-                <element signature="e#2803#3192#0" />
-                <element signature="e#3213#3318#0" />
                 <element signature="method#afterAddingMyCreditCardInformationISubmitPayment#0;class#PaymentsStep#0" />
-                <element signature="e#3477#4028#0" />
-                <element signature="e#4049#4222#0" />
                 <element signature="method#iGetConfirmationPageAcceptingMyPayment#0;class#PaymentsStep#0" />
-                <element signature="e#4473#5006#0" />
-                <element signature="e#5027#5132#0" />
-                <element signature="e#5141#5251#0" />
-                <element signature="e#5186#5241#1" />
                 <element signature="method#afterAddingMyBankAccountInformationISubmitAllInformation#0;class#PaymentsStep#0" />
-                <element signature="e#5428#5844#0" />
-                <element signature="e#5865#6038#0" />
                 <element signature="method#afterSelectingOfficeCreditOptionISubmitAllInformation#0;class#PaymentsStep#0" />
-                <element signature="e#6208#6702#0" />
-                <element signature="e#6723#6896#0" />
                 <element signature="method#afterSelectingOfficeCreditOptionISubmitAllInformation#1;class#PaymentsStep#0" />
-                <element signature="e#7084#7419#0" />
-                <element signature="e#7440#7613#0" />
                 <element signature="method#manuallyAddingMyCreditCardInformationISubmitAllInformation#0;class#PaymentsStep#0" />
-                <element signature="e#7811#8742#0" />
-                <element signature="e#8159#8732#1" />
-                <element signature="e#8244#8450#0" />
-                <element signature="e#8483#8615#0" />
-                <element signature="e#8652#8718#0" />
-                <element signature="e#8763#8936#0" />
                 <element signature="method#noPaymentWasRegistered#0;class#PaymentsStep#0" />
-                <element signature="e#9040#9603#0" />
-                <element signature="e#9463#9593#1" />
-                <element signature="e#9624#9729#0" />
                 <element signature="method#upgradingMembershipForUser#0;class#PaymentsStep#0" />
-                <element signature="e#9865#10301#0" />
-                <element signature="e#10322#10495#0" />
                 <element signature="method#purchaseDetailPageShowsCorrectPayment#0;class#PaymentsStep#0" />
-                <element signature="e#10671#10773#0" />
-                <element signature="e#10794#10899#0" />
-                <element signature="e#10908#11161#0" />
-                <element signature="e#10951#11151#1" />
                 <element signature="method#savePurchaseTime#0;class#PaymentsStep#0" />
                 <element signature="method#deletePayment#0;class#PaymentsStep#0" />
-                <element signature="e#11458#12141#0" />
-                <element signature="e#11500#12131#1" />
-                <element signature="e#11522#11970#0" />
-                <element signature="e#12012#12117#0" />
-                <element signature="e#12162#12241#0" />
                 <element signature="method#afterAddingMyCheckInformationISubmitPayment#0;class#PaymentsStep#0" />
-                <element signature="e#12390#12826#0" />
-                <element signature="e#12847#13020#0" />
-                <element signature="method#refundIsMadeForThisPayment#0;class#PaymentsStep#0" />
-                <element signature="e#13134#13426#0" />
-                <element signature="e#13447#13552#0" />
                 <element signature="method#refundPayment#0;class#PaymentsStep#0" />
-                <element signature="e#13642#14075#0" />
-                <element signature="e#14096#14201#0" />
                 <element signature="method#findPayment#0;class#PaymentsStep#0" />
-                <element signature="e#14460#15276#1" />
-                <element signature="e#14595#15249#1" />
-                <element signature="e#15095#15176#1" />
                 <element signature="class#PaymentInfo#0;class#PaymentsStep#0" />
                 <element signature="method#PaymentInfo#0;class#PaymentInfo#0;class#PaymentsStep#0" />
               </folding>
@@ -125,55 +102,65 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/steps/SignUpSteps.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="338">
-              <caret line="109" selection-start-line="109" selection-end-line="109" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/steps/NavigationSteps.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="253">
-              <caret line="52" column="19" selection-start-line="52" selection-start-column="19" selection-end-line="52" selection-end-column="19" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/steps/MembersAndRostersSteps.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="434">
-              <caret line="78" selection-start-line="78" selection-end-line="78" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/steps/MembershipPaymentsSteps.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="218">
-              <caret line="31" column="51" lean-forward="true" selection-start-line="31" selection-start-column="51" selection-end-line="31" selection-end-column="51" />
+            <state relative-caret-position="417">
+              <caret line="152" selection-start-line="152" selection-end-line="152" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="method#MembershipPaymentsSteps#0;class#MembershipPaymentsSteps#0" />
+                <element signature="method#iPayHisMembershipUsingMyCreditCard#0;class#MembershipPaymentsSteps#0" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/test/java/pages/memberPortal/payments/PendingPaymentsPage.java">
+      <file pinned="false" current-in-tab="false">
+        <entry file="jar://$MAVEN_REPOSITORY$/info/cukes/cucumber-core/1.2.5/cucumber-core-1.2.5.jar!/cucumber/runtime/Utils.class">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-306">
-              <caret line="6" selection-start-line="6" selection-end-line="6" />
+            <state relative-caret-position="33">
+              <caret line="39" selection-start-line="39" selection-end-line="39" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/pages/memberPortal/payments/PurchaseDetailPage.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="790">
+              <caret line="85" column="42" selection-start-line="85" selection-start-column="42" selection-end-line="85" selection-end-column="42" />
+              <folding>
+                <element signature="e#3132#3133#0" expanded="true" />
+                <element signature="e#3172#3173#0" expanded="true" />
+                <element signature="e#3204#3205#0" expanded="true" />
+                <element signature="e#3252#3253#0" expanded="true" />
+                <element signature="e#3292#3293#0" expanded="true" />
+                <element signature="e#3336#3337#0" expanded="true" />
+                <element signature="e#3372#3373#0" expanded="true" />
+                <element signature="e#3420#3421#0" expanded="true" />
+                <element signature="e#3460#3461#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/utility/Helpers.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="586">
+              <caret line="634" selection-start-line="634" selection-end-line="634" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/utility/payment/Refund.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="442">
+              <caret line="39" column="5" selection-start-line="39" selection-start-column="5" selection-end-line="39" selection-end-column="5" />
             </state>
           </provider>
         </entry>
@@ -191,8 +178,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>scrol</find>
-      <find>LeagueComponents</find>
       <find>leagueDescriptionList</find>
       <find>leagueListPage</find>
       <find>CalendarsPage</find>
@@ -221,6 +206,8 @@
       <find>ctl00_ctl00_CPHolder_CPHolder_MembershipPurchase1_btnNext</find>
       <find>ctl00_ctl00_CPHolder_CPHolder_MembershipPurchase1_rblCurrentYearMembership</find>
       <find>ctl00_ctl00_CPHolder_CPHolder_tblPaymentOption</find>
+      <find>toast</find>
+      <find>throw</find>
     </findStrings>
     <replaceStrings>
       <replace />
@@ -232,13 +219,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/pom.xml" />
-        <option value="$PROJECT_DIR$/src/test/java/pages/newPages/memberPortal/myAccount/PreferencesPage.java" />
-        <option value="$PROJECT_DIR$/src/test/java/pages/newPages/memberPortal/myAccount/MemberPreferencesPage.java" />
-        <option value="$PROJECT_DIR$/src/test/java/pages/newPages/memberPortal/myAccount/MemberAwardsPage.java" />
-        <option value="$PROJECT_DIR$/src/test/java/pages/newPages/memberPortal/myAccount/PersonAwardDetailPage.java" />
-        <option value="$PROJECT_DIR$/src/test/java/steps/MemberAwardsSteps.java" />
-        <option value="$PROJECT_DIR$/src/test/java/features/members_and_rosters/member_search/SearchForMember.feature" />
         <option value="$PROJECT_DIR$/src/test/java/steps/MemberPreferencesSteps.java" />
         <option value="$PROJECT_DIR$/src/test/java/utility/volunteer/Position.java" />
         <option value="$PROJECT_DIR$/src/test/java/features/league_support/volunteer_bulk_entry/VolunteerBulkEntry.feature" />
@@ -274,15 +254,22 @@
         <option value="$PROJECT_DIR$/src/test/java/pages/members_and_rosters/MembersAdvancedSearchPage.java" />
         <option value="$PROJECT_DIR$/src/test/java/utility/members/Member.java" />
         <option value="$PROJECT_DIR$/src/test/java/common/Actionable.java" />
-        <option value="$PROJECT_DIR$/src/test/java/utility/Helpers.java" />
-        <option value="$PROJECT_DIR$/src/test/java/pages/memberPortal/myAccount/MembershipsPaymentsPage.java" />
         <option value="$PROJECT_DIR$/src/test/java/steps/MembersAndRostersSteps.java" />
         <option value="$PROJECT_DIR$/src/test/java/features/payments/MemberShipPayment.feature" />
         <option value="$PROJECT_DIR$/src/test/java/pages/memberPortal/payments/PaymentConfirmationPage.java" />
         <option value="$PROJECT_DIR$/src/test/java/pages/memberPortal/myAccount/MyMembershipPage.java" />
         <option value="$PROJECT_DIR$/src/test/java/steps/PaymentsStep.java" />
-        <option value="$PROJECT_DIR$/src/test/java/steps/MembershipPaymentsSteps.java" />
         <option value="$PROJECT_DIR$/src/test/java/pages/memberPortal/payments/PendingPaymentsPage.java" />
+        <option value="$PROJECT_DIR$/src/test/java/pages/memberPortal/refunds/RefundPurchasePage.java" />
+        <option value="$PROJECT_DIR$/src/test/java/features/refunds/MembershipRefund.feature" />
+        <option value="$PROJECT_DIR$/src/test/java/features/payments/MembershipPaymentDeletion.feature" />
+        <option value="$PROJECT_DIR$/src/test/java/pages/memberPortal/myAccount/MembershipsPaymentsPage.java" />
+        <option value="$PROJECT_DIR$/src/test/java/pages/memberPortal/payments/PurchaseDetailPage.java" />
+        <option value="$PROJECT_DIR$/src/test/java/features/payments/MembershipChangePurchase.feature" />
+        <option value="$PROJECT_DIR$/src/test/java/utility/paymentInfo/PurchaseDetail.java" />
+        <option value="$PROJECT_DIR$/src/test/java/utility/paymentInfo/Refund.java" />
+        <option value="$PROJECT_DIR$/src/test/java/utility/Helpers.java" />
+        <option value="$PROJECT_DIR$/src/test/java/steps/MembershipPaymentsSteps.java" />
       </list>
     </option>
   </component>
@@ -330,6 +317,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -361,6 +350,23 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="test" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="features" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="SatoriAutomation" type="b2602c69:ProjectViewProjectNode" />
+              <item name="satori" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="features" type="462c0819:PsiDirectoryNode" />
+              <item name="payments" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="SatoriAutomation" type="b2602c69:ProjectViewProjectNode" />
+              <item name="satori" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="pages" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -371,16 +377,6 @@
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="pages" type="462c0819:PsiDirectoryNode" />
               <item name="memberPortal" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="SatoriAutomation" type="b2602c69:ProjectViewProjectNode" />
-              <item name="satori" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="pages" type="462c0819:PsiDirectoryNode" />
-              <item name="memberPortal" type="462c0819:PsiDirectoryNode" />
-              <item name="myAccount" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="SatoriAutomation" type="b2602c69:ProjectViewProjectNode" />
@@ -398,14 +394,6 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="test" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="steps" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="SatoriAutomation" type="b2602c69:ProjectViewProjectNode" />
-              <item name="satori" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="utility" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -415,16 +403,7 @@
               <item name="test" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="utility" type="462c0819:PsiDirectoryNode" />
-              <item name="members" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="SatoriAutomation" type="b2602c69:ProjectViewProjectNode" />
-              <item name="satori" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="utility" type="462c0819:PsiDirectoryNode" />
-              <item name="paymentInfo" type="462c0819:PsiDirectoryNode" />
+              <item name="payment" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="SatoriAutomation" type="b2602c69:ProjectViewProjectNode" />
@@ -439,13 +418,11 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
-      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="SearchEverywhereHistoryKey" value="getAllColumnHeaders&#9;PSI&#9;JAVA://pages.newPages.Pages#getAllColumnHeaders&#10;ClickOnRowButtonAtPosition&#9;PSI&#9;JAVA://common.Actionable#ClickOnRowButtonAtPosition&#10;By &#9;PSI&#9;JAVA://pages.newPages.ManageAlta#by" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1547679330462" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1547837444359" />
     <property name="com.intellij.ide.scratch.LRUPopupBuilder$1/New Scratch File" value="Gherkin" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/src/test/java/steps" />
     <property name="project.structure.last.edited" value="Modules" />
@@ -483,7 +460,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Cucumber java.Membership Payment">
+  <component name="RunManager" selected="Cucumber java.Membership Change Purchase">
     <configuration default="true" type="Application" factoryName="Application">
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <method v="2">
@@ -685,8 +662,62 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="Membership Change Purchase" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java">
+      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/java/features/payments/MembershipChangePurchase.feature" />
+      <option name="GLUE" value="common steps" />
+      <option name="MAIN_CLASS_NAME" value="cucumber.api.cli.Main" />
+      <module name="SatoriAutomation" />
+      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvmSMFormatter --monochrome" />
+      <option name="SUGGESTED_NAME" value="Feature: PublicNavigation" />
+      <option name="VM_PARAMETERS" value="-Denvironment=qa -Dbrowser=chrome" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="cucumber.api.cli.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Membership Deletion" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java">
+      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/java/features/payments/MembershipPaymentDeletion.feature" />
+      <option name="GLUE" value="common steps" />
+      <option name="MAIN_CLASS_NAME" value="cucumber.api.cli.Main" />
+      <module name="SatoriAutomation" />
+      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvmSMFormatter --monochrome" />
+      <option name="SUGGESTED_NAME" value="Feature: PublicNavigation" />
+      <option name="VM_PARAMETERS" value="-Denvironment=qa -Dbrowser=chrome" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="cucumber.api.cli.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="Membership Payment" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java">
       <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/java/features/payments/MembershipPayment.feature" />
+      <option name="GLUE" value="common steps" />
+      <option name="MAIN_CLASS_NAME" value="cucumber.api.cli.Main" />
+      <module name="SatoriAutomation" />
+      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvmSMFormatter --monochrome" />
+      <option name="SUGGESTED_NAME" value="Feature: PublicNavigation" />
+      <option name="VM_PARAMETERS" value="-Denvironment=qa -Dbrowser=chrome" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="cucumber.api.cli.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Membership Refund" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java">
+      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/java/features/refunds/MembershipRefund.feature" />
       <option name="GLUE" value="common steps" />
       <option name="MAIN_CLASS_NAME" value="cucumber.api.cli.Main" />
       <module name="SatoriAutomation" />
@@ -785,6 +816,9 @@
       <item itemvalue="Cucumber java.TSS" />
       <item itemvalue="Cucumber java.VulkEntry" />
       <item itemvalue="Cucumber java.Membership Payment" />
+      <item itemvalue="Cucumber java.Membership Change Purchase" />
+      <item itemvalue="Cucumber java.Membership Refund" />
+      <item itemvalue="Cucumber java.Membership Deletion" />
       <item itemvalue="Cucumber java.Feature: NewRoster" />
       <item itemvalue="Cucumber java.Feature: PublicNavigation" />
     </list>
@@ -809,35 +843,35 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="Membership_Payment - 2019.01.16 at 15h 07m 12s.xml">
+    <history-entry file="Membership_Payment - 2019.01.17 at 11h 13m 11s.xml">
       <configuration name="Membership Payment" configurationId="CucumberJavaRunConfigurationType" />
     </history-entry>
-    <history-entry file="Membership_Payment - 2019.01.16 at 15h 08m 47s.xml">
+    <history-entry file="Membership_Payment - 2019.01.17 at 11h 15m 30s.xml">
       <configuration name="Membership Payment" configurationId="CucumberJavaRunConfigurationType" />
     </history-entry>
-    <history-entry file="Membership_Payment - 2019.01.16 at 15h 37m 47s.xml">
+    <history-entry file="Membership_Refund - 2019.01.17 at 11h 24m 03s.xml">
+      <configuration name="Membership Refund" configurationId="CucumberJavaRunConfigurationType" />
+    </history-entry>
+    <history-entry file="Membership_Refund - 2019.01.17 at 11h 26m 21s.xml">
+      <configuration name="Membership Refund" configurationId="CucumberJavaRunConfigurationType" />
+    </history-entry>
+    <history-entry file="Membership_Refund - 2019.01.17 at 11h 41m 24s.xml">
+      <configuration name="Membership Refund" configurationId="CucumberJavaRunConfigurationType" />
+    </history-entry>
+    <history-entry file="Membership_Refund - 2019.01.17 at 12h 32m 37s.xml">
+      <configuration name="Membership Refund" configurationId="CucumberJavaRunConfigurationType" />
+    </history-entry>
+    <history-entry file="Membership_Refund - 2019.01.17 at 12h 49m 31s.xml">
+      <configuration name="Membership Refund" configurationId="CucumberJavaRunConfigurationType" />
+    </history-entry>
+    <history-entry file="Membership_Deletion - 2019.01.17 at 12h 52m 15s.xml">
+      <configuration name="Membership Deletion" configurationId="CucumberJavaRunConfigurationType" />
+    </history-entry>
+    <history-entry file="Membership_Payment - 2019.01.17 at 12h 57m 15s.xml">
       <configuration name="Membership Payment" configurationId="CucumberJavaRunConfigurationType" />
     </history-entry>
-    <history-entry file="Membership_Payment - 2019.01.16 at 15h 51m 57s.xml">
-      <configuration name="Membership Payment" configurationId="CucumberJavaRunConfigurationType" />
-    </history-entry>
-    <history-entry file="Membership_Payment - 2019.01.16 at 15h 57m 05s.xml">
-      <configuration name="Membership Payment" configurationId="CucumberJavaRunConfigurationType" />
-    </history-entry>
-    <history-entry file="Membership_Payment - 2019.01.16 at 16h 23m 30s.xml">
-      <configuration name="Membership Payment" configurationId="CucumberJavaRunConfigurationType" />
-    </history-entry>
-    <history-entry file="Membership_Payment - 2019.01.16 at 16h 28m 43s.xml">
-      <configuration name="Membership Payment" configurationId="CucumberJavaRunConfigurationType" />
-    </history-entry>
-    <history-entry file="Membership_Payment - 2019.01.16 at 16h 30m 17s.xml">
-      <configuration name="Membership Payment" configurationId="CucumberJavaRunConfigurationType" />
-    </history-entry>
-    <history-entry file="Membership_Payment - 2019.01.16 at 16h 32m 52s.xml">
-      <configuration name="Membership Payment" configurationId="CucumberJavaRunConfigurationType" />
-    </history-entry>
-    <history-entry file="Membership_Payment - 2019.01.16 at 16h 53m 14s.xml">
-      <configuration name="Membership Payment" configurationId="CucumberJavaRunConfigurationType" />
+    <history-entry file="Membership_Change_Purchase - 2019.01.18 at 12h 20m 19s.xml">
+      <configuration name="Membership Change Purchase" configurationId="CucumberJavaRunConfigurationType" />
     </history-entry>
   </component>
   <component name="TodoView">
@@ -853,7 +887,7 @@
     <frame x="1912" y="-8" width="1936" height="1096" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.5707155" visible="true" weight="0.31449893" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.5707155" visible="true" weight="0.22334754" />
       <window_info id="Image Layers" order="1" />
       <window_info id="Capture Tool" order="2" />
       <window_info id="Designer" order="3" />
@@ -862,7 +896,7 @@
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32446808" />
       <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49924356" weight="0.45212767" />
-      <window_info active="true" anchor="bottom" id="Debug" order="3" visible="true" weight="0.3606383" />
+      <window_info anchor="bottom" id="Debug" order="3" visible="true" weight="0.3606383" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32933104" />
@@ -918,18 +952,16 @@
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/test/java/steps/PaymentsStep.java</url>
-          <line>394</line>
+          <url>file://$PROJECT_DIR$/src/test/java/steps/MembershipPaymentsSteps.java</url>
+          <line>108</line>
           <properties />
-          <option name="timeStamp" value="7" />
+          <option name="timeStamp" value="1" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
     <watches-manager>
       <configuration name="CucumberJavaRunConfigurationType">
-        <watch expression="sub.getText()" language="JAVA" />
-        <watch expression="lnkName" language="JAVA" />
-        <watch expression="getErrorPages().size()" language="JAVA" custom="java.util.HashMap,java.util.ArrayList" />
+        <watch expression="product" language="JAVA" />
       </configuration>
     </watches-manager>
   </component>
@@ -991,6 +1023,11 @@ sel.getFirstSelectedOption().getText()</expression-string>
     </expressions>
     <expressions id="watch">
       <expression>
+        <expression-string>product</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
         <expression-string>getErrorPages().size()</expression-string>
         <language-id>JAVA</language-id>
         <custom-info>java.util.HashMap,java.util.ArrayList</custom-info>
@@ -1036,11 +1073,6 @@ sel.getFirstSelectedOption().getText()</expression-string>
       </expression>
       <expression>
         <expression-string>errorPages</expression-string>
-        <language-id>JAVA</language-id>
-        <evaluation-mode>EXPRESSION</evaluation-mode>
-      </expression>
-      <expression>
-        <expression-string>lnkName</expression-string>
         <language-id>JAVA</language-id>
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
@@ -1094,101 +1126,6 @@ sel.getFirstSelectedOption().getText()</expression-string>
     </expressions>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/test/java/utility/tss/TrackingSheetScoreCard.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="421">
-          <caret line="49" column="5" selection-start-line="49" selection-start-column="5" selection-end-line="49" selection-end-column="5" />
-          <folding>
-            <element signature="e#1590#1591#0" expanded="true" />
-            <element signature="e#1617#1618#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/pages/leagues/LeagueListPage.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-629">
-          <caret line="15" column="13" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/pages/leagues/LeagueNewEditPage.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-374">
-          <caret line="13" column="13" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/pages/leagues/LeagueTemplateDetailPage.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="110" column="76" lean-forward="true" selection-start-line="110" selection-start-column="76" selection-end-line="110" selection-end-column="76" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/pages/leagues/LeagueTemplatesPage.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="22" column="51" lean-forward="true" selection-start-line="22" selection-start-column="4" selection-end-line="22" selection-end-column="51" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/pages/jobs/JobsListPage.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="13" column="13" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/pages/jobs/JobPage.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="29" column="30" selection-start-line="29" selection-start-column="30" selection-end-line="29" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/steps/EventSteps.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="307">
-          <caret line="73" column="70" selection-start-line="73" selection-start-column="70" selection-end-line="73" selection-end-column="70" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/pages/tss/TrackingSheetScorecardDetailPage.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="115" column="43" lean-forward="true" selection-start-line="115" selection-start-column="43" selection-end-line="115" selection-end-column="43" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/pages/tss/TrackingSheetPage.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="200">
-          <caret line="101" column="18" selection-start-line="101" selection-start-column="18" selection-end-line="101" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/steps/TrackingSheetSteps.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="249">
-          <caret line="65" lean-forward="true" selection-start-line="65" selection-end-line="65" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/pages/events/EventsPage.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="256">
-          <caret line="40" column="64" selection-start-line="40" selection-start-column="4" selection-end-line="40" selection-end-column="64" />
-          <folding>
-            <element signature="e#1382#1383#0" expanded="true" />
-            <element signature="e#1426#1427#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/features/league_support/tss/TrackingSheetScoreCards.feature">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="153">
@@ -1240,20 +1177,6 @@ sel.getFirstSelectedOption().getText()</expression-string>
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/pages/Pages.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="252">
-          <caret line="26" lean-forward="true" selection-start-line="26" selection-end-line="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/info/cukes/cucumber-core/1.2.5/cucumber-core-1.2.5.jar!/cucumber/runtime/Utils.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="237">
-          <caret line="52" selection-start-line="52" selection-end-line="52" />
         </state>
       </provider>
     </entry>
@@ -1361,16 +1284,6 @@ sel.getFirstSelectedOption().getText()</expression-string>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/utility/Helpers.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="400">
-          <caret line="646" lean-forward="true" selection-start-line="646" selection-end-line="646" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/pages/memberPortal/payments/PaymentConfirmationPage.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="383">
@@ -1397,37 +1310,7 @@ sel.getFirstSelectedOption().getText()</expression-string>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/pages/memberPortal/myAccount/MembershipsPaymentsPage.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="338">
-          <caret line="35" selection-start-line="35" selection-end-line="35" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/steps/SignUpSteps.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="338">
-          <caret line="109" selection-start-line="109" selection-end-line="109" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/steps/NavigationSteps.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="253">
-          <caret line="52" column="19" selection-start-line="52" selection-start-column="19" selection-end-line="52" selection-end-column="19" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/utility/paymentInfo/CreditCardInfo.java">
+    <entry file="file://$PROJECT_DIR$/src/test/java/utility/payment/CreditCardInfo.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="476">
           <caret line="38" selection-start-line="38" selection-end-line="38" />
@@ -1437,112 +1320,246 @@ sel.getFirstSelectedOption().getText()</expression-string>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/steps/PaymentsStep.java">
+    <entry file="file://$PROJECT_DIR$/src/test/java/steps/SignUpSteps.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="400">
-          <caret line="402" selection-start-line="402" selection-end-line="402" />
+        <state relative-caret-position="1564">
+          <caret line="109" selection-start-line="109" selection-end-line="109" />
           <folding>
-            <element signature="method#PaymentsStep#0;class#PaymentsStep#0" />
-            <element signature="e#1641#1746#0" />
-            <element signature="method#clickOnMemberShipPayments#0;class#PaymentsStep#0" />
-            <element signature="e#1857#2073#0" />
-            <element signature="e#2094#2199#0" />
-            <element signature="method#clickOnAddMemberPayment#0;class#PaymentsStep#0" />
-            <element signature="e#2305#2518#0" />
-            <element signature="e#2539#2644#0" />
-            <element signature="method#addThePaymentForTheFollowingUser#0;class#PaymentsStep#0" />
-            <element signature="e#2803#3192#0" />
-            <element signature="e#3213#3318#0" />
-            <element signature="method#afterAddingMyCreditCardInformationISubmitPayment#0;class#PaymentsStep#0" />
-            <element signature="e#3477#4028#0" />
-            <element signature="e#4049#4222#0" />
-            <element signature="method#iGetConfirmationPageAcceptingMyPayment#0;class#PaymentsStep#0" />
-            <element signature="e#4473#5006#0" />
-            <element signature="e#5027#5132#0" />
-            <element signature="e#5141#5251#0" />
-            <element signature="e#5186#5241#1" />
-            <element signature="method#afterAddingMyBankAccountInformationISubmitAllInformation#0;class#PaymentsStep#0" />
-            <element signature="e#5428#5844#0" />
-            <element signature="e#5865#6038#0" />
-            <element signature="method#afterSelectingOfficeCreditOptionISubmitAllInformation#0;class#PaymentsStep#0" />
-            <element signature="e#6208#6702#0" />
-            <element signature="e#6723#6896#0" />
-            <element signature="method#afterSelectingOfficeCreditOptionISubmitAllInformation#1;class#PaymentsStep#0" />
-            <element signature="e#7084#7419#0" />
-            <element signature="e#7440#7613#0" />
-            <element signature="method#manuallyAddingMyCreditCardInformationISubmitAllInformation#0;class#PaymentsStep#0" />
-            <element signature="e#7811#8742#0" />
-            <element signature="e#8159#8732#1" />
-            <element signature="e#8244#8450#0" />
-            <element signature="e#8483#8615#0" />
-            <element signature="e#8652#8718#0" />
-            <element signature="e#8763#8936#0" />
-            <element signature="method#noPaymentWasRegistered#0;class#PaymentsStep#0" />
-            <element signature="e#9040#9603#0" />
-            <element signature="e#9463#9593#1" />
-            <element signature="e#9624#9729#0" />
-            <element signature="method#upgradingMembershipForUser#0;class#PaymentsStep#0" />
-            <element signature="e#9865#10301#0" />
-            <element signature="e#10322#10495#0" />
-            <element signature="method#purchaseDetailPageShowsCorrectPayment#0;class#PaymentsStep#0" />
-            <element signature="e#10671#10773#0" />
-            <element signature="e#10794#10899#0" />
-            <element signature="e#10908#11161#0" />
-            <element signature="e#10951#11151#1" />
-            <element signature="method#savePurchaseTime#0;class#PaymentsStep#0" />
-            <element signature="method#deletePayment#0;class#PaymentsStep#0" />
-            <element signature="e#11458#12141#0" />
-            <element signature="e#11500#12131#1" />
-            <element signature="e#11522#11970#0" />
-            <element signature="e#12012#12117#0" />
-            <element signature="e#12162#12241#0" />
-            <element signature="method#afterAddingMyCheckInformationISubmitPayment#0;class#PaymentsStep#0" />
-            <element signature="e#12390#12826#0" />
-            <element signature="e#12847#13020#0" />
-            <element signature="method#refundIsMadeForThisPayment#0;class#PaymentsStep#0" />
-            <element signature="e#13134#13426#0" />
-            <element signature="e#13447#13552#0" />
-            <element signature="method#refundPayment#0;class#PaymentsStep#0" />
-            <element signature="e#13642#14075#0" />
-            <element signature="e#14096#14201#0" />
-            <element signature="method#findPayment#0;class#PaymentsStep#0" />
-            <element signature="e#14460#15276#1" />
-            <element signature="e#14595#15249#1" />
-            <element signature="e#15095#15176#1" />
-            <element signature="class#PaymentInfo#0;class#PaymentsStep#0" />
-            <element signature="method#PaymentInfo#0;class#PaymentInfo#0;class#PaymentsStep#0" />
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/features/payments/MemberShipPayment.feature">
+    <entry file="file://$PROJECT_DIR$/src/test/java/steps/NavigationSteps.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="13" column="37" lean-forward="true" selection-start-line="13" selection-start-column="37" selection-end-line="13" selection-end-column="37" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/steps/MembershipPaymentsSteps.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="218">
-          <caret line="31" column="51" lean-forward="true" selection-start-line="31" selection-start-column="51" selection-end-line="31" selection-end-column="51" />
+        <state relative-caret-position="680">
+          <caret line="52" column="19" selection-start-line="52" selection-start-column="19" selection-end-line="52" selection-end-column="19" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/steps/MembersAndRostersSteps.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="434">
+        <state relative-caret-position="1054">
           <caret line="78" selection-start-line="78" selection-end-line="78" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/pages/memberPortal/payments/PendingPaymentsPage.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-306">
-          <caret line="6" selection-start-line="6" selection-end-line="6" />
+        <state relative-caret-position="646">
+          <caret line="47" column="35" selection-start-line="47" selection-start-column="35" selection-end-line="47" selection-end-column="35" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/steps/EventSteps.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="307">
+          <caret line="73" column="70" selection-start-line="73" selection-start-column="70" selection-end-line="73" selection-end-column="70" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/steps/TrackingSheetSteps.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="524">
+          <caret line="81" column="16" selection-start-line="81" selection-start-column="16" selection-end-line="81" selection-end-column="16" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/pages/memberPortal/myAccount/MembershipsPaymentsPage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="722">
+          <caret line="107" column="28" selection-start-line="107" selection-start-column="28" selection-end-line="107" selection-end-column="28" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#2152#2153#0" expanded="true" />
+            <element signature="e#2246#2247#0" expanded="true" />
+            <element signature="e#2522#2523#0" expanded="true" />
+            <element signature="e#2553#2554#0" expanded="true" />
+            <element signature="e#2841#2842#0" expanded="true" />
+            <element signature="e#2875#2876#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/pages/memberPortal/refunds/RefundPurchasePage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="374">
+          <caret line="31" column="44" selection-start-line="31" selection-start-column="44" selection-end-line="31" selection-end-column="44" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1343#1344#0" expanded="true" />
+            <element signature="e#1381#1382#0" expanded="true" />
+            <element signature="e#1411#1412#0" expanded="true" />
+            <element signature="e#1453#1454#0" expanded="true" />
+            <element signature="e#1487#1488#0" expanded="true" />
+            <element signature="e#1527#1528#0" expanded="true" />
+            <element signature="e#1559#1560#0" expanded="true" />
+            <element signature="e#1597#1598#0" expanded="true" />
+            <element signature="e#1627#1628#0" expanded="true" />
+            <element signature="e#1667#1668#0" expanded="true" />
+            <element signature="e#1699#1700#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/pages/Pages.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="340">
+          <caret line="31" column="68" selection-start-line="31" selection-start-column="68" selection-end-line="31" selection-end-column="68" />
+          <folding>
+            <element signature="e#1148#1149#0" expanded="true" />
+            <element signature="e#1187#1188#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/pages/memberPortal/payments/PurchaseDetailPage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="790">
+          <caret line="85" column="42" selection-start-line="85" selection-start-column="42" selection-end-line="85" selection-end-column="42" />
+          <folding>
+            <element signature="e#3132#3133#0" expanded="true" />
+            <element signature="e#3172#3173#0" expanded="true" />
+            <element signature="e#3204#3205#0" expanded="true" />
+            <element signature="e#3252#3253#0" expanded="true" />
+            <element signature="e#3292#3293#0" expanded="true" />
+            <element signature="e#3336#3337#0" expanded="true" />
+            <element signature="e#3372#3373#0" expanded="true" />
+            <element signature="e#3420#3421#0" expanded="true" />
+            <element signature="e#3460#3461#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/steps/PaymentsStep.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="783">
+          <caret line="392" column="16" selection-start-line="392" selection-start-column="16" selection-end-line="392" selection-end-column="16" />
+          <folding>
+            <element signature="method#PaymentsStep#0;class#PaymentsStep#0" />
+            <element signature="method#clickOnAddMemberPayment#0;class#PaymentsStep#0" />
+            <element signature="method#addThePaymentForTheFollowingUser#0;class#PaymentsStep#0" />
+            <element signature="method#afterAddingMyCreditCardInformationISubmitPayment#0;class#PaymentsStep#0" />
+            <element signature="method#iGetConfirmationPageAcceptingMyPayment#0;class#PaymentsStep#0" />
+            <element signature="method#afterAddingMyBankAccountInformationISubmitAllInformation#0;class#PaymentsStep#0" />
+            <element signature="method#afterSelectingOfficeCreditOptionISubmitAllInformation#0;class#PaymentsStep#0" />
+            <element signature="method#afterSelectingOfficeCreditOptionISubmitAllInformation#1;class#PaymentsStep#0" />
+            <element signature="method#manuallyAddingMyCreditCardInformationISubmitAllInformation#0;class#PaymentsStep#0" />
+            <element signature="method#noPaymentWasRegistered#0;class#PaymentsStep#0" />
+            <element signature="method#upgradingMembershipForUser#0;class#PaymentsStep#0" />
+            <element signature="method#purchaseDetailPageShowsCorrectPayment#0;class#PaymentsStep#0" />
+            <element signature="method#savePurchaseTime#0;class#PaymentsStep#0" />
+            <element signature="method#deletePayment#0;class#PaymentsStep#0" />
+            <element signature="method#afterAddingMyCheckInformationISubmitPayment#0;class#PaymentsStep#0" />
+            <element signature="method#refundPayment#0;class#PaymentsStep#0" />
+            <element signature="method#findPayment#0;class#PaymentsStep#0" />
+            <element signature="class#PaymentInfo#0;class#PaymentsStep#0" />
+            <element signature="method#PaymentInfo#0;class#PaymentInfo#0;class#PaymentsStep#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/utility/tss/TssWeekElements.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/utility/tss/TrackingSheetScoreCard.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/utility/tss/LineElement.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" column="12" selection-start-line="5" selection-start-column="12" selection-end-line="5" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/utility/payment/PurchaseDetail.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="493">
+          <caret line="57" column="5" selection-start-line="57" selection-start-column="5" selection-end-line="57" selection-end-column="5" />
+          <folding>
+            <element signature="method#PurchaseDetail#0;class#PurchaseDetail#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/utility/payment/Refund.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="442">
+          <caret line="39" column="5" selection-start-line="39" selection-start-column="5" selection-end-line="39" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/utility/Helpers.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="586">
+          <caret line="634" selection-start-line="634" selection-end-line="634" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/steps/MembershipPaymentsSteps.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="417">
+          <caret line="152" selection-start-line="152" selection-end-line="152" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#MembershipPaymentsSteps#0;class#MembershipPaymentsSteps#0" />
+            <element signature="method#iPayHisMembershipUsingMyCreditCard#0;class#MembershipPaymentsSteps#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/info/cukes/cucumber-core/1.2.5/cucumber-core-1.2.5.jar!/cucumber/runtime/Utils.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="33">
+          <caret line="39" selection-start-line="39" selection-end-line="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/features/payments/MembershipChangePurchase.feature">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="18" column="32" selection-start-line="18" selection-start-column="4" selection-end-line="18" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/features/payments/MembershipPayment.feature">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="14" column="33" selection-start-line="14" selection-start-column="33" selection-end-line="14" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/features/payments/MembershipPaymentDeletion.feature">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="12" column="43" lean-forward="true" selection-start-line="12" selection-start-column="43" selection-end-line="12" selection-end-column="43" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/features/refunds/MembershipRefund.feature">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="15" column="35" selection-start-line="15" selection-start-column="35" selection-end-line="15" selection-end-column="35" />
         </state>
       </provider>
     </entry>

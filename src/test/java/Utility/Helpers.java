@@ -646,4 +646,5 @@ public class Helpers implements Actionable {
         return (row.findElements(By.tagName("td")).get(19).getText().contains("Unpaid"));
 
     }
+
 }

@@ -1,7 +1,7 @@
 package pages.DefunctOldPages;
 
 import utility.Log;
-import utility.paymentInfo.PaymentLoggedInfo;
+import utility.payment.PaymentLoggedInfo;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
