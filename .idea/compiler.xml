@@ -9,8 +9,5 @@
         <module name="SatoriAutomation" />
       </profile>
     </annotationProcessing>
-    <bytecodeTargetLevel>
-      <module name="SatoriAutomation" target="1.8" />
-    </bytecodeTargetLevel>
   </component>
 </project>

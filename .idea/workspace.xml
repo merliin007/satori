@@ -1,8 +1,78 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="e233993c-a698-469a-8148-0774d40f71f6" name="Default" comment="" />
-    <ignored path="$PROJECT_DIR$/out/" />
+    <list default="true" id="0eaf1139-d41e-4752-9f15-6749932a46ba" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_beust_jcommander_1_72.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_code_findbugs_jsr305_1_3_9.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_code_gson_gson_2_8_2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_errorprone_error_prone_annotations_2_1_3.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_guava_guava_23_6_jre.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_j2objc_j2objc_annotations_1_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_squareup_okhttp3_okhttp_3_9_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_squareup_okio_okio_1_13_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__commons_codec_commons_codec_1_10.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__commons_io_commons_io_2_6.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__commons_logging_commons_logging_1_2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__info_cukes_cucumber_core_1_2_5.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__info_cukes_cucumber_html_0_2_3.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__info_cukes_cucumber_java_1_2_5.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__info_cukes_cucumber_junit_1_2_5.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__info_cukes_cucumber_jvm_deps_1_0_5.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__info_cukes_cucumber_picocontainer_1_2_5.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__info_cukes_cucumber_testng_1_2_5.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__info_cukes_gherkin_2_12_2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__junit_junit_4_12.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__net_bytebuddy_byte_buddy_1_8_3.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_commons_commons_exec_1_3.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_extras_beanshell_bsh_2_0b6.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_httpcomponents_httpclient_4_5_3.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_httpcomponents_httpcore_4_4_6.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_checkerframework_checker_compat_qual_2_0_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_codehaus_mojo_animal_sniffer_annotations_1_14.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_hamcrest_hamcrest_core_1_3.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_picocontainer_picocontainer_2_15.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_seleniumhq_selenium_selenium_api_3_12_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_seleniumhq_selenium_selenium_chrome_driver_3_12_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_seleniumhq_selenium_selenium_edge_driver_3_12_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_seleniumhq_selenium_selenium_firefox_driver_3_12_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_seleniumhq_selenium_selenium_ie_driver_3_12_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_seleniumhq_selenium_selenium_java_3_12_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_seleniumhq_selenium_selenium_opera_driver_3_12_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_seleniumhq_selenium_selenium_remote_driver_3_12_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_seleniumhq_selenium_selenium_safari_driver_3_12_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_seleniumhq_selenium_selenium_support_3_12_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_testng_testng_6_14_3.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SatoriAutomation.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Features/league_support/volunteer_bulk_entry/VolunteerBulkEntry.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Features/league_support/volunteer_bulk_entry/VolunteerBulkEntry.feature" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Pages/volunteer/VolunteerBulkEntryPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Pages/volunteer/VolunteerBulkEntryPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Steps/AvailabilitySteps.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/steps/AvailabilitySteps.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Steps/CalendarSteps.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/steps/CalendarSteps.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Steps/EventSteps.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/steps/EventSteps.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Steps/JobSteps.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/steps/JobSteps.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Steps/LandingSteps.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/steps/LandingSteps.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Steps/LeaderPreferencesSteps.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/steps/LeaderPreferencesSteps.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Steps/LeagueSteps.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/steps/LeagueSteps.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Steps/LeagueTemplateSteps.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/steps/LeagueTemplateSteps.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Steps/LoginSteps.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/steps/LoginSteps.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Steps/MemberAwardsSteps.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/steps/MemberAwardsSteps.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Steps/MemberCalendarSteps.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/steps/MemberCalendarSteps.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Steps/MemberPreferencesSteps.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/steps/MemberPreferencesSteps.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Steps/MemberProfileSteps.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/steps/MemberProfileSteps.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Steps/MembersAndRostersSteps.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/steps/MembersAndRostersSteps.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Steps/MembershipPaymentsSteps.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/steps/MembershipPaymentsSteps.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Steps/NavigationSteps.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/steps/NavigationSteps.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Steps/PaymentsStep.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/steps/PaymentsStep.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Steps/RosterSteps.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/steps/RosterSteps.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Steps/ScheduleLineupSteps.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/steps/ScheduleLineupSteps.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Steps/SignUpSteps.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/steps/SignUpSteps.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Steps/TrackingSheetSteps.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/steps/TrackingSheetSteps.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Steps/VolunteerBulkEntrySteps.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/steps/VolunteerBulkEntrySteps.java" afterDir="false" />
+    </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -10,314 +80,72 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="CoverageDataManager">
-    <SUITE FILE_PATH="coverage/SatoriAutomation$Feature__Calendars__1_.ic" NAME="Feature: Calendars (1) Coverage Results" MODIFIED="1531754560228" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
-      <FILTER>cucumber.api.cli.*</FILTER>
-    </SUITE>
-    <SUITE FILE_PATH="coverage/SatoriAutomation$Feature__Crawler__1_.ic" NAME="Feature: Crawler (1) Coverage Results" MODIFIED="1528811776072" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
-      <FILTER>cucumber.api.cli.*</FILTER>
-    </SUITE>
-    <SUITE FILE_PATH="coverage/SatoriAutomation$Members_Search.ic" NAME="Members Search Coverage Results" MODIFIED="1546970315936" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
-      <FILTER>cucumber.api.cli.*</FILTER>
-    </SUITE>
-    <SUITE FILE_PATH="coverage/SatoriAutomation$Feature__Crawler.ic" NAME="Feature: Crawler Coverage Results" MODIFIED="1545844039801" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
-      <FILTER>cucumber.api.cli.*</FILTER>
-    </SUITE>
-    <SUITE FILE_PATH="coverage/SatoriAutomation$Feature__LoginIntoNewSite.ic" NAME="Feature: LoginIntoNewSite Coverage Results" MODIFIED="1528467597544" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
-      <FILTER>cucumber.api.cli.*</FILTER>
-    </SUITE>
-    <SUITE FILE_PATH="coverage/SatoriAutomation$Feature__Calendars__3_.ic" NAME="Feature: Calendars (3) Coverage Results" MODIFIED="1532020819269" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
-      <FILTER>cucumber.api.cli.*</FILTER>
-    </SUITE>
-  </component>
-  <component name="FavoritesManager">
-    <favorites_list name="SatoriAutomation" />
-  </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+    <leaf>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/features/payments/MembershipPayment.feature">
+        <entry file="file://$PROJECT_DIR$/src/test/java/Features/league_support/volunteer_bulk_entry/VolunteerBulkEntry.feature">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="238">
-              <caret line="14" column="33" selection-start-line="14" selection-start-column="33" selection-end-line="14" selection-end-column="33" />
+            <state relative-caret-position="357">
+              <caret line="21" column="7" selection-start-line="21" selection-start-column="7" selection-end-line="21" selection-end-column="7" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/test/java/features/refunds/MembershipRefund.feature">
+        <entry file="file://$PROJECT_DIR$/src/test/java/steps/VolunteerBulkEntrySteps.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="15" column="35" selection-start-line="15" selection-start-column="35" selection-end-line="15" selection-end-column="35" />
+            <state relative-caret-position="191">
+              <caret line="56" column="17" lean-forward="true" selection-start-line="56" selection-start-column="17" selection-end-line="56" selection-end-column="17" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/features/payments/MembershipPaymentDeletion.feature">
+        <entry file="file://$PROJECT_DIR$/src/test/java/Pages/volunteer/VolunteerBulkEntryPage.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="204">
-              <caret line="12" column="43" lean-forward="true" selection-start-line="12" selection-start-column="43" selection-end-line="12" selection-end-column="43" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/features/payments/MembershipChangePurchase.feature">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="306">
-              <caret line="18" column="32" selection-start-line="18" selection-start-column="4" selection-end-line="18" selection-end-column="32" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/steps/PaymentsStep.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="783">
-              <caret line="392" column="16" selection-start-line="392" selection-start-column="16" selection-end-line="392" selection-end-column="16" />
+            <state relative-caret-position="759">
+              <caret line="126" column="34" selection-start-line="126" selection-start-column="34" selection-end-line="126" selection-end-column="34" />
               <folding>
-                <element signature="method#PaymentsStep#0;class#PaymentsStep#0" />
-                <element signature="method#clickOnAddMemberPayment#0;class#PaymentsStep#0" />
-                <element signature="method#addThePaymentForTheFollowingUser#0;class#PaymentsStep#0" />
-                <element signature="method#afterAddingMyCreditCardInformationISubmitPayment#0;class#PaymentsStep#0" />
-                <element signature="method#iGetConfirmationPageAcceptingMyPayment#0;class#PaymentsStep#0" />
-                <element signature="method#afterAddingMyBankAccountInformationISubmitAllInformation#0;class#PaymentsStep#0" />
-                <element signature="method#afterSelectingOfficeCreditOptionISubmitAllInformation#0;class#PaymentsStep#0" />
-                <element signature="method#afterSelectingOfficeCreditOptionISubmitAllInformation#1;class#PaymentsStep#0" />
-                <element signature="method#manuallyAddingMyCreditCardInformationISubmitAllInformation#0;class#PaymentsStep#0" />
-                <element signature="method#noPaymentWasRegistered#0;class#PaymentsStep#0" />
-                <element signature="method#upgradingMembershipForUser#0;class#PaymentsStep#0" />
-                <element signature="method#purchaseDetailPageShowsCorrectPayment#0;class#PaymentsStep#0" />
-                <element signature="method#savePurchaseTime#0;class#PaymentsStep#0" />
-                <element signature="method#deletePayment#0;class#PaymentsStep#0" />
-                <element signature="method#afterAddingMyCheckInformationISubmitPayment#0;class#PaymentsStep#0" />
-                <element signature="method#refundPayment#0;class#PaymentsStep#0" />
-                <element signature="method#findPayment#0;class#PaymentsStep#0" />
-                <element signature="class#PaymentInfo#0;class#PaymentsStep#0" />
-                <element signature="method#PaymentInfo#0;class#PaymentInfo#0;class#PaymentsStep#0" />
+                <element signature="method#VolunteerBulkEntryPage#0;class#VolunteerBulkEntryPage#0" />
+                <element signature="method#getToastMessage#0;class#VolunteerBulkEntryPage#0" />
+                <element signature="e#3592#3892#0" />
+                <element signature="n#!!block;n#getToast#0;n#VolunteerBulkEntryPage#0" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/steps/MembershipPaymentsSteps.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="417">
-              <caret line="152" selection-start-line="152" selection-end-line="152" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="method#MembershipPaymentsSteps#0;class#MembershipPaymentsSteps#0" />
-                <element signature="method#iPayHisMembershipUsingMyCreditCard#0;class#MembershipPaymentsSteps#0" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="jar://$MAVEN_REPOSITORY$/info/cukes/cucumber-core/1.2.5/cucumber-core-1.2.5.jar!/cucumber/runtime/Utils.class">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="33">
-              <caret line="39" selection-start-line="39" selection-end-line="39" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/pages/memberPortal/payments/PurchaseDetailPage.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="790">
-              <caret line="85" column="42" selection-start-line="85" selection-start-column="42" selection-end-line="85" selection-end-column="42" />
-              <folding>
-                <element signature="e#3132#3133#0" expanded="true" />
-                <element signature="e#3172#3173#0" expanded="true" />
-                <element signature="e#3204#3205#0" expanded="true" />
-                <element signature="e#3252#3253#0" expanded="true" />
-                <element signature="e#3292#3293#0" expanded="true" />
-                <element signature="e#3336#3337#0" expanded="true" />
-                <element signature="e#3372#3373#0" expanded="true" />
-                <element signature="e#3420#3421#0" expanded="true" />
-                <element signature="e#3460#3461#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/utility/Helpers.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="586">
-              <caret line="634" selection-start-line="634" selection-end-line="634" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/utility/payment/Refund.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="442">
-              <caret line="39" column="5" selection-start-line="39" selection-start-column="5" selection-end-line="39" selection-end-column="5" />
             </state>
           </provider>
         </entry>
       </file>
     </leaf>
   </component>
-  <component name="FileTemplateManagerImpl">
-    <option name="RECENT_TEMPLATES">
-      <list>
-        <option value="Interface" />
-        <option value="Enum" />
-        <option value="Class" />
-      </list>
-    </option>
-  </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>leagueDescriptionList</find>
-      <find>leagueListPage</find>
-      <find>CalendarsPage</find>
-      <find>getTblResults</find>
-      <find>cli</find>
-      <find>suita</find>
-      <find>selectOptionFromCell</find>
-      <find>leage</find>
-      <find>init</find>
-      <find>getAllCol</find>
-      <find>getAllcolu</find>
-      <find>extends</find>
-      <find>searchfor</find>
-      <find>searchform</find>
-      <find>toast-c</find>
-      <find>List&lt;List&lt;String&gt;&gt;</find>
-      <find>fluent</find>
-      <find>located</find>
-      <find>getHome()</find>
-      <find>apt</find>
-      <find>&lt;</find>
-      <find>deter</find>
-      <find>toastr</find>
-      <find>Defunct</find>
-      <find>waituntilelementw</find>
-      <find>ctl00_ctl00_CPHolder_CPHolder_MembershipPurchase1_btnNext</find>
-      <find>ctl00_ctl00_CPHolder_CPHolder_MembershipPurchase1_rblCurrentYearMembership</find>
-      <find>ctl00_ctl00_CPHolder_CPHolder_tblPaymentOption</find>
-      <find>toast</find>
-      <find>throw</find>
+      <find>comment</find>
     </findStrings>
-    <replaceStrings>
-      <replace />
-    </replaceStrings>
-    <dirStrings>
-      <dir>C:\branches\satori\src\test\java\pages\newPages</dir>
-    </dirStrings>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/test/java/steps/MemberPreferencesSteps.java" />
-        <option value="$PROJECT_DIR$/src/test/java/utility/volunteer/Position.java" />
-        <option value="$PROJECT_DIR$/src/test/java/features/league_support/volunteer_bulk_entry/VolunteerBulkEntry.feature" />
-        <option value="$PROJECT_DIR$/src/test/java/pages/newPages/volunteer/VolunteerBulkEntryPage.java" />
-        <option value="$PROJECT_DIR$/src/test/java/steps/VolunteerBulkEntrySteps.java" />
-        <option value="$PROJECT_DIR$/src/test/java/pages/newPages/nLoginPage.java" />
-        <option value="$PROJECT_DIR$/src/test/java/pages/newPages/singup/NewMemberSignUpPage.java" />
-        <option value="$PROJECT_DIR$/src/test/java/pages/newPages/singup/SingUpCommon.java" />
-        <option value="$PROJECT_DIR$/src/test/java/pages/newPages/singup/Register2Page.java" />
-        <option value="$PROJECT_DIR$/src/test/java/pages/newPages/memberPortal/myAccount/MyMembershipPage.java" />
-        <option value="$PROJECT_DIR$/src/test/java/utility/RandomString.java" />
-        <option value="$PROJECT_DIR$/src/test/java/steps/SignUpSteps.java" />
-        <option value="$PROJECT_DIR$/src/test/java/pages/newPages/singup/RegisterPage.java" />
-        <option value="$PROJECT_DIR$/src/test/java/utility/tss/TssWeekElements.java" />
-        <option value="$PROJECT_DIR$/src/test/java/utility/tss/LineElement.java" />
-        <option value="$PROJECT_DIR$/src/test/java/utility/tss/TrackinSheetScoreCard.java" />
-        <option value="$PROJECT_DIR$/src/test/java/utility/tss/TrackingSheetScoreCard.java" />
-        <option value="$PROJECT_DIR$/src/test/java/pages/newPages/tss/TrackingSheetPage.java" />
-        <option value="$PROJECT_DIR$/src/test/java/pages/newPages/tss/TrackingSheetScorecardDetailPage.java" />
-        <option value="$PROJECT_DIR$/src/test/java/steps/TrackingSheetSteps.java" />
-        <option value="$PROJECT_DIR$/src/test/java/features/league_support/tss/TrackingSheetScoreCards.feature" />
-        <option value="$PROJECT_DIR$/src/test/java/pages/newPages/nMainPage.java" />
-        <option value="$PROJECT_DIR$/src/test/java/pages/oldPages/LandingPage.java" />
-        <option value="$PROJECT_DIR$/src/test/java/steps/LoginSteps.java" />
-        <option value="$PROJECT_DIR$/src/test/java/pages/home/LandingPage.java" />
-        <option value="$PROJECT_DIR$/src/test/java/steps/LandingSteps.java" />
-        <option value="$PROJECT_DIR$/src/test/java/steps/NavigationSteps.java" />
-        <option value="$PROJECT_DIR$/src/test/java/pages/memberPortal/payments/PaymentConfirmation.java" />
-        <option value="$PROJECT_DIR$/src/test/java/features/navigation/PublicNavigation.feature" />
-        <option value="$PROJECT_DIR$/src/test/java/features/signup/NewMemberSignUp.feature" />
-        <option value="$PROJECT_DIR$/src/test/java/pages/memberPortal/myAccount/MembershipsPayments.java" />
-        <option value="$PROJECT_DIR$/src/test/java/steps/MemberProfileSteps.java" />
-        <option value="$PROJECT_DIR$/src/test/java/pages/members_and_rosters/MembersAdvancedSearchPage.java" />
-        <option value="$PROJECT_DIR$/src/test/java/utility/members/Member.java" />
-        <option value="$PROJECT_DIR$/src/test/java/common/Actionable.java" />
-        <option value="$PROJECT_DIR$/src/test/java/steps/MembersAndRostersSteps.java" />
-        <option value="$PROJECT_DIR$/src/test/java/features/payments/MemberShipPayment.feature" />
-        <option value="$PROJECT_DIR$/src/test/java/pages/memberPortal/payments/PaymentConfirmationPage.java" />
-        <option value="$PROJECT_DIR$/src/test/java/pages/memberPortal/myAccount/MyMembershipPage.java" />
-        <option value="$PROJECT_DIR$/src/test/java/steps/PaymentsStep.java" />
-        <option value="$PROJECT_DIR$/src/test/java/pages/memberPortal/payments/PendingPaymentsPage.java" />
-        <option value="$PROJECT_DIR$/src/test/java/pages/memberPortal/refunds/RefundPurchasePage.java" />
-        <option value="$PROJECT_DIR$/src/test/java/features/refunds/MembershipRefund.feature" />
-        <option value="$PROJECT_DIR$/src/test/java/features/payments/MembershipPaymentDeletion.feature" />
-        <option value="$PROJECT_DIR$/src/test/java/pages/memberPortal/myAccount/MembershipsPaymentsPage.java" />
-        <option value="$PROJECT_DIR$/src/test/java/pages/memberPortal/payments/PurchaseDetailPage.java" />
-        <option value="$PROJECT_DIR$/src/test/java/features/payments/MembershipChangePurchase.feature" />
-        <option value="$PROJECT_DIR$/src/test/java/utility/paymentInfo/PurchaseDetail.java" />
-        <option value="$PROJECT_DIR$/src/test/java/utility/paymentInfo/Refund.java" />
-        <option value="$PROJECT_DIR$/src/test/java/utility/Helpers.java" />
-        <option value="$PROJECT_DIR$/src/test/java/steps/MembershipPaymentsSteps.java" />
+        <option value="$PROJECT_DIR$/src/test/java/Pages/volunteer/VolunteerBulkEntryPage.java" />
+        <option value="$PROJECT_DIR$/src/test/java/Steps/VolunteerBulkEntrySteps.java" />
+        <option value="$PROJECT_DIR$/src/test/java/Features/league_support/volunteer_bulk_entry/VolunteerBulkEntry.feature" />
       </list>
     </option>
   </component>
-  <component name="LogFilters">
-    <option name="FILTER_ERRORS" value="false" />
-    <option name="FILTER_WARNINGS" value="false" />
-    <option name="FILTER_INFO" value="false" />
-    <option name="FILTER_DEBUG" value="false" />
-    <option name="CUSTOM_FILTER" />
-  </component>
-  <component name="MavenImportPreferences">
-    <option name="importingSettings">
-      <MavenImportingSettings>
-        <option name="importAutomatically" value="true" />
-      </MavenImportingSettings>
-    </option>
-  </component>
-  <component name="MavenProjectNavigator">
-    <treeState>
-      <expand>
-        <path>
-          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
-          <item name="SatoriAutomation" type="9519ce18:MavenProjectsStructure$ProjectNode" />
-        </path>
-        <path>
-          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
-          <item name="SatoriAutomation" type="9519ce18:MavenProjectsStructure$ProjectNode" />
-          <item name="Lifecycle" type="58874e2:MavenProjectsStructure$LifecycleNode" />
-        </path>
-      </expand>
-      <select />
-    </treeState>
-  </component>
-  <component name="MavenRunner">
-    <option name="runMavenInBackground" value="false" />
-  </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="1912" />
+    <option name="x" value="1771" />
     <option name="y" value="-8" />
-    <option name="width" value="1936" />
-    <option name="height" value="1096" />
+    <option name="width" value="1400" />
+    <option name="height" value="1000" />
   </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
       <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
@@ -350,7 +178,7 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="test" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="features" type="462c0819:PsiDirectoryNode" />
+              <item name="Features" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="SatoriAutomation" type="b2602c69:ProjectViewProjectNode" />
@@ -358,8 +186,8 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="test" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="features" type="462c0819:PsiDirectoryNode" />
-              <item name="payments" type="462c0819:PsiDirectoryNode" />
+              <item name="Features" type="462c0819:PsiDirectoryNode" />
+              <item name="league_support" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="SatoriAutomation" type="b2602c69:ProjectViewProjectNode" />
@@ -367,7 +195,9 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="test" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="pages" type="462c0819:PsiDirectoryNode" />
+              <item name="Features" type="462c0819:PsiDirectoryNode" />
+              <item name="league_support" type="462c0819:PsiDirectoryNode" />
+              <item name="volunteer_bulk_entry" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="SatoriAutomation" type="b2602c69:ProjectViewProjectNode" />
@@ -375,78 +205,18 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="test" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="pages" type="462c0819:PsiDirectoryNode" />
-              <item name="memberPortal" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="SatoriAutomation" type="b2602c69:ProjectViewProjectNode" />
-              <item name="satori" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="pages" type="462c0819:PsiDirectoryNode" />
-              <item name="memberPortal" type="462c0819:PsiDirectoryNode" />
-              <item name="payments" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="SatoriAutomation" type="b2602c69:ProjectViewProjectNode" />
-              <item name="satori" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="utility" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="SatoriAutomation" type="b2602c69:ProjectViewProjectNode" />
-              <item name="satori" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="utility" type="462c0819:PsiDirectoryNode" />
-              <item name="payment" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="SatoriAutomation" type="b2602c69:ProjectViewProjectNode" />
-              <item name="satori" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="utility" type="462c0819:PsiDirectoryNode" />
-              <item name="tss" type="462c0819:PsiDirectoryNode" />
+              <item name="steps" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="SearchEverywhereHistoryKey" value="getAllColumnHeaders&#9;PSI&#9;JAVA://pages.newPages.Pages#getAllColumnHeaders&#10;ClickOnRowButtonAtPosition&#9;PSI&#9;JAVA://common.Actionable#ClickOnRowButtonAtPosition&#10;By &#9;PSI&#9;JAVA://pages.newPages.ManageAlta#by" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1547837444359" />
-    <property name="com.intellij.ide.scratch.LRUPopupBuilder$1/New Scratch File" value="Gherkin" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/test/java/steps" />
-    <property name="project.structure.last.edited" value="Modules" />
-    <property name="project.structure.proportion" value="0.15" />
-    <property name="project.structure.side.proportion" value="0.19655173" />
-    <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
-    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
-  </component>
-  <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\branches\satori\src\test\java\features\player_portal\my_rosters" />
-      <recent name="C:\branches\satori\src\test\java\features\website_support\calendars_events\calendar_events" />
-      <recent name="C:\branches\satori\src\test\java\Features\Payments" />
-    </key>
-    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
-      <recent name="pages" />
-      <recent name="" />
-    </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\branches\satori\src\test\java\features" />
-      <recent name="C:\branches\satori\src\test\java\Features" />
-      <recent name="C:\branches\satori\src" />
-      <recent name="C:\branches\satori\src\test\java" />
-    </key>
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1548353115680" />
+    <property name="settings.editor.selected.configurable" value="preferences.keymap" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -460,92 +230,15 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Cucumber java.Membership Change Purchase">
-    <configuration default="true" type="Application" factoryName="Application">
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Calendar" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java">
-      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/java/features/website_support/calendar_events/Calendars.feature" />
+  <component name="RunManager" selected="Cucumber java.Feature: VolunteerBulkEntry">
+    <configuration name="Feature: NewMemberSignUp" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
+      <option name="CUCUMBER_CORE_VERSION" value="1.2" />
+      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/java/Features/signup/NewMemberSignUp.feature" />
       <option name="GLUE" value="common steps" />
       <option name="MAIN_CLASS_NAME" value="cucumber.api.cli.Main" />
       <module name="SatoriAutomation" />
       <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvmSMFormatter --monochrome" />
-      <option name="SUGGESTED_NAME" value="Feature: Crawler" />
-      <option name="VM_PARAMETERS" value="-Denvironment=qa -Dbrowser=chrome" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="cucumber.api.cli.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Captain" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java">
-      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/java/features/navigation/Crawler.feature" />
-      <option name="GLUE" value="common steps" />
-      <option name="MAIN_CLASS_NAME" value="cucumber.api.cli.Main" />
-      <module name="SatoriAutomation" />
-      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvmSMFormatter --monochrome" />
-      <option name="SUGGESTED_NAME" value="Feature: Crawler" />
-      <option name="VM_PARAMETERS" value="-Denvironment=qa -Dbrowser=chrome" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="cucumber.api.cli.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Coordinator" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java">
-      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/java/features/navigation/Crawler.feature" />
-      <option name="GLUE" value="common steps" />
-      <option name="MAIN_CLASS_NAME" value="cucumber.api.cli.Main" />
-      <module name="SatoriAutomation" />
-      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvmSMFormatter --monochrome" />
-      <option name="SUGGESTED_NAME" value="Feature: Crawler" />
-      <option name="VM_PARAMETERS" value="-Denvironment=qa -Dbrowser=chrome" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="cucumber.api.cli.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Events" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java">
-      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/java/features/website_support/calendar_events/Events.feature" />
-      <option name="GLUE" value="common steps" />
-      <option name="MAIN_CLASS_NAME" value="cucumber.api.cli.Main" />
-      <module name="SatoriAutomation" />
-      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvmSMFormatter --monochrome" />
-      <option name="SUGGESTED_NAME" value="Feature: Crawler" />
-      <option name="VM_PARAMETERS" value="-Denvironment=qa -Dbrowser=chrome" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="cucumber.api.cli.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Feature: NewRoster" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
-      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/java/features/player_portal/my_rosters/NewRoster.feature" />
-      <option name="GLUE" value="common steps" />
-      <option name="MAIN_CLASS_NAME" value="cucumber.api.cli.Main" />
-      <module name="SatoriAutomation" />
-      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvmSMFormatter --monochrome" />
-      <option name="SUGGESTED_NAME" value="Feature: NewRoster" />
+      <option name="SUGGESTED_NAME" value="Feature: NewMemberSignUp" />
       <option name="VM_PARAMETERS" value="-Dbrowser=chrome -Denvironment=qa" />
       <extension name="coverage">
         <pattern>
@@ -557,1120 +250,179 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Feature: NewRoster" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
-      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/java/features/player_portal/my_rosters/NewRoster.feature" />
+    <configuration name="Feature: VolunteerBulkEntry" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
+      <option name="CUCUMBER_CORE_VERSION" value="1.2" />
+      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/java/Features/league_support/volunteer_bulk_entry/VolunteerBulkEntry.feature" />
       <option name="GLUE" value="common steps" />
       <option name="MAIN_CLASS_NAME" value="cucumber.api.cli.Main" />
       <module name="SatoriAutomation" />
       <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvmSMFormatter --monochrome" />
-      <option name="SUGGESTED_NAME" value="Feature: NewRoster" />
-      <option name="VM_PARAMETERS" value="-Denvironment=qa -Dbrowser=chrome" />
+      <option name="SUGGESTED_NAME" value="Feature: VolunteerBulkEntry" />
+      <option name="VM_PARAMETERS" value="-Dbrowser=chrome -Denvironment=qa" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="cucumber.api.cli.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-    </configuration>
-    <configuration name="Feature: PublicNavigation" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
-      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/java/features/navigation/PublicNavigation.feature" />
-      <option name="GLUE" value="common steps" />
-      <option name="MAIN_CLASS_NAME" value="cucumber.api.cli.Main" />
-      <module name="SatoriAutomation" />
-      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvmSMFormatter --monochrome" />
-      <option name="SUGGESTED_NAME" value="Feature: PublicNavigation" />
-      <option name="VM_PARAMETERS" value="-Denvironment=qa -Dbrowser=chrome" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="cucumber.api.cli.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Jobs" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java">
-      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/java/features/league_support/jobs/Jobs.feature" />
-      <option name="GLUE" value="common steps" />
-      <option name="MAIN_CLASS_NAME" value="cucumber.api.cli.Main" />
-      <module name="SatoriAutomation" />
-      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvmSMFormatter --monochrome" />
-      <option name="SUGGESTED_NAME" value="Feature: Crawler" />
-      <option name="VM_PARAMETERS" value="-Denvironment=qa -Dbrowser=chrome" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="cucumber.api.cli.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Leagues Template creation" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java">
-      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/java/features/website_support/leagues/LeagueTemplateCreation.feature" />
-      <option name="GLUE" value="common steps" />
-      <option name="MAIN_CLASS_NAME" value="cucumber.api.cli.Main" />
-      <module name="SatoriAutomation" />
-      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvmSMFormatter --monochrome" />
-      <option name="SUGGESTED_NAME" value="Feature: Crawler" />
-      <option name="VM_PARAMETERS" value="-Denvironment=qa -Dbrowser=chrome" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="cucumber.api.cli.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Leagues creation" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java">
-      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/java/features/website_support/leagues/Leagues.feature" />
-      <option name="GLUE" value="common steps" />
-      <option name="MAIN_CLASS_NAME" value="cucumber.api.cli.Main" />
-      <module name="SatoriAutomation" />
-      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvmSMFormatter --monochrome" />
-      <option name="SUGGESTED_NAME" value="Feature: Crawler" />
-      <option name="VM_PARAMETERS" value="-Denvironment=qa -Dbrowser=chrome" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="cucumber.api.cli.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Members Search" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java">
-      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/java/features/members_and_rosters/member_search/SearchForMember.feature" />
-      <option name="GLUE" value="common steps" />
-      <option name="MAIN_CLASS_NAME" value="cucumber.api.cli.Main" />
-      <module name="SatoriAutomation" />
-      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvmSMFormatter --monochrome" />
-      <option name="SUGGESTED_NAME" value="Feature: Crawler" />
-      <option name="VM_PARAMETERS" value="-Denvironment=qa -Dbrowser=chrome" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="cucumber.api.cli.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Membership Change Purchase" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java">
-      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/java/features/payments/MembershipChangePurchase.feature" />
-      <option name="GLUE" value="common steps" />
-      <option name="MAIN_CLASS_NAME" value="cucumber.api.cli.Main" />
-      <module name="SatoriAutomation" />
-      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvmSMFormatter --monochrome" />
-      <option name="SUGGESTED_NAME" value="Feature: PublicNavigation" />
-      <option name="VM_PARAMETERS" value="-Denvironment=qa -Dbrowser=chrome" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="cucumber.api.cli.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Membership Deletion" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java">
-      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/java/features/payments/MembershipPaymentDeletion.feature" />
-      <option name="GLUE" value="common steps" />
-      <option name="MAIN_CLASS_NAME" value="cucumber.api.cli.Main" />
-      <module name="SatoriAutomation" />
-      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvmSMFormatter --monochrome" />
-      <option name="SUGGESTED_NAME" value="Feature: PublicNavigation" />
-      <option name="VM_PARAMETERS" value="-Denvironment=qa -Dbrowser=chrome" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="cucumber.api.cli.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Membership Payment" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java">
-      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/java/features/payments/MembershipPayment.feature" />
-      <option name="GLUE" value="common steps" />
-      <option name="MAIN_CLASS_NAME" value="cucumber.api.cli.Main" />
-      <module name="SatoriAutomation" />
-      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvmSMFormatter --monochrome" />
-      <option name="SUGGESTED_NAME" value="Feature: PublicNavigation" />
-      <option name="VM_PARAMETERS" value="-Denvironment=qa -Dbrowser=chrome" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="cucumber.api.cli.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Membership Refund" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java">
-      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/java/features/refunds/MembershipRefund.feature" />
-      <option name="GLUE" value="common steps" />
-      <option name="MAIN_CLASS_NAME" value="cucumber.api.cli.Main" />
-      <module name="SatoriAutomation" />
-      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvmSMFormatter --monochrome" />
-      <option name="SUGGESTED_NAME" value="Feature: PublicNavigation" />
-      <option name="VM_PARAMETERS" value="-Denvironment=qa -Dbrowser=chrome" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="cucumber.api.cli.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Signup" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java">
-      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/java/features/signup/NewMemberSignUp.feature" />
-      <option name="GLUE" value="common steps" />
-      <option name="MAIN_CLASS_NAME" value="cucumber.api.cli.Main" />
-      <module name="SatoriAutomation" />
-      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvmSMFormatter --monochrome" />
-      <option name="SUGGESTED_NAME" value="Feature: Crawler" />
-      <option name="VM_PARAMETERS" value="-Denvironment=qa -Dbrowser=chrome" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="cucumber.api.cli.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="TSS" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java">
-      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/java/features/league_support/tss/TrackingSheetScoreCards.feature" />
-      <option name="GLUE" value="common steps" />
-      <option name="MAIN_CLASS_NAME" value="cucumber.api.cli.Main" />
-      <module name="SatoriAutomation" />
-      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvmSMFormatter --monochrome" />
-      <option name="SUGGESTED_NAME" value="Feature: Crawler" />
-      <option name="VM_PARAMETERS" value="-Denvironment=qa -Dbrowser=chrome" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="cucumber.api.cli.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="VulkEntry" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java">
-      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/java/features/league_support/volunteer_bulk_entry/VolunteerBulkEntry.feature" />
-      <option name="GLUE" value="common steps" />
-      <option name="MAIN_CLASS_NAME" value="cucumber.api.cli.Main" />
-      <module name="SatoriAutomation" />
-      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvmSMFormatter --monochrome" />
-      <option name="SUGGESTED_NAME" value="Feature: Crawler" />
-      <option name="VM_PARAMETERS" value="-Denvironment=qa -Dbrowser=chrome" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="cucumber.api.cli.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration default="true" type="JUnit" factoryName="JUnit">
-      <option name="TEST_OBJECT" value="class" />
-      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration default="true" type="TestNG">
-      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
-      <properties />
-      <listeners />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <list>
-      <item itemvalue="Cucumber java.Calendar" />
-      <item itemvalue="Cucumber java.Captain" />
-      <item itemvalue="Cucumber java.Coordinator" />
-      <item itemvalue="Cucumber java.Events" />
-      <item itemvalue="Cucumber java.Jobs" />
-      <item itemvalue="Cucumber java.Leagues creation" />
-      <item itemvalue="Cucumber java.Leagues Template creation" />
-      <item itemvalue="Cucumber java.Members Search" />
-      <item itemvalue="Cucumber java.Signup" />
-      <item itemvalue="Cucumber java.TSS" />
-      <item itemvalue="Cucumber java.VulkEntry" />
-      <item itemvalue="Cucumber java.Membership Payment" />
-      <item itemvalue="Cucumber java.Membership Change Purchase" />
-      <item itemvalue="Cucumber java.Membership Refund" />
-      <item itemvalue="Cucumber java.Membership Deletion" />
-      <item itemvalue="Cucumber java.Feature: NewRoster" />
-      <item itemvalue="Cucumber java.Feature: PublicNavigation" />
+      <item itemvalue="Cucumber java.Feature: NewMemberSignUp" />
+      <item itemvalue="Cucumber java.Feature: VolunteerBulkEntry" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Cucumber java.Feature: PublicNavigation" />
+        <item itemvalue="Cucumber java.Feature: VolunteerBulkEntry" />
+        <item itemvalue="Cucumber java.Feature: NewMemberSignUp" />
       </list>
     </recent_temporary>
   </component>
-  <component name="SvnConfiguration" cleanupOnStartRun="true">
-    <configuration>C:\Users\Miguel\AppData\Roaming\Subversion</configuration>
-    <supportedVersion>125</supportedVersion>
+  <component name="SvnConfiguration">
+    <configuration />
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="e233993c-a698-469a-8148-0774d40f71f6" name="Default" comment="" />
-      <created>1526940067508</created>
+      <changelist id="0eaf1139-d41e-4752-9f15-6749932a46ba" name="Default Changelist" comment="" />
+      <created>1548349682121</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1526940067508</updated>
+      <updated>1548349682121</updated>
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="Membership_Payment - 2019.01.17 at 11h 13m 11s.xml">
-      <configuration name="Membership Payment" configurationId="CucumberJavaRunConfigurationType" />
+    <history-entry file="Feature__NewMemberSignUp - 2019.01.24 at 11h 12m 56s.xml">
+      <configuration name="Feature: NewMemberSignUp" configurationId="CucumberJavaRunConfigurationType" />
     </history-entry>
-    <history-entry file="Membership_Payment - 2019.01.17 at 11h 15m 30s.xml">
-      <configuration name="Membership Payment" configurationId="CucumberJavaRunConfigurationType" />
+    <history-entry file="Feature__NewMemberSignUp - 2019.01.24 at 11h 14m 11s.xml">
+      <configuration name="Feature: NewMemberSignUp" configurationId="CucumberJavaRunConfigurationType" />
     </history-entry>
-    <history-entry file="Membership_Refund - 2019.01.17 at 11h 24m 03s.xml">
-      <configuration name="Membership Refund" configurationId="CucumberJavaRunConfigurationType" />
+    <history-entry file="Feature__VolunteerBulkEntry - 2019.01.24 at 11h 38m 24s.xml">
+      <configuration name="Feature: VolunteerBulkEntry" configurationId="CucumberJavaRunConfigurationType" />
     </history-entry>
-    <history-entry file="Membership_Refund - 2019.01.17 at 11h 26m 21s.xml">
-      <configuration name="Membership Refund" configurationId="CucumberJavaRunConfigurationType" />
+    <history-entry file="Feature__VolunteerBulkEntry - 2019.01.24 at 11h 39m 15s.xml">
+      <configuration name="Feature: VolunteerBulkEntry" configurationId="CucumberJavaRunConfigurationType" />
     </history-entry>
-    <history-entry file="Membership_Refund - 2019.01.17 at 11h 41m 24s.xml">
-      <configuration name="Membership Refund" configurationId="CucumberJavaRunConfigurationType" />
+    <history-entry file="Feature__VolunteerBulkEntry - 2019.01.24 at 12h 00m 07s.xml">
+      <configuration name="Feature: VolunteerBulkEntry" configurationId="CucumberJavaRunConfigurationType" />
     </history-entry>
-    <history-entry file="Membership_Refund - 2019.01.17 at 12h 32m 37s.xml">
-      <configuration name="Membership Refund" configurationId="CucumberJavaRunConfigurationType" />
-    </history-entry>
-    <history-entry file="Membership_Refund - 2019.01.17 at 12h 49m 31s.xml">
-      <configuration name="Membership Refund" configurationId="CucumberJavaRunConfigurationType" />
-    </history-entry>
-    <history-entry file="Membership_Deletion - 2019.01.17 at 12h 52m 15s.xml">
-      <configuration name="Membership Deletion" configurationId="CucumberJavaRunConfigurationType" />
-    </history-entry>
-    <history-entry file="Membership_Payment - 2019.01.17 at 12h 57m 15s.xml">
-      <configuration name="Membership Payment" configurationId="CucumberJavaRunConfigurationType" />
-    </history-entry>
-    <history-entry file="Membership_Change_Purchase - 2019.01.18 at 12h 20m 19s.xml">
-      <configuration name="Membership Change Purchase" configurationId="CucumberJavaRunConfigurationType" />
-    </history-entry>
-  </component>
-  <component name="TodoView">
-    <todo-panel id="selected-file">
-      <is-autoscroll-to-source value="true" />
-    </todo-panel>
-    <todo-panel id="all">
-      <are-packages-shown value="true" />
-      <is-autoscroll-to-source value="true" />
-    </todo-panel>
   </component>
   <component name="ToolWindowManager">
     <frame x="1912" y="-8" width="1936" height="1096" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.5707155" visible="true" weight="0.22334754" />
-      <window_info id="Image Layers" order="1" />
-      <window_info id="Capture Tool" order="2" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.18017058" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
       <window_info id="UI Designer" order="4" />
-      <window_info id="Favorites" order="5" sideWeight="0.4292845" side_tool="true" weight="0.31449893" />
+      <window_info id="Capture Tool" order="5" />
+      <window_info id="Favorites" order="6" side_tool="true" />
+      <window_info anchor="bottom" id="Messages" />
       <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.32446808" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49924356" weight="0.45212767" />
-      <window_info anchor="bottom" id="Debug" order="3" visible="true" weight="0.3606383" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Run" order="2" />
+      <window_info active="true" anchor="bottom" id="Debug" order="3" visible="true" weight="0.39255318" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" weight="0.32933104" />
-      <window_info anchor="bottom" id="Terminal" order="7" weight="0.31336898" />
-      <window_info anchor="bottom" id="Event Log" order="8" sideWeight="0.50075644" side_tool="true" weight="0.31364125" />
-      <window_info anchor="bottom" id="Version Control" order="9" weight="0.32933104" />
-      <window_info anchor="bottom" id="Messages" order="10" weight="0.32553193" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Terminal" order="7" />
+      <window_info anchor="bottom" id="Event Log" order="8" side_tool="true" />
+      <window_info anchor="bottom" id="Version Control" order="9" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="right" id="Palette" order="3" />
-      <window_info anchor="right" id="Palette&#9;" order="4" />
-      <window_info anchor="right" id="Capture Analysis" order="5" />
-      <window_info anchor="right" id="Theme Preview" order="6" />
-      <window_info anchor="right" id="Coverage" order="7" side_tool="true" weight="0.32889125" />
-      <window_info anchor="right" x="0" y="0" width="314" height="716" id="Documentation" order="8" side_tool="true" weight="0.3295129" />
-      <window_info anchor="right" id="Maven Projects" order="9" weight="0.1860817" />
-      <window_info anchor="right" id="Structure" order="10" sideWeight="0.50428814" side_tool="true" weight="0.17397882" />
-      <window_info anchor="right" id="Maven" order="11" />
+      <window_info anchor="right" id="Maven" order="4" />
+      <window_info anchor="right" id="Theme Preview" order="5" />
+      <window_info anchor="right" id="Capture Analysis" order="6" />
+      <window_info anchor="right" id="Palette&#9;" order="7" />
     </layout>
-    <layout-to-restore>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.57967913" visible="true" weight="0.27345416" />
-      <window_info id="Image Layers" order="1" />
-      <window_info id="Capture Tool" order="2" />
-      <window_info id="Designer" order="3" />
-      <window_info id="UI Designer" order="4" />
-      <window_info id="Favorites" order="5" sideWeight="0.42032087" side_tool="true" weight="0.2707889" />
-      <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.32513368" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49924356" weight="0.45363128" />
-      <window_info anchor="bottom" id="Debug" order="3" visible="true" weight="0.37988827" />
-      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" weight="0.32933104" />
-      <window_info anchor="bottom" id="Terminal" order="7" weight="0.31336898" />
-      <window_info anchor="bottom" id="Event Log" order="8" sideWeight="0.50075644" side_tool="true" weight="0.31419623" />
-      <window_info anchor="bottom" id="Version Control" order="9" weight="0.32933104" />
-      <window_info anchor="bottom" id="Messages" order="10" weight="0.3272727" />
-      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
-      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="right" id="Palette" order="3" />
-      <window_info anchor="right" id="Palette&#9;" order="4" />
-      <window_info anchor="right" id="Capture Analysis" order="5" />
-      <window_info anchor="right" id="Theme Preview" order="6" />
-      <window_info anchor="right" id="Coverage" order="7" side_tool="true" weight="0.32889125" />
-      <window_info anchor="right" x="0" y="0" width="314" height="716" id="Documentation" order="8" side_tool="true" weight="0.3295129" />
-      <window_info anchor="right" id="Maven Projects" order="9" weight="0.1860817" />
-      <window_info anchor="right" id="Structure" order="10" sideWeight="0.50428814" side_tool="true" weight="0.17397882" />
-    </layout-to-restore>
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/test/java/steps/MembershipPaymentsSteps.java</url>
-          <line>108</line>
+          <url>file://$PROJECT_DIR$/src/test/java/steps/VolunteerBulkEntrySteps.java</url>
+          <line>33</line>
           <properties />
-          <option name="timeStamp" value="1" />
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/steps/VolunteerBulkEntrySteps.java</url>
+          <line>46</line>
+          <properties />
+          <option name="timeStamp" value="3" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/steps/VolunteerBulkEntrySteps.java</url>
+          <line>71</line>
+          <properties />
+          <option name="timeStamp" value="4" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
-    <watches-manager>
-      <configuration name="CucumberJavaRunConfigurationType">
-        <watch expression="product" language="JAVA" />
-      </configuration>
-    </watches-manager>
-  </component>
-  <component name="debuggerHistoryManager">
-    <expressions id="evaluateCodeFragment">
-      <expression>
-        <expression-string>Select sel = new Select(weekElements.get(3).awayResult);
-sel.getFirstSelectedOption().getText()</expression-string>
-        <language-id>JAVA</language-id>
-        <evaluation-mode>CODE_FRAGMENT</evaluation-mode>
-      </expression>
-      <expression>
-        <expression-string>Select sel = new Select(weekElements.get(3).awaySet1);
-sel.getFirstSelectedOption().getText()</expression-string>
-        <language-id>JAVA</language-id>
-        <evaluation-mode>CODE_FRAGMENT</evaluation-mode>
-      </expression>
-      <expression>
-        <expression-string>Select sel = new Select(weekElements.get(3).awaySet2);
-sel.getFirstSelectedOption().getText()</expression-string>
-        <language-id>JAVA</language-id>
-        <evaluation-mode>CODE_FRAGMENT</evaluation-mode>
-      </expression>
-      <expression>
-        <expression-string>Select sel = new Select(weekElements.get(3).awaySet3);
-sel.getFirstSelectedOption().getText()</expression-string>
-        <language-id>JAVA</language-id>
-        <evaluation-mode>CODE_FRAGMENT</evaluation-mode>
-      </expression>
-      <expression>
-        <expression-string>Select sel = new Select(weekElements.get(3).homeSet2);
-sel.getFirstSelectedOption().getText()</expression-string>
-        <language-id>JAVA</language-id>
-        <evaluation-mode>CODE_FRAGMENT</evaluation-mode>
-      </expression>
-      <expression>
-        <expression-string>Select sel = new Select(weekElements.get(4).homeResult);
-sel.getFirstSelectedOption().getText()</expression-string>
-        <language-id>JAVA</language-id>
-        <evaluation-mode>CODE_FRAGMENT</evaluation-mode>
-      </expression>
-      <expression>
-        <expression-string>Select sel = new Select(weekElements.get(3).awayPlayer2);
-sel.getFirstSelectedOption().getText()</expression-string>
-        <language-id>JAVA</language-id>
-        <evaluation-mode>CODE_FRAGMENT</evaluation-mode>
-      </expression>
-      <expression>
-        <expression-string>Select sel = new Select(weekElements.get(3).awayPlayer1);
-sel.getFirstSelectedOption().getText()</expression-string>
-        <language-id>JAVA</language-id>
-        <evaluation-mode>CODE_FRAGMENT</evaluation-mode>
-      </expression>
-      <expression>
-        <expression-string>cells.get(6).findElement(By.tagName(&quot;input&quot;)).getAttribute(&quot;value&quot;)</expression-string>
-        <language-id>JAVA</language-id>
-        <evaluation-mode>CODE_FRAGMENT</evaluation-mode>
-      </expression>
-    </expressions>
-    <expressions id="watch">
-      <expression>
-        <expression-string>product</expression-string>
-        <language-id>JAVA</language-id>
-        <evaluation-mode>EXPRESSION</evaluation-mode>
-      </expression>
-      <expression>
-        <expression-string>getErrorPages().size()</expression-string>
-        <language-id>JAVA</language-id>
-        <custom-info>java.util.HashMap,java.util.ArrayList</custom-info>
-        <evaluation-mode>EXPRESSION</evaluation-mode>
-      </expression>
-      <expression>
-        <expression-string>getErrorPages()).size</expression-string>
-        <language-id>JAVA</language-id>
-        <custom-info>java.util.HashMap,java.util.ArrayList</custom-info>
-        <evaluation-mode>EXPRESSION</evaluation-mode>
-      </expression>
-      <expression>
-        <expression-string>I</expression-string>
-        <language-id>JAVA</language-id>
-        <evaluation-mode>EXPRESSION</evaluation-mode>
-      </expression>
-      <expression>
-        <expression-string>((ArrayList) I.getErrorPages()).size</expression-string>
-        <language-id>JAVA</language-id>
-        <custom-info>java.util.HashMap,java.util.ArrayList</custom-info>
-        <evaluation-mode>EXPRESSION</evaluation-mode>
-      </expression>
-      <expression>
-        <expression-string>((HashMap) I.errorPages).size</expression-string>
-        <language-id>JAVA</language-id>
-        <custom-info>java.util.HashMap</custom-info>
-        <evaluation-mode>EXPRESSION</evaluation-mode>
-      </expression>
-      <expression>
-        <expression-string>errorPages.</expression-string>
-        <language-id>JAVA</language-id>
-        <evaluation-mode>EXPRESSION</evaluation-mode>
-      </expression>
-      <expression>
-        <expression-string>errorPages.size()</expression-string>
-        <language-id>JAVA</language-id>
-        <evaluation-mode>EXPRESSION</evaluation-mode>
-      </expression>
-      <expression>
-        <expression-string>((HashMap) errorPages).size</expression-string>
-        <language-id>JAVA</language-id>
-        <evaluation-mode>EXPRESSION</evaluation-mode>
-      </expression>
-      <expression>
-        <expression-string>errorPages</expression-string>
-        <language-id>JAVA</language-id>
-        <evaluation-mode>EXPRESSION</evaluation-mode>
-      </expression>
-    </expressions>
-    <expressions id="evaluateExpression">
-      <expression>
-        <expression-string>boolean a = base.driver.getTitle().contains(&quot;Add Payment&quot;);</expression-string>
-        <language-id>JAVA</language-id>
-        <evaluation-mode>EXPRESSION</evaluation-mode>
-      </expression>
-      <expression>
-        <expression-string>base.driver.getTitle().contains(&quot;Add Payment&quot;)</expression-string>
-        <language-id>JAVA</language-id>
-        <evaluation-mode>EXPRESSION</evaluation-mode>
-      </expression>
-      <expression>
-        <expression-string>base.driver.getTitle().contains(&quot;ALTA Tennis - Add Payment&quot;)</expression-string>
-        <language-id>JAVA</language-id>
-        <evaluation-mode>EXPRESSION</evaluation-mode>
-      </expression>
-      <expression>
-        <expression-string>Assert.assertTrue((base.driver.getTitle().contains(&quot;ALTA Tennis - Add Payment&quot;)))</expression-string>
-        <language-id>JAVA</language-id>
-        <evaluation-mode>EXPRESSION</evaluation-mode>
-      </expression>
-      <expression>
-        <expression-string>Assert.assertTrue((base.driver.getTitle().contains(&quot;Add Payment&quot;)))</expression-string>
-        <language-id>JAVA</language-id>
-        <evaluation-mode>EXPRESSION</evaluation-mode>
-      </expression>
-      <expression>
-        <expression-string>Assert.assertTrue(base.driver.getTitle().contains(&quot;Add Payment&quot;))</expression-string>
-        <language-id>JAVA</language-id>
-        <evaluation-mode>EXPRESSION</evaluation-mode>
-      </expression>
-      <expression>
-        <expression-string>Assert.assertTrue(base.driver.getTitle().contains(&quot;Add Payment&quot;));</expression-string>
-        <language-id>JAVA</language-id>
-        <evaluation-mode>EXPRESSION</evaluation-mode>
-      </expression>
-      <expression>
-        <expression-string>base.driver.getTitle()</expression-string>
-        <language-id>JAVA</language-id>
-        <evaluation-mode>EXPRESSION</evaluation-mode>
-      </expression>
-      <expression>
-        <expression-string>Assert.assertTrue(base.driver.getTitle().contains(&quot;Add payment&quot;))</expression-string>
-        <language-id>JAVA</language-id>
-        <evaluation-mode>EXPRESSION</evaluation-mode>
-      </expression>
-    </expressions>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/test/java/features/league_support/tss/TrackingSheetScoreCards.feature">
+    <entry file="file://$PROJECT_DIR$/src/test/java/Features/payments/MembershipChangePurchase.feature">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="9" column="23" selection-start-line="9" selection-start-column="23" selection-end-line="9" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/features/navigation/MemberPortalNavigation.feature">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="18" column="82" selection-start-line="18" selection-start-column="82" selection-end-line="18" selection-end-column="82" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/features/navigation/ManageALTANavigation.feature">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="533">
-          <caret line="47" column="24" selection-start-line="47" selection-start-column="24" selection-end-line="47" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/steps/TrioSteps.java" />
-    <entry file="file://$PROJECT_DIR$/src/test/java/pages/newPages/TrioMainPage.java" />
-    <entry file="file://$PROJECT_DIR$/src/test/java/steps/NewStepFile2.java" />
-    <entry file="file://$PROJECT_DIR$/src/test/java/steps/NewStepFile.java" />
-    <entry file="file://$PROJECT_DIR$/src/test/java/pages/newPages/TransactionManagerPage.java" />
-    <entry file="file://$PROJECT_DIR$/src/test/java/pages/ManageAlta.java" />
-    <entry file="file://$PROJECT_DIR$/src/test/java/pages/home/MainPage.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="14" column="13" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/pages/home/LoginPage.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/pages/DefunctOldPages/LoginPage.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="527">
-          <caret line="33" column="22" selection-start-line="33" selection-start-column="22" selection-end-line="33" selection-end-column="22" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/pages/home/LandingPage.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1054">
-          <caret line="86" selection-start-line="86" selection-end-line="86" />
-          <folding>
-            <element signature="method#LandingPage#0;class#LandingPage#0" />
-            <element signature="method#IsUserLoggedIn#0;class#LandingPage#0" />
-            <element signature="e#2128#2129#0" expanded="true" />
-            <element signature="e#2162#2163#0" expanded="true" />
-            <element signature="e#2480#2481#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/pages/DefunctOldPages/AddPaymentPage.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="535">
-          <caret line="152" column="5" lean-forward="true" selection-start-line="130" selection-start-column="4" selection-end-line="152" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/features/navigation/PublicNavigation.feature">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="408">
-          <caret line="24" selection-start-line="24" selection-end-line="41" selection-end-column="58" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/steps/LandingSteps.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="348">
-          <caret line="33" column="47" lean-forward="true" selection-start-line="33" selection-start-column="47" selection-end-line="33" selection-end-column="47" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/features/signup/NewMemberSignUp.feature">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="9" column="44" lean-forward="true" selection-start-line="9" selection-start-column="44" selection-end-line="9" selection-end-column="44" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/common/Actionable.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="773">
-          <caret line="126" column="49" selection-start-line="126" selection-start-column="49" selection-end-line="126" selection-end-column="49" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/utility/members/Member.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="527">
-          <caret line="61" column="25" selection-start-line="61" selection-start-column="25" selection-end-line="61" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/pages/members_and_rosters/MembersAdvancedSearchPage.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="476">
-          <caret line="42" column="38" selection-start-line="42" selection-start-column="38" selection-end-line="42" selection-end-column="38" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/steps/MemberProfileSteps.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="527">
-          <caret line="45" selection-start-line="45" selection-end-line="45" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/pages/memberPortal/myAccount/ProfileDetailPage.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="524">
-          <caret line="57" column="22" selection-start-line="57" selection-start-column="22" selection-end-line="57" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/seleniumhq/selenium/selenium-remote-driver/3.12.0/selenium-remote-driver-3.12.0.jar!/org/openqa/selenium/remote/RemoteWebElement.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="192">
-          <caret line="141" selection-start-line="141" selection-end-line="141" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/features/members_and_rosters/member_search/SearchForMember.feature">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="11" column="23" selection-start-line="11" selection-start-column="23" selection-end-line="11" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/steps/LoginSteps.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-573">
-          <caret line="43" column="16" selection-start-line="43" selection-start-column="16" selection-end-line="43" selection-end-column="16" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/pages/memberPortal/payments/PaymentConfirmationPage.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="383">
-          <caret line="43" column="40" selection-start-line="43" selection-start-column="40" selection-end-line="43" selection-end-column="40" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#462#463#0" expanded="true" />
-            <element signature="e#516#517#0" expanded="true" />
-            <element signature="e#1131#1132#0" expanded="true" />
-            <element signature="e#1169#1170#0" expanded="true" />
-            <element signature="e#1245#1246#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/pages/memberPortal/myAccount/MyMembershipPage.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="425">
-          <caret line="45" selection-start-line="45" selection-end-line="45" />
-          <folding>
-            <element signature="e#1034#1035#0" expanded="true" />
-            <element signature="e#1064#1065#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/utility/payment/CreditCardInfo.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="476">
-          <caret line="38" selection-start-line="38" selection-end-line="38" />
-          <folding>
-            <element signature="e#904#905#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/steps/SignUpSteps.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1564">
-          <caret line="109" selection-start-line="109" selection-end-line="109" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/steps/NavigationSteps.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="680">
-          <caret line="52" column="19" selection-start-line="52" selection-start-column="19" selection-end-line="52" selection-end-column="19" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/steps/MembersAndRostersSteps.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1054">
-          <caret line="78" selection-start-line="78" selection-end-line="78" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/pages/memberPortal/payments/PendingPaymentsPage.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="646">
-          <caret line="47" column="35" selection-start-line="47" selection-start-column="35" selection-end-line="47" selection-end-column="35" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/steps/EventSteps.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="307">
-          <caret line="73" column="70" selection-start-line="73" selection-start-column="70" selection-end-line="73" selection-end-column="70" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/steps/TrackingSheetSteps.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="524">
-          <caret line="81" column="16" selection-start-line="81" selection-start-column="16" selection-end-line="81" selection-end-column="16" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/pages/memberPortal/myAccount/MembershipsPaymentsPage.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="722">
-          <caret line="107" column="28" selection-start-line="107" selection-start-column="28" selection-end-line="107" selection-end-column="28" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#2152#2153#0" expanded="true" />
-            <element signature="e#2246#2247#0" expanded="true" />
-            <element signature="e#2522#2523#0" expanded="true" />
-            <element signature="e#2553#2554#0" expanded="true" />
-            <element signature="e#2841#2842#0" expanded="true" />
-            <element signature="e#2875#2876#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/pages/memberPortal/refunds/RefundPurchasePage.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="31" column="44" selection-start-line="31" selection-start-column="44" selection-end-line="31" selection-end-column="44" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#1343#1344#0" expanded="true" />
-            <element signature="e#1381#1382#0" expanded="true" />
-            <element signature="e#1411#1412#0" expanded="true" />
-            <element signature="e#1453#1454#0" expanded="true" />
-            <element signature="e#1487#1488#0" expanded="true" />
-            <element signature="e#1527#1528#0" expanded="true" />
-            <element signature="e#1559#1560#0" expanded="true" />
-            <element signature="e#1597#1598#0" expanded="true" />
-            <element signature="e#1627#1628#0" expanded="true" />
-            <element signature="e#1667#1668#0" expanded="true" />
-            <element signature="e#1699#1700#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/pages/Pages.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="31" column="68" selection-start-line="31" selection-start-column="68" selection-end-line="31" selection-end-column="68" />
-          <folding>
-            <element signature="e#1148#1149#0" expanded="true" />
-            <element signature="e#1187#1188#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/pages/memberPortal/payments/PurchaseDetailPage.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="790">
-          <caret line="85" column="42" selection-start-line="85" selection-start-column="42" selection-end-line="85" selection-end-column="42" />
-          <folding>
-            <element signature="e#3132#3133#0" expanded="true" />
-            <element signature="e#3172#3173#0" expanded="true" />
-            <element signature="e#3204#3205#0" expanded="true" />
-            <element signature="e#3252#3253#0" expanded="true" />
-            <element signature="e#3292#3293#0" expanded="true" />
-            <element signature="e#3336#3337#0" expanded="true" />
-            <element signature="e#3372#3373#0" expanded="true" />
-            <element signature="e#3420#3421#0" expanded="true" />
-            <element signature="e#3460#3461#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/steps/PaymentsStep.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="783">
-          <caret line="392" column="16" selection-start-line="392" selection-start-column="16" selection-end-line="392" selection-end-column="16" />
-          <folding>
-            <element signature="method#PaymentsStep#0;class#PaymentsStep#0" />
-            <element signature="method#clickOnAddMemberPayment#0;class#PaymentsStep#0" />
-            <element signature="method#addThePaymentForTheFollowingUser#0;class#PaymentsStep#0" />
-            <element signature="method#afterAddingMyCreditCardInformationISubmitPayment#0;class#PaymentsStep#0" />
-            <element signature="method#iGetConfirmationPageAcceptingMyPayment#0;class#PaymentsStep#0" />
-            <element signature="method#afterAddingMyBankAccountInformationISubmitAllInformation#0;class#PaymentsStep#0" />
-            <element signature="method#afterSelectingOfficeCreditOptionISubmitAllInformation#0;class#PaymentsStep#0" />
-            <element signature="method#afterSelectingOfficeCreditOptionISubmitAllInformation#1;class#PaymentsStep#0" />
-            <element signature="method#manuallyAddingMyCreditCardInformationISubmitAllInformation#0;class#PaymentsStep#0" />
-            <element signature="method#noPaymentWasRegistered#0;class#PaymentsStep#0" />
-            <element signature="method#upgradingMembershipForUser#0;class#PaymentsStep#0" />
-            <element signature="method#purchaseDetailPageShowsCorrectPayment#0;class#PaymentsStep#0" />
-            <element signature="method#savePurchaseTime#0;class#PaymentsStep#0" />
-            <element signature="method#deletePayment#0;class#PaymentsStep#0" />
-            <element signature="method#afterAddingMyCheckInformationISubmitPayment#0;class#PaymentsStep#0" />
-            <element signature="method#refundPayment#0;class#PaymentsStep#0" />
-            <element signature="method#findPayment#0;class#PaymentsStep#0" />
-            <element signature="class#PaymentInfo#0;class#PaymentsStep#0" />
-            <element signature="method#PaymentInfo#0;class#PaymentInfo#0;class#PaymentsStep#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/utility/tss/TssWeekElements.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/utility/tss/TrackingSheetScoreCard.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/utility/tss/LineElement.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" column="12" selection-start-line="5" selection-start-column="12" selection-end-line="5" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/utility/payment/PurchaseDetail.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="493">
-          <caret line="57" column="5" selection-start-line="57" selection-start-column="5" selection-end-line="57" selection-end-column="5" />
-          <folding>
-            <element signature="method#PurchaseDetail#0;class#PurchaseDetail#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/utility/payment/Refund.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="442">
-          <caret line="39" column="5" selection-start-line="39" selection-start-column="5" selection-end-line="39" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/utility/Helpers.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="586">
-          <caret line="634" selection-start-line="634" selection-end-line="634" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state relative-caret-position="255">
+          <caret line="15" column="37" selection-start-line="15" selection-start-column="37" selection-end-line="15" selection-end-column="37" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/steps/MembershipPaymentsSteps.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="417">
-          <caret line="152" selection-start-line="152" selection-end-line="152" />
+        <state relative-caret-position="255">
+          <caret line="35" lean-forward="true" selection-start-line="35" selection-end-line="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/steps/CalendarSteps.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="20" column="13" selection-start-line="20" selection-start-column="13" selection-end-line="20" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/Features/league_support/volunteer_bulk_entry/VolunteerBulkEntry.feature">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="357">
+          <caret line="21" column="7" selection-start-line="21" selection-start-column="7" selection-end-line="21" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/Pages/volunteer/VolunteerBulkEntryPage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="759">
+          <caret line="126" column="34" selection-start-line="126" selection-start-column="34" selection-end-line="126" selection-end-column="34" />
           <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="method#MembershipPaymentsSteps#0;class#MembershipPaymentsSteps#0" />
-            <element signature="method#iPayHisMembershipUsingMyCreditCard#0;class#MembershipPaymentsSteps#0" />
+            <element signature="method#VolunteerBulkEntryPage#0;class#VolunteerBulkEntryPage#0" />
+            <element signature="method#getToastMessage#0;class#VolunteerBulkEntryPage#0" />
+            <element signature="e#3592#3892#0" />
+            <element signature="n#!!block;n#getToast#0;n#VolunteerBulkEntryPage#0" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/info/cukes/cucumber-core/1.2.5/cucumber-core-1.2.5.jar!/cucumber/runtime/Utils.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="33">
-          <caret line="39" selection-start-line="39" selection-end-line="39" />
+        <state>
+          <folding>
+            <element signature="e#0#4945#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/features/payments/MembershipChangePurchase.feature">
+    <entry file="file://$PROJECT_DIR$/src/test/java/steps/VolunteerBulkEntrySteps.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="18" column="32" selection-start-line="18" selection-start-column="4" selection-end-line="18" selection-end-column="32" />
+        <state relative-caret-position="191">
+          <caret line="56" column="17" lean-forward="true" selection-start-line="56" selection-start-column="17" selection-end-line="56" selection-end-column="17" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/features/payments/MembershipPayment.feature">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="14" column="33" selection-start-line="14" selection-start-column="33" selection-end-line="14" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/features/payments/MembershipPaymentDeletion.feature">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="12" column="43" lean-forward="true" selection-start-line="12" selection-start-column="43" selection-end-line="12" selection-end-column="43" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/features/refunds/MembershipRefund.feature">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="15" column="35" selection-start-line="15" selection-start-column="35" selection-end-line="15" selection-end-column="35" />
-        </state>
-      </provider>
-    </entry>
-  </component>
-  <component name="masterDetails">
-    <states>
-      <state key="ArtifactsStructureConfigurable.UI">
-        <settings>
-          <artifact-editor />
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.19655173" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-      <state key="Copyright.UI">
-        <settings>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.19655173" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-      <state key="FacetStructureConfigurable.UI">
-        <settings>
-          <last-edited>No facets are configured</last-edited>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.19655173" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-      <state key="GlobalLibrariesConfigurable.UI">
-        <settings>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.19655173" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-      <state key="JdkListConfigurable.UI">
-        <settings>
-          <last-edited>1.8</last-edited>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.19655173" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-      <state key="ModuleStructureConfigurable.UI">
-        <settings>
-          <last-edited>SatoriAutomation</last-edited>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.19655173" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-      <state key="ProjectJDKs.UI">
-        <settings>
-          <last-edited>1.8</last-edited>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-      <state key="ProjectLibrariesConfigurable.UI">
-        <settings>
-          <last-edited>Maven: com.beust:jcommander:1.72</last-edited>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.19655173" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-      <state key="ScopeChooserConfigurable.UI">
-        <settings>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.19655173" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-    </states>
   </component>
 </project>

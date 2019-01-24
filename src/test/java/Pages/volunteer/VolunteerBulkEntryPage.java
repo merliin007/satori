@@ -27,6 +27,24 @@ public class VolunteerBulkEntryPage {
     @FindBy(how = How.ID, using = "ctl00_ctl00_CPHolder_CPHolder_dtv_btnReset")
     private WebElement btnClear;
 
+    @FindBy(how = How.ID, using = "ctl00_ctl00_CPHolder_CPHolder_dtv_ddlVolunteerType")
+    private WebElement ddlVolunteerPosition;
+
+    @FindBy(how = How.ID, using = "ctl00_ctl00_CPHolder_CPHolder_dtv_ddlYears")
+    private WebElement ddlYear;
+
+    @FindBy(how = How.ID, using = "ctl00_ctl00_CPHolder_CPHolder_dtv_ddlLeagueType")
+    private WebElement ddlLeague;
+
+    @FindBy(how = How.ID, using = "ctl00_ctl00_CPHolder_CPHolder_dtv_ddlSeason")
+    private WebElement ddlSeason;
+
+    @FindBy(how = How.ID, using = "ctl00_ctl00_CPHolder_CPHolder_dtv_txtComments")
+    private WebElement txtComments;
+
+    @FindBy(how= How.ID, using ="ctl00_ctl00_CPHolder_CPHolder_btnAddNew")
+    private WebElement btnSave;
+
     private By toastrBy = By.id("toast-container");
 
     public WebElement getTxtAltaNumber() {
@@ -53,59 +71,16 @@ public class VolunteerBulkEntryPage {
         return _driver.findElement(getModalLocator());
     }
 
-    public WebElement getSaveModal() {
-        return _driver.findElement(By.id("assignVolunteer"))
-                .findElement(By.className("modal-content"))
-                .findElement(By.className("modal-footer"))
-                .findElement(By.id("ctl00_ctl00_CPHolder_CPHolder_dtv_btnAltaNumAdd"));
-    }
-
-    public WebElement getPositionModal() {
-        return _driver.findElement(By.id("assignVolunteer"))
-                .findElement(By.className("modal-content"))
-                .findElement(By.className("modal-body"))
-                .findElement(By.id("ctl00_ctl00_CPHolder_CPHolder_dtv_ddlVolunteerType"));
-    }
-
-    public WebElement getYearModal() {
-        return _driver.findElement(By.id("assignVolunteer"))
-                .findElement(By.className("modal-content"))
-                .findElement(By.className("modal-body"))
-                .findElement(getYearLocator());
-
-    }
-
     public By getYearLocator() {
         return By.id("ctl00_ctl00_CPHolder_CPHolder_dtv_ddlYears");
-    }
-
-    public WebElement getLeagueModal() {
-        return _driver.findElement(By.id("assignVolunteer"))
-                .findElement(By.className("modal-content"))
-                .findElement(By.className("modal-body"))
-                .findElement(getLeagueLocator());
     }
 
     public By getLeagueLocator() {
         return By.id("ctl00_ctl00_CPHolder_CPHolder_dtv_ddlLeagueType");
     }
 
-    public WebElement getSeasonModal() {
-        return _driver.findElement(By.id("assignVolunteer"))
-                .findElement(By.className("modal-content"))
-                .findElement(By.className("modal-body"))
-                .findElement(getSeasonLocator());
-    }
-
     public By getSeasonLocator() {
         return By.id("ctl00_ctl00_CPHolder_CPHolder_dtv_ddlSeason");
-    }
-
-    public WebElement getCommentsModal() {
-        return _driver.findElement(By.id("assignVolunteer"))
-                .findElement(By.className("modal-content"))
-                .findElement(By.className("modal-body"))
-                .findElement(getCommentsLocator());
     }
 
     public By getCommentsLocator() {
@@ -125,8 +100,31 @@ public class VolunteerBulkEntryPage {
         }
     }
 
-    public WebElement getToast(By locator){
+    public WebElement getToast(By locator) {
         return _driver.findElement(locator);
     }
 
+    public WebElement getDdlVolunteerPosition() {
+        return ddlVolunteerPosition;
+    }
+
+    public WebElement getDdlYear() {
+        return ddlYear;
+    }
+
+    public WebElement getDdlLeague() {
+        return ddlLeague;
+    }
+
+    public WebElement getDdlSeason() {
+        return ddlSeason;
+    }
+
+    public WebElement getTxtComments() {
+        return txtComments;
+    }
+
+    public WebElement getBtnSave() {
+        return btnSave;
+    }
 }
