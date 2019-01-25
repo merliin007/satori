@@ -19,7 +19,7 @@ public class NewRosterWizardPage {
     private By lblLocator = new By.ById("ctl00_ctl00_CPHolder_CPHolder_memberSearchPopup_lblMessage");
 
     @FindBy(how = How.ID, using = "ctl00_ctl00_CPHolder_CPHolder_ct999_dtv_lblAcknowledgement")
-    private WebElement chkAcnowledgment;
+    private WebElement chkAcknowledgment;
 
     @FindBy(how = How.ID, using = "ctl00_ctl00_CPHolder_CPHolder_ct999_dtv_btnSearchPlayers")
     private WebElement btnAddPlayer;
@@ -59,6 +59,9 @@ public class NewRosterWizardPage {
     @FindBy(how = How.ID, using = "ctl00_ctl00_CPHolder_CPHolder_ct999_dtv_ddlLevelFlight")
     private WebElement ddlLevelFlight;
 
+    @FindBy(how = How.ID, using = "warning-popup")
+    private WebElement warningContainer;
+
     private By divBusyPopupLocator = new By.ById("ctl00_ctl00_CPHolder_CPHolder_wizardIsBusyIndicator_divBusyPopup");
 
     public NewRosterWizardPage(WebDriver driver) {
@@ -66,9 +69,10 @@ public class NewRosterWizardPage {
         _driver = driver;
     }
 
-    public WebElement getChkAcnowledgment() {
-        return chkAcnowledgment;
+    public WebElement getChkAcknowledgment() {
+        //return chkAcknowledgment;
         //return _driver.findElement(By.id("ctl00_ctl00_CPHolder_CPHolder_ct999_dtv_cbAcknowledgement"));
+        return _driver.findElement(By.className("noColor-CheckBox")).findElement(By.tagName("label"));
     }
 
     public WebElement getBtnAddPlayer() {
@@ -199,5 +203,17 @@ public class NewRosterWizardPage {
 
     public WebElement getBtnDesignee() {
         return btnDesignee;
+    }
+
+    public WebElement getWarningContainer() {
+        return warningContainer;
+    }
+
+    public WebElement getWarningModal(){
+        return warningContainer.findElement(By.className("modal-content"));
+    }
+
+    public WebElement warningModalContinue(){
+        return getWarningModal().findElement(By.className("modal-footer")).findElement(By.id("ctl00_ctl00_CPHolder_CPHolder_warningsPopup_btnContinue"));
     }
 }

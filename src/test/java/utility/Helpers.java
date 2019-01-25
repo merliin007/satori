@@ -211,7 +211,7 @@ public class Helpers implements Actionable {
         try {
 
             List<WebElement> list = page.getPopOverLocatorList();
-            Click(list.get(position));
+            JSClick(list.get(position));
             List<WebElement> subElementCommands = page.getPopOverCommands(position);
 
             JSScrollToView(list.get(position));
@@ -309,12 +309,11 @@ public class Helpers implements Actionable {
 
     @Override
     public int searchForSuitableLeagueTemplate(LeagueComponents.LeagueDescription league, List<WebElement> tblResults) {
-        int i = 1;
-        for (; i < tblResults.size(); i++) {
+        for (int i = 1; i < tblResults.size(); i++) {
             List<WebElement> tblCel = tblResults.get(i).findElements(By.tagName("td"));
             if (league.getYear().equals(tblCel.get(1).getText()) &&
                     league.getSeason().toLowerCase().equals(tblCel.get(2).getText().toLowerCase()) &&
-                    league.getLeagueType().toLowerCase().contains(tblCel.get(3).getText().toLowerCase())) {
+                    tblCel.get(3).getText().toLowerCase().contains(league.getLeagueType().toLowerCase())) {
                 return i;
             }
         }
@@ -516,6 +515,13 @@ public class Helpers implements Actionable {
                 .ignoring(NoSuchElementException.class)
                 .until(ExpectedConditions.invisibilityOfElementLocated(locator));
     }
+    public void waitUntilElementDisappears(WebElement element) throws Exception {
+        new FluentWait<>(_driver)
+                .withTimeout(Duration.ofSeconds(6))
+                .pollingEvery(Duration.ofMillis(100L))
+                .ignoring(NoSuchElementException.class)
+                .until(ExpectedConditions.invisibilityOf(element));
+    }
 
     @Override
     public void WaitUntilPresenceOfElement(By locator) throws Exception {
@@ -642,7 +648,7 @@ public class Helpers implements Actionable {
     }
 
     @Override
-    public boolean IsMembershipNotPayed(WebElement row){
+    public boolean IsMembershipNotPayed(WebElement row) {
         return (row.findElements(By.tagName("td")).get(19).getText().contains("Unpaid"));
 
     }

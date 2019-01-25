@@ -2,76 +2,90 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0eaf1139-d41e-4752-9f15-6749932a46ba" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_beust_jcommander_1_72.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_code_findbugs_jsr305_1_3_9.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_code_gson_gson_2_8_2.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_errorprone_error_prone_annotations_2_1_3.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_guava_guava_23_6_jre.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_j2objc_j2objc_annotations_1_1.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_squareup_okhttp3_okhttp_3_9_1.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_squareup_okio_okio_1_13_0.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__commons_codec_commons_codec_1_10.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__commons_io_commons_io_2_6.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__commons_logging_commons_logging_1_2.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__info_cukes_cucumber_core_1_2_5.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__info_cukes_cucumber_html_0_2_3.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__info_cukes_cucumber_java_1_2_5.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__info_cukes_cucumber_junit_1_2_5.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__info_cukes_cucumber_jvm_deps_1_0_5.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__info_cukes_cucumber_picocontainer_1_2_5.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__info_cukes_cucumber_testng_1_2_5.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__info_cukes_gherkin_2_12_2.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__junit_junit_4_12.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__net_bytebuddy_byte_buddy_1_8_3.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_commons_commons_exec_1_3.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_extras_beanshell_bsh_2_0b6.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_httpcomponents_httpclient_4_5_3.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_httpcomponents_httpcore_4_4_6.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_checkerframework_checker_compat_qual_2_0_0.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_codehaus_mojo_animal_sniffer_annotations_1_14.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_hamcrest_hamcrest_core_1_3.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_picocontainer_picocontainer_2_15.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_seleniumhq_selenium_selenium_api_3_12_0.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_seleniumhq_selenium_selenium_chrome_driver_3_12_0.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_seleniumhq_selenium_selenium_edge_driver_3_12_0.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_seleniumhq_selenium_selenium_firefox_driver_3_12_0.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_seleniumhq_selenium_selenium_ie_driver_3_12_0.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_seleniumhq_selenium_selenium_java_3_12_0.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_seleniumhq_selenium_selenium_opera_driver_3_12_0.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_seleniumhq_selenium_selenium_remote_driver_3_12_0.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_seleniumhq_selenium_selenium_safari_driver_3_12_0.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_seleniumhq_selenium_selenium_support_3_12_0.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_testng_testng_6_14_3.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SatoriAutomation.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/Features/league_support/volunteer_bulk_entry/VolunteerBulkEntry.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Features/league_support/volunteer_bulk_entry/VolunteerBulkEntry.feature" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/Pages/volunteer/VolunteerBulkEntryPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Pages/volunteer/VolunteerBulkEntryPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/Steps/AvailabilitySteps.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/steps/AvailabilitySteps.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/Steps/CalendarSteps.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/steps/CalendarSteps.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/Steps/EventSteps.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/steps/EventSteps.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/Steps/JobSteps.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/steps/JobSteps.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/Steps/LandingSteps.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/steps/LandingSteps.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/Steps/LeaderPreferencesSteps.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/steps/LeaderPreferencesSteps.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/Steps/LeagueSteps.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/steps/LeagueSteps.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/Steps/LeagueTemplateSteps.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/steps/LeagueTemplateSteps.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/Steps/LoginSteps.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/steps/LoginSteps.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/Steps/MemberAwardsSteps.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/steps/MemberAwardsSteps.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/Steps/MemberCalendarSteps.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/steps/MemberCalendarSteps.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/Steps/MemberPreferencesSteps.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/steps/MemberPreferencesSteps.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/Steps/MemberProfileSteps.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/steps/MemberProfileSteps.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/Steps/MembersAndRostersSteps.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/steps/MembersAndRostersSteps.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/Steps/MembershipPaymentsSteps.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/steps/MembershipPaymentsSteps.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/Steps/NavigationSteps.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/steps/NavigationSteps.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/Steps/PaymentsStep.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/steps/PaymentsStep.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/Steps/RosterSteps.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/steps/RosterSteps.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/Steps/ScheduleLineupSteps.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/steps/ScheduleLineupSteps.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/Steps/SignUpSteps.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/steps/SignUpSteps.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/Steps/TrackingSheetSteps.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/steps/TrackingSheetSteps.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/Steps/VolunteerBulkEntrySteps.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/steps/VolunteerBulkEntrySteps.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Features/player_portal/my_rosters/NewRoster.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Features/player_portal/my_rosters/NewRoster.feature" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Pages/DefunctOldPages/AddPaymentPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pages/DefunctOldPages/AddPaymentPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Pages/DefunctOldPages/LoginPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pages/DefunctOldPages/LoginPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Pages/DefunctOldPages/MembershipAndPayments.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pages/DefunctOldPages/MembershipAndPayments.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Pages/DefunctOldPages/MyProfilePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pages/DefunctOldPages/MyProfilePage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Pages/DefunctOldPages/PaymentDetailsPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pages/DefunctOldPages/PaymentDetailsPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Pages/DefunctOldPages/PaymentsErrorPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pages/DefunctOldPages/PaymentsErrorPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Pages/DefunctOldPages/RefundPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pages/DefunctOldPages/RefundPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Pages/Pages.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pages/Pages.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Pages/calendars/CalendarsPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pages/calendars/CalendarsPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Pages/calendars/NewCalendarPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pages/calendars/NewCalendarPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Pages/decision/DecisionPlayerPortal.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pages/decision/DecisionPlayerPortal.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Pages/decision/DecisionPortal.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pages/decision/DecisionPortal.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Pages/documents/RosterInstructions_SelectionPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pages/documents/RosterInstructions_SelectionPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Pages/events/EventsPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pages/events/EventsPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Pages/events/NewEventsPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pages/events/NewEventsPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Pages/home/LandingPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pages/home/LandingPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Pages/home/LoginPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pages/home/LoginPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Pages/home/MainPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pages/home/MainPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Pages/jobs/AssignToDivisionPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pages/jobs/AssignToDivisionPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Pages/jobs/CalculateAwardsPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pages/jobs/CalculateAwardsPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Pages/jobs/DropDuplicatesPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pages/jobs/DropDuplicatesPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Pages/jobs/JobPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pages/jobs/JobPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Pages/jobs/JobsListPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pages/jobs/JobsListPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Pages/jobs/PlayoffDrawPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pages/jobs/PlayoffDrawPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Pages/jobs/ScheduleLeaguePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pages/jobs/ScheduleLeaguePage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Pages/leagues/LeagueListPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pages/leagues/LeagueListPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Pages/leagues/LeagueNewEditPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pages/leagues/LeagueNewEditPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Pages/leagues/LeagueTemplateDetailPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pages/leagues/LeagueTemplateDetailPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Pages/leagues/LeagueTemplateSelectionPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pages/leagues/LeagueTemplateSelectionPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Pages/leagues/LeagueTemplatesPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pages/leagues/LeagueTemplatesPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Pages/leagues/LeagueVP_SelectionPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pages/leagues/LeagueVP_SelectionPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Pages/memberPortal/myAccount/MemberAwardsPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pages/memberPortal/myAccount/MemberAwardsPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Pages/memberPortal/myAccount/MemberPreferencesPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pages/memberPortal/myAccount/MemberPreferencesPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Pages/memberPortal/myAccount/MemberProfile.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pages/memberPortal/myAccount/MemberProfile.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Pages/memberPortal/myAccount/MembershipsPaymentsPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pages/memberPortal/myAccount/MembershipsPaymentsPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Pages/memberPortal/myAccount/MyMembershipPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pages/memberPortal/myAccount/MyMembershipPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Pages/memberPortal/myAccount/PersonAwardDetailPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pages/memberPortal/myAccount/PersonAwardDetailPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Pages/memberPortal/myAccount/ProfileDetailPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pages/memberPortal/myAccount/ProfileDetailPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Pages/memberPortal/myActiveTeams/AvailabilityPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pages/memberPortal/myActiveTeams/AvailabilityPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Pages/memberPortal/myActiveTeams/CalendarPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pages/memberPortal/myActiveTeams/CalendarPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Pages/memberPortal/myActiveTeams/LeaderPreferencesPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pages/memberPortal/myActiveTeams/LeaderPreferencesPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Pages/memberPortal/myActiveTeams/LineupPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pages/memberPortal/myActiveTeams/LineupPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Pages/memberPortal/myActiveTeams/ScheduleLineupPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pages/memberPortal/myActiveTeams/ScheduleLineupPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Pages/memberPortal/payments/PaymentConfirmationPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pages/memberPortal/payments/PaymentConfirmationPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Pages/memberPortal/payments/PendingPaymentsPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pages/memberPortal/payments/PendingPaymentsPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Pages/memberPortal/payments/PurchaseDetailPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pages/memberPortal/payments/PurchaseDetailPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Pages/memberPortal/refunds/RefundPurchasePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pages/memberPortal/refunds/RefundPurchasePage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Pages/members_and_rosters/MembersAdvancedSearchPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pages/members_and_rosters/MembersAdvancedSearchPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Pages/myRosters/MyRostersPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pages/myRosters/MyRostersPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Pages/myRosters/NewRosterPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pages/myRosters/NewRosterPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Pages/myRosters/NewRosterWizardPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pages/myRosters/NewRosterWizardPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Pages/singup/NewMemberSignUpPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pages/singup/NewMemberSignUpPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Pages/singup/RegisterPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pages/singup/RegisterPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Pages/singup/SingUpCommon.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pages/singup/SingUpCommon.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Pages/tss/TrackingSheetPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pages/tss/TrackingSheetPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Pages/tss/TrackingSheetScorecardDetailPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pages/tss/TrackingSheetScorecardDetailPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Pages/volunteer/VolunteerBulkEntryPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pages/volunteer/VolunteerBulkEntryPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Runner/TestRunner.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/runner/TestRunner.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Utility/CaptainsRetriever.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/utility/CaptainsRetriever.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Utility/Helpers.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/utility/Helpers.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Utility/Log.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/utility/Log.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Utility/RandomString.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/utility/RandomString.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Utility/calendar/Calendar.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/utility/calendar/Calendar.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Utility/calendar/CalendarEvent.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/utility/calendar/CalendarEvent.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Utility/credentials/MemberCredentials.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/utility/credentials/MemberCredentials.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Utility/event/Event.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/utility/event/Event.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Utility/job/Job.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/utility/job/Job.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Utility/league/LeagueComponents.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/utility/league/LeagueComponents.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Utility/members/Member.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/utility/members/Member.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Utility/newRoster/Facility.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/utility/newRoster/Facility.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Utility/newRoster/PlayerRoster.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/utility/newRoster/PlayerRoster.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Utility/payment/BankAccountInfo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/utility/payment/BankAccountInfo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Utility/payment/CheckInfo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/utility/payment/CheckInfo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Utility/payment/CreditCardInfo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/utility/payment/CreditCardInfo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Utility/payment/PaymentLoggedInfo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/utility/payment/PaymentLoggedInfo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Utility/payment/PurchaseDetail.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/utility/payment/PurchaseDetail.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Utility/payment/Refund.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/utility/payment/Refund.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Utility/tss/LineElement.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/utility/tss/LineElement.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Utility/tss/TrackingSheetScoreCard.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/utility/tss/TrackingSheetScoreCard.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Utility/tss/TssWeekElements.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/utility/tss/TssWeekElements.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Utility/volunteer/Position.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/utility/volunteer/Position.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/steps/RosterSteps.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/steps/RosterSteps.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -80,36 +94,51 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="FavoritesManager">
+    <favorites_list name="SatoriAutomation" />
+  </component>
   <component name="FileEditorManager">
     <leaf>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/Features/league_support/volunteer_bulk_entry/VolunteerBulkEntry.feature">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="357">
-              <caret line="21" column="7" selection-start-line="21" selection-start-column="7" selection-end-line="21" selection-end-column="7" />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/test/java/steps/VolunteerBulkEntrySteps.java">
+        <entry file="file://$PROJECT_DIR$/src/test/java/Features/player_portal/my_rosters/NewRoster.feature">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="191">
-              <caret line="56" column="17" lean-forward="true" selection-start-line="56" selection-start-column="17" selection-end-line="56" selection-end-column="17" />
+            <state relative-caret-position="340">
+              <caret line="20" column="47" lean-forward="true" selection-start-line="20" selection-start-column="47" selection-end-line="20" selection-end-column="47" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/Pages/volunteer/VolunteerBulkEntryPage.java">
+        <entry file="file://$PROJECT_DIR$/src/test/java/steps/RosterSteps.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="759">
-              <caret line="126" column="34" selection-start-line="126" selection-start-column="34" selection-end-line="126" selection-end-column="34" />
+            <state relative-caret-position="268">
+              <caret line="227" column="46" selection-start-line="227" selection-start-column="46" selection-end-line="227" selection-end-column="46" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/utility/Helpers.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="157">
+              <caret line="214" column="32" selection-start-line="214" selection-start-column="32" selection-end-line="214" selection-end-column="32" />
               <folding>
-                <element signature="method#VolunteerBulkEntryPage#0;class#VolunteerBulkEntryPage#0" />
-                <element signature="method#getToastMessage#0;class#VolunteerBulkEntryPage#0" />
-                <element signature="e#3592#3892#0" />
-                <element signature="n#!!block;n#getToast#0;n#VolunteerBulkEntryPage#0" />
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/pages/myRosters/NewRosterWizardPage.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="421">
+              <caret line="215" column="42" selection-start-line="215" selection-start-column="22" selection-end-line="215" selection-end-column="42" />
+              <folding>
+                <element signature="e#7766#7767#0" expanded="true" />
+                <element signature="e#7805#7806#0" expanded="true" />
+                <element signature="e#7851#7852#0" expanded="true" />
+                <element signature="e#7896#7897#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -120,6 +149,9 @@
   <component name="FindInProjectRecents">
     <findStrings>
       <find>comment</find>
+      <find>ran</find>
+      <find>chk</find>
+      <find>ack</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -131,6 +163,11 @@
         <option value="$PROJECT_DIR$/src/test/java/Pages/volunteer/VolunteerBulkEntryPage.java" />
         <option value="$PROJECT_DIR$/src/test/java/Steps/VolunteerBulkEntrySteps.java" />
         <option value="$PROJECT_DIR$/src/test/java/Features/league_support/volunteer_bulk_entry/VolunteerBulkEntry.feature" />
+        <option value="$PROJECT_DIR$/src/test/java/steps/VolunteerBulkEntrySteps.java" />
+        <option value="$PROJECT_DIR$/src/test/java/Features/player_portal/my_rosters/NewRoster.feature" />
+        <option value="$PROJECT_DIR$/src/test/java/pages/myRosters/NewRosterWizardPage.java" />
+        <option value="$PROJECT_DIR$/src/test/java/utility/Helpers.java" />
+        <option value="$PROJECT_DIR$/src/test/java/steps/RosterSteps.java" />
       </list>
     </option>
   </component>
@@ -196,8 +233,15 @@
               <item name="test" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="Features" type="462c0819:PsiDirectoryNode" />
-              <item name="league_support" type="462c0819:PsiDirectoryNode" />
-              <item name="volunteer_bulk_entry" type="462c0819:PsiDirectoryNode" />
+              <item name="my_rosters" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="SatoriAutomation" type="b2602c69:ProjectViewProjectNode" />
+              <item name="satori" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="runner" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="SatoriAutomation" type="b2602c69:ProjectViewProjectNode" />
@@ -215,7 +259,10 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1548353115680" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1548370851438" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.0" />
     <property name="settings.editor.selected.configurable" value="preferences.keymap" />
   </component>
   <component name="RunDashboard">
@@ -230,7 +277,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Cucumber java.Feature: VolunteerBulkEntry">
+  <component name="RunManager" selected="Cucumber java.New Roster Wizard">
     <configuration name="Feature: NewMemberSignUp" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
       <option name="CUCUMBER_CORE_VERSION" value="1.2" />
       <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/java/Features/signup/NewMemberSignUp.feature" />
@@ -269,7 +316,27 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="New Roster Wizard" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java">
+      <option name="CUCUMBER_CORE_VERSION" value="1.2" />
+      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/java/Features/player_portal/my_rosters/NewRoster.feature" />
+      <option name="GLUE" value="common steps" />
+      <option name="MAIN_CLASS_NAME" value="cucumber.api.cli.Main" />
+      <module name="SatoriAutomation" />
+      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvmSMFormatter --monochrome" />
+      <option name="SUGGESTED_NAME" value="Feature: VolunteerBulkEntry" />
+      <option name="VM_PARAMETERS" value="-Dbrowser=chrome -Denvironment=qa" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="cucumber.api.cli.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <list>
+      <item itemvalue="Cucumber java.New Roster Wizard" />
       <item itemvalue="Cucumber java.Feature: NewMemberSignUp" />
       <item itemvalue="Cucumber java.Feature: VolunteerBulkEntry" />
     </list>
@@ -294,38 +361,52 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="Feature__NewMemberSignUp - 2019.01.24 at 11h 12m 56s.xml">
-      <configuration name="Feature: NewMemberSignUp" configurationId="CucumberJavaRunConfigurationType" />
+    <history-entry file="New_Roster_Wizard - 2019.01.24 at 16h 22m 05s.xml">
+      <configuration name="New Roster Wizard" configurationId="CucumberJavaRunConfigurationType" />
     </history-entry>
-    <history-entry file="Feature__NewMemberSignUp - 2019.01.24 at 11h 14m 11s.xml">
-      <configuration name="Feature: NewMemberSignUp" configurationId="CucumberJavaRunConfigurationType" />
+    <history-entry file="New_Roster_Wizard - 2019.01.24 at 16h 23m 14s.xml">
+      <configuration name="New Roster Wizard" configurationId="CucumberJavaRunConfigurationType" />
     </history-entry>
-    <history-entry file="Feature__VolunteerBulkEntry - 2019.01.24 at 11h 38m 24s.xml">
-      <configuration name="Feature: VolunteerBulkEntry" configurationId="CucumberJavaRunConfigurationType" />
+    <history-entry file="New_Roster_Wizard - 2019.01.24 at 16h 24m 36s.xml">
+      <configuration name="New Roster Wizard" configurationId="CucumberJavaRunConfigurationType" />
     </history-entry>
-    <history-entry file="Feature__VolunteerBulkEntry - 2019.01.24 at 11h 39m 15s.xml">
-      <configuration name="Feature: VolunteerBulkEntry" configurationId="CucumberJavaRunConfigurationType" />
+    <history-entry file="New_Roster_Wizard - 2019.01.24 at 16h 26m 04s.xml">
+      <configuration name="New Roster Wizard" configurationId="CucumberJavaRunConfigurationType" />
     </history-entry>
-    <history-entry file="Feature__VolunteerBulkEntry - 2019.01.24 at 12h 00m 07s.xml">
-      <configuration name="Feature: VolunteerBulkEntry" configurationId="CucumberJavaRunConfigurationType" />
+    <history-entry file="New_Roster_Wizard - 2019.01.24 at 16h 28m 43s.xml">
+      <configuration name="New Roster Wizard" configurationId="CucumberJavaRunConfigurationType" />
+    </history-entry>
+    <history-entry file="New_Roster_Wizard - 2019.01.24 at 16h 29m 42s.xml">
+      <configuration name="New Roster Wizard" configurationId="CucumberJavaRunConfigurationType" />
+    </history-entry>
+    <history-entry file="New_Roster_Wizard - 2019.01.24 at 16h 30m 30s.xml">
+      <configuration name="New Roster Wizard" configurationId="CucumberJavaRunConfigurationType" />
+    </history-entry>
+    <history-entry file="New_Roster_Wizard - 2019.01.24 at 16h 31m 58s.xml">
+      <configuration name="New Roster Wizard" configurationId="CucumberJavaRunConfigurationType" />
+    </history-entry>
+    <history-entry file="New_Roster_Wizard - 2019.01.24 at 16h 33m 26s.xml">
+      <configuration name="New Roster Wizard" configurationId="CucumberJavaRunConfigurationType" />
+    </history-entry>
+    <history-entry file="New_Roster_Wizard - 2019.01.24 at 16h 35m 51s.xml">
+      <configuration name="New Roster Wizard" configurationId="CucumberJavaRunConfigurationType" />
     </history-entry>
   </component>
   <component name="ToolWindowManager">
     <frame x="1912" y="-8" width="1936" height="1096" extended-state="6" />
-    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.18017058" />
-      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49893618" visible="true" weight="0.18017058" />
+      <window_info id="Structure" order="1" sideWeight="0.50087565" side_tool="true" weight="0.18017058" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
       <window_info id="UI Designer" order="4" />
       <window_info id="Capture Tool" order="5" />
-      <window_info id="Favorites" order="6" side_tool="true" />
+      <window_info id="Favorites" order="6" sideWeight="0.5010638" side_tool="true" visible="true" weight="0.18017058" />
       <window_info anchor="bottom" id="Messages" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" />
-      <window_info active="true" anchor="bottom" id="Debug" order="3" visible="true" weight="0.39255318" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.32978722" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.39255318" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -346,25 +427,59 @@
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/test/java/steps/VolunteerBulkEntrySteps.java</url>
-          <line>33</line>
+          <url>file://$PROJECT_DIR$/src/test/java/steps/RosterSteps.java</url>
+          <line>228</line>
           <properties />
-          <option name="timeStamp" value="2" />
+          <option name="timeStamp" value="47" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/test/java/steps/VolunteerBulkEntrySteps.java</url>
-          <line>46</line>
+          <url>file://$PROJECT_DIR$/src/test/java/steps/RosterSteps.java</url>
+          <line>101</line>
           <properties />
-          <option name="timeStamp" value="3" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/test/java/steps/VolunteerBulkEntrySteps.java</url>
-          <line>71</line>
-          <properties />
-          <option name="timeStamp" value="4" />
+          <option name="timeStamp" value="51" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
+    <watches-manager>
+      <configuration name="CucumberJavaRunConfigurationType">
+        <watch expression="tblResults.get(8).findElements(By.tagName(&quot;td&quot;)).get(3).getText()" language="JAVA" />
+        <watch expression="tblCel.get(3).getText()" language="JAVA" />
+      </configuration>
+    </watches-manager>
+  </component>
+  <component name="debuggerHistoryManager">
+    <expressions id="watch">
+      <expression>
+        <expression-string>tblCel.get(3).getText()</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>tblResults.get(8).findElements(By.tagName(&quot;td&quot;)).get(3).getText()</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>tblResults.get(8).findElements(By.tagName(&quot;td&quot;)).get(1).getText()</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>tblResults.get(8).findElements(By.tagName(&quot;td&quot;))</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>tblResults.get(i).findElements(By.tagName(&quot;td&quot;))</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>tblResults.get(i).findElements(By.tagName(&quot;td&quot;)</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+    </expressions>
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/test/java/Features/payments/MembershipChangePurchase.feature">
@@ -388,6 +503,13 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/steps/VolunteerBulkEntrySteps.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="514">
+          <caret line="83" column="28" lean-forward="true" selection-start-line="83" selection-start-column="28" selection-end-line="83" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/Features/league_support/volunteer_bulk_entry/VolunteerBulkEntry.feature">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="357">
@@ -395,7 +517,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/Pages/volunteer/VolunteerBulkEntryPage.java">
+    <entry file="file://$PROJECT_DIR$/src/test/java/pages/volunteer/VolunteerBulkEntryPage.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="759">
           <caret line="126" column="34" selection-start-line="126" selection-start-column="34" selection-end-line="126" selection-end-column="34" />
@@ -408,21 +530,156 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/runner/TestRunner.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/utility/CaptainsRetriever.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="9" column="16" selection-start-line="9" selection-start-column="16" selection-end-line="9" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/info/cukes/cucumber-core/1.2.5/cucumber-core-1.2.5.jar!/cucumber/runtime/Utils.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state>
+        <state relative-caret-position="182">
+          <caret line="51" selection-start-line="51" selection-end-line="51" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/pages/myRosters/NewRosterWizardPage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="421">
+          <caret line="215" column="42" selection-start-line="215" selection-start-column="22" selection-end-line="215" selection-end-column="42" />
           <folding>
-            <element signature="e#0#4945#0" expanded="true" />
+            <element signature="e#7766#7767#0" expanded="true" />
+            <element signature="e#7805#7806#0" expanded="true" />
+            <element signature="e#7851#7852#0" expanded="true" />
+            <element signature="e#7896#7897#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/steps/VolunteerBulkEntrySteps.java">
+    <entry file="file://$PROJECT_DIR$/src/test/java/pages/Pages.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="191">
-          <caret line="56" column="17" lean-forward="true" selection-start-line="56" selection-start-column="17" selection-end-line="56" selection-end-column="17" />
+        <state relative-caret-position="459">
+          <caret line="38" selection-start-line="38" selection-end-line="38" />
+          <folding>
+            <element signature="e#1187#1188#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/utility/Helpers.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="157">
+          <caret line="214" column="32" selection-start-line="214" selection-start-column="32" selection-end-line="214" selection-end-column="32" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/Base/BaseUtil.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="27" selection-start-line="27" selection-end-line="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/steps/RosterSteps.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="268">
+          <caret line="227" column="46" selection-start-line="227" selection-start-column="46" selection-end-line="227" selection-end-column="46" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/Features/player_portal/my_rosters/NewRoster.feature">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="340">
+          <caret line="20" column="47" lean-forward="true" selection-start-line="20" selection-start-column="47" selection-end-line="20" selection-end-column="47" />
+        </state>
+      </provider>
+    </entry>
+  </component>
+  <component name="masterDetails">
+    <states>
+      <state key="ArtifactsStructureConfigurable.UI">
+        <settings>
+          <artifact-editor />
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="FacetStructureConfigurable.UI">
+        <settings>
+          <last-edited>No facets are configured</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="GlobalLibrariesConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="JdkListConfigurable.UI">
+        <settings>
+          <last-edited>1.8</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ModuleStructureConfigurable.UI">
+        <settings>
+          <last-edited>SatoriAutomation</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+                <option value="0.6" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectLibrariesConfigurable.UI">
+        <settings>
+          <last-edited>Maven: com.beust:jcommander:1.72</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+    </states>
   </component>
 </project>

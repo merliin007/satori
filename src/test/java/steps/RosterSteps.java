@@ -12,6 +12,7 @@ import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
+import pages.memberPortal.payments.PendingPaymentsPage;
 import pages.myRosters.MyRostersPage;
 import pages.myRosters.NewRosterPage;
 import pages.myRosters.NewRosterWizardPage;
@@ -20,6 +21,7 @@ import utility.Log;
 import utility.league.LeagueComponents;
 import utility.newRoster.Facility;
 import utility.newRoster.PlayerRoster;
+import utility.payment.CreditCardInfo;
 
 import java.util.List;
 
@@ -55,6 +57,11 @@ public class RosterSteps {
             I.selectOptionFromCell(index, "select", newRosterPage);
             I.waitUntilElementIsVisible(newRosterPage.getNewRosterModal());
             I.Click(newRosterPage.modalCommands("New"));
+
+            newRosterWizardPage = new NewRosterWizardPage(base.driver);
+            I.waitUntilInvisibilityOf(newRosterWizardPage.getWizardObscurer());
+            I.waitUntilElementIsClickable(newRosterWizardPage.getChkAcknowledgment());
+
         } catch (Exception e) {
             base.GrabScreenShot();
             Log.error(e.getMessage());
@@ -64,16 +71,17 @@ public class RosterSteps {
     }
 
     @When("^I enter the following players on Players tab$")
-    public void iEnterTheFollowingPlayersOnPlayersTab(DataTable table) {
+    public void iEnterTheFollowingPlayersOnPlayersTab(DataTable table) throws Exception {
+//        Thread.sleep(2000L);
         try {
-            //Thread.sleep(2000L);
-            newRosterWizardPage = new NewRosterWizardPage(base.driver);
-            I.waitUntilInvisibilityOf(newRosterWizardPage.getWizardObscurer());
-            I.CheckCheckBox(newRosterWizardPage.getChkAcnowledgment());
-            I.Click(newRosterWizardPage.getBtnNext());
-            I.waitUntilElementIsVisible(newRosterWizardPage.getBtnAddPlayer());
+            if (newRosterWizardPage == null)
+                newRosterWizardPage = new NewRosterWizardPage(base.driver);
 
-            I.CheckCheckBox(newRosterWizardPage.getChkAcnowledgment());
+            I.CheckCheckBox(newRosterWizardPage.getChkAcknowledgment());
+            I.Click(newRosterWizardPage.getBtnNext());
+
+            Thread.sleep(2000L);
+            I.waitUntilElementIsClickable(newRosterWizardPage.getBtnAddPlayer());
             I.Click(newRosterWizardPage.getBtnAddPlayer());
             I.waitUntilElementIsVisible(newRosterWizardPage.getAddPlayerModal());
             I.waitUntilElementIsClickable(newRosterWizardPage.getAddPlayerModalElement("txtalta"));
@@ -93,41 +101,29 @@ public class RosterSteps {
             }
             I.Click(newRosterWizardPage.getAddPlayerModalElement("bntclose"));
             I.fluentWaitUntilElementDisappears(newRosterWizardPage.getPlayerModalLocator());
-            I.waitUntilElementIsVisible(newRosterWizardPage.getBtnNext());
+            I.CheckCheckBox(newRosterWizardPage.getChkAcknowledgment());
+            I.waitUntilElementIsClickable(newRosterWizardPage.getBtnNext());
             I.Click(newRosterWizardPage.getBtnNext());
-            iSelectTheFollowingCaptains(playerRosterList);
         } catch (Exception e) {
             base.GrabScreenShot();
             Log.error(e.getMessage());
             fail();
+        } finally {
+            if (newRosterWizardPage.getWarningModal().isDisplayed())
+                I.Click(newRosterWizardPage.warningModalContinue());
         }
     }
 
-    @And("^I select the following captains$")
-    public void iSelectTheFollowingCaptains(List<PlayerRoster> players) {
+    @And("^I select the captains$")
+    public void iSelectTheCaptains() {
         try {
             Log.info("Selecting captains");
-            List<String> captains = I.getCaptains.findCaptains(players);
+            List<String> captains = I.getCaptains.findCaptains(playerRosterList);
             I.SelectValue(newRosterWizardPage.getDdlCaptain(), captains.get(0));
             I.SelectValue(newRosterWizardPage.getDdlCoCaptain(), captains.get(1));
 
             I.waitUntilElementIsClickable(newRosterWizardPage.getBtnNext());
             I.Click(newRosterWizardPage.getBtnNext());
-//            iSelectTheFollowingDesignee(null);
-        } catch (Exception e) {
-            base.GrabScreenShot();
-            Log.error(e.getMessage());
-            fail();
-        }
-    }
-
-    @And("^I select the following designee")
-    public void iSelectTheFollowingDesignee(List<PlayerRoster> players) {
-        try {
-            Log.info("Selecting designee");
-            I.waitUntilInvisibilityOf(newRosterWizardPage.getWizardObscurer());
-            I.waitUntilElementIsVisible(newRosterWizardPage.getBtnDesignee());
-            I.Click(newRosterWizardPage.getBtnNext());
         } catch (Exception e) {
             base.GrabScreenShot();
             Log.error(e.getMessage());
@@ -136,13 +132,13 @@ public class RosterSteps {
     }
 
 
-    @When("^I select the following facility$")
+    @Then("^I select the following facility$")
     public void iSelectTheFollowingFacility(DataTable table) {
         try {
             Log.info("Selecting facility");
             I.waitUntilInvisibilityOf(newRosterWizardPage.getWizardObscurer());
-            I.waitUntilElementIsVisible(newRosterWizardPage.getChkAcnowledgment());
-            I.CheckCheckBox(newRosterWizardPage.getChkAcnowledgment());
+            I.waitUntilElementIsVisible(newRosterWizardPage.getChkAcknowledgment());
+            I.CheckCheckBox(newRosterWizardPage.getChkAcknowledgment());
             I.Click(newRosterWizardPage.getBtnFacility());
             I.waitUntilElementIsVisible(newRosterWizardPage.getAddFacilityModal());
             I.waitUntilElementIsClickable(newRosterWizardPage.getAddFacilityModalElement("txtName"));
@@ -159,7 +155,6 @@ public class RosterSteps {
             I.waitUntilInvisibilityOf(newRosterWizardPage.getAddFacilityModal());
             I.waitUntilElementIsClickable(newRosterWizardPage.getBtnNext());
             I.Click(newRosterWizardPage.getBtnNext());
-            iSelectTheFollowingDesignee(null);
         } catch (Exception e) {
             base.GrabScreenShot();
             Log.error(e.getMessage());
@@ -167,11 +162,18 @@ public class RosterSteps {
         }
     }
 
-
-    @Then("^I save my new roster without errors$")
-    public void iSaveMyNewRosterWithoutErrors() throws Throwable {
-        // Write code here that turns the phrase above into concrete actions
-        throw new PendingException();
+    @And("^I select designees")
+    public void iSelectDesignees() {
+        try {
+            Log.info("Selecting designee");
+            I.waitUntilInvisibilityOf(newRosterWizardPage.getWizardObscurer());
+            I.waitUntilElementIsVisible(newRosterWizardPage.getBtnDesignee());
+            I.Click(newRosterWizardPage.getBtnNext());
+        } catch (Exception e) {
+            base.GrabScreenShot();
+            Log.error(e.getMessage());
+            fail();
+        }
     }
 
     @And("^I select \"([^\"]*)\" Level flight$")
@@ -189,6 +191,7 @@ public class RosterSteps {
             fail();
         }
     }
+
     @And("^I request for review")
     public void iRequestForReview() {
         try {
@@ -216,6 +219,22 @@ public class RosterSteps {
             Log.error(e.getMessage());
             fail();
         }
+    }
+
+    @Then("^I save my new roster without errors$")
+    public void iSaveMyNewRosterWithoutErrors() throws Throwable {
+        try {
+            I.Click(newRosterWizardPage.getBtnNext());
+            //wait for payments page to appear
+            PendingPaymentsPage paymentsPage = new PendingPaymentsPage(base.driver);
+            paymentsPage.setCreditCardInformationAndSubmit(new CreditCardInfo());
+
+        } catch (Exception e) {
+            base.GrabScreenShot();
+            Log.error(e.getMessage());
+            fail();
+        }
+
     }
 
 }

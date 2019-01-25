@@ -11,16 +11,18 @@ Feature: Roster creation
       | My Rosters & New/Reinstate | My Rosters |  |
     And I create a new roster selecting a league matching
       | Year | Season | League Type   |
-#      | 2019 | Winter | Automated Test League |
-      | 2019 | Winter | Mixed doubles |
+      | 2019 | Winter | Automated Test League |
+#      | 2019 | Winter | Mixed doubles |
     When I enter the following players on Players tab
       | ALTA_Number | First  | Last        | Captain | CoCaptain | Designee |
       | 100-392-308 | VICKI  | BACHMAN     | Yes     |           |          |
       | 101-223-223 | JESSIE | ABRAHAM     |         | Yes       |          |
       | 100-840-014 | RUBI   | BENNETT     |         |           | yes      |
       | 102-878-938 | SOFIA  | CENCIARELLI |         |           |          |
-    When I select the following facility
+    And I select the captains
+    Then I select the following facility
       | Id | Name             | City |
       | 14 | ATHLETIC CLUB NE |      |
+    And I select designees
     And I select "C-3" Level flight
     Then I save my new roster without errors
