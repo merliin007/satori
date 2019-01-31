@@ -10,6 +10,9 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.How;
 import org.openqa.selenium.support.PageFactory;
+import pages.Pages;
+
+import java.util.List;
 
 public class MyMembershipPage {
     public MyMembershipPage(WebDriver driver) {
@@ -28,6 +31,9 @@ public class MyMembershipPage {
     @FindBy(how = How.ID, using = "ctl00_ctl00_CPHolder_CPHolder_MembershipPurchase1_btnNext")
     private WebElement btnNext;
 
+    @FindBy(how = How.ID, using = "ctl00_ctl00_CPHolder_CPHolder_MembershipPurchase1_btnNextUser")
+    private WebElement btnAnotherMember;
+
     public WebElement getLblUserName() {
         return lblUserName;
     }
@@ -38,6 +44,10 @@ public class MyMembershipPage {
 
     public WebElement getBtnNext() {
         return btnNext;
+    }
+
+    public WebElement getBtnAnotherMember() {
+        return btnAnotherMember;
     }
 
     public WebElement getMembershipYearCheck(String year) {

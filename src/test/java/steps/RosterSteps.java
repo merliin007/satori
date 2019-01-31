@@ -23,6 +23,8 @@ import utility.newRoster.Facility;
 import utility.newRoster.PlayerRoster;
 import utility.payment.CreditCardInfo;
 
+import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
 
 import static org.testng.Assert.fail;
@@ -222,7 +224,7 @@ public class RosterSteps {
     }
 
     @Then("^I save my new roster without errors$")
-    public void iSaveMyNewRosterWithoutErrors() throws Throwable {
+    public void iSaveMyNewRosterWithoutErrors() {
         try {
             I.Click(newRosterWizardPage.getBtnNext());
             //wait for payments page to appear
@@ -235,6 +237,34 @@ public class RosterSteps {
             fail();
         }
 
+    }
+
+    @Then("^I create a new roster with default values and recently created accounts$")
+    public void iCreateANewRosterWithDefaultValuesAndRecentlyCreatedAccounts(DataTable table) {
+        try {
+            Log.info("just chilling");
+            iEnterTheFollowingPlayersOnPlayersTab(DataTable.create(Helpers.getAltaNumbers()));
+            iSelectTheCaptains();
+            iSelectTheFollowingFacility(createFacilityTable());
+            iSelectDesignees();
+            iSelectLevelFlight("C-3");
+            iSaveMyNewRosterWithoutErrors();
+        } catch (Exception e) {
+            base.GrabScreenShot();
+            Log.error(e.getMessage());
+            fail();
+        }
+    }
+
+    private DataTable createFacilityTable() {
+        String[][] header = {{"Id", "Name", "City"}, {"14", "ATHLETIC CLUB NE", ""}};
+        List<List<String>> facilityTable = new ArrayList<>();
+
+        for (int i = 0; i < header.length; i++) {
+            List<String> row = new ArrayList<>(Arrays.asList(header[i]));
+            facilityTable.add(row);
+        }
+        return DataTable.create(facilityTable);
     }
 
 }

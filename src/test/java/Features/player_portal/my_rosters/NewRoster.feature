@@ -1,5 +1,5 @@
 Feature: Roster creation
-  This feature exercises creating a new roster
+  This feature exercises creating users and use them to create a couple of rosters
 
   Background: Successfully login into alta website
     Given User navigates to ALTA website

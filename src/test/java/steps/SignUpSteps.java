@@ -7,7 +7,10 @@ package steps;
 import base.BaseUtil;
 import cucumber.api.DataTable;
 import cucumber.api.java.en.And;
+import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
+import org.apache.commons.collections.ArrayStack;
+import pages.home.LandingPage;
 import pages.memberPortal.myAccount.MyMembershipPage;
 import pages.singup.NewMemberSignUpPage;
 import pages.singup.RegisterPage;
@@ -15,6 +18,7 @@ import utility.Helpers;
 import utility.Log;
 import utility.members.Member;
 
+import java.util.ArrayList;
 import java.util.List;
 
 import static org.testng.Assert.assertTrue;
@@ -38,7 +42,8 @@ public class SignUpSteps {
         try {
             Log.info("New Account: Filling out main form");
             List<List<String>> tbl = table.raw();
-            member = new Member(tbl.get(0));
+//            member = new Member(tbl.get(0));
+            member = tbl.get(0).size() > 16 ? new Member(tbl.get(0), true) : new Member(tbl.get(0));
             NewMemberSignUpPage signUpPage = new NewMemberSignUpPage(base.driver);
 
             I.Write(signUpPage.getTxtFirstName(), member.getFirst());
@@ -114,4 +119,38 @@ public class SignUpSteps {
             fail();
         }
     }
+
+    @Given("^User creates (\\d+) new accounts$")
+    public void userCreatesNewAccounts(int accounts) {
+        try {
+            Log.info("Creating dummy accounts");
+
+            LoginSteps loginSteps = new LoginSteps(base);
+            loginSteps.userNavigatesToALTAWebsite();
+            loginSteps.userClicksOnJoinNowLink();
+            DataTable table = I.CreateDummyAccountsInfo();
+            while (accounts-- > 0) {
+                this.userEntersTheFollowingInformationForSigningUp(table);
+                this.userSelectsTheFollowingRankings("");
+                this.afterSavingNewAccountIsCreated();
+                this.getCreatedALTANumber();
+                I.Click(myMembershipPage.getBtnAnotherMember());
+            }
+        } catch (Exception e) {
+            Log.error(e.getMessage());
+            base.GrabScreenShot();
+            fail();
+        }
+    }
+
+    private void getCreatedALTANumber() {
+        if (myMembershipPage == null) myMembershipPage = new MyMembershipPage(base.driver);
+        try {
+            Helpers.addAltaNumbers(myMembershipPage.getLblUserName().getText());
+        } catch (Exception e) {
+            Log.warn("Something wrong getting recently created ALTA Number");
+        }
+    }
+
+
 }

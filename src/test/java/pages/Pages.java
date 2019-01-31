@@ -25,6 +25,13 @@ public abstract class Pages{
     @FindBy(how = How.CLASS_NAME, using = "nav-ribbon")
     private WebElement topRibbon;
 
+    @FindBy(how = How.ID, using = "topNav")
+    private WebElement topNav;
+
+    public WebElement getTopNav() {
+        return topNav;
+    }
+
     public WebElement RibbonOption(String opt) throws Exception{
         List<WebElement> ribbonList = topRibbon.findElement(By.className("container"))
                 .findElements(By.className("nav-ribbon__option"));
@@ -56,6 +63,18 @@ public abstract class Pages{
                 .get(i)
                 .findElement(By.tagName("tbody"))
                 .findElements(By.tagName("tr"));
+    }
+
+    public WebElement getDdlSwtichTo(){
+        return topNav.findElement(By.className("dropdown"));
+    }
+
+    public WebElement ddMenu(){
+        return topNav.findElement(By.className("dropdown-menu"));
+    }
+
+    public List<WebElement> ddMenuOptions(){
+        return ddMenu().findElements(By.tagName("a"));
     }
 
 }

@@ -6,7 +6,9 @@ package utility.members;
 
 import com.sun.istack.NotNull;
 import utility.RandomString;
-
+import java.lang.reflect.Field;
+import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
 
 public class Member {
@@ -14,10 +16,8 @@ public class Member {
     private String altaNum;
     private String first;
     private String last;
-    private String city;
-    private String zip;
-    private String dob;
     private String gender;
+    private String dob;
     private String wheelChair;
     private String homePhone;
     private String mobilePhone;
@@ -25,9 +25,39 @@ public class Member {
     private String email;
     private String street;
     private String apt;
+    private String city;
     private String state;
+    private String zip;
     private String county;
     private String password;
+
+    public Member(String AltaNum, String FirstName, String LastName, String Gender, String DOB, String WheelChair, String HomePhone, String MobilePhone, String WorkPhone,
+                  @NotNull String Email, String Street, String Apt, String City, String State, String Zip, String County, String Password) {
+
+        String systemTime = String.valueOf(System.currentTimeMillis());
+        this.altaNum = AltaNum;
+        this.first = FirstName + systemTime;
+        this.last = LastName + systemTime;
+        this.city = City.isEmpty() ? RandomString.getAlphaNumericString(20) : City;
+        this.zip = Zip;
+        this.dob = DOB;
+        this.gender = Gender;
+        this.wheelChair = WheelChair;
+        this.homePhone = HomePhone.isEmpty() ? "5031" + RandomString.getNumericString(6) : HomePhone;
+        this.mobilePhone = MobilePhone.isEmpty() ? "5031" + RandomString.getNumericString(6) : MobilePhone;
+        this.workPhone = WorkPhone.isEmpty() ? "5031" + RandomString.getNumericString(6) : WorkPhone;
+        if (!Email.contains("@"))
+            throw new IllegalArgumentException("Email does not have correct format");
+        else {
+            String[] tmp = Email.split("(?=@)");
+            this.email = tmp[0] + systemTime + tmp[1];
+        }
+        this.street = Street.isEmpty() ? RandomString.getAlphaNumericString(50) : Street;
+        this.apt = Apt.isEmpty() ? RandomString.getNumericString(4) : Apt;
+        this.state = State;
+        this.county = County;
+        this.password = Password;
+    }
 
     public Member(String FirstName, String LastName, String Gender, String DOB, String WheelChair, String HomePhone, String MobilePhone, String WorkPhone,
                   @NotNull String Email, String Street, String Apt, String City, String State, String Zip, String County, String Password) {
@@ -57,13 +87,19 @@ public class Member {
         this.password = Password;
     }
 
-    public Member(String first, String last){
+    public Member(String first, String last) {
         this.first = first;
         this.last = last;
     }
+
     public Member(List<String> tbl) {
         this(tbl.get(0), tbl.get(1), tbl.get(2), tbl.get(3), tbl.get(4), tbl.get(5), tbl.get(6), tbl.get(7),
                 tbl.get(8), tbl.get(9), tbl.get(10), tbl.get(11), tbl.get(12), tbl.get(13), tbl.get(14), tbl.get(15));
+    }
+
+    public Member(List<String> tbl, boolean t) {
+        this(tbl.get(0), tbl.get(1), tbl.get(2), tbl.get(3), tbl.get(4), tbl.get(5), tbl.get(6), tbl.get(7),
+                tbl.get(8), tbl.get(9), tbl.get(10), tbl.get(11), tbl.get(12), tbl.get(13), tbl.get(14), tbl.get(15), tbl.get(16));
     }
 
     public Member(String altaNum, String first, String last, String city, String zip, String dob) {
@@ -73,6 +109,28 @@ public class Member {
         this.city = city;
         this.zip = zip;
         this.dob = dob;
+    }
+
+    public Member() {
+        String systemTime = String.valueOf(System.currentTimeMillis());
+
+        this.altaNum = "";
+        this.first = "automated";
+        this.last = "user";
+        this.city = "";
+        this.zip = "95621";
+        this.dob = "11/13/1984";
+        this.gender = Long.valueOf(systemTime) % 2L == 0 ? "Male" : "Female";
+        this.wheelChair = Long.valueOf(systemTime) % 2L == 0 ? "Yes" : "No";
+        this.homePhone = "";
+        this.mobilePhone = "";
+        this.workPhone = "";
+        this.email = "automatedtest@automation.com";
+        this.street = "";
+        this.apt = "";
+        this.state = "DE";
+        this.county = "Butts";
+        this.password = "test123";
     }
 
     public Member(String altaNum) {
@@ -149,5 +207,23 @@ public class Member {
 
     public String getPassword() {
         return password;
+    }
+
+    public List<String> getFields() throws Exception {
+        Class<? extends Member> memberClass = getClass();
+        Field[] fields = memberClass.getDeclaredFields();
+
+        List<String> lines = new ArrayList<>(fields.length);
+
+        Arrays.stream(fields).forEach(field -> {
+            try {
+                field.setAccessible(true);
+                Object value = field.get(this);
+                lines.add((String) value);
+            } catch (IllegalAccessException e) {
+                e.printStackTrace();
+            }
+        });
+        return lines;
     }
 }

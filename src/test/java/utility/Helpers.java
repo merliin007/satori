@@ -29,6 +29,7 @@ import java.time.LocalDate;
 import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
 import java.util.*;
+import java.util.List;
 import java.util.NoSuchElementException;
 
 
@@ -37,6 +38,7 @@ public class Helpers implements Actionable {
     private WebDriverWait wait;
     private WebDriver _driver;
     private static List<String> errorPages;
+    private static List<List<String>> altaNumbers = new ArrayList<>();
 
     public Helpers(WebDriver driver) {
         _driver = driver;
@@ -48,6 +50,8 @@ public class Helpers implements Actionable {
         base = baseUtil;
         _driver = base.driver;
         wait = new WebDriverWait(_driver, 5);
+
+
     }
 
     @Override
@@ -67,7 +71,11 @@ public class Helpers implements Actionable {
 
     @Override
     public void AcceptAlert() {
-        _driver.switchTo().alert().accept();
+        try {
+            _driver.switchTo().alert().accept();
+        } catch (NoAlertPresentException e) {
+            Log.info("No need to accept any alert ;)");
+        }
     }
 
     @Override
@@ -515,6 +523,7 @@ public class Helpers implements Actionable {
                 .ignoring(NoSuchElementException.class)
                 .until(ExpectedConditions.invisibilityOfElementLocated(locator));
     }
+
     public void waitUntilElementDisappears(WebElement element) throws Exception {
         new FluentWait<>(_driver)
                 .withTimeout(Duration.ofSeconds(6))
@@ -653,4 +662,29 @@ public class Helpers implements Actionable {
 
     }
 
+    public DataTable CreateDummyAccountsInfo() throws Exception {
+        List<List<String>> table = new ArrayList<>();
+        List<String> tmp = new Member().getFields();
+        table.add(tmp);
+        return DataTable.create(table);
+    }
+
+    public static List<List<String>> getAltaNumbers() {
+        return altaNumbers;
+    }
+
+    public static void addAltaNumbers(String memberInfo) {
+        if (altaNumbers.size() == 0) {
+            String tmp[] = new String[]{"ALTA_Number", "First", "Last", "Captain", "CoCaptain", "Designee"};
+            List<String> header = new ArrayList<>();
+            header.addAll(Arrays.asList(tmp));
+            altaNumbers.add(header);
+        }
+
+        String[] tmp = memberInfo.split(" ");
+        String[] toList = new String[]{tmp[2], tmp[0], tmp[1], (altaNumbers.size() == 1 || altaNumbers.size() == 3) ? "yes" : "", (altaNumbers.size() == 2 || altaNumbers.size() == 4) ? "yes" : "", ""};
+        List<String> row = new ArrayList<>(Arrays.asList(toList));
+
+        altaNumbers.add(row);
+    }
 }
