@@ -40,10 +40,6 @@ public class BaseUtil {
                     driver.navigate().to(SuiteSetUp.TEST_ENVIRONMENT);
                     Log.info("Navigating to: " + SuiteSetUp.TEST_ENVIRONMENT);
                     break;
-                case "trio":
-                    driver.navigate().to(SuiteSetUp.QA_TRIO);
-                    Log.info("Navigating to: " + SuiteSetUp.QA_TRIO);
-                    break;
                 case "uat":
                     driver.navigate().to(SuiteSetUp.UAT_ENVIRONMENT_all);
                     Log.info("Navigating to: " + SuiteSetUp.UAT_ENVIRONMENT_all);

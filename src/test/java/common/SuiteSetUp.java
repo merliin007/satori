@@ -9,13 +9,12 @@ import utility.Log;
 public class SuiteSetUp {
 
     public static final String TEST_ENVIRONMENT = "https://test.altatennis.org/";
-    public static final String QA_TRIO = "http://trioqa.scio.local";
 
     public static final String QA_ENVIRONMENT_ie = "https://altarebuild.qa.satoriinteractive.com/webapp/";
     public static final String QA_ENVIRONMENT_all = "https://Alta:TennisQa1@altarebuild.qa.satoriinteractive.com/webapp/";
 
     public static final String UAT_ENVIRONMENT_ie = "https://altarebuild.uat.satoriinteractive.com/webapp/";
-    public static final String UAT_ENVIRONMENT_all = "https://Alta:TennisQa1@altarebuild.uat.satoriinteractive.com/webapp/";
+    public static final String UAT_ENVIRONMENT_all = "https://alta.web.satoriinteractive.com/";
 
     public static final String ADD_PLAYER_SUCCESS_LABEL = "successfully added to Roster. Please choose another member or Close";
 
