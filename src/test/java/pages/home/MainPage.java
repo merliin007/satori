@@ -29,6 +29,9 @@ public class MainPage {
     @FindBy(how = How.ID, using = "scrollChild")
     private WebElement menuListOptions;
 
+    @FindBy(how =   How.ID, using = "topNav")
+    private WebElement topNav;
+
     public MainPage(WebDriver driver) {
         PageFactory.initElements(driver, this);
     }
@@ -74,6 +77,20 @@ public class MainPage {
         for (WebElement element : elementList) {
             if (section.equals(element.getText().toLowerCase()))
                 return element;
+        }
+        return null;
+    }
+
+    public WebElement getSwitchTo(){
+        return topNav.findElement(By.className("dropdown"));
+    }
+
+    public WebElement getSwitchToOptionDdl(String opt)throws Exception{
+        List<WebElement> options = getSwitchTo().findElement(By.className("dropdown-menu")).findElements(By.tagName("a"));
+
+        for(WebElement item: options){
+            if(item.getText().toLowerCase().equals(opt.toLowerCase()))
+                return item;
         }
         return null;
     }

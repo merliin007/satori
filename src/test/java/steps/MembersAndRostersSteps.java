@@ -84,5 +84,21 @@ public class MembersAndRostersSteps {
         }
     }
 
+    @And("^I Search and Impersonate the following member ([^\"]*)$")
+    public void iSearchAndImpersonateTheFollowingMember(String altaNumber) {
+        if (membersAdvancedSearchPage == null)
+            membersAdvancedSearchPage = new MembersAdvancedSearchPage(base.driver);
+        try {
+            Log.info("Searching for: " + altaNumber);
+
+            I.Write(membersAdvancedSearchPage.getTxtAltaNumber(), altaNumber);
+            I.Click(membersAdvancedSearchPage.getBtnSearch());
+            I.selectOptionFromCell(1, "Impersonate", membersAdvancedSearchPage);
+        } catch (Exception e) {
+            Log.error(e.getMessage());
+            base.GrabScreenShot();
+            fail();
+        }
+    }
 
 }

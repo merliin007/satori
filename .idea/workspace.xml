@@ -3,13 +3,15 @@
   <component name="ChangeListManager">
     <list default="true" id="0eaf1139-d41e-4752-9f15-6749932a46ba" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/Features/player_portal/my_rosters/NewRoster.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Features/player_portal/my_rosters/NewRoster.feature" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/pages/Pages.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pages/Pages.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/pages/memberPortal/myAccount/MyMembershipPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pages/memberPortal/myAccount/MyMembershipPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/steps/RosterSteps.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/steps/RosterSteps.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/steps/SignUpSteps.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/steps/SignUpSteps.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/utility/Helpers.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/utility/Helpers.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/utility/members/Member.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/utility/members/Member.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Base/BaseUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/base/BaseUtil.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Base/CustomExceptions.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/base/CustomExceptions.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Base/RunScript.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/base/RunScript.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Features/refunds/MembershipRefund.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Features/refunds/MembershipRefund.feature" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/common/SuiteSetUp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/common/SuiteSetUp.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/pages/home/MainPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pages/home/MainPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/steps/MembersAndRostersSteps.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/steps/MembersAndRostersSteps.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/steps/NavigationSteps.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/steps/NavigationSteps.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -23,174 +25,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/Features/player_portal/my_rosters/NewRoster.feature">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="427">
-              <caret line="27" column="31" lean-forward="true" selection-start-line="27" selection-start-column="31" selection-end-line="27" selection-end-column="31" />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/test/java/steps/RosterSteps.java">
+        <entry file="file://$PROJECT_DIR$/src/test/java/Features/league_support/jobs/Jobs.feature">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="336">
-              <caret line="248" column="31" lean-forward="true" selection-start-line="248" selection-start-column="31" selection-end-line="248" selection-end-column="31" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/Features/league_support/assigned_leveling/AssignRoster.feature">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="289">
-              <caret line="17" lean-forward="true" selection-start-line="17" selection-end-line="17" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/steps/SignUpSteps.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="336">
-              <caret line="151" selection-start-line="151" selection-end-line="151" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/pages/memberPortal/myAccount/MyMembershipPage.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="291">
-              <caret line="37" selection-start-line="37" selection-end-line="37" />
-              <folding>
-                <element signature="e#1257#1258#0" expanded="true" />
-                <element signature="method#getMembershipYearCheck#0;class#MyMembershipPage#0" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/utility/Helpers.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="421">
-              <caret line="690" lean-forward="true" selection-start-line="690" selection-end-line="690" />
-              <folding>
-                <element signature="e#1086#1238#0" />
-                <element signature="e#1393#1582#0" />
-                <element signature="e#1588#1827#0" />
-                <element signature="e#1833#2018#0" />
-                <element signature="e#1887#1947#0" />
-                <element signature="e#1968#2012#0" />
-                <element signature="e#1931#2293#0" />
-                <element signature="e#2809#2810#0" expanded="true" />
-                <element signature="e#2840#2841#0" expanded="true" />
-                <element signature="e#2389#2562#0" />
-                <element signature="e#2568#2894#0" />
-                <element signature="e#2900#3115#0" />
-                <element signature="e#3121#3352#0" />
-                <element signature="e#3358#3551#0" />
-                <element signature="e#3557#3990#0" />
-                <element signature="e#3823#3984#1" />
-                <element signature="e#3881#3974#1" />
-                <element signature="class#4063:5836" />
-                <element signature="initializer##0;class#4063:5836" />
-                <element signature="e#5843#5973#0" />
-                <element signature="e#5979#6110#0" />
-                <element signature="e#6116#6302#0" />
-                <element signature="e#6308#6598#0" />
-                <element signature="e#6430#6571#1" />
-                <element signature="e#6490#6561#1" />
-                <element signature="e#6604#7140#0" />
-                <element signature="e#6689#7037#0" />
-                <element signature="e#7058#7134#0" />
-                <element signature="e#7146#7821#0" />
-                <element signature="e#7430#7744#0" />
-                <element signature="e#7765#7815#0" />
-                <element signature="e#7827#8132#0" />
-                <element signature="e#8138#8445#0" />
-                <element signature="e#8222#8368#0" />
-                <element signature="e#8389#8439#0" />
-                <element signature="e#8451#8852#0" />
-                <element signature="e#8633#8827#1" />
-                <element signature="e#8858#9438#0" />
-                <element signature="e#9046#9413#1" />
-                <element signature="e#9444#10134#0" />
-                <element signature="e#9645#10109#1" />
-                <element signature="e#10057#10099#1" />
-                <element signature="e#10140#10740#0" />
-                <element signature="e#10333#10715#1" />
-                <element signature="e#10663#10705#1" />
-                <element signature="e#10746#11215#0" />
-                <element signature="e#10947#11190#1" />
-                <element signature="e#11139#11180#1" />
-                <element signature="e#11221#11846#0" />
-                <element signature="e#11404#11821#1" />
-                <element signature="e#11770#11811#1" />
-                <element signature="e#11852#12283#0" />
-                <element signature="e#12056#12258#1" />
-                <element signature="e#12207#12248#1" />
-                <element signature="e#12289#13363#0" />
-                <element signature="e#12569#13338#1" />
-                <element signature="e#13286#13328#1" />
-                <element signature="e#13369#14163#0" />
-                <element signature="e#13516#14098#1" />
-                <element signature="e#13622#13970#0" />
-                <element signature="e#13845#13956#1" />
-                <element signature="e#14007#14088#0" />
-                <element signature="e#14169#15163#0" />
-                <element signature="e#14348#15099#1" />
-                <element signature="e#14454#14971#0" />
-                <element signature="e#14846#14957#1" />
-                <element signature="e#15008#15089#0" />
-                <element signature="e#15169#15958#0" />
-                <element signature="e#15334#15894#1" />
-                <element signature="e#15440#15766#0" />
-                <element signature="e#15641#15752#1" />
-                <element signature="e#15803#15884#0" />
-                <element signature="e#15964#16871#0" />
-                <element signature="e#16163#16807#1" />
-                <element signature="e#16269#16679#0" />
-                <element signature="e#16554#16665#1" />
-                <element signature="e#16716#16797#0" />
-                <element signature="e#17407#17408#0" expanded="true" />
-                <element signature="e#17475#17476#0" expanded="true" />
-                <element signature="e#17024#17458#0" />
-                <element signature="e#17464#17731#0" />
-                <element signature="e#17737#18057#0" />
-                <element signature="e#18063#18305#0" />
-                <element signature="e#18190#18299#1" />
-                <element signature="e#18311#18504#0" />
-                <element signature="e#18510#18776#0" />
-                <element signature="e#18782#19020#0" />
-                <element signature="e#19026#19537#0" />
-                <element signature="e#19543#19917#0" />
-                <element signature="e#19923#20271#0" />
-                <element signature="e#20277#20643#0" />
-                <element signature="e#20649#21039#0" />
-                <element signature="e#21045#21740#0" />
-                <element signature="e#21746#22313#0" />
-                <element signature="e#22372#22634#0" />
-                <element signature="e#22477#22603#1" />
-                <element signature="e#22641#22810#0" />
-                <element signature="e#22816#23041#0" />
-                <element signature="e#23047#23561#0" />
-                <element signature="e#23190#23534#1" />
-                <element signature="e#23310#23524#1" />
-                <element signature="e#23409#23510#1" />
-                <element signature="e#23567#24355#0" />
-                <element signature="e#24361#25493#0" />
-                <element signature="e#25823#25824#0" expanded="true" />
-                <element signature="e#25886#25887#0" expanded="true" />
-                <element signature="e#25936#25937#0" expanded="true" />
-                <element signature="e#25969#25970#0" expanded="true" />
-                <element signature="e#25702#25866#0" />
-                <element signature="e#25872#26146#0" />
-                <element signature="e#26440#26441#0" expanded="true" />
-                <element signature="e#26474#26475#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="170">
+              <caret line="10" column="30" selection-start-line="10" selection-start-column="30" selection-end-line="10" selection-end-column="30" />
             </state>
           </provider>
         </entry>
@@ -201,6 +40,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Interface" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -211,43 +51,92 @@
       <find>chk</find>
       <find>ack</find>
       <find>.create</find>
+      <find>I Search and Select the following member</find>
+      <find>&lt;</find>
+      <find>switchto</find>
+      <find>topNav</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="assignedLeveling" />
+      </map>
+    </option>
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/test/java/Pages/volunteer/VolunteerBulkEntryPage.java" />
-        <option value="$PROJECT_DIR$/src/test/java/Steps/VolunteerBulkEntrySteps.java" />
-        <option value="$PROJECT_DIR$/src/test/java/Features/league_support/volunteer_bulk_entry/VolunteerBulkEntry.feature" />
-        <option value="$PROJECT_DIR$/src/test/java/steps/VolunteerBulkEntrySteps.java" />
-        <option value="$PROJECT_DIR$/src/test/java/pages/myRosters/NewRosterWizardPage.java" />
-        <option value="$PROJECT_DIR$/src/test/java/Features/player_portal/my_rosters/NewRoster.feature" />
-        <option value="$PROJECT_DIR$/src/test/java/utility/members/MemberLister.java" />
-        <option value="$PROJECT_DIR$/src/test/java/pages/Pages.java" />
-        <option value="$PROJECT_DIR$/src/test/java/utility/members/Member.java" />
-        <option value="$PROJECT_DIR$/src/test/java/pages/memberPortal/myAccount/MyMembershipPage.java" />
-        <option value="$PROJECT_DIR$/src/test/java/steps/SignUpSteps.java" />
-        <option value="$PROJECT_DIR$/src/test/java/utility/Helpers.java" />
-        <option value="$PROJECT_DIR$/src/test/java/Features/league_support/assigned_leveling/AssignRoster.feature" />
-        <option value="$PROJECT_DIR$/src/test/java/steps/RosterSteps.java" />
+        <option value="$PROJECT_DIR$/src/test/java/pages/reports/officeOnly/duplicateRosterMemberLetters_page.java" />
+        <option value="$PROJECT_DIR$/src/test/java/pages/reports/officeOnly/duplicateRosterMembers_page.java" />
+        <option value="$PROJECT_DIR$/src/test/java/pages/reports/officeOnly/facilitiesList_page.java" />
+        <option value="$PROJECT_DIR$/src/test/java/pages/reports/officeOnly/facilityOverloadByLeague_page.java" />
+        <option value="$PROJECT_DIR$/src/test/java/pages/reports/officeOnly/facilityWithTooFewTeams_page.java" />
+        <option value="$PROJECT_DIR$/src/test/java/pages/reports/officeOnly/homeMatches_page.java" />
+        <option value="$PROJECT_DIR$/src/test/java/pages/reports/officeOnly/postSeasonPlayerDeletion_page.java" />
+        <option value="$PROJECT_DIR$/src/test/java/pages/reports/officeOnly/rosterByCaptainNumber_page.java" />
+        <option value="$PROJECT_DIR$/src/test/java/pages/reports/officeOnly/rosterByFacilityNumber_page.java" />
+        <option value="$PROJECT_DIR$/src/test/java/pages/reports/officeOnly/rosterForPreviousSeasonsCaptains_page.java" />
+        <option value="$PROJECT_DIR$/src/test/java/pages/reports/officeOnly/rosterMemberPrinting_page.java" />
+        <option value="$PROJECT_DIR$/src/test/java/pages/reports/officeOnly/seasonScheduleLabel_page.java" />
+        <option value="$PROJECT_DIR$/src/test/java/pages/reports/officeOnly/sisterTeams_page.java" />
+        <option value="$PROJECT_DIR$/src/test/java/pages/reports/officeOnly/suspendedMembers_page.java" />
+        <option value="$PROJECT_DIR$/src/test/java/pages/reports/officeOnly/tallyReport_page.java" />
+        <option value="$PROJECT_DIR$/src/test/java/pages/reports/officeOnly/totalTeamsByFacility_page.java" />
+        <option value="$PROJECT_DIR$/src/test/java/pages/reports/officeOnly/volunteerList_page.java" />
+        <option value="$PROJECT_DIR$/src/test/java/pages/reports/paymentRecords/duesReconciliation_page.java" />
+        <option value="$PROJECT_DIR$/src/test/java/pages/reports/paymentRecords/purchaseDetail_page.java" />
+        <option value="$PROJECT_DIR$/src/test/java/pages/reports/paymentRecords/tournamentPayments.java" />
+        <option value="$PROJECT_DIR$/src/test/java/pages/reports/playoffDraw/bagTagMailingList_page.java" />
+        <option value="$PROJECT_DIR$/src/test/java/pages/reports/playoffDraw/bagTagProcess_page.java" />
+        <option value="$PROJECT_DIR$/src/test/java/pages/reports/playoffDraw/finalStandingsByLeague_page.java" />
+        <option value="$PROJECT_DIR$/src/test/java/pages/reports/playoffDraw/finalStandingsByLeagueWorksheet_page.java" />
+        <option value="$PROJECT_DIR$/src/test/java/pages/reports/playoffDraw/maxPlayoffTeamMembers_page.java" />
+        <option value="$PROJECT_DIR$/src/test/java/pages/reports/roster/playerAdds_page.java" />
+        <option value="$PROJECT_DIR$/src/test/java/pages/reports/roster/requestForReview_page.java" />
+        <option value="$PROJECT_DIR$/src/test/java/pages/reports/roster/returningTeamsPercentage_page.java" />
+        <option value="$PROJECT_DIR$/src/test/java/pages/reports/roster/teamRegistrationTotals_page.java" />
+        <option value="$PROJECT_DIR$/src/test/java/pages/reports/roster/teamsByFacility_page.java" />
+        <option value="$PROJECT_DIR$/src/test/java/pages/reports/roster/teamsByLeague_page.java" />
+        <option value="$PROJECT_DIR$/src/test/java/pages/reports/roster/teamsWithoutMinimumNumberOfPlayers_page.java" />
+        <option value="$PROJECT_DIR$/src/test/java/pages/reports/roster/VRSTeamRosters_page.java" />
+        <option value="$PROJECT_DIR$/src/test/java/pages/reports/scheduling/seasonSchedule_page.java" />
+        <option value="$PROJECT_DIR$/src/test/java/pages/reports/tournaments/tournamentEntries_page.java" />
+        <option value="$PROJECT_DIR$/src/test/java/pages/reports/ReportListPage.java" />
+        <option value="$PROJECT_DIR$/src/test/java/pages/reports/ReportsListPage.java" />
+        <option value="$PROJECT_DIR$/src/test/java/pages/reports/ReportCategory.java" />
+        <option value="$PROJECT_DIR$/src/test/java/pages/reports/ReportCategoryPage.java" />
+        <option value="$PROJECT_DIR$/src/test/java/Features/refunds/MembershipRefund.feature" />
+        <option value="$PROJECT_DIR$/src/test/java/Features/payments/MembershipChangePurchase.feature" />
+        <option value="$PROJECT_DIR$/src/test/java/Features/payments/MemberShipPayment.feature" />
+        <option value="$PROJECT_DIR$/src/test/java/Features/payments/MembershipPaymentDeletion.feature" />
+        <option value="$PROJECT_DIR$/src/test/java/steps/RolesSteps.java" />
+        <option value="$PROJECT_DIR$/src/test/java/pages/home/MainPage.java" />
+        <option value="$PROJECT_DIR$/src/test/java/steps/NavigationSteps.java" />
+        <option value="$PROJECT_DIR$/src/test/java/steps/ReportsSteps.java" />
+        <option value="$PROJECT_DIR$/src/test/java/steps/MembersAndRostersSteps.java" />
+        <option value="$PROJECT_DIR$/src/test/java/common/SuiteSetUp.java" />
+        <option value="$PROJECT_DIR$/src/test/java/Features/roles/ReportsRoleTesting.feature" />
+        <option value="$PROJECT_DIR$/pom.xml" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds">
-    <option name="x" value="2426" />
-    <option name="y" value="45" />
-    <option name="width" value="1400" />
-    <option name="height" value="1000" />
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="-8" />
+    <option name="y" value="-8" />
+    <option name="width" value="1936" />
+    <option name="height" value="1056" />
   </component>
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="1" id="Add" />
+  </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -279,7 +168,7 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="test" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="Features" type="462c0819:PsiDirectoryNode" />
+              <item name="base" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="SatoriAutomation" type="b2602c69:ProjectViewProjectNode" />
@@ -287,8 +176,7 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="test" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="Features" type="462c0819:PsiDirectoryNode" />
-              <item name="league_support" type="462c0819:PsiDirectoryNode" />
+              <item name="common" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="SatoriAutomation" type="b2602c69:ProjectViewProjectNode" />
@@ -296,31 +184,22 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="test" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="Features" type="462c0819:PsiDirectoryNode" />
-              <item name="my_rosters" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="SatoriAutomation" type="b2602c69:ProjectViewProjectNode" />
-              <item name="satori" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="steps" type="462c0819:PsiDirectoryNode" />
+              <item name="utility" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
       <pane id="PackagesPane" />
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1548976465772" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1552071831193" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/test/java/steps" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
-    <property name="settings.editor.selected.configurable" value="preferences.keymap" />
+    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -334,7 +213,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Cucumber java.Feature: AssignRoster">
+  <component name="RunManager" selected="Cucumber java.Feature: NewMemberSignUp">
     <configuration name="AssignRoster" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java">
       <option name="CUCUMBER_CORE_VERSION" value="1.2" />
       <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/java/Features/league_support/assigned_leveling/Assignroster.feature" />
@@ -373,6 +252,25 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="Feature: ManageALTANavigation" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
+      <option name="CUCUMBER_CORE_VERSION" value="1.2" />
+      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/java/Features/navigation/ManageALTANavigation.feature" />
+      <option name="GLUE" value="common steps" />
+      <option name="MAIN_CLASS_NAME" value="cucumber.api.cli.Main" />
+      <module name="SatoriAutomation" />
+      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvmSMFormatter --monochrome" />
+      <option name="SUGGESTED_NAME" value="Feature: ManageALTANavigation" />
+      <option name="VM_PARAMETERS" value="-Dbrowser=chrome -Denvironment=qa" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="cucumber.api.cli.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="Feature: NewMemberSignUp" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
       <option name="CUCUMBER_CORE_VERSION" value="1.2" />
       <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/java/Features/signup/NewMemberSignUp.feature" />
@@ -382,6 +280,25 @@
       <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvmSMFormatter --monochrome" />
       <option name="SUGGESTED_NAME" value="Feature: NewMemberSignUp" />
       <option name="VM_PARAMETERS" value="-Dbrowser=chrome -Denvironment=qa" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="cucumber.api.cli.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Feature: ReportsRoleTesting" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
+      <option name="CUCUMBER_CORE_VERSION" value="1.2" />
+      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/java/Features/roles/ReportsRoleTesting.feature" />
+      <option name="GLUE" value="common steps" />
+      <option name="MAIN_CLASS_NAME" value="cucumber.api.cli.Main" />
+      <module name="SatoriAutomation" />
+      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvmSMFormatter --monochrome" />
+      <option name="SUGGESTED_NAME" value="Feature: ReportsRoleTesting" />
+      <option name="VM_PARAMETERS" value="-Denvironment=uat -Dbrowser=chrome" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="cucumber.api.cli.*" />
@@ -431,17 +348,21 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="Cucumber java.New Roster Wizard" />
       <item itemvalue="Cucumber java.AssignRoster" />
-      <item itemvalue="Cucumber java.Feature: NewMemberSignUp" />
-      <item itemvalue="Cucumber java.Feature: VolunteerBulkEntry" />
       <item itemvalue="Cucumber java.Feature: AssignRoster" />
+      <item itemvalue="Cucumber java.Feature: ManageALTANavigation" />
+      <item itemvalue="Cucumber java.Feature: NewMemberSignUp" />
+      <item itemvalue="Cucumber java.Feature: ReportsRoleTesting" />
+      <item itemvalue="Cucumber java.Feature: VolunteerBulkEntry" />
+      <item itemvalue="Cucumber java.New Roster Wizard" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Cucumber java.Feature: NewMemberSignUp" />
+        <item itemvalue="Cucumber java.Feature: ManageALTANavigation" />
+        <item itemvalue="Cucumber java.Feature: ReportsRoleTesting" />
         <item itemvalue="Cucumber java.Feature: AssignRoster" />
         <item itemvalue="Cucumber java.Feature: VolunteerBulkEntry" />
-        <item itemvalue="Cucumber java.Feature: NewMemberSignUp" />
       </list>
     </recent_temporary>
   </component>
@@ -459,41 +380,42 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="Feature__AssignRoster - 2019.01.31 at 16h 02m 12s.xml">
-      <configuration name="Feature: AssignRoster" configurationId="CucumberJavaRunConfigurationType" />
+    <history-entry file="Feature__ReportsRoleTesting - 2019.02.28 at 12h 56m 48s.xml">
+      <configuration name="Feature: ReportsRoleTesting" configurationId="CucumberJavaRunConfigurationType" />
     </history-entry>
-    <history-entry file="Feature__AssignRoster - 2019.01.31 at 16h 06m 20s.xml">
-      <configuration name="Feature: AssignRoster" configurationId="CucumberJavaRunConfigurationType" />
+    <history-entry file="Feature__ReportsRoleTesting - 2019.02.28 at 12h 58m 47s.xml">
+      <configuration name="Feature: ReportsRoleTesting" configurationId="CucumberJavaRunConfigurationType" />
     </history-entry>
-    <history-entry file="Feature__AssignRoster - 2019.01.31 at 16h 15m 40s.xml">
-      <configuration name="Feature: AssignRoster" configurationId="CucumberJavaRunConfigurationType" />
+    <history-entry file="Feature__ReportsRoleTesting - 2019.02.28 at 12h 59m 50s.xml">
+      <configuration name="Feature: ReportsRoleTesting" configurationId="CucumberJavaRunConfigurationType" />
     </history-entry>
-    <history-entry file="Feature__AssignRoster - 2019.01.31 at 16h 17m 26s.xml">
-      <configuration name="Feature: AssignRoster" configurationId="CucumberJavaRunConfigurationType" />
+    <history-entry file="Feature__ReportsRoleTesting - 2019.02.28 at 13h 00m 21s.xml">
+      <configuration name="Feature: ReportsRoleTesting" configurationId="CucumberJavaRunConfigurationType" />
     </history-entry>
-    <history-entry file="Feature__AssignRoster - 2019.01.31 at 16h 20m 15s.xml">
-      <configuration name="Feature: AssignRoster" configurationId="CucumberJavaRunConfigurationType" />
+    <history-entry file="Feature__ReportsRoleTesting - 2019.02.28 at 13h 02m 24s.xml">
+      <configuration name="Feature: ReportsRoleTesting" configurationId="CucumberJavaRunConfigurationType" />
     </history-entry>
-    <history-entry file="Feature__AssignRoster - 2019.01.31 at 16h 22m 17s.xml">
-      <configuration name="Feature: AssignRoster" configurationId="CucumberJavaRunConfigurationType" />
+    <history-entry file="Feature__ReportsRoleTesting - 2019.02.28 at 13h 03m 15s.xml">
+      <configuration name="Feature: ReportsRoleTesting" configurationId="CucumberJavaRunConfigurationType" />
     </history-entry>
-    <history-entry file="Feature__AssignRoster - 2019.01.31 at 16h 27m 32s.xml">
-      <configuration name="Feature: AssignRoster" configurationId="CucumberJavaRunConfigurationType" />
+    <history-entry file="Feature__NewMemberSignUp - 2019.03.08 at 12h 34m 23s.xml">
+      <configuration name="Feature: NewMemberSignUp" configurationId="CucumberJavaRunConfigurationType" />
     </history-entry>
-    <history-entry file="Feature__AssignRoster - 2019.01.31 at 16h 31m 16s.xml">
-      <configuration name="Feature: AssignRoster" configurationId="CucumberJavaRunConfigurationType" />
+    <history-entry file="Feature__ManageALTANavigation - 2019.03.08 at 12h 35m 06s.xml">
+      <configuration name="Feature: ManageALTANavigation" configurationId="CucumberJavaRunConfigurationType" />
     </history-entry>
-    <history-entry file="Feature__AssignRoster - 2019.01.31 at 16h 41m 56s.xml">
-      <configuration name="Feature: AssignRoster" configurationId="CucumberJavaRunConfigurationType" />
+    <history-entry file="Feature__ManageALTANavigation - 2019.03.08 at 12h 36m 49s.xml">
+      <configuration name="Feature: ManageALTANavigation" configurationId="CucumberJavaRunConfigurationType" />
     </history-entry>
-    <history-entry file="Feature__AssignRoster - 2019.01.31 at 16h 52m 09s.xml">
-      <configuration name="Feature: AssignRoster" configurationId="CucumberJavaRunConfigurationType" />
+    <history-entry file="Feature__NewMemberSignUp - 2019.03.08 at 12h 37m 10s.xml">
+      <configuration name="Feature: NewMemberSignUp" configurationId="CucumberJavaRunConfigurationType" />
     </history-entry>
   </component>
   <component name="ToolWindowManager">
-    <frame x="2426" y="45" width="1400" height="1000" extended-state="0" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49787235" visible="true" weight="0.25447762" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49787235" visible="true" weight="0.17910448" />
       <window_info id="Structure" order="1" sideWeight="0.50087565" side_tool="true" weight="0.18017058" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -502,8 +424,8 @@
       <window_info id="Favorites" order="6" sideWeight="0.50212765" side_tool="true" weight="0.18176973" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32978722" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.32978722" />
-      <window_info active="true" anchor="bottom" id="Debug" order="3" visible="true" weight="0.4372038" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.3282313" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4099526" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -531,10 +453,16 @@
           <option name="timeStamp" value="82" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/test/java/utility/Helpers.java</url>
-          <line>676</line>
+          <url>file://$PROJECT_DIR$/src/test/java/steps/NavigationSteps.java</url>
+          <line>71</line>
           <properties />
-          <option name="timeStamp" value="85" />
+          <option name="timeStamp" value="87" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/utility/Helpers.java</url>
+          <line>265</line>
+          <properties />
+          <option name="timeStamp" value="89" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
@@ -544,6 +472,7 @@
         <watch expression="altaNumbers" language="JAVA" />
         <watch expression="Helpers.getAltaNumbers()" language="JAVA" />
         <watch expression="playerRosterList" />
+        <watch expression="rolesPermissions" />
       </configuration>
     </watches-manager>
   </component>
@@ -631,376 +560,505 @@
     </expressions>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/test/java/Features/payments/MembershipChangePurchase.feature">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="15" column="37" selection-start-line="15" selection-start-column="37" selection-end-line="15" selection-end-column="37" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/steps/MembershipPaymentsSteps.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="35" lean-forward="true" selection-start-line="35" selection-end-line="35" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/steps/CalendarSteps.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="20" column="13" selection-start-line="20" selection-start-column="13" selection-end-line="20" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/steps/VolunteerBulkEntrySteps.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="514">
-          <caret line="83" column="28" lean-forward="true" selection-start-line="83" selection-start-column="28" selection-end-line="83" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/Features/league_support/volunteer_bulk_entry/VolunteerBulkEntry.feature">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="21" column="7" selection-start-line="21" selection-start-column="7" selection-end-line="21" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/pages/volunteer/VolunteerBulkEntryPage.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="759">
-          <caret line="126" column="34" selection-start-line="126" selection-start-column="34" selection-end-line="126" selection-end-column="34" />
-          <folding>
-            <element signature="method#VolunteerBulkEntryPage#0;class#VolunteerBulkEntryPage#0" />
-            <element signature="method#getToastMessage#0;class#VolunteerBulkEntryPage#0" />
-            <element signature="e#3592#3892#0" />
-            <element signature="n#!!block;n#getToast#0;n#VolunteerBulkEntryPage#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/runner/TestRunner.java">
+    <entry file="file://$PROJECT_DIR$/src/test/java/pages/reports/officeOnly/rosterMemberPrinting_page.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="136">
-          <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/pages/myRosters/NewRosterWizardPage.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2941">
-          <caret line="215" column="42" selection-start-line="215" selection-start-column="22" selection-end-line="215" selection-end-column="42" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/utility/members/MemberLister.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" column="35" selection-start-line="5" selection-start-column="23" selection-end-line="5" selection-end-column="35" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/info/cukes/cucumber-core/1.2.5/cucumber-core-1.2.5.jar!/cucumber/runtime/table/TableConverter.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="223">
-          <caret line="308" selection-start-line="308" selection-end-line="308" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_131/src.zip!/java/lang/Throwable.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-30">
-          <caret line="651" lean-forward="true" selection-start-line="651" selection-end-line="651" />
+          <caret line="11" column="4" selection-start-line="11" selection-start-column="4" selection-end-line="11" selection-end-column="4" />
           <folding>
-            <element signature="e#26222#26223#0" expanded="true" />
-            <element signature="e#26265#26266#0" expanded="true" />
-            <element signature="e#26470#26471#0" expanded="true" />
-            <element signature="e#26528#26529#0" expanded="true" />
+            <element signature="imports" expanded="true" />
+            <element signature="e#303#304#0" expanded="true" />
+            <element signature="e#332#333#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/utility/CaptainsRetriever.java">
+    <entry file="file://$PROJECT_DIR$/src/test/java/pages/reports/officeOnly/seasonScheduleLabel_page.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="10" column="1" lean-forward="true" selection-start-line="10" selection-start-column="1" selection-end-line="10" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/steps/EventSteps.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-593">
-          <caret line="38" column="84" lean-forward="true" selection-start-line="38" selection-start-column="84" selection-end-line="38" selection-end-column="84" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/Features/league_support/tss/TrackingSheetScoreCards.feature">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="20" lean-forward="true" selection-start-line="20" selection-end-line="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/Features/league_support/jobs/Jobs.feature">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/common/TearDown.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="17" column="25" selection-start-line="17" selection-start-column="25" selection-end-line="17" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/common/SetUp.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="378">
-          <caret line="111" column="17" lean-forward="true" selection-start-line="111" selection-start-column="17" selection-end-line="111" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/Base/BaseUtil.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="31" column="25" selection-start-line="31" selection-start-column="25" selection-end-line="31" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/pages/Pages.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="370">
-          <caret line="74" lean-forward="true" selection-start-line="74" selection-end-line="74" />
+        <state relative-caret-position="136">
+          <caret line="11" column="4" selection-start-line="11" selection-start-column="4" selection-end-line="11" selection-end-column="4" />
           <folding>
-            <element signature="e#794#795#0" expanded="true" />
-            <element signature="e#828#829#0" expanded="true" />
-            <element signature="e#1148#1149#0" expanded="true" />
-            <element signature="e#1187#1188#0" expanded="true" />
-            <element signature="e#2080#2081#0" expanded="true" />
-            <element signature="e#2108#2109#0" expanded="true" />
-            <element signature="e#2176#2177#0" expanded="true" />
-            <element signature="e#2218#2219#0" expanded="true" />
-            <element signature="e#2298#2299#0" expanded="true" />
-            <element signature="e#2328#2329#0" expanded="true" />
+            <element signature="imports" expanded="true" />
+            <element signature="e#301#302#0" expanded="true" />
+            <element signature="e#330#331#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/pages/reports/officeOnly/sisterTeams_page.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="11" column="4" selection-start-line="11" selection-start-column="4" selection-end-line="11" selection-end-column="4" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#285#286#0" expanded="true" />
+            <element signature="e#314#315#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/pages/reports/officeOnly/suspendedMembers_page.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="11" column="4" selection-start-line="11" selection-start-column="4" selection-end-line="11" selection-end-column="4" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#295#296#0" expanded="true" />
+            <element signature="e#324#325#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/pages/reports/officeOnly/tallyReport_page.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="11" column="4" selection-start-line="11" selection-start-column="4" selection-end-line="11" selection-end-column="4" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#285#286#0" expanded="true" />
+            <element signature="e#314#315#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/pages/reports/officeOnly/totalTeamsByFacility_page.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="11" column="4" selection-start-line="11" selection-start-column="4" selection-end-line="11" selection-end-column="4" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#303#304#0" expanded="true" />
+            <element signature="e#332#333#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/pages/reports/officeOnly/volunteerList_page.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="11" column="4" selection-start-line="11" selection-start-column="4" selection-end-line="11" selection-end-column="4" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#289#290#0" expanded="true" />
+            <element signature="e#318#319#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/pages/reports/paymentRecords/duesReconciliation_page.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="11" column="4" selection-start-line="11" selection-start-column="4" selection-end-line="11" selection-end-column="4" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#303#304#0" expanded="true" />
+            <element signature="e#332#333#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/pages/reports/paymentRecords/purchaseDetail_page.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="11" column="4" selection-start-line="11" selection-start-column="4" selection-end-line="11" selection-end-column="4" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#295#296#0" expanded="true" />
+            <element signature="e#324#325#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/pages/reports/paymentRecords/tournamentPayments.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="11" column="4" selection-start-line="11" selection-start-column="4" selection-end-line="11" selection-end-column="4" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#293#294#0" expanded="true" />
+            <element signature="e#322#323#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/pages/reports/playoffDraw/bagTagMailingList_page.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="11" column="4" selection-start-line="11" selection-start-column="4" selection-end-line="11" selection-end-column="4" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#298#299#0" expanded="true" />
+            <element signature="e#327#328#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/pages/reports/playoffDraw/bagTagProcess_page.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="11" column="4" selection-start-line="11" selection-start-column="4" selection-end-line="11" selection-end-column="4" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#290#291#0" expanded="true" />
+            <element signature="e#319#320#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/pages/reports/playoffDraw/finalStandingsByLeague_page.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="11" column="4" selection-start-line="11" selection-start-column="4" selection-end-line="11" selection-end-column="4" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#308#309#0" expanded="true" />
+            <element signature="e#337#338#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/pages/reports/playoffDraw/finalStandingsByLeagueWorksheet_page.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="11" column="4" selection-start-line="11" selection-start-column="4" selection-end-line="11" selection-end-column="4" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#326#327#0" expanded="true" />
+            <element signature="e#355#356#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/pages/reports/playoffDraw/maxPlayoffTeamMembers_page.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="11" column="4" selection-start-line="11" selection-start-column="4" selection-end-line="11" selection-end-column="4" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#306#307#0" expanded="true" />
+            <element signature="e#335#336#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/pages/reports/roster/playerAdds_page.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="11" column="4" selection-start-line="11" selection-start-column="4" selection-end-line="11" selection-end-column="4" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#279#280#0" expanded="true" />
+            <element signature="e#308#309#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/pages/reports/roster/requestForReview_page.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="11" column="4" selection-start-line="11" selection-start-column="4" selection-end-line="11" selection-end-column="4" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#291#292#0" expanded="true" />
+            <element signature="e#320#321#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/pages/reports/roster/returningTeamsPercentage_page.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="11" column="4" selection-start-line="11" selection-start-column="4" selection-end-line="11" selection-end-column="4" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#307#308#0" expanded="true" />
+            <element signature="e#336#337#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/pages/reports/roster/teamRegistrationTotals_page.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="11" column="4" selection-start-line="11" selection-start-column="4" selection-end-line="11" selection-end-column="4" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#303#304#0" expanded="true" />
+            <element signature="e#332#333#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/pages/reports/roster/teamsByFacility_page.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="11" column="4" selection-start-line="11" selection-start-column="4" selection-end-line="11" selection-end-column="4" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#289#290#0" expanded="true" />
+            <element signature="e#318#319#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/pages/reports/roster/teamsByLeague_page.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="11" column="4" selection-start-line="11" selection-start-column="4" selection-end-line="11" selection-end-column="4" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#285#286#0" expanded="true" />
+            <element signature="e#314#315#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/pages/reports/roster/teamsWithoutMinimumNumberOfPlayers_page.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="11" column="4" selection-start-line="11" selection-start-column="4" selection-end-line="11" selection-end-column="4" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#327#328#0" expanded="true" />
+            <element signature="e#356#357#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/pages/reports/roster/VRSTeamRosters_page.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="11" column="4" selection-start-line="11" selection-start-column="4" selection-end-line="11" selection-end-column="4" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#287#288#0" expanded="true" />
+            <element signature="e#316#317#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/pages/reports/scheduling/seasonSchedule_page.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="11" column="4" selection-start-line="11" selection-start-column="4" selection-end-line="11" selection-end-column="4" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#291#292#0" expanded="true" />
+            <element signature="e#320#321#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/pages/reports/tournaments/tournamentEntries_page.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="11" column="4" selection-start-line="11" selection-start-column="4" selection-end-line="11" selection-end-column="4" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#298#299#0" expanded="true" />
+            <element signature="e#327#328#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/Features/roles/Captain.feature">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="2" selection-start-line="3" selection-start-column="2" selection-end-line="4" selection-end-column="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/Features/refunds/MembershipRefund.feature">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="9" column="29" selection-start-line="9" selection-start-column="29" selection-end-line="9" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/pages/reports/ReportCategoryPage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="15" lean-forward="true" selection-start-line="15" selection-end-line="15" />
+          <folding>
+            <element signature="e#238#239#0" expanded="true" />
+            <element signature="e#267#268#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/pages/reports/ReportsListPage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="493">
+          <caret line="32" lean-forward="true" selection-start-line="32" selection-end-line="32" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#267#268#0" expanded="true" />
+            <element signature="e#293#294#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/utility/members/Member.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="476">
-          <caret line="146" lean-forward="true" selection-start-line="146" selection-end-line="146" />
-          <folding>
-            <element signature="method#Member#0;class#Member#0" />
-            <element signature="e#1904#2019#1" />
-            <element signature="method#Member#1;class#Member#0" />
-            <element signature="e#3387#3502#1" />
-            <element signature="method#Member#2;class#Member#0" />
-            <element signature="method#Member#3;class#Member#0" />
-            <element signature="method#Member#4;class#Member#0" />
-            <element signature="method#Member#5;class#Member#0" />
-            <element signature="method#Member#6;class#Member#0" />
-            <element signature="method#getFields#0;class#Member#0" />
-            <element signature="e#7225#7497#0" />
-            <element signature="e#7252#7401#0" />
-            <element signature="e#7435#7487#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/Features/signup/NewMemberSignUp.feature">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="13" column="138" selection-start-line="13" selection-start-column="110" selection-end-line="13" selection-end-column="138" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/steps/LoginSteps.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="395">
-          <caret line="85" column="12" lean-forward="true" selection-start-line="85" selection-start-column="12" selection-end-line="85" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/pages/memberPortal/myAccount/MyMembershipPage.java">
-      <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="291">
-          <caret line="37" selection-start-line="37" selection-end-line="37" />
-          <folding>
-            <element signature="e#1257#1258#0" expanded="true" />
-            <element signature="method#getMembershipYearCheck#0;class#MyMembershipPage#0" />
-          </folding>
+          <caret line="89" column="11" selection-start-line="89" selection-start-column="11" selection-end-line="89" selection-end-column="11" />
         </state>
       </provider>
     </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/info/cukes/cucumber-core/1.2.5/cucumber-core-1.2.5.jar!/cucumber/api/DataTable.class">
+    <entry file="file://$PROJECT_DIR$/src/test/java/Features/payments/MemberShipPayment.feature">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="31" selection-start-line="31" selection-end-line="31" />
-          <folding>
-            <element signature="e#1038#1039#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="187">
+          <caret line="11" column="27" selection-start-line="11" selection-start-column="27" selection-end-line="11" selection-end-column="27" />
         </state>
       </provider>
     </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/info/cukes/cucumber-core/1.2.5/cucumber-core-1.2.5.jar!/cucumber/runtime/Utils.class">
+    <entry file="file://$PROJECT_DIR$/src/test/java/Features/payments/MembershipPaymentDeletion.feature">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="182">
-          <caret line="48" selection-start-line="48" selection-end-line="48" />
+        <state relative-caret-position="255">
+          <caret line="15" column="26" lean-forward="true" selection-start-line="15" selection-start-column="26" selection-end-line="15" selection-end-column="26" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/utility/newRoster/PlayerRoster.java">
+    <entry file="file://$PROJECT_DIR$/src/test/java/Features/payments/MembershipChangePurchase.feature">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-106">
-          <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
+        <state relative-caret-position="170">
+          <caret line="10" column="26" lean-forward="true" selection-start-line="10" selection-start-column="26" selection-end-line="11" selection-end-column="59" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/steps/SignUpSteps.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="336">
-          <caret line="151" selection-start-line="151" selection-end-line="151" />
+        <state relative-caret-position="274">
+          <caret line="84" column="55" selection-start-line="84" selection-start-column="47" selection-end-line="84" selection-end-column="55" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/steps/LoginSteps.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="512">
+          <caret line="114" column="9" lean-forward="true" selection-start-line="114" selection-start-column="9" selection-end-line="114" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/pages/jobs/JobsListPage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="14" column="25" lean-forward="true" selection-start-line="14" selection-start-column="25" selection-end-line="14" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/pages/jobs/AssignToDivisionPage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="16" column="13" selection-start-line="16" selection-start-column="13" selection-end-line="16" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/pages/Pages.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="799">
+          <caret line="68" column="15" selection-start-line="68" selection-start-column="15" selection-end-line="68" selection-end-column="15" />
+          <folding>
+            <element signature="e#2079#2080#0" expanded="true" />
+            <element signature="e#2146#2147#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/Features/roles/ReportsRoleTesting.feature">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="10" column="35" selection-start-line="10" selection-start-column="35" selection-end-line="10" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/steps/MembersAndRostersSteps.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1343">
+          <caret line="95" selection-start-line="95" selection-end-line="95" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/common/SuiteSetUp.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="13" column="38" selection-start-line="13" selection-start-column="38" selection-end-line="13" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/pages/home/MainPage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1173">
+          <caret line="87" column="42" selection-start-line="87" selection-start-column="22" selection-end-line="87" selection-end-column="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/steps/RolesSteps.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="18" selection-start-line="18" selection-end-line="19" selection-end-column="38" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/steps/ReportsSteps.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="442">
+          <caret line="36" selection-start-line="36" selection-end-line="36" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/steps/NavigationSteps.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="263">
+          <caret line="50" column="13" selection-start-line="50" selection-start-column="13" selection-end-line="50" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/Features/signup/NewMemberSignUp.feature">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="12" column="52" lean-forward="true" selection-start-line="12" selection-start-column="52" selection-end-line="12" selection-end-column="52" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/utility/Helpers.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="421">
-          <caret line="690" lean-forward="true" selection-start-line="690" selection-end-line="690" />
-          <folding>
-            <element signature="e#1086#1238#0" />
-            <element signature="e#1393#1582#0" />
-            <element signature="e#1588#1827#0" />
-            <element signature="e#1833#2018#0" />
-            <element signature="e#1887#1947#0" />
-            <element signature="e#1968#2012#0" />
-            <element signature="e#1931#2293#0" />
-            <element signature="e#2809#2810#0" expanded="true" />
-            <element signature="e#2840#2841#0" expanded="true" />
-            <element signature="e#2389#2562#0" />
-            <element signature="e#2568#2894#0" />
-            <element signature="e#2900#3115#0" />
-            <element signature="e#3121#3352#0" />
-            <element signature="e#3358#3551#0" />
-            <element signature="e#3557#3990#0" />
-            <element signature="e#3823#3984#1" />
-            <element signature="e#3881#3974#1" />
-            <element signature="class#4063:5836" />
-            <element signature="initializer##0;class#4063:5836" />
-            <element signature="e#5843#5973#0" />
-            <element signature="e#5979#6110#0" />
-            <element signature="e#6116#6302#0" />
-            <element signature="e#6308#6598#0" />
-            <element signature="e#6430#6571#1" />
-            <element signature="e#6490#6561#1" />
-            <element signature="e#6604#7140#0" />
-            <element signature="e#6689#7037#0" />
-            <element signature="e#7058#7134#0" />
-            <element signature="e#7146#7821#0" />
-            <element signature="e#7430#7744#0" />
-            <element signature="e#7765#7815#0" />
-            <element signature="e#7827#8132#0" />
-            <element signature="e#8138#8445#0" />
-            <element signature="e#8222#8368#0" />
-            <element signature="e#8389#8439#0" />
-            <element signature="e#8451#8852#0" />
-            <element signature="e#8633#8827#1" />
-            <element signature="e#8858#9438#0" />
-            <element signature="e#9046#9413#1" />
-            <element signature="e#9444#10134#0" />
-            <element signature="e#9645#10109#1" />
-            <element signature="e#10057#10099#1" />
-            <element signature="e#10140#10740#0" />
-            <element signature="e#10333#10715#1" />
-            <element signature="e#10663#10705#1" />
-            <element signature="e#10746#11215#0" />
-            <element signature="e#10947#11190#1" />
-            <element signature="e#11139#11180#1" />
-            <element signature="e#11221#11846#0" />
-            <element signature="e#11404#11821#1" />
-            <element signature="e#11770#11811#1" />
-            <element signature="e#11852#12283#0" />
-            <element signature="e#12056#12258#1" />
-            <element signature="e#12207#12248#1" />
-            <element signature="e#12289#13363#0" />
-            <element signature="e#12569#13338#1" />
-            <element signature="e#13286#13328#1" />
-            <element signature="e#13369#14163#0" />
-            <element signature="e#13516#14098#1" />
-            <element signature="e#13622#13970#0" />
-            <element signature="e#13845#13956#1" />
-            <element signature="e#14007#14088#0" />
-            <element signature="e#14169#15163#0" />
-            <element signature="e#14348#15099#1" />
-            <element signature="e#14454#14971#0" />
-            <element signature="e#14846#14957#1" />
-            <element signature="e#15008#15089#0" />
-            <element signature="e#15169#15958#0" />
-            <element signature="e#15334#15894#1" />
-            <element signature="e#15440#15766#0" />
-            <element signature="e#15641#15752#1" />
-            <element signature="e#15803#15884#0" />
-            <element signature="e#15964#16871#0" />
-            <element signature="e#16163#16807#1" />
-            <element signature="e#16269#16679#0" />
-            <element signature="e#16554#16665#1" />
-            <element signature="e#16716#16797#0" />
-            <element signature="e#17407#17408#0" expanded="true" />
-            <element signature="e#17475#17476#0" expanded="true" />
-            <element signature="e#17024#17458#0" />
-            <element signature="e#17464#17731#0" />
-            <element signature="e#17737#18057#0" />
-            <element signature="e#18063#18305#0" />
-            <element signature="e#18190#18299#1" />
-            <element signature="e#18311#18504#0" />
-            <element signature="e#18510#18776#0" />
-            <element signature="e#18782#19020#0" />
-            <element signature="e#19026#19537#0" />
-            <element signature="e#19543#19917#0" />
-            <element signature="e#19923#20271#0" />
-            <element signature="e#20277#20643#0" />
-            <element signature="e#20649#21039#0" />
-            <element signature="e#21045#21740#0" />
-            <element signature="e#21746#22313#0" />
-            <element signature="e#22372#22634#0" />
-            <element signature="e#22477#22603#1" />
-            <element signature="e#22641#22810#0" />
-            <element signature="e#22816#23041#0" />
-            <element signature="e#23047#23561#0" />
-            <element signature="e#23190#23534#1" />
-            <element signature="e#23310#23524#1" />
-            <element signature="e#23409#23510#1" />
-            <element signature="e#23567#24355#0" />
-            <element signature="e#24361#25493#0" />
-            <element signature="e#25823#25824#0" expanded="true" />
-            <element signature="e#25886#25887#0" expanded="true" />
-            <element signature="e#25936#25937#0" expanded="true" />
-            <element signature="e#25969#25970#0" expanded="true" />
-            <element signature="e#25702#25866#0" />
-            <element signature="e#25872#26146#0" />
-            <element signature="e#26440#26441#0" expanded="true" />
-            <element signature="e#26474#26475#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="541">
+          <caret line="245" column="13" lean-forward="true" selection-start-line="245" selection-start-column="13" selection-end-line="245" selection-end-column="13" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/Features/league_support/assigned_leveling/AssignRoster.feature">
+    <entry file="file://$PROJECT_DIR$/src/test/java/steps/AvailabilitySteps.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="17" lean-forward="true" selection-start-line="17" selection-end-line="17" />
+        <state relative-caret-position="-75">
+          <caret line="30" column="24" selection-start-line="30" selection-start-column="8" selection-end-line="30" selection-end-column="24" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/Features/player_portal/my_rosters/NewRoster.feature">
+    <entry file="file://$PROJECT_DIR$/src/test/java/pages/calendars/CalendarsPage.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="427">
-          <caret line="27" column="31" lean-forward="true" selection-start-line="27" selection-start-column="31" selection-end-line="27" selection-end-column="31" />
+        <state relative-caret-position="-432">
+          <caret line="22" column="32" selection-start-line="22" selection-start-column="22" selection-end-line="22" selection-end-column="32" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/steps/RosterSteps.java">
+    <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="336">
-          <caret line="248" column="31" lean-forward="true" selection-start-line="248" selection-start-column="31" selection-end-line="248" selection-end-column="31" />
+        <state relative-caret-position="838">
+          <caret line="144" column="36" lean-forward="true" selection-start-line="144" selection-start-column="36" selection-end-line="144" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/Features/league_support/jobs/Jobs.feature">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="10" column="30" selection-start-line="10" selection-start-column="30" selection-end-line="10" selection-end-column="30" />
         </state>
       </provider>
     </entry>

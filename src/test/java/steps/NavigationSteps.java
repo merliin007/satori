@@ -2,13 +2,16 @@ package steps;
 
 import base.BaseUtil;
 import cucumber.api.DataTable;
+import cucumber.api.PendingException;
 import cucumber.api.java.en.And;
 import cucumber.api.java.en.Then;
 import pages.home.MainPage;
 import utility.Helpers;
 import utility.Log;
+
 import java.util.Collections;
 import java.util.List;
+
 import static org.testng.Assert.assertTrue;
 import static org.testng.Assert.fail;
 import static utility.Helpers.AddErrorPage;
@@ -61,5 +64,18 @@ public class NavigationSteps {
         else
             Log.info("There was an error accessing: " + Collections.singleton(getErrorPages()));
         assertTrue(getErrorPages().isEmpty());
+    }
+
+    @Then("^I switch to \"([^\"]*)\"$")
+    public void iSwitchTo(String menu) {
+        try {
+            if (mainPage == null) mainPage = new MainPage(base.driver);
+            I.Click(mainPage.getSwitchTo());
+            I.Click(mainPage.getSwitchToOptionDdl(menu));
+        } catch (Exception e) {
+            base.GrabScreenShot();
+            Log.error("Error switching to: " + menu);
+            fail();
+        }
     }
 }

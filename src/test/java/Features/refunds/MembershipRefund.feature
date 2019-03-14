@@ -7,7 +7,7 @@ Feature: Membership payment
     Then I select "Manage" portal
     When I navigate to the following page option
       | Members and Rosters | Members Advanced Search |  |
-    And I Search and Select the following member
+    And I Search and "Select" the following member
       | Automated | User |
     And I pay his "current" membership using my credit card
     Then I get success payment confirmation
