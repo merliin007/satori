@@ -26,6 +26,7 @@ public class RolesSteps {
     public void iVisitEachOfTheReportsGrantedForRole() {
         try{
 
+
         }catch (Exception e){
             base.GrabScreenShot();
             Log.error(e.getMessage());

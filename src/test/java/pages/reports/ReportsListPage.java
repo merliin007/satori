@@ -12,19 +12,36 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.How;
 import org.openqa.selenium.support.PageFactory;
 
+import java.util.List;
+
 public class ReportsListPage {
 
     public ReportsListPage(WebDriver driver) {
         PageFactory.initElements(driver, this);
     }
 
-    @FindBy(how = How.CLASS_NAME, using = "reports-list")
-    private WebDriver tblReportsList;
+    @FindBy(how = How.CSS, using = "ul.list-group")
+    private WebElement tblOptions;
 
-    public WebElement getReportRowButton(String reportName) throws Exception{
-        for(WebElement row: tblReportsList.findElements(By.className("reports-list__item"))){
-            if(row.findElement(By.tagName("h5")).getText().toLowerCase().equals(reportName))
+    @FindBy(how = How.CLASS_NAME, using = "reports-list")
+    private WebElement tblReportsList;
+
+    public WebElement getReportRowButton(String reportName) throws Exception {
+        for (WebElement row : tblReportsList.findElements(By.className("reports-list__item"))) {
+            if (row.findElement(By.tagName("h5")).getText().toLowerCase().equals(reportName))
                 return row.findElement(By.tagName("a"));
+        }
+        return null;
+    }
+
+    public List<WebElement> getAllAvailableReports() throws Exception {
+        return tblReportsList.findElements(By.tagName("a"));
+    }
+
+    public WebElement getOptionElement(String option) {
+        List<WebElement> optList = tblOptions.findElements(By.tagName("a"));
+        for (WebElement opt : optList) {
+            if (opt.getText().toLowerCase().contains(option)) return opt;
         }
         return null;
     }

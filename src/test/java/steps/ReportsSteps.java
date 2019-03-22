@@ -7,6 +7,7 @@ package steps;
 
 import base.BaseUtil;
 import cucumber.api.java.en.Then;
+import org.openqa.selenium.WebElement;
 import pages.reports.ReportCategoryPage;
 import pages.reports.ReportPage;
 import pages.reports.ReportsListPage;
@@ -17,7 +18,7 @@ import utility.roles.PagesByRole;
 
 import java.util.List;
 
-import static org.testng.Assert.fail;
+import static org.testng.Assert.*;
 
 
 public class ReportsSteps {
@@ -37,19 +38,28 @@ public class ReportsSteps {
             Log.info("Visiting reports granted for: " + roleName);
             reportsListPage = new ReportsListPage(base.driver);
 
-            SpreadSheetReader spreadSheetReader = new SpreadSheetReader();
-            allowedReports = spreadSheetReader.getRoleRowFromSpreadSheet(roleName);
+            int i = 0;
+            while (true) {
+                List<WebElement> availableReports = reportsListPage.getAllAvailableReports();
+                I.Click(availableReports.get(i));
 
-            PagesByRole availablePages = getPages(roleName);
+                int j = 0;
+                while (true) {
+                    ReportsListPage subRep = new ReportsListPage(base.driver);
+                    List<WebElement> subList = subRep.getAllAvailableReports();
+                    I.Click(subList.get(j));
 
-            for (String reportCategory : allowedReports) {
-                I.Click(reportsListPage.getReportRowButton(reportCategory));
-                for(ReportPage reportPage : availablePages.getPages(base.driver)){
-                    ReportCategoryPage categoryPage = new ReportCategoryPage(base.driver);
+                    ReportPage reportPage = new ReportPage(base.driver);
+                    assertNull(reportPage.getErrorElement());
+                    I.Click(reportPage.getBtnBackToFolder());
 
+
+                    if (!(++j < subList.size())) break;
                 }
-
+                I.Click(reportsListPage.getOptionElement("back"));
+                if (!(++i < availableReports.size())) break;
             }
+
 
         } catch (Exception e) {
             Log.error(e.getMessage());
