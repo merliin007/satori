@@ -47,12 +47,13 @@ public class SetUp extends BaseUtil {
         boolean isIe = false;
         switch (SuiteSetUp.BROWSER.toLowerCase()) {
             case "firefox":
-                driver_exe = new File(SuiteSetUp.WEBDRIVERS_FOLDER, "geckodriver64.exe");
+                driver_exe = new File(SuiteSetUp.WEBDRIVERS_FOLDER, "geckodriver.exe");
                 System.setProperty("webdriver.gecko.driver", driver_exe.getAbsolutePath());
-                FirefoxOptions firefoxOptions = new FirefoxOptions();
-                firefoxOptions.setAcceptInsecureCerts(true);
-                firefoxOptions.setCapability("browser.private.browsing.autostart", true);
-                base.driver = new FirefoxDriver(firefoxOptions);
+                //FirefoxOptions firefoxOptions = new FirefoxOptions();
+                //firefoxOptions.setAcceptInsecureCerts(true);
+                //firefoxOptions.setCapability("browser.private.browsing.autostart", true);
+                //base.driver = new FirefoxDriver(firefoxOptions);
+                base.driver = new FirefoxDriver();
                 break;
             case "chrome":
                 driver_exe = new File(SuiteSetUp.WEBDRIVERS_FOLDER, "chromedriver.exe");
@@ -111,7 +112,6 @@ public class SetUp extends BaseUtil {
             Log.endTestCase(scenario.getName() + "\tPASSED");
         new TearDown(base);
     }
-
 
 
 }
