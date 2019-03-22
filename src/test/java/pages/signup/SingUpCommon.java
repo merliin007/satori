@@ -2,7 +2,7 @@
  * Created by Miguel Angel Aguilar Cuevas
  * 09/01/2019 at 11:26 AM
  */
-package pages.singup;
+package pages.signup;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;

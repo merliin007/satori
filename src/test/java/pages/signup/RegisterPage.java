@@ -2,7 +2,7 @@
  * Created by Miguel Angel Aguilar Cuevas
  * 09/01/2019 at 11:15 AM
  */
-package pages.singup;
+package pages.signup;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
@@ -25,44 +25,44 @@ public class RegisterPage extends SingUpCommon {
     private WebElement txtFirstName;
     @FindBy(how = How.ID, using = "ctl00_CPHolder_dtv_tbc_tpProfile_txtLastName")
     private WebElement txtLastName;
-    @FindBy(how = How.ID, using = "ctl00_CPHolder_dtv_tbc_tpProfile_ddlGender")
+    @FindBy(how = How.ID, using = "ddlGender")
     private WebElement dropGender;
-    @FindBy(how = How.ID, using = "ctl00_CPHolder_dtv_tbc_tpProfile_txtBirthDate")
+    @FindBy(how = How.ID, using = "txtBirthDate")
     private WebElement txtBirthDate;
     @FindBy(how = How.CSS, using = "#ctl00_CPHolder_dtv_tbc_tpProfile_editableContents > div:nth-child(4) > div > span > label")
     private WebElement chkWheelChair;
-    @FindBy(how = How.ID, using = "ctl00_CPHolder_dtv_tbc_tpProfile_txtHomePhone")
+    @FindBy(how = How.ID, using = "txtHomePhone")
     private WebElement txtHomePhone;
     @FindBy(how = How.ID, using = "ctl00_CPHolder_dtv_tbc_tpProfile_txtMobilePhone")
     private WebElement txtMobilePhone;
     @FindBy(how = How.ID, using = "ctl00_CPHolder_dtv_tbc_tpProfile_txtWorkPhone")
     private WebElement txtWorkPhone;
-    @FindBy(how = How.ID, using = "ctl00_CPHolder_dtv_tbc_tpProfile_txtEmail")
+    @FindBy(how = How.ID, using = "txtEmail")
     private WebElement txtEmail;
-    @FindBy(how = How.ID, using = "ctl00_CPHolder_dtv_tbc_tpProfile_txtStreet")
+    @FindBy(how = How.ID, using = "txtStreet")
     private WebElement txtStreet;
-    @FindBy(how = How.ID, using = "ctl00_CPHolder_dtv_tbc_tpProfile_txtCity")
+    @FindBy(how = How.ID, using = "txtCity")
     private WebElement txtCity;
     @FindBy(how = How.ID, using ="ctl00_CPHolder_dtv_tbc_tpProfile_txtSuite")
     private WebElement txtApt;
-    @FindBy(how = How.ID, using = "ctl00_CPHolder_dtv_tbc_tpProfile_ddlState")
+    @FindBy(how = How.ID, using = "ddlState")
     private WebElement dropState;
-    @FindBy(how = How.ID, using = "ctl00_CPHolder_dtv_tbc_tpProfile_txtZip")
+    @FindBy(how = How.ID, using = "txtZip")
     private WebElement txtZip;
     @FindBy(how = How.ID, using = "ctl00_CPHolder_dtv_tbc_tpProfile_txtZip2")
     private WebElement txtZipExt;
-    @FindBy(how = How.ID, using = "ctl00_CPHolder_dtv_tbc_tpProfile_ddlCounty")
+    @FindBy(how = How.ID, using = "ddlCounty")
     private WebElement dropCounty;
     // Region 2
-    @FindBy(how = How.ID, using = "ctl00_CPHolder_dtv_tbc_tpLogin_txtUsername")
+    @FindBy(how = How.ID, using = "txtUsername")
     private WebElement txtUserName;
     @FindBy(how = How.ID, using = "ctl00_CPHolder_dtv_tbc_tpLogin_btnConfirmUsername")
     private WebElement btnConfirmUserName;
     @FindBy(how = How.ID, using = "ctl00_CPHolder_dtv_tbc_tpLogin_lblUsernameValid")
     private WebElement lblUserNameValid;
-    @FindBy(how = How.ID, using = "ctl00_CPHolder_dtv_tbc_tpLogin_txtNewPassword")
+    @FindBy(how = How.ID, using = "txtNewPassword")
     private WebElement txtPassword;
-    @FindBy(how = How.ID, using = "ctl00_CPHolder_dtv_tbc_tpLogin_txtConfirmPassword")
+    @FindBy(how = How.ID, using = "txtConfirmPassword")
     private WebElement txtPasswordConfirmation;
     // Region 3
     @FindBy(how = How.ID, using ="ctl00_CPHolder_dtv_tbc_tpRankings_chkRankings")
