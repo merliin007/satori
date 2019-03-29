@@ -1,3 +1,4 @@
+@signUp
 Feature: Member SignUp
   This feature exercises creating a new member SignUp
 
