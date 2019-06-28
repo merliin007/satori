@@ -4,11 +4,17 @@ import base.BaseUtil;
 import cucumber.api.DataTable;
 import cucumber.api.java.en.And;
 import cucumber.api.java.en.Then;
+import org.apache.commons.lang3.exception.ExceptionUtils;
+import org.openqa.selenium.NoSuchElementException;
+import org.openqa.selenium.UnhandledAlertException;
 import pages.home.MainPage;
+import pages.navigation.GenericPage;
 import utility.Helpers;
 import utility.Log;
-import java.util.Collections;
-import java.util.List;
+import utility.xml.XMLReader;
+
+import java.util.*;
+
 import static org.testng.Assert.assertTrue;
 import static org.testng.Assert.fail;
 import static utility.Helpers.AddErrorPage;
@@ -19,6 +25,8 @@ public class NavigationSteps {
     private BaseUtil base;
     private MainPage mainPage;
     private Helpers I;
+    private List<List<String>> compare = new ArrayList<>();
+
 
     public NavigationSteps(BaseUtil base) {
         this.base = base;
@@ -61,5 +69,99 @@ public class NavigationSteps {
         else
             Log.info("There was an error accessing: " + Collections.singleton(getErrorPages()));
         assertTrue(getErrorPages().isEmpty());
+    }
+
+    @And("^I start navigating URLs from XML file being redirected to new site correctly$")
+    public void iStartNavigatingURLsFromXMLFileBeingRedirectedToNewSiteCorrectly() {
+        try {
+            XMLReader xmlReader = new XMLReader("redirections.xml");
+            Map<String, String> urls = xmlReader.getURLS();
+
+            Iterator it = null;
+            if (urls != null)
+                it = urls.keySet().iterator();
+            else
+                fail();
+
+            while (it.hasNext()) {
+                String from = "";
+                String to = "";
+                List<String> tmp = new ArrayList<>();
+
+                try {
+
+                    from = (String) it.next();
+                    to = urls.get(from);
+                    Log.info("From: " + from + " -> To: " + to);
+                    base.NavigateToURL(from);
+
+                    String actualURL = base.GetPageURL();
+
+                    GenericPage page = new GenericPage(base.driver);
+
+                    if (!actualURL.substring(22).contains(to) || actualURL.substring(22).contains("Unexpected") || page.getDivError().isDisplayed()) {
+                        tmp.add(from);
+                        tmp.add(to);
+                        tmp.add(actualURL);
+
+                        Log.error("Visiting: " + from + " expecting: " + to + " actual: " + actualURL);
+                    }
+
+                } catch (UnhandledAlertException e) {
+                    I.verifyAlertErrorAndAcceptIt();
+
+                }catch (NoSuchElementException e){}
+                catch (Exception e) {
+                    Log.error("Error accessing: " + from);
+                    String stackTrace = ExceptionUtils.getStackTrace(e);
+                    Log.error(stackTrace);
+                }
+                if (!tmp.isEmpty())
+                    compare.addAll(Collections.singleton(tmp));
+            }
+
+
+        } catch (Exception e) {
+            base.GrabScreenShot();
+            Log.error("Error during navigation to: ");
+            fail();
+        }
+    }
+
+    /*@And("^I create a file with redirected urls$")
+    public void iCreateAFileWithRedirectedUrls() {
+        try {
+            File file = new File("url_redirections.txt");
+            file.createNewFile();
+
+            FileWriter fw = new FileWriter(file);
+
+
+            Iterator it = redirect.keySet().iterator();
+            while (it.hasNext()) {
+                String from = (String) it.next();
+                fw.write("From: " + from + " => " + redirect.get(from) + "\n");
+//                Thread.sleep(2000L);
+            }
+
+            fw.flush();
+            fw.close();
+
+        } catch (Exception e) {
+            Log.error(e.getMessage());
+        }
+
+    }*/
+
+    @Then("^I print results$")
+    public void iPrintResults() {
+        if(compare.isEmpty())
+            Log.info("******* No errors navigating all pages *******");
+        else {
+            Log.info("******* The following pages had errors while being visited *******");
+            for (List<String> tmp : compare) {
+                Log.error("From: " + tmp.get(0) + " to: " + tmp.get(1) + " -> " + tmp.get(2));
+            }
+        }
     }
 }

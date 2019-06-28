@@ -1,10 +1,11 @@
+@sanity
 Feature: Login validation
   This feature exercises correct login into new site
 
   Background: Successfully login into alta website
     Given User navigates to ALTA website
-    When I enter username as "101-424-440" and password as "password123"
-    Then I select "Member" portal
+    When I enter username as "AUTOMATED1557848014391" and password as "test123"
+#    Then I select "Member" portal
 
   Scenario: User navigates for all rebuilt website without issues
     When I navigate to the following page option

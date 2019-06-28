@@ -1,3 +1,4 @@
+@sanity
 Feature: Captain access
   This feature exercises correct login into new site
 

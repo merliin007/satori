@@ -36,12 +36,12 @@ public class Helpers implements Actionable {
     private BaseUtil base;
     private WebDriverWait wait;
     private WebDriver _driver;
-    private static List<String> errorPages;
+    private static List<String> errorPages = new ArrayList<>();
 
     public Helpers(WebDriver driver) {
         _driver = driver;
         wait = new WebDriverWait(_driver, 5);
-        errorPages = new ArrayList<>();
+        //errorPages = new ArrayList<>();
     }
 
     public Helpers(BaseUtil baseUtil) {

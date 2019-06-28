@@ -78,8 +78,12 @@ public class SetUp extends BaseUtil {
                 System.exit(-1);
         }
 
-        base.driver.manage().timeouts().implicitlyWait(10L, TimeUnit.SECONDS);
-        //base.driver.manage().timeouts().pageLoadTimeout(20L, TimeUnit.SECONDS);
+        String redirect_test = System.getProperty("redirect_test");
+        if(redirect_test != null && redirect_test.equals("true"))
+            base.driver.manage().timeouts().implicitlyWait(1L, TimeUnit.SECONDS);
+        else
+            base.driver.manage().timeouts().implicitlyWait(10L, TimeUnit.SECONDS);
+
         base.driver.manage().window().maximize();
 
         /*executeAutoItNeeded(SuiteSetUp.BROWSER.toLowerCase());*/

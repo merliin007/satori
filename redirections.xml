@@ -1,0 +1,518 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<content>
+   <location path="Public/AltaFoundation.aspx">
+      <system.webServer>
+         <httpRedirect enabled="true" destination="/AltaFoundation.aspx" httpResponseStatus="Permanent" />
+      </system.webServer>
+   </location>
+   <location path="Public/AltaMerchandise.aspx">
+      <system.webServer>
+         <httpRedirect enabled="true" destination="/AboutALTA.aspx" httpResponseStatus="Permanent" />
+      </system.webServer>
+   </location>
+   <location path="Public/Help.aspx">
+      <system.webServer>
+         <httpRedirect enabled="true" destination="/ResourceAndCalendars/Faq.aspx" httpResponseStatus="Permanent" />
+      </system.webServer>
+   </location>
+   <location path="Public/AdultLeagues.aspx">
+      <system.webServer>
+         <httpRedirect enabled="true" destination="/PlayersAndLeagues/AdultLeagues.aspx" httpResponseStatus="Permanent" />
+      </system.webServer>
+   </location>
+   <location path="Public/League.aspx">
+      <system.webServer>
+         <httpRedirect enabled="true" destination="/PlayersAndLeagues/AdultLeagues.aspx" httpResponseStatus="Permanent" />
+      </system.webServer>
+   </location>
+   <location path="Public/JuniorLeagues.aspx">
+      <system.webServer>
+         <httpRedirect enabled="true" destination="/PlayersAndLeagues/JuniorLeagues.aspx" httpResponseStatus="Permanent" />
+      </system.webServer>
+   </location>
+   <location path="Public/HowToJoinAlta.aspx">
+      <system.webServer>
+         <httpRedirect enabled="true" destination="/AboutALTA/AltaMembership.aspx" httpResponseStatus="Permanent" />
+      </system.webServer>
+   </location>
+   <location path="Public/ChallengeLadder.aspx">
+      <system.webServer>
+         <httpRedirect enabled="true" destination="/LaddersAndMixers/ChallengeLadder.aspx" httpResponseStatus="Permanent" />
+      </system.webServer>
+   </location>
+   <location path="Public/Secure/LadderSignUp.aspx">
+      <system.webServer>
+         <httpRedirect enabled="true" destination="/LaddersAndMixers/ChallengeLadder.aspx" httpResponseStatus="Permanent" />
+      </system.webServer>
+   </location>
+   <location path="Public/DocumentDownloadList.aspx">
+      <system.webServer>
+         <httpRedirect enabled="true" destination="/ResourceAndCalendars/Documents.aspx" httpResponseStatus="Permanent" />
+      </system.webServer>
+   </location>
+   <location path="Members/Ladders/MyLaddersList.aspx">
+      <system.webServer>
+         <httpRedirect enabled="true" destination="/Member/Ladders/MyLaddersList.aspx" httpResponseStatus="Permanent" />
+      </system.webServer>
+   </location>
+   <location path="Members/Ladders/LadderList.aspx">
+      <system.webServer>
+         <httpRedirect enabled="true" destination="/Manage/LaddersAndMixers/Ladders/LadderList.aspx" httpResponseStatus="Permanent" />
+      </system.webServer>
+   </location>
+   <location path="Members/Ladders/LadderEntryList.aspx">
+      <system.webServer>
+         <httpRedirect enabled="true" destination="/Manage/LaddersAndMixers/LaddersEntries/LadderEntryList.aspx" httpResponseStatus="Permanent" />
+      </system.webServer>
+   </location>
+   <location path="Members/Ladders/LadderEntryBulkEntry.aspx">
+      <system.webServer>
+         <httpRedirect enabled="true" destination="/Manage/LaddersAndMixers/LadderEntryBulk/LadderEntryBulkEntry.aspx" httpResponseStatus="Permanent" />
+      </system.webServer>
+   </location>
+   <location path="Public/Tournaments.aspx">
+      <system.webServer>
+         <httpRedirect enabled="true" destination="/LaddersAndMixers/Mixers.aspx" httpResponseStatus="Permanent" />
+      </system.webServer>
+   </location>
+   <location path="Public/Secure/TournamentSignUp.aspx">
+      <system.webServer>
+         <httpRedirect enabled="true" destination="/Public/Secure/NewMemberSignUp.aspx" httpResponseStatus="Permanent" />
+      </system.webServer>
+   </location>
+   <location path="Members/Tournaments/MyTournamentsList.aspx">
+      <system.webServer>
+         <httpRedirect enabled="true" destination="/Member/Mixers/MyMixersList.aspx" httpResponseStatus="Permanent" />
+      </system.webServer>
+   </location>
+   <location path="Members/Tournaments/TournamentList.aspx">
+      <system.webServer>
+         <httpRedirect enabled="true" destination="/Manage/LaddersAndMixers/Mixers/MixerList.aspx" httpResponseStatus="Permanent" />
+      </system.webServer>
+   </location>
+   <location path="Members/Tournaments/TournamentEntryList.aspx">
+      <system.webServer>
+         <httpRedirect enabled="true" destination="/Manage/LaddersAndMixers/MixersEntries/MixerEntryList.aspx" httpResponseStatus="Permanent" />
+      </system.webServer>
+   </location>
+   <location path="Public/PlayoffList.aspx">
+      <system.webServer>
+         <httpRedirect enabled="true" destination="/StandingsPostSeason/PlayoffList.aspx" httpResponseStatus="Permanent" />
+      </system.webServer>
+   </location>
+   <location path="Members/Documents/DocumentList.aspx">
+      <system.webServer>
+         <httpRedirect enabled="true" destination="/Manage/LeagueSupport/LeagueDocuments/DocumentList.aspx" httpResponseStatus="Permanent" />
+      </system.webServer>
+   </location>
+   <location path="Public/Calendar/Calendar.aspx">
+      <system.webServer>
+         <httpRedirect enabled="true" destination="/ResourceAndCalendars/Calendar.aspx" httpResponseStatus="Permanent" />
+      </system.webServer>
+   </location>
+   <location path="Members/Calendars/CalendarList.aspx">
+      <system.webServer>
+         <httpRedirect enabled="true" destination="/Manage/WebsiteSupport/CalendarEvents/CalendarList.aspx" httpResponseStatus="Permanent" />
+      </system.webServer>
+   </location>
+   <location path="Members/Calendars/EventList.aspx">
+      <system.webServer>
+         <httpRedirect enabled="true" destination="/Manage/WebsiteSupport/CalendarEvents/EventList.aspx" httpResponseStatus="Permanent" />
+      </system.webServer>
+   </location>
+   <location path="Members/Leagues/LeagueTemplateList.aspx">
+      <system.webServer>
+         <httpRedirect enabled="true" destination="/Manage/WebsiteSupport/Leagues/LeagueTemplateList.aspx" httpResponseStatus="Permanent" />
+      </system.webServer>
+   </location>
+   <location path="Members/Leagues/LeagueList.aspx">
+      <system.webServer>
+         <httpRedirect enabled="true" destination="/Manage/WebsiteSupport/Leagues/LeagueList.aspx" httpResponseStatus="Permanent" />
+      </system.webServer>
+   </location>
+   <location path="Members/Rosters/MyRosterSearch.aspx">
+      <system.webServer>
+         <httpRedirect enabled="true" destination="/Member/Rosters/MyRosters/MyRosterSearch.aspx" httpResponseStatus="Permanent" />
+      </system.webServer>
+   </location>
+   <location path="Members/Rosters/AdvancedRosterSearch.aspx">
+      <system.webServer>
+         <httpRedirect enabled="true" destination="/Manage/MembersAndRosters/RosterAdvancedSearch/AdvancedRosterSearch.aspx" httpResponseStatus="Permanent" />
+      </system.webServer>
+   </location>
+   <location path="Members/Rosters/RosterLeagueSelection.aspx">
+      <system.webServer>
+         <httpRedirect enabled="true" destination="/Member/Rosters/NewRoster/NewRoster.aspx" httpResponseStatus="Permanent" />
+      </system.webServer>
+   </location>
+   <location path="Members/PostSeasonDeletion/PostSeasonDeletion.aspx">
+      <system.webServer>
+         <httpRedirect enabled="true" destination="/Member/Rosters/PostSeasonDeletion/PostSeasonDeletion.aspx" httpResponseStatus="Permanent" />
+      </system.webServer>
+   </location>
+   <location path="Members/PostSeasonDeletion/PostSeasonDeletePurge.aspx">
+      <system.webServer>
+         <httpRedirect enabled="true" destination="/Manage/MembersAndRosters/PostSeasonDeletion/PostSeasonDeletePurge.aspx" httpResponseStatus="Permanent" />
+      </system.webServer>
+   </location>
+   <location path="Members/Rosters/DefaultOut.aspx">
+      <system.webServer>
+         <httpRedirect enabled="true" destination="/Manage/MembersAndRosters/RostersDefaultOut/DefaultOut.aspx" httpResponseStatus="Permanent" />
+      </system.webServer>
+   </location>
+   <location path="Members/Rosters/RosterPlayerSwap.aspx">
+      <system.webServer>
+         <httpRedirect enabled="true" destination="/Manage/MembersAndRosters/PlayerSwap/RosterPlayerSwap.aspx" httpResponseStatus="Permanent" />
+      </system.webServer>
+   </location>
+   <location path="Members/Members/MemberSearch.aspx">
+      <system.webServer>
+         <httpRedirect enabled="true" destination="/Member/Member/MyMemberSearch.aspx" httpResponseStatus="Permanent" />
+      </system.webServer>
+   </location>
+   <location path="Members/Members/AdvancedPrivateMemberSearch.aspx">
+      <system.webServer>
+         <httpRedirect enabled="true" destination="/Manage/MembersAndRosters/MemberAdvancedSearch/AdvancedPrivateMemberSearch.aspx" httpResponseStatus="Permanent" />
+      </system.webServer>
+   </location>
+   <location path="Public/Secure/NewMemberSignUp.aspx">
+      <system.webServer>
+         <httpRedirect enabled="true" destination="/Public/Secure/NewMemberSignUp.aspx" httpResponseStatus="Permanent" />
+      </system.webServer>
+   </location>
+   <location path="Members/Members/MemberMerge.aspx">
+      <system.webServer>
+         <httpRedirect enabled="true" destination="/Manage/MembersAndRosters/MemberAdvancedSearch/MemberMerge.aspx" httpResponseStatus="Permanent" />
+      </system.webServer>
+   </location>
+   <location path="Members/Members/RenewMembershipNew.aspx">
+      <system.webServer>
+         <httpRedirect enabled="true" destination="/Member/Member/RenewMembershipNew.aspx" httpResponseStatus="Permanent" />
+      </system.webServer>
+   </location>
+   <location path="Public/Secure/MembershipPurchase.aspx">
+      <system.webServer>
+         <httpRedirect enabled="true" destination="/Public/Secure/MembershipPurchase.aspx" httpResponseStatus="Permanent" />
+      </system.webServer>
+   </location>
+   <location path="Members/Honorariums/HonorariumsSearch.aspx">
+      <system.webServer>
+         <httpRedirect enabled="true" destination="/Manage/Honorariums/HonorariumsSearch.aspx" httpResponseStatus="Permanent" />
+      </system.webServer>
+   </location>
+   <location path="Members/Awards/PersonAwardsSearch.aspx">
+      <system.webServer>
+         <httpRedirect enabled="true" destination="/Manage/Awards/PersonAwardsSearch.aspx" httpResponseStatus="Permanent" />
+      </system.webServer>
+   </location>
+   <location path="Members/Members/VolunteerBulkEntry.aspx">
+      <system.webServer>
+         <httpRedirect enabled="true" destination="/Manage/LeagueSupport/VolunteerBulk/VolunteerBulkEntry.aspx" httpResponseStatus="Permanent" />
+      </system.webServer>
+   </location>
+   <location path="Public/Postings/PlayersLookingForTeams.aspx">
+      <system.webServer>
+         <httpRedirect enabled="true" destination="/PlayersAndLeagues/playerslookingforteams.aspx" httpResponseStatus="Permanent" />
+      </system.webServer>
+   </location>
+   <location path="Public/Postings/TeamsLookingForPlayers.aspx">
+      <system.webServer>
+         <httpRedirect enabled="true" destination="/PlayersAndLeagues/TeamsLookingForPlayers.aspx" httpResponseStatus="Permanent" />
+      </system.webServer>
+   </location>
+   <location path="Members/Rosters/PostingsPurge.aspx">
+      <system.webServer>
+         <httpRedirect enabled="true" destination="/Manage/WebsiteSupport/PostingsPurge.aspx" httpResponseStatus="Permanent" />
+      </system.webServer>
+   </location>
+   <location path="Public/Facilities/Facilities.aspx">
+      <system.webServer>
+         <httpRedirect enabled="true" destination="/Facilities.aspx" httpResponseStatus="Permanent" />
+      </system.webServer>
+   </location>
+   <location path="Public/Facilities/FacilityList.aspx">
+      <system.webServer>
+         <httpRedirect enabled="true" destination="/Facilities/FacilitySearch.aspx" httpResponseStatus="Permanent" />
+      </system.webServer>
+   </location>
+   <location path="Public/Facilities/InspectionRequestDetail.aspx">
+      <system.webServer>
+         <httpRedirect enabled="true" destination="/Facilities/InspectionRequestDetail.aspx" httpResponseStatus="Permanent" />
+      </system.webServer>
+   </location>
+   <location path="Members/Facilities/InspectionRequestList.aspx">
+      <system.webServer>
+         <httpRedirect enabled="true" destination="/Manage/Facilities/InspectionRequestList.aspx" httpResponseStatus="Permanent" />
+      </system.webServer>
+   </location>
+   <location path="Members/Facilities/InspectionReportList.aspx">
+      <system.webServer>
+         <httpRedirect enabled="true" destination="/Manage/Facilities/InspectionReportList.aspx" httpResponseStatus="Permanent" />
+      </system.webServer>
+   </location>
+   <location path="Members/Facilities/UnusedFacilityList.aspx">
+      <system.webServer>
+         <httpRedirect enabled="true" destination="/Manage/Facilities/UnusedFacilityList.aspx" httpResponseStatus="Permanent" />
+      </system.webServer>
+   </location>
+   <location path="Members/Jobs/JobQueueList.aspx">
+      <system.webServer>
+         <httpRedirect enabled="true" destination="/Manage/LeagueSupport/Jobs/JobQueueList.aspx" httpResponseStatus="Permanent" />
+      </system.webServer>
+   </location>
+   <location path="Members/Jobs/MultipleRosterRegistrationNoficiationList.aspx">
+      <system.webServer>
+         <httpRedirect enabled="true" destination="/manage/LeagueSupport/Jobs/MultipleRosterRegistrationNoficiationList.aspx" httpResponseStatus="Permanent" />
+      </system.webServer>
+   </location>
+   <location path="Members/Jobs/DropDuplicatesList.aspx">
+      <system.webServer>
+         <httpRedirect enabled="true" destination="/Manage/LeagueSupport/Jobs/DropDuplicatesList.aspx" httpResponseStatus="Permanent" />
+      </system.webServer>
+   </location>
+   <location path="Members/Jobs/PreliminaryPlacementRosterList.aspx">
+      <system.webServer>
+         <httpRedirect enabled="true" destination="/Manage/LeagueSupport/Jobs/PreliminaryPlacementRosterList.aspx" httpResponseStatus="Permanent" />
+      </system.webServer>
+   </location>
+   <location path="Members/Jobs/AssignToDivisionList.aspx">
+      <system.webServer>
+         <httpRedirect enabled="true" destination="/Manage/LeagueSupport/Jobs/AssignToDivisionList.aspx" httpResponseStatus="Permanent" />
+      </system.webServer>
+   </location>
+   <location path="Members/Jobs/ScheduleLeagueList.aspx">
+      <system.webServer>
+         <httpRedirect enabled="true" destination="/Manage/LeagueSupport/Jobs/ScheduleLeagueList.aspx" httpResponseStatus="Permanent" />
+      </system.webServer>
+   </location>
+   <location path="Members/Jobs/DivisionFinalStandingsList.aspx">
+      <system.webServer>
+         <httpRedirect enabled="true" destination="/Manage/LeagueSupport/Jobs/DivisionFinalStandingsList.aspx" httpResponseStatus="Permanent" />
+      </system.webServer>
+   </location>
+   <location path="Members/Jobs/PlayoffDrawList.aspx">
+      <system.webServer>
+         <httpRedirect enabled="true" destination="/Manage/LeagueSupport/Jobs/PlayoffDrawList.aspx" httpResponseStatus="Permanent" />
+      </system.webServer>
+   </location>
+   <location path="Members/Jobs/CityFinalStandingsList.aspx">
+      <system.webServer>
+         <httpRedirect enabled="true" destination="/Manage/LeagueSupport/Jobs/CityFinalStandingsList.aspx" httpResponseStatus="Permanent" />
+      </system.webServer>
+   </location>
+   <location path="Members/Jobs/NetNewsStandingsExportList.aspx">
+      <system.webServer>
+         <httpRedirect enabled="true" destination="/Manage/LeagueSupport/Jobs/NetNewsStandingsExportList.aspx" httpResponseStatus="Permanent" />
+      </system.webServer>
+   </location>
+   <location path="Members/Jobs/NetNewsAddressesExportList.aspx">
+      <system.webServer>
+         <httpRedirect enabled="true" destination="/Manage/LeagueSupport/Jobs/NetNewsAddressesExportList.aspx" httpResponseStatus="Permanent" />
+      </system.webServer>
+   </location>
+   <location path="Members/Jobs/CalculateAwardsJob.aspx">
+      <system.webServer>
+         <httpRedirect enabled="true" destination="/manage/LeagueSupport/Jobs/CalculateAwardsJobNewStyle.aspx" httpResponseStatus="Permanent" />
+      </system.webServer>
+   </location>
+   <location path="Members/Jobs/JobProcessLogList.aspx">
+      <system.webServer>
+         <httpRedirect enabled="true" destination="/Manage/LeagueSupport/Jobs/JobProcessLogList.aspx" httpResponseStatus="Permanent" />
+      </system.webServer>
+   </location>
+   <location path="Members/Leveling/LevelingLeagueSelection.aspx">
+      <system.webServer>
+         <httpRedirect enabled="true" destination="/Manage/LeagueSupport/AssignedLeveling/AssignedLeveling.aspx" httpResponseStatus="Permanent" />
+      </system.webServer>
+   </location>
+   <location path="Public/Facilities/FacilityDivisionMap.aspx">
+      <system.webServer>
+         <httpRedirect enabled="true" destination="/Manage/LeagueSupport/DivisionAssignmentMap/FacilityDivisionMap.aspx" httpResponseStatus="Permanent" />
+      </system.webServer>
+   </location>
+   <location path="Members/Schedules/ScheduleList.aspx">
+      <system.webServer>
+         <httpRedirect enabled="true" destination="/Manage/LeagueSupport/ScheduleOverride/ScheduleList.aspx" httpResponseStatus="Permanent" />
+      </system.webServer>
+   </location>
+   <location path="Members/TrackingSheets/TrackingSheetList.aspx">
+      <system.webServer>
+         <httpRedirect enabled="true" destination="/Manage/LeagueSupport/TrackingSheetsScorecards/TrackingSheetList.aspx" httpResponseStatus="Permanent" />
+      </system.webServer>
+   </location>
+   <location path="Members/Logging/UIActivityLog.aspx">
+      <system.webServer>
+         <httpRedirect enabled="true" destination="/Manage/Logs/ActivityLog/UIActivityLog.aspx" httpResponseStatus="Permanent" />
+      </system.webServer>
+   </location>
+   <location path="Members/Logging/DataLog.aspx">
+      <system.webServer>
+         <httpRedirect enabled="true" destination="/Manage/Logs/DataLog/DataLog.aspx" httpResponseStatus="Permanent" />
+      </system.webServer>
+   </location>
+   <location path="Members/SearchSequence/SearchSequenceList.aspx">
+      <system.webServer>
+         <httpRedirect enabled="true" destination="/Manage/WebsiteSupport/RulesAdmin/SearchSequence/SearchSequenceList.aspx" httpResponseStatus="Permanent" />
+      </system.webServer>
+   </location>
+   <location path="Members/Leveling/AdultLevelFlightEquivalenceSelection.aspx">
+      <system.webServer>
+         <httpRedirect enabled="true" destination="/Manage/WebsiteSupport/RulesAdmin/AdultLevelFlightEquivalence/AdultLevelFlightEquivalenceSelection.aspx" httpResponseStatus="Permanent" />
+      </system.webServer>
+   </location>
+   <location path="Members/Leveling/JuniorLevelFlightEquivalence.aspx">
+      <system.webServer>
+         <httpRedirect enabled="true" destination="/Manage/WebsiteSupport/RulesAdmin/JuniorLevelFlightEquivalence/JuniorLevelFlightEquivalence.aspx" httpResponseStatus="Permanent" />
+      </system.webServer>
+   </location>
+   <location path="Members/Rosters/RankedPlayerLevelValue.aspx">
+      <system.webServer>
+         <httpRedirect enabled="true" destination="/Manage/WebsiteSupport/RulesAdmin/RankedPlayerLevelValue/RankedPlayerLevelValue.aspx" httpResponseStatus="Permanent" />
+      </system.webServer>
+   </location>
+   <location path="Members/EndOfSeasonMovement/EndOfSeasonMovement.aspx">
+      <system.webServer>
+         <httpRedirect enabled="true" destination="/Manage/WebsiteSupport/RulesAdmin/EndOfSeasonMovement/EndOfSeasonMovement.aspx" httpResponseStatus="Permanent" />
+      </system.webServer>
+   </location>
+   <location path="Members/Setup/ProductList.aspx">
+      <system.webServer>
+         <httpRedirect enabled="true" destination="/Manage/WebsiteSupport/Products/ProductList.aspx" httpResponseStatus="Permanent" />
+      </system.webServer>
+   </location>
+   <location path="Members/Setup/UnpaidMembershipText.aspx">
+      <system.webServer>
+         <httpRedirect enabled="true" destination="/Manage/WebsiteSupport/RulesAdmin/UnpaidMembershipText/UnpaidMembershipText.aspx" httpResponseStatus="Permanent" />
+      </system.webServer>
+   </location>
+   <location path="Members/Honorariums/PositionHonorariumAdmin.aspx">
+      <system.webServer>
+         <httpRedirect enabled="true" destination="/Manage/Honorariums/PositionHonorariumAdmin.aspx" httpResponseStatus="Permanent" />
+      </system.webServer>
+   </location>
+   <location path="Members/Awards/AwardGiftAssignment.aspx">
+      <system.webServer>
+         <httpRedirect enabled="true" destination="/Manage/Awards/AwardGiftAssignment.aspx" httpResponseStatus="Permanent" />
+      </system.webServer>
+   </location>
+   <location path="Members/Gifts/GiftList.aspx">
+      <system.webServer>
+         <httpRedirect enabled="true" destination="/Manage/Gifts/GiftList.aspx" httpResponseStatus="Permanent" />
+      </system.webServer>
+   </location>
+   <location path="Members/Members/CoordinatorApplicationDetail.aspx">
+      <system.webServer>
+         <httpRedirect enabled="true" destination="/Manage/LeagueSupport/CoordinatorApp/CoordinatorApplicationDetail.aspx" httpResponseStatus="Permanent" />
+      </system.webServer>
+   </location>
+   <location path="Members/Members/CoordinatorApplicationList.aspx">
+      <system.webServer>
+         <httpRedirect enabled="true" destination="/Manage/LeagueSupport/CoordinatorApp/CoordinatorApplicationList.aspx" httpResponseStatus="Permanent" />
+      </system.webServer>
+   </location>
+   <location path="Members/Members/CoordinatorApplicationPurge.aspx">
+      <system.webServer>
+         <httpRedirect enabled="true" destination="/Manage/LeagueSupport/CoordinatorApp/CoordinatorApplicationPurge.aspx" httpResponseStatus="Permanent" />
+      </system.webServer>
+   </location>
+   <location path="Public/WeeklyStandingsList.aspx">
+      <system.webServer>
+         <httpRedirect enabled="true" destination="/StandingsPostSeason/WeeklyStandingsList.aspx" httpResponseStatus="Permanent" />
+      </system.webServer>
+   </location>
+   <location path="Members/Reports/ReportList.aspx">
+      <system.webServer>
+         <httpRedirect enabled="true" destination="/Manage/Reports.aspx" httpResponseStatus="Permanent" />
+      </system.webServer>
+   </location>
+   <location path="Members/Members/Dashboard/Membership.aspx">
+      <system.webServer>
+         <httpRedirect enabled="true" destination="/Members/Members/Dashboard/MemberInfo/Membership.aspx" httpResponseStatus="Permanent" />
+      </system.webServer>
+   </location>
+   <location path="Members/Schedules/MySchedules.aspx">
+      <system.webServer>
+         <httpRedirect enabled="true" destination="/Member/Schedules/Schedule.aspx" httpResponseStatus="Permanent" />
+      </system.webServer>
+   </location>
+   <location path="Members/Standings/MyStandings.aspx">
+      <system.webServer>
+         <httpRedirect enabled="true" destination="/Member/Teams/TeamsDivisionStandings.aspx" httpResponseStatus="Permanent" />
+      </system.webServer>
+   </location>
+   <location path="Members/Scorecards/MyScorecards.aspx">
+      <system.webServer>
+         <httpRedirect enabled="true" destination="/Member/Teams/TeamScorecards.aspx" httpResponseStatus="Permanent" />
+      </system.webServer>
+   </location>
+   <location path="Members/Members/Dashboard/VolunteerList.aspx">
+      <system.webServer>
+         <httpRedirect enabled="true" destination="/Member/Account/Volunteer/VolunteerList.aspx" httpResponseStatus="Permanent" />
+      </system.webServer>
+   </location>
+   <location path="Members/Members/Dashboard/AwardList.aspx">
+      <system.webServer>
+         <httpRedirect enabled="true" destination="/Member/Account/Award/AwardList.aspx" httpResponseStatus="Permanent" />
+      </system.webServer>
+   </location>
+   <location path="Public/Secure/ProfileDetail.aspx'&amp;'Dashboard=true'&amp;'Tab=Login">
+      <system.webServer>
+         <httpRedirect enabled="true" destination="/Member/Account/PasswordReset.aspx" httpResponseStatus="Permanent" />
+      </system.webServer>
+   </location>
+   <location path="Members/Members/Dashboard/HonorariumList.aspx">
+      <system.webServer>
+         <httpRedirect enabled="true" destination="/Member/Account/HonorariumList.aspx" httpResponseStatus="Permanent" />
+      </system.webServer>
+   </location>
+   <location path="Public/Secure/WelcomeCard.aspx">
+      <system.webServer>
+         <httpRedirect enabled="true" destination="/Member/Account/ProfileDetail.aspx" httpResponseStatus="Permanent" />
+      </system.webServer>
+   </location>
+   <location path="Members/Playoffs/MyPlayoffs.aspx">
+      <system.webServer>
+         <httpRedirect enabled="true" destination="/Member/Teams/TeamsPlayoffs.aspx" httpResponseStatus="Permanent" />
+      </system.webServer>
+   </location>
+   <location path="Public/ContactUs.aspx">
+      <system.webServer>
+         <httpRedirect enabled="true" destination="/Contact.aspx" httpResponseStatus="Permanent" />
+      </system.webServer>
+   </location>
+   <location path="Public/ExecutiveCommittee.aspx">
+      <system.webServer>
+         <httpRedirect enabled="true" destination="/AboutALTA.aspx" httpResponseStatus="Permanent" />
+      </system.webServer>
+   </location>
+   <location path="Public/BoardOfDirectors.aspx">
+      <system.webServer>
+         <httpRedirect enabled="true" destination="/Contact.aspx" httpResponseStatus="Permanent" />
+      </system.webServer>
+   </location>
+   <location path="Public/OfficeStaff.aspx">
+      <system.webServer>
+         <httpRedirect enabled="true" destination="/Contact.aspx" httpResponseStatus="Permanent" />
+      </system.webServer>
+   </location>
+   <location path="Public/DirectionsAndMaps.aspx">
+      <system.webServer>
+         <httpRedirect enabled="true" destination="/Contact.aspx" httpResponseStatus="Permanent" />
+      </system.webServer>
+   </location>
+   <location path="Public/TermsAndConditions.aspx">
+      <system.webServer>
+         <httpRedirect enabled="true" destination="/Welcome.aspx" httpResponseStatus="Permanent" />
+      </system.webServer>
+   </location>
+   <location path="Public/PrivacyPolicy.aspx">
+      <system.webServer>
+         <httpRedirect enabled="true" destination="/Welcome.aspx" httpResponseStatus="Permanent" />
+      </system.webServer>
+   </location>
+   <location path="Public/ReleaseAndHoldHarmless.aspx">
+      <system.webServer>
+         <httpRedirect enabled="true" destination="/Welcome.aspx" httpResponseStatus="Permanent" />
+      </system.webServer>
+   </location>
+</content>

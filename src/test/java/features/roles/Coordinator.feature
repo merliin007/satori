@@ -1,3 +1,4 @@
+@sanity
 Feature: Coordinator access
   This feature exercises Coordinator access to portal
 

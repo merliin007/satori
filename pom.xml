@@ -145,5 +145,36 @@
             <artifactId>cucumber-java8</artifactId>
             <version>1.2.5</version>
         </dependency>-->
+
+        <!-- https://mvnrepository.com/artifact/io.rest-assured/rest-assured -->
+        <!--<dependency>
+            <groupId>io.rest-assured</groupId>
+            <artifactId>rest-assured</artifactId>
+            <version>4.0.0</version>
+            <scope>test</scope>
+        </dependency>-->
+
+        <!-- https://mvnrepository.com/artifact/org.apache.httpcomponents/httpclient -->
+        <!--<dependency>
+            <groupId>org.apache.httpcomponents</groupId>
+            <artifactId>httpclient</artifactId>
+            <version>4.5.9</version>
+        </dependency>-->
+
+        <!--<dependency>
+            <groupId>net.sourceforge.htmlunit</groupId>
+            <artifactId>htmlunit</artifactId>
+            <version>2.10</version>
+            <scope>test</scope>
+        </dependency>
+
+        &lt;!&ndash; https://mvnrepository.com/artifact/org.apache.httpcomponents/fluent-hc &ndash;&gt;
+        <dependency>
+            <groupId>org.apache.httpcomponents</groupId>
+            <artifactId>fluent-hc</artifactId>
+            <version>4.5.9</version>
+        </dependency>-->
+
+
     </dependencies>
 </project>

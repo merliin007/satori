@@ -1,3 +1,4 @@
+@sanity
 Feature: Jobs execution
   This feature exercises executing a job and verifies it is shown in the Job Queue
 

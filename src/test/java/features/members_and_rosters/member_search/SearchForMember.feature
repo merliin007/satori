@@ -1,3 +1,4 @@
+@sanity
 Feature: Member search
   This feature exercises searching for a member and editing it
 

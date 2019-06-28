@@ -1,3 +1,4 @@
+@sanity
 Feature: Login validation
   This feature exercises correct login into new site
 

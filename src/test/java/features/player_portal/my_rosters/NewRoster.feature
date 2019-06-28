@@ -1,3 +1,4 @@
+@sanity
 Feature: Roster creation
   This feature exercises creating a new roster
 

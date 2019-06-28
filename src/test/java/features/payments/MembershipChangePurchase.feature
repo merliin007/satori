@@ -1,3 +1,4 @@
+@sanity
 Feature: Membership payment
   This feature exercises searching for a member paying his membership and changing Purchase type
 

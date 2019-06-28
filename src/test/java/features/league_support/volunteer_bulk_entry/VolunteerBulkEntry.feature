@@ -1,3 +1,4 @@
+@sanity
 Feature: Volunteer bulk entry
   This feature exercises adding a position to a member
 

@@ -1,3 +1,4 @@
+@sanity
 Feature: Public website navigation
   This feature exercises visiting all of the public website pages
 
