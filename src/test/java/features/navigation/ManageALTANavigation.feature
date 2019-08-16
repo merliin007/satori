@@ -22,12 +22,13 @@ Feature: Login validation
       | League Support      | Jobs                                 |      |
       | League Support      | League Documents                     |      |
       | League Support      | Volunteer Bulk Entry                 |      |
+      | League Support      | Coordinator Applications             |      |
       | Members and Rosters | Member Search                        |      |
       | Members and Rosters | Members Advanced Search              |      |
       | Members and Rosters | Rosters Advanced Search              |      |
-      | Members and Rosters | Rosters Default out                  | true |
-      | Members and Rosters | Post-Season Deletion Request Purge   | true |
-      | Members and Rosters | Roster Player swap                   | true |
+      | Members and Rosters | Rosters Default out                  |      |
+      | Members and Rosters | Postseason Deletion Request Purge    |      |
+      | Members and Rosters | Roster Player Swap                   |      |
       | Ladders and Mixers  | Ladders                              | true |
       | Ladders and Mixers  | Ladder Entries                       | true |
       | Ladders and Mixers  | Ladder Participant Bulk Entry        | true |
@@ -43,8 +44,8 @@ Feature: Login validation
       | Service Recognition | Gift Management                      | true |
       | Service Recognition | Honorariums                          | true |
       | Service Recognition | Honorarium Admin                     | true |
-      | Logs                | UI Activity Log                      | true |
-      | Logs                | Data Log                             | true |
+      | Logs                | UI Activity Log                      |      |
+      | Logs                | Data Log                             |      |
 
     Then No error is shown
 

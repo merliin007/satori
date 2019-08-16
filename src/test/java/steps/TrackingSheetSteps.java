@@ -48,7 +48,8 @@ public class TrackingSheetSteps {
     public void selectingTrackingSheetAtPosition(int index) {
         try {
             List<WebElement> tblResults = tss.getTblResults(0);
-            I.Click(tblResults.get(index));
+//            I.Click(tblResults.get(index +3));
+            I.Click(tblResults.get(index + (tblResults.size() > 10 ? 2 : 0)));
         } catch (Exception e) {
             Log.error(e.getMessage());
             base.GrabScreenShot();

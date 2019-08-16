@@ -455,7 +455,7 @@
          <httpRedirect enabled="true" destination="/Member/Account/Award/AwardList.aspx" httpResponseStatus="Permanent" />
       </system.webServer>
    </location>
-   <location path="Public/Secure/ProfileDetail.aspx'&amp;'Dashboard=true'&amp;'Tab=Login">
+   <location path="Public/Secure/ProfileDetail.aspx">
       <system.webServer>
          <httpRedirect enabled="true" destination="/Member/Account/PasswordReset.aspx" httpResponseStatus="Permanent" />
       </system.webServer>

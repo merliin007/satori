@@ -5,6 +5,7 @@ import cucumber.api.DataTable;
 import cucumber.api.java.en.And;
 import cucumber.api.java.en.Then;
 import org.apache.commons.lang3.exception.ExceptionUtils;
+import org.junit.rules.ErrorCollector;
 import org.openqa.selenium.NoSuchElementException;
 import org.openqa.selenium.UnhandledAlertException;
 import pages.home.MainPage;
@@ -15,6 +16,7 @@ import utility.xml.XMLReader;
 
 import java.util.*;
 
+import static org.hamcrest.core.IsEqual.equalTo;
 import static org.testng.Assert.assertTrue;
 import static org.testng.Assert.fail;
 import static utility.Helpers.AddErrorPage;
@@ -76,23 +78,24 @@ public class NavigationSteps {
         try {
             XMLReader xmlReader = new XMLReader("redirections.xml");
             Map<String, String> urls = xmlReader.getURLS();
+            int i = 0;
 
             Iterator it = null;
-            if (urls != null)
+            if (urls != null) {
                 it = urls.keySet().iterator();
-            else
+            } else {
                 fail();
+            }
 
             while (it.hasNext()) {
                 String from = "";
-                String to = "";
+                String to;
                 List<String> tmp = new ArrayList<>();
 
                 try {
-
                     from = (String) it.next();
                     to = urls.get(from);
-                    Log.info("From: " + from + " -> To: " + to);
+                    Log.info(++i + " From: " + from + " -> To: " + to);
                     base.NavigateToURL(from);
 
                     String actualURL = base.GetPageURL();
@@ -110,8 +113,8 @@ public class NavigationSteps {
                 } catch (UnhandledAlertException e) {
                     I.verifyAlertErrorAndAcceptIt();
 
-                }catch (NoSuchElementException e){}
-                catch (Exception e) {
+                } catch (NoSuchElementException e) {
+                } catch (Exception e) {
                     Log.error("Error accessing: " + from);
                     String stackTrace = ExceptionUtils.getStackTrace(e);
                     Log.error(stackTrace);
@@ -155,13 +158,17 @@ public class NavigationSteps {
 
     @Then("^I print results$")
     public void iPrintResults() {
-        if(compare.isEmpty())
-            Log.info("******* No errors navigating all pages *******");
-        else {
-            Log.info("******* The following pages had errors while being visited *******");
-            for (List<String> tmp : compare) {
-                Log.error("From: " + tmp.get(0) + " to: " + tmp.get(1) + " -> " + tmp.get(2));
+        try {
+            if (!compare.isEmpty()) {
+                Log.info("******* The following pages had errors while being visited *******");
+                for (List<String> tmp : compare) {
+                    Log.error("From: " + tmp.get(0) + " to: " + tmp.get(1) + " -> " + tmp.get(2));
+                }
             }
+        } catch (Exception e) {
+            e.printStackTrace();
+        } finally {
+            assertTrue(compare.isEmpty());
         }
     }
 }

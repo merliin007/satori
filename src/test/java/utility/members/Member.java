@@ -8,6 +8,7 @@ import com.sun.istack.NotNull;
 import utility.RandomString;
 
 import java.util.List;
+import java.util.Random;
 
 public class Member {
 
@@ -57,10 +58,16 @@ public class Member {
         this.password = Password;
     }
 
-    public Member(String first, String last){
+    public Member(String[] member) {
+        this(member[0], member[1], member[2], member[3], member[4], "", "", "",
+                member[5], "", "", "", member[6], member[7], member[8], member[9]);
+    }
+
+    public Member(String first, String last) {
         this.first = first;
         this.last = last;
     }
+
     public Member(List<String> tbl) {
         this(tbl.get(0), tbl.get(1), tbl.get(2), tbl.get(3), tbl.get(4), tbl.get(5), tbl.get(6), tbl.get(7),
                 tbl.get(8), tbl.get(9), tbl.get(10), tbl.get(11), tbl.get(12), tbl.get(13), tbl.get(14), tbl.get(15));

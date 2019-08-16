@@ -33,7 +33,7 @@ public class LandingPage {
     @FindBy(how = How.CLASS_NAME, using = "megamenu__list-col")
     private WebElement navList;
 
-    @FindBy(how = How.CLASS_NAME, using ="breadcrumbs")
+    @FindBy(how = How.CLASS_NAME, using = "breadcrumbs")
     private WebElement breadCrumbs;
 
     public boolean IsUserLoggedIn() throws Exception {
@@ -57,17 +57,18 @@ public class LandingPage {
         return navList;
     }
 
-        public WebElement getLinkOptionFromMenu(String lnkName) throws Exception {
-        List<WebElement> elementList = navList.findElements(By.className("megamenu__section"));
-        for (WebElement element : elementList) {
-            List<WebElement> subList = element.findElements(By.tagName("a"));
-            for (WebElement sub : subList) {
-                if (sub.getText().trim().contains(lnkName.trim())) {
-                    Log.info("URL found: " + sub.getAttribute("href"));
-                    return sub;
-                }
+    public WebElement getLinkOptionFromMenu(String lnkName) throws Exception {
+//        List<WebElement> elementList = navList.findElements(By.className("megamenu__section"));
+        List<WebElement> elementList = navList.findElement(By.className("megamenu__ul")).findElements(By.tagName("a"));
+        //for (WebElement element : elementList) {
+        //List<WebElement> subList = element.findElements(By.tagName("a"));
+        for (WebElement sub : elementList) {
+            if (sub.getText().trim().toLowerCase().contains(lnkName.trim().toLowerCase())) {
+                Log.info("URL found: " + sub.getAttribute("href"));
+                return sub;
             }
         }
+
         return null;
     }
 
@@ -75,7 +76,7 @@ public class LandingPage {
         return breadCrumbs;
     }
 
-    public String getBreadCrumbChildText(){
+    public String getBreadCrumbChildText() {
         try {
             return breadCrumbs.findElement(By.className("breadcrumbs__text")).getText();
         } catch (Exception e) {
@@ -83,7 +84,7 @@ public class LandingPage {
         }
     }
 
-    public By getBreadCrumbLocator(){
+    public By getBreadCrumbLocator() {
         return By.className("breadcrumbs__text");
     }
 }

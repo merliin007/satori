@@ -454,6 +454,13 @@ public class Helpers implements Actionable {
 
     }
 
+    public void waitForPageIsDone() {
+        new FluentWait<>(_driver)
+                .until(
+                        webDriver -> ((JavascriptExecutor) webDriver).executeScript("return document.readyState").equals("complete"));
+
+    }
+
     @Override
     public void changeZindex() {
         String script = "document.getElementById('WizardIsBusyIndicatorBehavior_backgroundElement').style.zIndex=-1000;";
@@ -515,6 +522,7 @@ public class Helpers implements Actionable {
                 .ignoring(NoSuchElementException.class)
                 .until(ExpectedConditions.invisibilityOfElementLocated(locator));
     }
+
     public void waitUntilElementDisappears(WebElement element) throws Exception {
         new FluentWait<>(_driver)
                 .withTimeout(Duration.ofSeconds(6))
@@ -651,6 +659,12 @@ public class Helpers implements Actionable {
     public boolean IsMembershipNotPayed(WebElement row) {
         return (row.findElements(By.tagName("td")).get(19).getText().contains("Unpaid"));
 
+    }
+
+    public String[] getDefaultMemberObject() {
+        String[] member = {"automated", "user", (new Random(2).nextInt() % 2 == 0) ? "Female" : "Male",
+                RandomString.getNumericString(5), "12/19/1994", "no", "automated@satoriinteractive.com", "TN", "Coffee", "test123"};
+        return member;
     }
 
 }

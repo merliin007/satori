@@ -27,10 +27,12 @@ public class SignUpSteps {
     private RegisterPage registerPage;
     private Member member;
     private MyMembershipPage myMembershipPage;
+    private NewMemberSignUpPage signUpPage;
 
     public SignUpSteps(BaseUtil base) {
         this.base = base;
         I = new Helpers(base.driver);
+        signUpPage = new NewMemberSignUpPage(base.driver);
     }
 
     @Then("^User enters the following information for signing up$")
@@ -39,7 +41,7 @@ public class SignUpSteps {
             Log.info("New Account: Filling out main form");
             List<List<String>> tbl = table.raw();
             member = new Member(tbl.get(0));
-            NewMemberSignUpPage signUpPage = new NewMemberSignUpPage(base.driver);
+
 
             I.Write(signUpPage.getTxtFirstName(), member.getFirst());
             I.Write(signUpPage.getTxtLastName(), member.getLast());
@@ -113,5 +115,51 @@ public class SignUpSteps {
             base.GrabScreenShot();
             fail();
         }
+    }
+
+    @And("^I create (\\d+) default players$")
+    public void iCreateDefaultPlayers(int num) {
+        try {
+            int i = 0;
+            while (i < num) {
+                member = new Member(I.getDefaultMemberObject());
+
+                I.Write(signUpPage.getTxtFirstName(), member.getFirst());
+                I.Write(signUpPage.getTxtLastName(), member.getLast());
+                I.Click(signUpPage.getBtnNext());
+
+                registerPage = new RegisterPage(base.driver);
+                I.waitUntilElementIsVisible(registerPage.getTxtFirstName());
+
+                I.SelectValue(registerPage.getDropGender(), member.getGender());
+                I.Write(registerPage.getTxtBirthDate(), member.getDob());
+                I.CheckCheckBoxIf(registerPage.getChkWheelChair(), member.getWheelChair());
+                I.Write(registerPage.getTxtHomePhone(), member.getHomePhone());
+                I.Write(registerPage.getTxtMobilePhone(), member.getMobilePhone());
+                I.Write(registerPage.getTxtWorkPhone(), member.getWorkPhone());
+                I.Write(registerPage.getTxtEmail(), member.getEmail());
+                I.Write(registerPage.getTxtStreet(), member.getStreet());
+                I.Write(registerPage.getTxtApt(), member.getApt());
+                I.Write(registerPage.getTxtCity(), member.getCity());
+                I.SelectValue(registerPage.getDropState(), member.getState());
+                I.Write(registerPage.getTxtZip(), member.getZip());
+                I.SelectValue(registerPage.getDropCounty(), member.getCounty());
+                I.Click(registerPage.getBtnNext());
+
+                Log.info("New Account: Selecting Username");
+                I.waitUntilElementIsVisible(registerPage.getTxtUserName());
+                I.Write(registerPage.getTxtUserName(), member.getUserName());
+                I.Write(registerPage.getTxtPassword(), member.getPassword());
+                I.Write(registerPage.getTxtPasswordConfirmation(), member.getPassword());
+                I.Click(registerPage.getBtnNext());
+
+
+            }
+        } catch (Exception e) {
+            Log.error(e.getMessage());
+            base.GrabScreenShot();
+            fail();
+        }
+
     }
 }

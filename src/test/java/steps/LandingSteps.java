@@ -11,7 +11,9 @@ import org.openqa.selenium.WebElement;
 import pages.home.LandingPage;
 import utility.Helpers;
 import utility.Log;
+
 import java.util.List;
+
 import static org.testng.Assert.fail;
 import static utility.Helpers.AddErrorPage;
 
@@ -29,15 +31,20 @@ public class LandingSteps {
     @When("^I navigate to the following public page option$")
     public void iNavigateToTheFollowingPublicPageOption(DataTable table) {
         try {
-            landingPage = new LandingPage(base.driver);
 
             List<List<String>> data = table.raw();
             for (List<String> row : data) {
+
+                landingPage = new LandingPage(base.driver);
                 Log.info("Navigating to " + row.get(1) + " page");
                 I.Click(landingPage.getBtnNavigator()); // Code for using Navigator Menu
                 Log.info("Current page: " + landingPage.getBreadCrumbChildText());
+
                 try {
+                    Thread.sleep(1500L);
+//                    I.waitForPageIsDone();
                     WebElement pageLink = landingPage.getLinkOptionFromMenu(row.get(1));
+
                     if (pageLink != null)
                         I.Click(pageLink);
                     else

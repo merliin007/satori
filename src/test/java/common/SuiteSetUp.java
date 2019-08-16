@@ -8,7 +8,7 @@ import utility.Log;
 
 public class SuiteSetUp {
 
-    public static final String TEST_ENVIRONMENT = "https://test.altatennis.org/";
+    public static final String TEST_ENVIRONMENT = "https://54.68.108.124/webapp";
 
     public static final String QA_ENVIRONMENT_ie = "https://altarebuild.qa.satoriinteractive.com/webapp/";
     public static final String QA_ENVIRONMENT_all = "https://Alta:TennisQa1@altarebuild.qa.satoriinteractive.com/webapp/";
